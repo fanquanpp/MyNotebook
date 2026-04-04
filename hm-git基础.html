@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Git &#x57fa;&#x7840;&#x64cd;&#x4f5c;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <blockquote>
+<p>大学生变活人联盟 学习笔记</p>
+<br />
+<p>Git基础</p>
+</blockquote>
+<hr>
+<h1 id="git-基础操作">Git 基础操作</h1>
+<h2 id="一首次使用-git全局配置">一、首次使用 Git：全局配置</h2>
+<p>在任何 Git 操作前，先告诉 Git 你是谁（用于记录提交者信息）<br>
+打开git bash</p>
+<pre><code class="language-bash"><span class="hljs-comment"># 1. 设置用户名（替换为你的名字）</span>
+git config --global user.name <span class="hljs-string">&quot;你的用户名（可用中文，或者与GitHub相同）&quot;</span>
+
+<span class="hljs-comment"># 2. 设置邮箱（替换为你的邮箱）</span>
+git config --global user.email <span class="hljs-string">&quot;你的邮箱地址（与GitHub相同）&quot;</span>
+
+<span class="hljs-comment"># 3. (可选但推荐) 解决 Windows 下中文文件名乱码问题</span>
+git config --global core.quotepath <span class="hljs-literal">false</span>
+</code></pre>
+<hr>
+<h2 id="二本地仓库基础操作">二、本地仓库基础操作</h2>
+<h3 id="1-初始化获取仓库">1. 初始化/获取仓库</h3>
+<pre><code class="language-bash"><span class="hljs-comment"># A: 初始化仓库</span>
+git init
+
+<span class="hljs-comment"># B：从远程克隆一个已有的仓库（例如从 GitHub/Gitee）</span>
+git <span class="hljs-built_in">clone</span> &lt;仓库地址&gt;
+</code></pre>
+<h3 id="2-提交代码到仓库三步">2. 提交代码到仓库（三步）</h3>
+<pre><code class="language-bash"><span class="hljs-comment"># 1. 将所有修改添加到暂存区</span>
+git add .
+
+<span class="hljs-comment"># 2. 将暂存区的内容提交到本地仓库（引号内写本次提交的说明）</span>
+git commit -m <span class="hljs-string">&quot;描述你做了什么修改&quot;</span>
+
+<span class="hljs-comment"># (可选操作) 查看当前状态，确认是否还有未提交的内容</span>
+git status
+
+<span class="hljs-comment"># 3-1. 提交代码（首次）</span>
+git push -u origin main
+
+<span class="hljs-comment"># 3-2. 提交代码(非首次)</span>
+git push
+</code></pre>
+<h3 id="2-1基本操作三个命令">2-1.基本操作（三个命令）</h3>
+<pre><code class="language-bash"><span class="hljs-comment"># 1.</span>
+git add .
+
+<span class="hljs-comment"># 2.</span>
+git commit -m <span class="hljs-string">&quot;描述&quot;</span>
+
+<span class="hljs-comment"># 3.</span>
+git push
+</code></pre>
+<hr>
+<blockquote>
+<p>重点部分</p>
+</blockquote>
+<h2 id="三关联远程仓库与推送">三、关联远程仓库与推送</h2>
+<p>已在本地做了 <code>git commit</code></p>
+<h3 id="1-首次推送建立关联">1. 首次推送（建立关联）</h3>
+<blockquote>
+<p>我们可以直接使用VSCode里的图形化界面操作这些步骤（使用GitHub账号登录VSCode）</p>
+</blockquote>
+<p>如果是<strong>第一次</strong>把本地代码推送到远程仓库，需要先关联并设置“上游分支”。</p>
+<pre><code class="language-bash"><span class="hljs-comment"># 1. (如果还没关联远程仓库) 关联远程仓库（替换为你的仓库地址）</span>
+git remote add origin &lt;你的远程仓库URL&gt;
+
+<span class="hljs-comment"># 2. 首次推送到远程 main 分支，并关联上游（关键：-u 参数）</span>
+<span class="hljs-comment"># 作用：以后直接 git push 即可，不用再写分支名</span>
+git push -u origin main
+</code></pre>
+<blockquote>
+<p><strong>注意</strong>：旧版默认分支常用<code>master</code>,如果默认分支是 <code>master</code>，就把 <code>main</code> 换成 <code>master</code>。<br>
+现在基本都是<code>main</code></p>
+</blockquote>
+<hr>
+<h3 id="2-后续推送日常提交">2. 后续推送（日常提交）</h3>
+<p>首次推送成功后，<strong>以后的日常推送</strong>就不需要 <code>-u</code>。</p>
+<pre><code class="language-bash"><span class="hljs-comment"># 1. 拉取远程最新代码（防止冲突，建议每次 push 前先 pull）</span>
+git pull
+
+<span class="hljs-comment"># 2. 直接推送到远程（因为首次已经用 -u 关联过了）</span>
+git push
+</code></pre>
+<hr>
+<h2 id="四常用查看与辅助命令">四、常用查看与辅助命令</h2>
+<pre><code class="language-bash"><span class="hljs-comment"># 1. 查看提交历史（按 q 退出）</span>
+git <span class="hljs-built_in">log</span>
+
+<span class="hljs-comment"># 2. 查看当前分支</span>
+git branch
+
+<span class="hljs-comment"># 3. 查看远程仓库信息</span>
+git remote -v
+
+<span class="hljs-comment"># 4. 查看工作区和暂存区的差异</span>
+git diff
+</code></pre>
+<hr>
+<h2 id="五完整流程示例">五、完整流程示例</h2>
+<pre><code class="language-bash"><span class="hljs-comment"># 1. 全局配置（仅第一次）</span>
+git config --global user.name <span class="hljs-string">&quot;用户名称（操作者名称）&quot;</span>
+git config --global user.email <span class="hljs-string">&quot;GitHub邮箱地址&quot;</span>
+<span class="hljs-comment"># 1-1.（可选操作）</span>
+git config --global core.quotepath <span class="hljs-literal">false</span>
+
+<span class="hljs-comment"># 2. 新建/进入项目文件夹并初始化(VSCode终端里可同样操作)</span>
+<span class="hljs-built_in">mkdir</span> my-project
+<span class="hljs-built_in">cd</span> my-project
+<span class="hljs-comment"># 2-1.（VSCode中最主要的操作，一般只这一个命令就行）</span>
+git init
+
+<span class="hljs-comment"># 3. 写代码，然后提交</span>
+git add .
+git commit -m <span class="hljs-string">&quot;初始化项目&quot;</span>
+
+<span class="hljs-comment"># 4. 关联远程仓库（替换为你的地址）</span>
+git remote add origin 你的仓库地址
+git remote add origin https://github.com/xxx/my-project.git
+
+<span class="hljs-comment"># 5. 首次推送（带 -u）</span>
+git push -u origin main
+
+<span class="hljs-comment"># --- 第二天修改了代码 ---</span>
+<span class="hljs-comment"># 6. 后续日常操作</span>
+git add .
+git commit -m <span class="hljs-string">&quot;新增了登录功能&quot;</span>
+git pull          <span class="hljs-comment"># 先拉取别人的更新</span>
+git push          <span class="hljs-comment"># 直接推送，无需 -u</span>
+</code></pre>
+<hr>
+<h2 id="vscode里的操作">VSCode里的操作</h2>
+<pre><code class="language-bash">&gt; 打开终端
+
+<span class="hljs-comment"># 1.</span>
+    git add .
+
+<span class="hljs-comment"># 2.</span>
+    git commit -m <span class="hljs-string">&quot;描述&quot;</span>
+
+<span class="hljs-comment"># 3.(第一次)</span>
+    git push -u origin main
+
+<span class="hljs-comment"># 3-1.(之后)</span>
+    git push
+</code></pre>
+<h3 id="关键总结">关键总结</h3>
+<ul>
+<li><strong><code>git push -u origin main</code></strong>：仅用于<strong>第一次</strong>推送，目的是“绑定”本地和远程分支。</li>
+<li><strong><code>git push</code></strong>：绑定之后，所有后续推送都用这个。</li>
+<li><strong>好习惯</strong>：推送前先 <code>git pull</code>，避免代码冲突。</li>
+</ul>
+
+            
+            
+        </body>
+        </html>

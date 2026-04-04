@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Git &#x57fa;&#x7840;&#x64cd;&#x4f5c;&#x547d;&#x4ee4;&#x624b;&#x518c;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <blockquote>
+<p>大学生变活人联盟 学习笔记</p>
+<br />
+<p>Git命令手册</p>
+</blockquote>
+<hr>
+<h1 id="git-基础操作命令手册">Git 基础操作命令手册</h1>
+<h2 id="1-环境配置">1. 环境配置</h2>
+<ul>
+<li>配置用户名：<code>git config --global user.name &quot;你的用户名&quot;</code></li>
+<li>配置邮箱：<code>git config --global user.email &quot;你的邮箱&quot;</code></li>
+<li>查看配置：<code>git config --list</code></li>
+</ul>
+<h2 id="2-创建与克隆仓库">2. 创建与克隆仓库</h2>
+<ul>
+<li>初始化本地仓库：<code>git init</code></li>
+<li>克隆远程仓库：<code>git clone &lt;仓库地址&gt;</code></li>
+</ul>
+<h2 id="3-基本操作">3. 基本操作</h2>
+<ul>
+<li>查看状态：<code>git status</code></li>
+<li>添加文件到暂存区：<code>git add &lt;文件名&gt;</code> 或 <code>git add .</code>（添加所有）</li>
+<li>提交到本地仓库：<code>git commit -m &quot;提交说明&quot;</code></li>
+<li>查看提交历史：<code>git log</code></li>
+</ul>
+<h2 id="4-分支管理">4. 分支管理</h2>
+<ul>
+<li>查看分支：<code>git branch</code></li>
+<li>创建分支：<code>git branch &lt;分支名&gt;</code></li>
+<li>切换分支：<code>git checkout &lt;分支名&gt;</code> 或 <code>git switch &lt;分支名&gt;</code></li>
+<li>创建并切换分支：<code>git checkout -b &lt;分支名&gt;</code></li>
+<li>合并分支：<code>git merge &lt;分支名&gt;</code></li>
+<li>删除分支：<code>git branch -d &lt;分支名&gt;</code></li>
+</ul>
+<h2 id="5-远程仓库操作">5. 远程仓库操作</h2>
+<ul>
+<li>关联远程仓库：<code>git remote add origin &lt;仓库地址&gt;</code></li>
+<li>推送到远程仓库：<code>git push -u origin &lt;分支名&gt;</code>（首次）或 <code>git push</code></li>
+<li>拉取远程仓库：<code>git pull</code></li>
+<li>查看远程仓库：<code>git remote -v</code></li>
+</ul>
+<h2 id="6-撤销操作">6. 撤销操作</h2>
+<ul>
+<li>撤销工作区修改：<code>git checkout -- &lt;文件名&gt;</code></li>
+<li>撤销暂存区：<code>git reset HEAD &lt;文件名&gt;</code></li>
+<li>撤销提交（保留修改）：<code>git reset --soft HEAD~1</code></li>
+<li>撤销提交（丢弃修改）：<code>git reset --hard HEAD~1</code></li>
+</ul>
+
+            
+            
+        </body>
+        </html>

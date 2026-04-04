@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&#x4e00;&#x3001;&#x6807;&#x9898;&#x8bed;&#x6cd5;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <blockquote>
+<p>大学生变活人联盟 学习笔记</p>
+<p>Markdown基础</p>
+</blockquote>
+<hr>
+<h2 id="一标题语法">一、标题语法</h2>
+<p>Markdown支持6级标题，通过<code>#</code>的数量区分层级，<strong><code>#</code>后必须加1个空格</strong>，否则语法不生效。</p>
+<h3 id="语法示例">语法示例</h3>
+<pre><code class="language-markdown"><span class="hljs-section"># 一级标题（对应HTML h1，文档主标题）</span>
+<span class="hljs-section">## 二级标题（对应HTML h2，一级章节）</span>
+<span class="hljs-section">### 三级标题（对应HTML h3，二级章节）</span>
+<span class="hljs-section">#### 四级标题</span>
+<span class="hljs-section">##### 五级标题</span>
+<span class="hljs-section">###### 六级标题</span>
+</code></pre>
+<h3 id="渲染效果">渲染效果</h3>
+<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<h3 id="三级标题">三级标题</h3>
+<h4 id="四级标题">四级标题</h4>
+<h5 id="五级标题">五级标题</h5>
+<h6 id="六级标题">六级标题</h6>
+<hr>
+<h2 id="二段落与换行">二、段落与换行</h2>
+<h3 id="核心规则">核心规则</h3>
+<ol>
+<li><strong>段落分隔</strong>：两个段落之间必须用<strong>1个空行</strong>分隔，无空行的连续文本会被合并为同一段落</li>
+<li><strong>强制换行</strong>：行尾添加<strong>2个及以上空格</strong>后按回车，实现同一段落内的换行（全平台通用标准写法）</li>
+</ol>
+<h3 id="语法示例-1">语法示例</h3>
+<pre><code class="language-markdown">这是第一个段落的第一行
+这一行和上一行无空行、无行尾空格，会被合并为同一段落
+
+这是第二个段落（上一行是空行，成功分段）
+这一行末尾加了2个空格  
+这一行成功换行，和上一行属于同一段落
+</code></pre>
+<hr>
+<h2 id="三基础文本格式">三、基础文本格式</h2>
+<h3 id="核心语法">核心语法</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">格式效果</th>
+<th style="text-align:left">语法写法</th>
+<th style="text-align:left">渲染效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">斜体</td>
+<td style="text-align:left"><code>*斜体文本*</code> 或 <code>_斜体文本_</code></td>
+<td style="text-align:left"><em>斜体文本</em></td>
+</tr>
+<tr>
+<td style="text-align:left">粗体</td>
+<td style="text-align:left"><code>**粗体文本**</code> 或 <code>__粗体文本__</code></td>
+<td style="text-align:left"><strong>粗体文本</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">粗斜体</td>
+<td style="text-align:left"><code>***粗斜体文本***</code> 或 <code>___粗斜体文本___</code></td>
+<td style="text-align:left"><em><strong>粗斜体文本</strong></em></td>
+</tr>
+<tr>
+<td style="text-align:left">删除线(GFM扩展)</td>
+<td style="text-align:left"><code>~~删除线文本~~</code></td>
+<td style="text-align:left"><s>删除线文本</s></td>
+</tr>
+</tbody>
+</table>
+<h3 id="语法示例-2">语法示例</h3>
+<pre><code class="language-markdown">这是<span class="hljs-emphasis">*斜体*</span>、<span class="hljs-strong">**粗体**</span>、<span class="hljs-strong">**<span class="hljs-emphasis">*粗斜体*</span>**</span>、~~删除线~~文本
+</code></pre>
+<hr>
+<h2 id="四列表语法">四、列表语法</h2>
+<h3 id="1-无序列表">1. 无序列表</h3>
+<p>使用<code>-</code>/<code>*</code>/<code>+</code> + 空格开头，三者效果完全一致，推荐统一使用<code>-</code>，嵌套列表需缩进<strong>4个空格/1个制表符</strong>。</p>
+<h4 id="语法示例-3">语法示例</h4>
+<pre><code class="language-markdown"><span class="hljs-bullet">-</span> 无序列表一级项1
+<span class="hljs-bullet">-</span> 无序列表一级项2
+<span class="hljs-bullet">    -</span> 无序列表二级嵌套项1
+<span class="hljs-bullet">    -</span> 无序列表二级嵌套项2
+<span class="hljs-bullet">        -</span> 无序列表三级嵌套项
+<span class="hljs-bullet">-</span> 无序列表一级项3
+</code></pre>
+<h4 id="渲染效果-1">渲染效果</h4>
+<ul>
+<li>无序列表一级项1</li>
+<li>无序列表一级项2
+<ul>
+<li>无序列表二级嵌套项1</li>
+<li>无序列表二级嵌套项2
+<ul>
+<li>无序列表三级嵌套项</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>无序列表一级项3</li>
+</ul>
+<hr>
+<h3 id="2-有序列表">2. 有序列表</h3>
+<p>使用<code>数字 + 英文句号 + 空格</code>开头，数字顺序不影响最终渲染结果，推荐按顺序书写，嵌套需缩进<strong>4个空格/1个制表符</strong>。</p>
+<h4 id="语法示例-4">语法示例</h4>
+<pre><code class="language-markdown"><span class="hljs-bullet">1.</span> 有序列表一级项1
+<span class="hljs-bullet">2.</span> 有序列表一级项2
+<span class="hljs-bullet">    1.</span> 有序列表二级嵌套项1
+<span class="hljs-bullet">    2.</span> 有序列表二级嵌套项2
+<span class="hljs-bullet">3.</span> 有序列表一级项3
+</code></pre>
+<h4 id="渲染效果-2">渲染效果</h4>
+<ol>
+<li>有序列表一级项1</li>
+<li>有序列表一级项2
+<ol>
+<li>有序列表二级嵌套项1</li>
+<li>有序列表二级嵌套项2</li>
+</ol>
+</li>
+<li>有序列表一级项3</li>
+</ol>
+<hr>
+<h3 id="3-任务列表gfm扩展">3. 任务列表(GFM扩展)</h3>
+<p>待办清单专用语法，<code>[ ]</code>表示未完成，<code>[x]</code>表示已完成，符号后必须加空格。</p>
+<h4 id="语法示例-5">语法示例</h4>
+<pre><code class="language-markdown"><span class="hljs-bullet">-</span> [ ] 未完成的待办任务
+<span class="hljs-bullet">-</span> [x] 已完成的待办任务
+<span class="hljs-bullet">-</span> [ ] 可嵌套待办
+<span class="hljs-bullet">    -</span> [x] 子任务1
+<span class="hljs-bullet">    -</span> [ ] 子任务2
+</code></pre>
+<h4 id="渲染效果-3">渲染效果</h4>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> 未完成的待办任务</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> 已完成的待办任务</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> 可嵌套待办
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked=""type="checkbox"> 子任务1</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox"type="checkbox"> 子任务2</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="五块引用">五、块引用</h2>
+<p>使用<code>&gt;</code> + 空格开头，可多层嵌套，也可与标题、列表、代码等其他语法混用。</p>
+<h3 id="语法示例-6">语法示例</h3>
+<pre><code class="language-markdown"><span class="hljs-quote">&gt; 单层块引用，多行内容可只在第一行加&gt;</span>
+<span class="hljs-quote">&gt; 第二行内容，和上一行同属一个引用块</span>
+
+<span class="hljs-quote">&gt; 多层嵌套引用</span>
+<span class="hljs-quote">&gt; &gt; 第二层嵌套引用</span>
+<span class="hljs-quote">&gt; &gt; &gt; 第三层嵌套引用</span>
+
+<span class="hljs-quote">&gt; 引用内混用其他语法</span>
+<span class="hljs-quote">&gt; 1. 有序列表项</span>
+<span class="hljs-quote">&gt; 2. 有序列表项</span>
+<span class="hljs-quote">&gt; <span class="hljs-strong">**粗体文本**</span></span>
+</code></pre>
+<h3 id="渲染效果-4">渲染效果</h3>
+<blockquote>
+<p>单层块引用，多行内容可只在第一行加&gt;<br>
+第二行内容，和上一行同属一个引用块</p>
+</blockquote>
+<blockquote>
+<p>多层嵌套引用</p>
+<blockquote>
+<p>第二层嵌套引用</p>
+<blockquote>
+<p>第三层嵌套引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>引用内混用其他语法</p>
+<ol>
+<li>有序列表项</li>
+<li>有序列表项<br>
+<strong>粗体文本</strong></li>
+</ol>
+</blockquote>
+<hr>
+<h2 id="六分隔线">六、分隔线</h2>
+<p>使用3个及以上的<code>-</code>/<code>*</code>/<code>_</code>单独占一行，前后建议保留空行，避免与二级标题语法混淆。</p>
+<h3 id="语法示例-7">语法示例</h3>
+<pre><code class="language-markdown">---
+<span class="hljs-strong">**<span class="hljs-emphasis">*
+___
+</span></span></code></pre>
+<h3 id="渲染效果-5">渲染效果</h3>
+<hr>
+<hr>
+<h2 id="七链接语法">七、链接语法</h2>
+<h3 id="1-行内式链接最常用">1. 行内式链接（最常用）</h3>
+<p>标准格式：<code>[链接显示文本](链接地址 &quot;链接可选标题&quot;)</code></p>
+<ul>
+<li>可选标题：鼠标悬浮时显示的提示文字，可省略</li>
+</ul>
+<h4 id="语法示例-8">语法示例</h4>
+<pre><code class="language-markdown">[<span class="hljs-string">GitHub官网</span>](<span class="hljs-link">https://github.com &quot;全球最大开源托管平台&quot;</span>)
+[<span class="hljs-string">打开豆包</span>](<span class="hljs-link">https://www.doubao.com</span>)
+</code></pre>
+<h4 id="渲染效果-6">渲染效果</h4>
+<p><a href="https://github.com" title="全球最大开源托管平台">GitHub官网</a><br>
+<a href="https://www.doubao.com">打开豆包</a></p>
+<hr>
+<h3 id="2-自动链接">2. 自动链接</h3>
+<p>用<code>&lt;&gt;</code>包裹网址/邮箱，快速生成链接，适合直接展示完整地址。</p>
+<h4 id="语法示例-9">语法示例</h4>
+<pre><code class="language-markdown"><span class="language-xml">&lt;https://github.com&gt;</span>
+<span class="language-xml">&lt;fanquanpangpiing@163.com&gt;</span>
+</code></pre>
+<h4 id="渲染效果-7">渲染效果</h4>
+<p><a href="https://github.com">https://github.com</a><br>
+<a href="mailto:fanquanpangpiing@163.com">fanquanpangpiing@163.com</a></p>
+<hr>
+<h3 id="3-参考式链接">3. 参考式链接</h3>
+<p>适合长文档中多次复用同一个链接，文档末尾统一定义地址，便于维护。</p>
+<h4 id="语法示例-10">语法示例</h4>
+<pre><code class="language-markdown">[<span class="hljs-string">GitHub官网</span>][<span class="hljs-symbol">github</span>]
+[<span class="hljs-string">GitHub开源社区</span>][<span class="hljs-symbol">github</span>]
+
+&lt;!-- 文档末尾统一定义 --&gt;
+[<span class="hljs-symbol">github</span>]: <span class="hljs-link">https://github.com &quot;GitHub官网&quot;</span>
+</code></pre>
+<hr>
+<h2 id="八图片语法">八、图片语法</h2>
+<p>基础格式：<code>![图片替代文本](图片地址 &quot;图片可选标题&quot;)</code></p>
+<ul>
+<li>替代文本：图片加载失败时显示的文字，必填</li>
+<li>可选标题：鼠标悬浮时显示的提示文字，可省略</li>
+</ul>
+<h3 id="语法示例-11">语法示例</h3>
+<pre><code class="language-markdown">![<span class="hljs-string">示例图</span>](<span class="hljs-link">https://example.com/image.jpg &quot;这是一张喵娘图片&quot;</span>)
+</code></pre>
+<h3 id="图片带跳转链接">图片带跳转链接</h3>
+<p>嵌套链接语法，实现点击图片跳转到指定地址。</p>
+<pre><code class="language-markdown">[<span class="hljs-string">![示例风景图</span>](<span class="hljs-link">https://example.com/image.jpg</span>)](<span class="hljs-link">https://github.com</span>)
+</code></pre>
+<hr>
+<h2 id="九代码语法">九、代码语法</h2>
+<h3 id="1-行内代码">1. 行内代码</h3>
+<p>用单个反引号<code>`</code>包裹，适合在行内插入短代码、关键词、命令。</p>
+<h4 id="语法示例-12">语法示例</h4>
+<pre><code class="language-markdown">Python的打印函数是<span class="hljs-code">`print(&quot;Hello World&quot;)`</span>
+</code></pre>
+<h4 id="渲染效果-8">渲染效果</h4>
+<p>Python的打印函数是<code>print(&quot;Hello World&quot;)</code></p>
+<hr>
+<h3 id="2-多行代码块">2. 多行代码块</h3>
+<p>用三组反引号```包裹，上下单独占一行，支持指定编程语言实现语法高亮。</p>
+<h4 id="语法示例-13">语法示例</h4>
+<pre><code class="language-markdown"><span class="hljs-code">```python
+# Python代码示例
+def hello_markdown():
+    print(&quot;Hello Markdown!&quot;)
+    return 0
+</span></code></pre>
+<pre><code>
+#### 渲染效果
+```python
+# Python代码示例
+def hello_markdown():
+    print(&quot;Hello Markdown!&quot;)
+    return 0
+</code></pre>
+<hr>
+<h2 id="十表格语法gfm扩展">十、表格语法(GFM扩展)</h2>
+<p>使用<code>|</code>分隔单元格，<code>-</code>分隔表头和表体，<code>:</code>定义列对齐方式：</p>
+<ul>
+<li>左对齐：<code>:---</code>（默认）</li>
+<li>居中对齐：<code>:---:</code></li>
+<li>右对齐：<code>---:</code></li>
+</ul>
+<h3 id="语法示例-14">语法示例</h3>
+<pre><code class="language-markdown">| 左对齐列   | 居中对齐列 | 右对齐列 |
+| :--------- | :--------: | -------: |
+| 内容1      |   内容2    |    内容3 |
+| 长文本测试 |  居中显示  | 靠右显示 |
+</code></pre>
+<h3 id="渲染效果-9">渲染效果</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">左对齐列</th>
+<th style="text-align:center">居中对齐列</th>
+<th style="text-align:right">右对齐列</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">内容1</td>
+<td style="text-align:center">内容2</td>
+<td style="text-align:right">内容3</td>
+</tr>
+<tr>
+<td style="text-align:left">长文本测试</td>
+<td style="text-align:center">居中显示</td>
+<td style="text-align:right">靠右显示</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="十一转义字符">十一、转义字符</h2>
+<p>使用反斜杠<code>\</code>转义Markdown特殊字符，使其正常显示，避免被解析为语法标记。</p>
+<h3 id="可转义的核心特殊字符">可转义的核心特殊字符</h3>
+<pre><code class="language-markdown">\   反斜杠
+<span class="hljs-bullet">*</span>   星号
+<span class="hljs-emphasis">_   下划线
+#   井号
++   加号
+-   减号
+.   英文句号
+!   感叹号
+|   竖线
+`   反引号
+[ ] 方括号
+( ) 圆括号
+</span></code></pre>
+<h3 id="语法示例-15">语法示例</h3>
+<pre><code class="language-markdown">\# 转义后正常显示#号，不会被解析为标题
+\<span class="hljs-emphasis">* 转义后正常显示*</span>号，不会被解析为列表
+</code></pre>
+<hr>
+<h2 id="十二页内跳转锚点链接">十二、页内跳转（锚点链接）</h2>
+<p>实现文档内部标题之间的跳转，格式：<code>[跳转显示文本](#目标标题名称)</code></p>
+<h3 id="核心规则-1">核心规则</h3>
+<ol>
+<li>标题名称全部转为小写</li>
+<li>空格替换为短横线<code>-</code></li>
+<li>特殊符号直接省略</li>
+</ol>
+<h3 id="语法示例-16">语法示例</h3>
+<pre><code class="language-markdown">[<span class="hljs-string">跳转到文档开头</span>](<span class="hljs-link">#markdown-基础语法知识点总结</span>)
+[<span class="hljs-string">跳转到标题语法章节</span>](<span class="hljs-link">#一标题语法</span>)
+</code></pre>
+<hr>
+<h2 id="十三常见问题">十三、常见问题</h2>
+<ol>
+<li><strong>语法标记后必须加空格</strong>：标题、列表、引用、任务列表等语法的标记符后，必须加1个空格，否则无法正常渲染</li>
+<li><strong>段落必须用空行分隔</strong>：无空行的连续文本会被合并为同一段落，无法实现分段</li>
+<li><strong>嵌套元素必须规范缩进</strong>：列表嵌套、引用嵌套必须缩进4个空格/1个制表符，否则会出现渲染异常</li>
+<li><strong>特殊字符必须转义</strong>：文本中包含Markdown专用特殊字符时，必须用<code>\</code>转义，避免被错误解析</li>
+<li><strong>跨平台优先用标准语法</strong>：不同平台对扩展语法支持度不同，跨平台写作优先使用通用标准语法</li>
+</ol>
+
+            
+            
+        </body>
+        </html>
