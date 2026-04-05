@@ -54,7 +54,7 @@ This repository is a personal learning notebook maintained by fanquanpp, used fo
 | 11 | Renpy 视觉小说 | Ren'Py Game | [./11-Renpy视觉小说/README.md](./11-Renpy视觉小说/README.md) |
 | 12 | Typescript 进阶 | TypeScript | [./12-Typescript进阶/README.md](./12-Typescript进阶/README.md) |
 | 13 | C++ 系统编程 | C++ Systems | [./13-C++系统编程/README.md](./13-C++系统编程/README.md) |
-| 14 | Lua 脚本开发 | Lua Scripting | [./14-Lua/README.md](./14-Lua/README.md) |
+| 14 | Lua 脚本开发 | Lua Scripting | [./14-Lua语言/README.md](./14-Lua语言/README.md) |
 
 ## 3. 快速开始 | Quick Start
 
@@ -87,4 +87,3 @@ bash meta/scripts/verify.sh
 **更新日志 | Changelog**
 
 - 2026-04-05: 全库重构完成，引入“一知识点一文件”架构，升级为 v2.5.0。
-

@@ -7,10 +7,6 @@
  * @Teaching:    前提是数组必须有序，注意循环退出条件。 | The array must be sorted. Watch out for loop termination conditions.
  */
 
-package algorithms;
-
-import java.util.Arrays;
-
 public class binary_search_java {
     /**
      * 二分搜索查找目标索引 | Find target index using Binary Search

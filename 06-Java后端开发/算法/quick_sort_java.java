@@ -7,8 +7,6 @@
  * @Teaching:    掌握分区 (Partition) 逻辑。注意递归栈深度。 | Mastering Partition logic. Watch for recursion stack depth.
  */
 
-package algorithms;
-
 import java.util.Arrays;
 
 public class quick_sort_java {
@@ -46,7 +44,7 @@ public class quick_sort_java {
         quickSort(arr, 0, arr.length - 1);
         int[] expected = {1, 5, 7, 8, 9, 10};
         assert Arrays.equals(arr, expected);
-        
+
         System.out.println("Quick Sort (Java) tests passed! | 快速排序 (Java) 测试通过！");
     }
 }

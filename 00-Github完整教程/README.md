@@ -14,8 +14,8 @@
 **GitHub** 是全球使用最广泛的代码协作平台之一，在 **Git（分布式版本控制系统）** 之上提供 Web 界面、权限、审查与自动化。本教程与仓库内 [`04-Git版本控制`](../04-Git版本控制/README.md) 互补：后者讲命令与概念，本系列讲 **GitHub 网页端与平台能力**。
 
 ## 2. 目录索引 | Directory Index
-- [GitHub 基础 (一知识点一文件) | Basics](./basics/01-账户与安全.md)
-- [协作与高级特性 | Advanced](./advanced/04-分支保护规则.md)
+- [GitHub 基础 (一知识点一文件) | Basics](./基础/README.md)
+- [协作与高级特性 | Advanced](./进阶/04-分支保护规则.md)
 
 ## 截图与自动化说明
 
@@ -24,7 +24,7 @@
 ## 延伸阅读
 
 - [GitHub 官方文档](https://docs.github.com/) <!-- nofollow -->
-- 本仓库：[04-Git版本控制](../04-Git版本控制/README.md)、[术语表](../笔记库务/术语表.md)
+- 本仓库：[04-Git版本控制](../04-Git版本控制/README.md)、[术语表](../meta/笔记库务/术语表.md)
 
 ## 更新日志
 

@@ -7,8 +7,6 @@
  * @Teaching:    路径压缩使查找更高效。按秩合并保持树平衡。 | Path compression for efficient find. Union by rank for balance.
  */
 
-package data_structures;
-
 public class union_find_java {
     private int[] parent;
     private int[] rank;

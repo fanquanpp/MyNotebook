@@ -11,28 +11,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          
-      - name: Install Linting Tools
-        run: |
-          npm install -g markdownlint-cli markdown-link-check
-          
-      - name: Run Validation Script
+          node-version: "20"
+
+      - name: Install linting tools
+        run: npm install -g markdownlint-cli markdown-link-check
+
+      - name: Run validation script
         run: bash meta/scripts/validate.sh --strict --report=report.xml
-        
-      - name: Upload Test Report
+
+      - name: Upload test report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: validation-report
           path: report.xml
-
-      - name: Post Report to Wiki (Simulated)
-        if: success()
-        run: |
-          echo "CI Passed for commit ${GITHUB_SHA}"
-          # 在真实环境中，这里会使用 git push 到 wiki 仓库
