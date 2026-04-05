@@ -10,21 +10,22 @@
 
 ## 1. 项目简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 GDScript 游戏开发部分，聚焦 **Godot** 引擎默认脚本语言 **GDScript** 的语法、信号与异步、性能与版本迁移，服务于 2D/3D 游戏逻辑与工具脚本开发。旨在为游戏开发者提供全面、系统的 GDScript 学习指南。
+本模块是 fanquanpp 个人综合学习笔记库中的 GDScript 游戏开发部分，专注于 Godot 引擎的默认脚本语言 GDScript 的学习与应用。作为一款轻量级、Python 风格的脚本语言，GDScript 专为游戏开发设计，本模块涵盖其语法特性、信号与异步机制、性能优化以及版本迁移等核心内容，旨在为 2D/3D 游戏逻辑与工具脚本开发提供全面的技术支持。
 
-This module focuses on GDScript, the default scripting language for Godot engine, covering syntax, signals and async, performance, and version migration for 2D/3D game logic and tool scripting, providing a comprehensive guide for game developers.
+This module focuses on GDScript, the default scripting language for Godot engine, covering its syntax features, signal and async mechanisms, performance optimization, and version migration, providing comprehensive technical support for 2D/3D game logic and tool script development.
 
-### 仓库定位
+### 模块定位
 
-- **学习资源中心**：提供从基础到高级的 GDScript 游戏开发学习指南
-- **技术文档库**：详细解析 GDScript 语言特性和 Godot 引擎使用技巧
-- **个人知识管理**：系统化整理 GDScript 相关知识，便于复习和查阅
+- **GDScript 学习指南**：从基础语法到高级特性，全面覆盖 GDScript 核心知识点
+- **Godot 引擎应用**：结合 Godot 引擎的实际使用，提供实用的游戏开发技巧
+- **性能优化资源**：重点讲解 GDScript 性能优化策略，帮助开发者创建高效游戏
+- **版本迁移指南**：提供 Godot 3.x 到 4.x 的迁移技巧，确保项目顺利升级
 
 **使用说明：**
 
-- 本仓库已开放为公共，允许他人访问和克隆
+- 本模块已开放为公共资源，允许他人访问和克隆
 - 禁止直接修改本仓库内容
-- 他人使用本仓库内容时出现的任何问题与作者无关
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
 

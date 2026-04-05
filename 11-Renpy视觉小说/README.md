@@ -8,21 +8,22 @@
 
 ## 1. 项目简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 Ren'Py 视觉小说部分，收录 Ren'Py 引擎核心开发笔记，涵盖脚本语法、ATL 动画、SL2 屏幕语言及发布流程。旨在为创作高质量、跨平台的互动叙事游戏提供参考。
+本模块是 fanquanpp 个人综合学习笔记库中的 Ren'Py 视觉小说部分，专注于 Ren'Py 引擎的核心开发技术，包括脚本语法、ATL 动画语言、SL2 屏幕语言、游戏机制设计以及发布流程等内容。作为一款专为视觉小说和互动叙事游戏设计的引擎，Ren'Py 以其易用性和强大的功能而受到开发者的喜爱，本模块旨在为创作者提供从入门到进阶的系统化 Ren'Py 学习路径。
 
-This module covers Ren'Py engine core development, including scripting, ATL, SL2, and deployment for high-quality interactive storytelling.
+This module focuses on Ren'Py engine core development techniques, including scripting, ATL animation language, SL2 screen language, game mechanics design, and deployment process. As an engine specifically designed for visual novels and interactive storytelling games, Ren'Py is loved by developers for its ease of use and powerful features, and this module aims to provide a systematic Ren'Py learning path from beginner to advanced levels.
 
-### 仓库定位
+### 模块定位
 
-- **学习资源中心**：提供从基础到高级的 Ren'Py 视觉小说开发学习指南
-- **技术文档库**：详细解析 Ren'Py 引擎的核心功能和使用技巧
-- **个人知识管理**：系统化整理 Ren'Py 相关知识，便于复习和查阅
+- **Ren'Py 学习指南**：从基础脚本到高级特性，全面覆盖 Ren'Py 核心知识点
+- **视觉小说开发资源**：提供角色、对话、场景、转场等视觉小说核心元素的实现方法
+- **互动叙事设计**：收录游戏机制设计、分支剧情处理等互动叙事技巧
+- **跨平台发布指南**：提供完整的游戏打包和多平台发布流程
 
 **使用说明：**
 
-- 本仓库已开放为公共，允许他人访问和克隆
+- 本模块已开放为公共资源，允许他人访问和克隆
 - 禁止直接修改本仓库内容
-- 他人使用本仓库内容时出现的任何问题与作者无关
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
 

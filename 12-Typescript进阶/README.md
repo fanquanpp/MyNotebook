@@ -8,21 +8,22 @@
 
 ## 1. 项目简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 TypeScript 进阶部分，深入探讨 TypeScript 强类型系统及其在大型工程中的应用，涵盖从基础类型到复杂工程化配置的全过程。
+本模块是 fanquanpp 个人综合学习笔记库中的 TypeScript 进阶部分，专注于 TypeScript 强类型系统、高级类型技巧、工程化配置以及在大型项目中的应用。作为 JavaScript 的超集，TypeScript 为前端和 Node.js 开发提供了类型安全保障，本模块旨在为开发者提供从基础类型到复杂工程化配置的系统化 TypeScript 学习路径。
 
-This module explores TypeScript's strong typing system and its application in large-scale engineering, from basic types to complex configurations.
+This module focuses on TypeScript's strong typing system, advanced type techniques, engineering configuration, and application in large-scale projects. As a superset of JavaScript, TypeScript provides type safety for frontend and Node.js development, and this module aims to provide a systematic TypeScript learning path from basic types to complex engineering configurations.
 
-### 仓库定位
+### 模块定位
 
-- **学习资源中心**：提供从基础到高级的 TypeScript 学习指南
-- **技术文档库**：详细解析 TypeScript 核心概念和工程化实践
-- **个人知识管理**：系统化整理 TypeScript 相关知识，便于复习和查阅
+- **TypeScript 进阶指南**：从基础类型到高级特性，全面覆盖 TypeScript 核心知识点
+- **类型系统深度解析**：深入探讨 TypeScript 强类型系统的设计原理和应用
+- **工程化实践资源**：提供大型 TypeScript 项目的配置、优化和最佳实践
+- **性能优化指南**：重点讲解 TypeScript 编译与运行性能优化策略
 
 **使用说明：**
 
-- 本仓库已开放为公共，允许他人访问和克隆
+- 本模块已开放为公共资源，允许他人访问和克隆
 - 禁止直接修改本仓库内容
-- 他人使用本仓库内容时出现的任何问题与作者无关
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
 

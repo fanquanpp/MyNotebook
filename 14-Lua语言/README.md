@@ -8,21 +8,22 @@
 
 ## 1. 项目简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 Lua 语言部分，聚焦 Lua 语言的极简语法、Table 核心数据结构、元表机制及协程，服务于游戏逻辑与嵌入式扩展。
+本模块是 fanquanpp 个人综合学习笔记库中的 Lua 语言部分，专注于 Lua 语言的极简语法、Table 核心数据结构、元表机制、协程以及在游戏开发和嵌入式系统中的应用。作为一种轻量级、高效的脚本语言，Lua 以其简洁的语法和强大的扩展能力而广泛应用于游戏逻辑、嵌入式系统、Nginx 扩展等场景，本模块旨在为开发者提供从基础语法到高级应用的系统化 Lua 学习路径。
 
-This module focuses on Lua's minimalist syntax, Table core data structure, metatable mechanism, and coroutines, serving game logic and embedded extensions.
+This module focuses on Lua's minimalist syntax, Table core data structure, metatable mechanism, coroutines, and its applications in game development and embedded systems. As a lightweight and efficient scripting language, Lua is widely used in game logic, embedded systems, Nginx extensions, and other scenarios for its concise syntax and powerful extension capabilities, and this module aims to provide a systematic Lua learning path from basic syntax to advanced applications.
 
-### 仓库定位
+### 模块定位
 
-- **学习资源中心**：提供从基础到高级的 Lua 语言学习指南
-- **技术文档库**：详细解析 Lua 核心概念和应用技巧
-- **个人知识管理**：系统化整理 Lua 相关知识，便于复习和查阅
+- **Lua 学习指南**：从基础语法到高级特性，全面覆盖 Lua 核心知识点
+- **游戏开发资源**：提供游戏逻辑、AI 行为等游戏开发相关的 Lua 应用
+- **嵌入式扩展指南**：收录 Nginx、Godot 等平台的 Lua 扩展开发技巧
+- **Table 与元表深度解析**：重点讲解 Lua 独特的 Table 数据结构和元表机制
 
 **使用说明：**
 
-- 本仓库已开放为公共，允许他人访问和克隆
+- 本模块已开放为公共资源，允许他人访问和克隆
 - 禁止直接修改本仓库内容
-- 他人使用本仓库内容时出现的任何问题与作者无关
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
 

@@ -8,21 +8,22 @@
 
 ## 1. 项目简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 Python 脚本部分，致力于 Python 脚本开发，涵盖环境搭建、核心语法、算法实现及数据结构。旨在通过 Python 的高效特性，实现办公自动化与数据处理。
+本模块是 fanquanpp 个人综合学习笔记库中的 Python 脚本部分，专注于 Python 脚本开发、办公自动化和数据处理。作为一种优雅、高效的编程语言，Python 在自动化脚本、数据分析、Web 开发等领域有着广泛应用，本模块旨在为开发者提供从基础语法到高级应用的系统化 Python 学习路径。
 
-This module focuses on Python scripting, covering environments, core syntax, algorithms, and data structures for automation and data analysis.
+This module focuses on Python scripting, office automation, and data processing. As an elegant and efficient programming language, Python is widely used in automation scripts, data analysis, web development, and other fields, and this module aims to provide a systematic Python learning path from basic syntax to advanced applications.
 
-### 仓库定位
+### 模块定位
 
-- **学习资源中心**：提供从基础到高级的 Python 脚本学习指南
-- **技术文档库**：详细解析 Python 核心概念和实战技巧
-- **个人知识管理**：系统化整理 Python 相关知识，便于复习和查阅
+- **Python 学习指南**：从环境搭建到核心语法，全面覆盖 Python 核心知识点
+- **自动化脚本资源**：提供办公自动化、文件处理等实用脚本示例
+- **数据处理工具**：收录数据分析、处理和可视化的实践案例
+- **算法与数据结构**：提供经典算法和数据结构的 Python 实现
 
 **使用说明：**
 
-- 本仓库已开放为公共，允许他人访问和克隆
+- 本模块已开放为公共资源，允许他人访问和克隆
 - 禁止直接修改本仓库内容
-- 他人使用本仓库内容时出现的任何问题与作者无关
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
 

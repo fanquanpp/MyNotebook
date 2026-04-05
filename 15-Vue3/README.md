@@ -8,21 +8,22 @@
 
 ## 1. 项目简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 Vue3 框架部分，专注于 Vue3 的核心特性、组合式 API、响应式系统及实战应用。旨在为前端开发提供现代化的 Vue3 学习资料。
+本模块是 fanquanpp 个人综合学习笔记库中的 Vue3 框架部分，专注于 Vue3 的核心特性、组合式 API、响应式系统、组件设计、路由与状态管理以及实战应用。作为一款现代化的前端框架，Vue3 以其简洁的 API、出色的性能和强大的生态系统而受到开发者的喜爱，本模块旨在为前端开发者提供从入门到进阶的系统化 Vue3 学习路径。
 
-This module focuses on Vue3 framework, covering core features, Composition API, reactive system, and practical applications for modern frontend development.
+This module focuses on Vue3 framework, covering core features, Composition API, reactive system, component design, routing and state management, and practical applications. As a modern frontend framework, Vue3 is loved by developers for its concise API, excellent performance, and powerful ecosystem, and this module aims to provide a systematic Vue3 learning path from beginner to advanced levels for frontend developers.
 
-### 仓库定位
+### 模块定位
 
-- **学习资源中心**：提供从基础到高级的 Vue3 学习指南
-- **技术文档库**：详细解析 Vue3 核心概念和实战技巧
-- **个人知识管理**：系统化整理 Vue3 相关知识，便于复习和查阅
+- **Vue3 学习指南**：从环境搭建到高级特性，全面覆盖 Vue3 核心知识点
+- **组合式 API 深度解析**：重点讲解 Vue3 全新的组合式 API，提高代码复用性和可维护性
+- **响应式系统原理**：解析 Vue3 响应式系统的工作原理和使用方法
+- **前端工程化实践**：提供 Vue3 项目的性能优化、TypeScript 集成和部署方案
 
 **使用说明：**
 
-- 本仓库已开放为公共，允许他人访问和克隆
+- 本模块已开放为公共资源，允许他人访问和克隆
 - 禁止直接修改本仓库内容
-- 他人使用本仓库内容时出现的任何问题与作者无关
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
 

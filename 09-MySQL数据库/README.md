@@ -8,21 +8,22 @@
 
 ## 1. 项目简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 MySQL 数据库部分，收录 MySQL 关系型数据库的核心概念、安装配置、SQL 语法及数据建模实战。旨在构建高效、安全的数据持久化体系。
+本模块是 fanquanpp 个人综合学习笔记库中的 MySQL 数据库部分，专注于 MySQL 关系型数据库的核心概念、安装配置、SQL 语法、数据建模、性能优化以及高可用架构等内容。作为最流行的关系型数据库之一，MySQL 广泛应用于各种规模的应用系统，本模块旨在为开发者提供从入门到进阶的系统化 MySQL 学习路径，帮助构建高效、安全的数据持久化体系。
 
-This module covers MySQL core concepts, installation, SQL syntax, and data modeling practices for building efficient persistence layers.
+This module focuses on MySQL relational database core concepts, installation, SQL syntax, data modeling, performance optimization, and high-availability architecture. As one of the most popular relational databases, MySQL is widely used in applications of all sizes, and this module aims to provide a systematic MySQL learning path from beginner to advanced levels, helping build efficient and secure data persistence systems.
 
-### 仓库定位
+### 模块定位
 
-- **学习资源中心**：提供从基础到高级的 MySQL 数据库学习指南
-- **技术文档库**：详细解析 MySQL 核心概念和 SQL 语法
-- **个人知识管理**：系统化整理 MySQL 相关知识，便于复习和查阅
+- **MySQL 学习指南**：从基础安装到高级优化，全面覆盖 MySQL 核心知识点
+- **SQL 语法参考**：提供详细的 SQL 语法说明和实战示例
+- **性能优化资源**：重点讲解 MySQL 性能调优技巧和最佳实践
+- **数据建模指南**：收录常见业务场景的数据建模案例和设计原则
 
 **使用说明：**
 
-- 本仓库已开放为公共，允许他人访问和克隆
+- 本模块已开放为公共资源，允许他人访问和克隆
 - 禁止直接修改本仓库内容
-- 他人使用本仓库内容时出现的任何问题与作者无关
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
 

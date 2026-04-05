@@ -8,21 +8,22 @@
 
 ## 1. 项目简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 Java 后端开发部分，收录了 Java 语言核心知识点、面向对象编程思想、JVM 基础及后端开发必备规范。旨在为构建稳定、可扩展的企业级后端服务奠定基础。
+本模块是 fanquanpp 个人综合学习笔记库中的 Java 后端开发部分，专注于 Java 语言核心知识点、面向对象编程思想、JVM 基础、多线程编程、集合框架以及 Spring Boot 等后端开发技术。作为企业级应用开发的主流语言，Java 以其稳定性、可扩展性和丰富的生态系统而广泛应用于后端服务开发，本模块旨在为开发者提供从入门到进阶的系统化学习路径。
 
-This module covers Java core concepts, object-oriented programming, JVM fundamentals, and backend development best practices for building stable and scalable enterprise services.
+This module focuses on Java core concepts, object-oriented programming, JVM fundamentals, multithreading, collection framework, and Spring Boot backend development technologies. As a mainstream language for enterprise application development, Java is widely used in backend service development for its stability, scalability, and rich ecosystem, and this module aims to provide a systematic learning path from beginner to advanced levels.
 
-### 仓库定位
+### 模块定位
 
-- **学习资源中心**：提供从基础到高级的 Java 后端开发学习指南
-- **技术文档库**：详细解析 Java 核心概念和后端开发最佳实践
-- **个人知识管理**：系统化整理 Java 相关知识，便于复习和查阅
+- **Java 后端开发指南**：从基础语法到高级特性，全面覆盖 Java 后端开发核心知识点
+- **企业级应用开发资源**：提供构建稳定、可扩展的企业级后端服务的技术支持
+- **JVM 与性能优化**：重点讲解 JVM 内存模型、垃圾回收机制和性能优化策略
+- **Spring Boot 实战**：包含 Spring Boot 框架的核心使用和实战示例
 
 **使用说明：**
 
-- 本仓库已开放为公共，允许他人访问和克隆
+- 本模块已开放为公共资源，允许他人访问和克隆
 - 禁止直接修改本仓库内容
-- 他人使用本仓库内容时出现的任何问题与作者无关
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
 

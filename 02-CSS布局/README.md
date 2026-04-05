@@ -8,21 +8,22 @@
 
 ## 1. 项目简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 CSS 布局部分，涵盖现代 Web 开发中的核心布局技术，重点介绍 Flexbox、Grid 及传统布局方案，同时包含 Canvas 绘图相关知识。旨在为 Web 前端开发者提供全面、系统的布局技术指南。
+本模块是 fanquanpp 个人综合学习笔记库中的 CSS 布局部分，专注于现代 Web 开发中的核心布局技术，包括 Flexbox、Grid、传统布局方案以及 Canvas 绘图。作为前端开发的重要组成部分，布局技术直接影响网站的视觉效果和用户体验，本模块旨在为开发者提供从基础到高级的系统化布局技术指南。
 
-This module covers core layout techniques in modern web development, focusing on Flexbox, Grid, and traditional layout solutions, as well as Canvas drawing knowledge, providing a comprehensive guide for web frontend developers.
+This module focuses on core layout techniques in modern web development, including Flexbox, Grid, traditional layout solutions, and Canvas drawing. As an essential part of frontend development, layout techniques directly impact the visual效果 and user experience of websites, and this module aims to provide a systematic guide from basic to advanced layout techniques for developers.
 
-### 仓库定位
+### 模块定位
 
-- **学习资源中心**：提供从基础到高级的 CSS 布局技术学习指南
-- **技术文档库**：详细解析各种布局技术的原理和应用
-- **个人知识管理**：系统化整理 CSS 布局相关知识，便于复习和查阅
+- **CSS 布局技术指南**：从盒模型到现代 Flexbox 和 Grid 布局，全面覆盖 CSS 布局核心知识点
+- **响应式设计资源**：提供响应式布局的实现方法和最佳实践
+- **可视化学习**：包含 Flexbox 和 Grid 的可视化学习资源，帮助开发者直观理解布局原理
+- **Canvas 绘图教程**：提供基础绘图、动画效果和实战示例
 
 **使用说明：**
 
-- 本仓库已开放为公共，允许他人访问和克隆
+- 本模块已开放为公共资源，允许他人访问和克隆
 - 禁止直接修改本仓库内容
-- 他人使用本仓库内容时出现的任何问题与作者无关
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
 

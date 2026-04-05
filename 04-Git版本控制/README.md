@@ -8,21 +8,22 @@
 
 ## 1. 项目简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 Git 版本控制部分，收录了 Git 核心概念与日常协作规范，旨在帮助开发者高效管理代码库，建立清晰的版本历史与协作流程。
+本模块是 fanquanpp 个人综合学习笔记库中的 Git 版本控制部分，专注于 Git 核心概念、命令操作和团队协作规范。作为现代软件开发的必备工具，Git 版本控制能够帮助开发者高效管理代码库，追踪代码变更，协作开发项目，本模块旨在为开发者提供从入门到进阶的系统化 Git 学习路径。
 
-This module covers Git core concepts and daily collaboration norms, aiming to help developers efficiently manage code repositories and establish clear version history and collaboration processes.
+This module focuses on Git core concepts, command operations, and team collaboration norms. As an essential tool for modern software development, Git version control helps developers efficiently manage code repositories, track code changes, and collaborate on projects, and this module aims to provide a systematic Git learning path from beginner to advanced levels.
 
-### 仓库定位
+### 模块定位
 
-- **学习资源中心**：提供从基础到高级的 Git 版本控制学习指南
-- **技术文档库**：详细解析 Git 核心概念和操作技巧
-- **个人知识管理**：系统化整理 Git 相关知识，便于复习和查阅
+- **Git 学习指南**：从基础命令到高级操作，全面覆盖 Git 核心知识点
+- **协作流程规范**：提供团队协作的最佳实践和工作流程
+- **问题解决资源**：收录常见 Git 问题的解决方案和技巧
+- **平台集成指南**：涵盖 GitHub、GitLab、Gitee 等主流平台的使用
 
 **使用说明：**
 
-- 本仓库已开放为公共，允许他人访问和克隆
+- 本模块已开放为公共资源，允许他人访问和克隆
 - 禁止直接修改本仓库内容
-- 他人使用本仓库内容时出现的任何问题与作者无关
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
 

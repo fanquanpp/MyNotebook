@@ -8,21 +8,22 @@
 
 ## 1. 项目简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 Markdown 文档部分，收录了 Markdown 基础语法与高级排版技巧，旨在建立一套统一、美观、易读的文档编写规范，确保知识库内容的专业呈现。
+本模块是 fanquanpp 个人综合学习笔记库中的 Markdown 文档部分，专注于 Markdown 基础语法、高级排版技巧和文档编写规范。作为一种轻量级标记语言，Markdown 因其简洁易读的特性被广泛应用于文档编写、博客撰写和技术文档等场景，本模块旨在帮助用户掌握 Markdown 的各种语法和排版技巧，建立统一、美观、易读的文档编写规范。
 
-This module covers Markdown basic syntax and advanced typesetting techniques, aiming to establish a unified, beautiful, and readable documentation writing standard to ensure professional presentation of knowledge base content.
+This module focuses on Markdown basic syntax, advanced typesetting techniques, and documentation writing standards. As a lightweight markup language, Markdown is widely used in documentation writing, blog creation, and technical documentation due to its concise and readable nature, and this module aims to help users master various Markdown syntax and typesetting techniques, establishing unified, beautiful, and readable documentation writing standards.
 
-### 仓库定位
+### 模块定位
 
-- **学习资源中心**：提供从基础到高级的 Markdown 文档编写学习指南
-- **技术文档库**：详细解析 Markdown 语法和排版技巧
-- **个人知识管理**：系统化整理 Markdown 相关知识，便于复习和查阅
+- **Markdown 学习指南**：从基础语法到高级排版，全面覆盖 Markdown 核心知识点
+- **文档编写规范**：建立一套统一的 Markdown 编写规范，确保文档的一致性和专业性
+- **排版技巧资源**：提供高级排版技巧，提升文档的美观度和可读性
+- **工具推荐中心**：推荐适合 Markdown 编写的工具和插件，提高写作效率
 
 **使用说明：**
 
-- 本仓库已开放为公共，允许他人访问和克隆
+- 本模块已开放为公共资源，允许他人访问和克隆
 - 禁止直接修改本仓库内容
-- 他人使用本仓库内容时出现的任何问题与作者无关
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 技术栈说明
 

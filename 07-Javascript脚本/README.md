@@ -10,21 +10,22 @@
 
 ## 1. 项目简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 JavaScript 脚本部分，收录 **ECMAScript（ECMAScript 语言标准）** 语法、**DOM（文档对象模型）**、异步与模块化及调试优化；目录名保留历史拼写 **Javascript**，正文中统一使用 **JavaScript（JavaScript 脚本语言）**。
+本模块是 fanquanpp 个人综合学习笔记库中的 JavaScript 脚本部分，专注于 ECMAScript 语法标准、DOM 操作、异步编程、模块化开发以及调试优化等核心内容。作为前端开发的核心语言，JavaScript 不仅用于浏览器端交互，也广泛应用于 Node.js 服务端开发，本模块旨在为开发者提供从基础到高级的系统化 JavaScript 学习路径。
 
-This module covers ECMAScript syntax, DOM manipulation, asynchronous programming, modularization, and debugging optimization for both browser and Node.js environments.
+This module focuses on ECMAScript syntax standards, DOM manipulation, asynchronous programming, modular development, and debugging optimization. As the core language of frontend development, JavaScript is not only used for browser-side interaction but also widely applied in Node.js server-side development, and this module aims to provide a systematic JavaScript learning path from beginner to advanced levels.
 
-### 仓库定位
+### 模块定位
 
-- **学习资源中心**：提供从基础到高级的 JavaScript 脚本学习指南
-- **技术文档库**：详细解析 JavaScript 核心概念和实战技巧
-- **个人知识管理**：系统化整理 JavaScript 相关知识，便于复习和查阅
+- **JavaScript 学习指南**：从基础语法到高级特性，全面覆盖 JavaScript 核心知识点
+- **前端交互开发资源**：提供 DOM 操作、事件处理和异步编程的实战技巧
+- **全栈开发支持**：涵盖浏览器端和 Node.js 服务端的 JavaScript 应用
+- **性能优化指南**：重点讲解 JavaScript 性能优化策略和最佳实践
 
 **使用说明：**
 
-- 本仓库已开放为公共，允许他人访问和克隆
+- 本模块已开放为公共资源，允许他人访问和克隆
 - 禁止直接修改本仓库内容
-- 他人使用本仓库内容时出现的任何问题与作者无关
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 技术栈与工具（双语）
 
