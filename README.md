@@ -1,4 +1,4 @@
-# MyNotebook | 个人向资料阅览站
+# MyNotebook | 个人学习笔记库
 
 <!--
 作者：fanquanpp
@@ -8,7 +8,7 @@
 
 ## 1. 项目简介 | Introduction
 
-本仓库是 fanquanpp 的个人综合资料阅览仓库，用于日常学习和后续复习查阅。涵盖 C/C++、Web 前端、Python/Java 后端、MySQL 数据库及游戏开发等多个技术领域。采用「一知识点一文件」的深度解析模式，旨在提供工业级的自学参考资料。
+MyNotebook 是一个综合性个人学习笔记库，用于日常学习和复习查阅。涵盖 C/C++、Web 前端、Python/Java 后端、MySQL 数据库及游戏开发等多个技术领域。采用「一知识点一文件」的深度解析模式，旨在提供工业级的自学参考资料。
 
 **使用说明：**
 
@@ -22,7 +22,7 @@
 - QQ：1839243393
 - 欢迎提意见交流或反馈问题
 
-This repository is a personal learning notebook maintained by fanquanpp, used for daily learning and future review. It covers multiple technical domains including C/C++, Web frontend, Python/Java backend, MySQL database, and game development. It adopts a "one knowledge point per file" structure for in-depth analysis, aiming to provide industrial-grade self-learning references.
+This repository is a comprehensive personal learning notebook maintained by fanquanpp, used for daily learning and future review. It covers multiple technical domains including C/C++, Web frontend, Python/Java backend, MySQL database, and game development. It adopts a "one knowledge point per file" structure for in-depth analysis, aiming to provide industrial-grade self-learning references.
 
 **Usage Notes:**
 
@@ -60,7 +60,7 @@ This repository is a personal learning notebook maintained by fanquanpp, used fo
 
 - **操作系统**：Windows 10+, Ubuntu 22.04+, macOS 14+
 - **运行时**：Python 3.10+ (用于环境验证)
-- **最小配置**：1 Core CPU / 1 GB RAM / 500 MB Disk
+- **最小配置**：1 核心 CPU / 1 GB 内存 / 500 MB 磁盘
 
 ## 4. 快速开始 | Quick Start
 
@@ -82,6 +82,8 @@ bash meta/scripts/verify.sh
 - **双语注释**：所有源码均包含中文/英文双语注释与解析
 - **学习路线**：每个模块均提供 Mermaid 流程图形式的学习路径
 - **工业级标准**：遵循统一的代码风格指南，并通过自动化脚本进行校验
+- **全面覆盖**：涵盖从基础语法到高级应用的完整知识体系
+- **实战导向**：提供丰富的代码示例和实际应用场景
 
 ## 6. 贡献指南 | Contribution Guide
 

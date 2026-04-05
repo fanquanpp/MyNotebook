@@ -1,4 +1,4 @@
-# 知识地图 | SUMMARY
+# 知识地图 | Knowledge Map
 
 <!--
 作者：fanquanpp
@@ -6,7 +6,7 @@
 版本：v2.5.0
 -->
 
-> **说明**：本文件为全库笔记入口；小节标题中的 **英文（中文）** 便于检索与对照。
+> **说明**：本文件为全库笔记入口，提供完整的知识体系导航；小节标题采用 **中文 | 英文** 格式，便于检索与对照。
 
 ## GitHub 平台教程 | GitHub Platform
 - [00-GitHub 完整教程](./00-Github完整教程/README.md)
@@ -18,7 +18,7 @@
   - [基础体系 (Basics)](./03-GDScript游戏开发/基础/README.md)
   - [进阶特性 (Advanced)](./03-GDScript游戏开发/进阶/01-信号与异步.md)
   - [算法库 (Algorithms)](./03-GDScript游戏开发/算法/README.md)
-- [11-Renpy 视觉小说](./11-Renpy视觉小说/README.md)
+- [11-Ren'Py 视觉小说](./11-Renpy视觉小说/README.md)
   - [基础体系 (Basics)](./11-Renpy视觉小说/基础/README.md)
   - [ATL 动画 (Advanced)](./11-Renpy视觉小说/进阶/01-ATL动画语言.md)
   - [脚本与逻辑 (Algorithms)](./11-Renpy视觉小说/算法/README.md)
@@ -31,11 +31,11 @@
 - [02-CSS 布局](./02-CSS布局/README.md)
   - [基础体系 (Basics)](./02-CSS布局/基础/README.md)
   - [实战示例 (Examples)](./02-CSS布局/示例/responsive_layout.html)
-- [07-Javascript 脚本](./07-Javascript脚本/README.md)
+- [07-JavaScript 脚本](./07-Javascript脚本/README.md)
   - [基础体系 (Basics)](./07-Javascript脚本/基础/README.md)
   - [进阶实战 (Advanced)](./07-Javascript脚本/进阶/01-调试与性能优化.md)
   - [算法实现 (Algorithms)](./07-Javascript脚本/算法/merge_sort_js.js)
-- [12-Typescript 进阶](./12-Typescript进阶/README.md)
+- [12-TypeScript 进阶](./12-Typescript进阶/README.md)
   - [基础体系 (Basics)](./12-Typescript进阶/基础/README.md)
   - [进阶实战 (Advanced)](./12-Typescript进阶/进阶/01-编译与性能优化.md)
 
@@ -72,5 +72,6 @@
 
 ---
 **更新日志 | Changelog**
-- 2026-04-05: 全面推行“一知识点一文件”结构，完成 C/Java/Python/前端/游戏开发等全库重构。
-- 2026-04-05: 深入补全全库算法与实战示例，版本升级为 v2.5.0。
+- 2026-04-05: 全面推行「一知识点一文件」结构，完成 C/Java/Python/前端/游戏开发等全库重构
+- 2026-04-05: 深入补全全库算法与实战示例，版本升级为 v2.5.0
+- 2026-04-06: 优化 SUMMARY.md 文件结构，提升可读性和导航体验
