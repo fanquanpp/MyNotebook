@@ -6,12 +6,12 @@
 
 ```mermaid
 graph TD
-    A[编程语言基础 (Lua/GDScript) | Language Basics] --> B[引擎核心概念 | Engine Core Concepts]
-    B --> C[场景、节点与资源 | Scenes, Nodes & Resources]
-    C --> D[2D/3D 渲染与物理 | Rendering & Physics]
-    D --> E[脚本编写与 AI | Scripting & AI]
-    E --> F[UI、音效与后期 | UI, Audio & VFX]
-    F --> G[游戏发布与多平台 | Publishing & Multi-platform]
+    A["编程语言基础 (Lua/GDScript) | Language Basics"] --> B["引擎核心概念 | Engine Core Concepts"]
+    B --> C["场景、节点与资源 | Scenes, Nodes & Resources"]
+    C --> D["2D/3D 渲染与物理 | Rendering & Physics"]
+    D --> E["脚本编写与 AI | Scripting & AI"]
+    E --> F["UI、音效与后期 | UI, Audio & VFX"]
+    F --> G["游戏发布与多平台 | Publishing & Multi-platform"]
 ```
 
 ## 2. 详细路径 | Detailed Path
