@@ -1,0 +1,363 @@
+<a id="title"></a>
+# Java 基础语法
+
+> fanquanpp 的个人学习笔记
+
+最新更新时间：2026-04-05
+
+<a id="1"></a>
+## 1 引言
+
+Java 基础语法是 Java 编程的基础，包括数据类型、标识符、键盘录入等核心概念。
+
+<a id="2"></a>
+## 2 目录
+
+- [1. 数据类型](#1-数据类型)
+- [2. 标识符](#2-标识符)
+- [3. 键盘录入（Scanner）](#3-键盘录入 scanner)
+- [4. 变量与常量](#4-变量与常量)
+- [5. 类型转换](#5-类型转换)
+- [6. 常见问题与解决方案](#6-常见问题与解决方案)
+- [7. 总结与最佳实践](#7-总结与最佳实践)
+
+<a id="3"></a>
+## 3 . 数据类型
+
+<a id="3.1"></a>
+### 3.1 基本数据类型（数据类型-关键字-取值范围）
+
+**整数：**
+- `byte`（1），范围：-128~127
+- `short`（2），范围：-32768~32767
+- `int`（4），范围：-2147483648~2147483647
+- `long`（8），范围：-9223372036854775808~9223372036854775807
+
+**浮点数：**
+- `float`（4），范围：-3.4028235E+38~3.4028235E+38
+- `double`（8），范围：-1.7976931348623157E+308~1.7976931348623157E+308
+
+**字符：**
+- `char`（2），范围：\u0000~ \uffff
+
+**布尔：**
+- `boolean`（1），true/false
+
+*整数默认：int*
+*浮点数默认：double*
+*字符默认：char*
+
+**注意事项：**
+- 定义 long 类型变量时，在数值后面加一个 L
+- 定义 float 类型变量时，在数值后面加一个 F
+
+**记忆点：**
+- byte 取值范围：-128~127
+- 取值范围大小的关系：byte < short < int < long < float < double
+- long 类型变量：需加一个 L
+- float 类型变量：需加一个 F
+
+<a id="4"></a>
+## 4 . 标识符
+
+<a id="4.1"></a>
+### 4.1 标识符的组成
+- 标识符由字母、数字、下划线、$ 组成，不能以数字开头。
+
+<a id="4.2"></a>
+### 4.2 标识符的命名规则（硬性要求）
+- 由数字、字母、下划线、$ 组成
+- 不能以数字开头
+- 不能使用关键字作为标识符
+- 不能使用系统定义的常量、函数、类型等作为标识符
+- 区分大小写
+
+<a id="4.3"></a>
+### 4.3 标识符的命名规则（建议）
+
+**小驼峰命名法**（方法、变量…………）
+- 规范一：标识符是一个单词时，全部小写
+    - 例：name
+- 规范二：标识符由多个单词组成时，第一个单词全部小写，其他单词的首字母大写
+    - 例：getName
+
+**大驼峰命名法**（类名、接口名、枚举名…………）
+- 规范一：标识符是一个单词时，首字母大写
+    - 例：Student
+- 规范二：标识符由多个单词组成时，每个单词首字母大写
+    - 例：GetName
+
+*注意：见名知意*
+
+<a id="4.4"></a>
+### 4.4 关键字
+
+```
+abstract   continue   for   new   switch
+assert     default    goto   package   synchronized
+boolean    do         if     private   this
+break      double     implements  protected   throw
+byte       else       import    public     throws
+case       enum       instanceof  return   transient
+catch      extends    int     short     try
+char       final      interface  static     void
+class      finally    long     strictfp  volatile
+const      float      native    super     while
+```
+
+<a id="5"></a>
+## 5 . 键盘录入（Scanner）
+
+<a id="5.1"></a>
+### 5.1 步骤
+
+**步骤一：导包**
+```java
+import java.util.Scanner;
+// 注意：导包的动作必须出现在类 class 的上面
+```
+
+**步骤二：创建 Scanner 对象**
+```java
+Scanner sc = new Scanner(System.in);
+// 注意：上面这个格式中，只有 sc 为变量名，可自定义。其他都不可变
+```
+
+**步骤三：获取数据**
+```java
+int a = sc.nextInt();//键盘录入一个整数
+double b = sc.nextDouble();//键盘录入一个小数
+String c = sc.next();//键盘录入一个字符串
+char d = sc.next().charAt(0);//键盘录入一个字符
+boolean e = sc.nextBoolean();//键盘录入一个布尔值
+```
+
+<a id="5.2"></a>
+### 5.2 示例
+
+```java
+import java.util.Scanner;//步骤一：导包
+
+public class Test01 {
+    public static void main(String[] args) {
+        //2.创建 Scanner 对象
+        Scanner sc = new Scanner(System.in);//步骤二：创建 Scanner 对象
+        //3.获取数据
+        int a = sc.nextInt();//键盘录入一个整数
+        double b = sc.nextDouble();//键盘录入一个小数
+        String c = sc.next();//键盘录入一个字符串
+        char d = sc.next().charAt(0);//键盘录入一个字符
+        boolean e = sc.nextBoolean();//键盘录入一个布尔值
+        //4.输出数据
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+    }
+}
+```
+
+<a id="5.3"></a>
+### 5.3 小结
+- 第一步：import java.util.Scanner:
+- 第二步：Scanner sc = new Scanner(System.in):
+- 第三步：int i = sc.nextInt();
+
+<a id="6"></a>
+## 6 . 变量与常量
+
+<a id="6.1"></a>
+### 6.1 变量
+
+**变量的定义：**
+```java
+数据类型 变量名 = 值;
+
+// 示例
+int age = 18;
+double salary = 5000.50;
+String name = "张三";
+```
+
+**变量的命名规则：**
+- 遵循标识符命名规则
+- 使用小驼峰命名法
+- 见名知意
+
+<a id="6.2"></a>
+### 6.2 常量
+
+**常量的定义：**
+```java
+final 数据类型 常量名 = 值;
+
+// 示例
+final int MAX_AGE = 100;
+final double PI = 3.1415926;
+final String SCHOOL_NAME = "北京大学";
+```
+
+**常量的命名规则：**
+- 全部大写
+- 单词间用下划线分隔
+- 见名知意
+
+<a id="7"></a>
+## 7 . 类型转换
+
+<a id="7.1"></a>
+### 7.1 自动类型转换
+
+**规则：** 小范围类型向大范围类型转换，系统自动完成。
+
+**转换顺序：** byte → short → int → long → float → double
+
+```java
+// 示例
+byte b = 10;
+int i = b; // 自动转换：byte → int
+
+double d = i; // 自动转换：int → double
+
+char c = 'A';
+int ascii = c; // 自动转换：char → int，获取字符的 ASCII 码
+```
+
+<a id="7.2"></a>
+### 7.2 强制类型转换
+
+**规则：** 大范围类型向小范围类型转换，需要手动强制转换。
+
+**语法：** `(目标类型) 表达式`
+
+```java
+// 示例
+int i = 100;
+byte b = (byte) i; // 强制转换：int → byte
+
+double d = 3.14;
+int num = (int) d; // 强制转换：double → int，小数部分会被截断
+
+int large = 1000;
+byte small = (byte) large; // 强制转换：int → byte，可能导致数据溢出
+```
+
+<a id="7.3"></a>
+### 7.3 类型转换注意事项
+
+1. **数据溢出**：当大范围类型的值超出小范围类型的取值范围时，会发生数据溢出
+   ```java
+   int i = 130;
+   byte b = (byte) i; // 结果为 -126，因为 byte 的范围是 -128~127
+   ```
+
+2. **精度丢失**：浮点数转换为整数时，小数部分会被截断
+   ```java
+   double d = 3.999;
+   int i = (int) d; // 结果为 3，不是 4
+   ```
+
+3. **布尔类型**：布尔类型不能与其他类型相互转换
+   ```java
+   boolean flag = true;
+   int i = (int) flag; // 编译错误
+   ```
+
+4. **字符串转换**：需要使用包装类的方法
+   ```java
+   String str = "123";
+   int i = Integer.parseInt(str);
+   double d = Double.parseDouble(str);
+   ```
+
+<a id="8"></a>
+## 8 . 常见问题与解决方案
+
+<a id="8.1"></a>
+### 8.1 数据类型相关问题
+
+**问题描述：** 定义 long 类型变量时出现编译错误。
+
+**原因分析：** 整数默认类型为 int，当数值超过 int 范围时需要显式声明为 long。
+
+**解决方案：** 在数值后面加 L 或 l，如`long num = 10000000000L;`
+
+<a id="8.2"></a>
+### 8.2 类型转换问题
+
+**问题描述：** 强制类型转换导致数据丢失。
+
+**原因分析：** 大范围类型向小范围类型转换时，超出小范围类型取值范围的数据会被截断。
+
+**解决方案：**
+- 确保转换后的数据在目标类型的取值范围内
+- 使用合适的数据类型，避免不必要的类型转换
+
+<a id="8.3"></a>
+### 8.3 Scanner 使用问题
+
+**问题描述：** 使用 Scanner 获取字符串后，无法正确获取后续输入。
+
+**原因分析：** `next()`方法只读取到空格前的内容，`nextLine()`方法会读取到换行符。
+
+**解决方案：**
+- 统一使用`nextLine()`方法获取输入
+- 或者在`next()`后使用`nextLine()`消费掉换行符
+
+<a id="9"></a>
+## 9 . 总结与最佳实践
+
+<a id="9.1"></a>
+### 9.1 核心概念
+
+- **数据类型**：Java 中的基本数据类型和引用数据类型
+- **标识符**：用于命名变量、方法、类等的名称
+- **变量**：存储可变数据的容器
+- **常量**：存储不可变数据的容器
+- **类型转换**：不同数据类型之间的转换
+
+<a id="9.2"></a>
+### 9.2 最佳实践
+
+1. **数据类型选择**
+   - 根据实际需求选择合适的数据类型
+   - 优先使用基本数据类型，减少内存占用
+   - 对于大整数，使用 long 类型
+   - 对于小数，根据精度要求选择 float 或 double
+
+2. **命名规范**
+   - 类名使用大驼峰命名法
+   - 方法名和变量名使用小驼峰命名法
+   - 常量使用全大写，单词间用下划线分隔
+   - 包名使用小写字母
+
+3. **类型转换**
+   - 尽量使用自动类型转换，避免强制类型转换
+   - 强制类型转换前检查数据范围，避免数据丢失
+   - 注意浮点数到整数的转换会截断小数部分
+
+4. **输入处理**
+   - 使用 Scanner 类处理用户输入
+   - 注意不同输入方法的区别
+   - 对输入进行验证，确保数据合法性
+
+5. **代码风格**
+   - 变量声明时初始化
+   - 一行只声明一个变量
+   - 合理使用空格和缩进，提高代码可读性
+
+<a id="9.3"></a>
+### 9.3 参考资源
+
+- [Oracle Java 官方文档](https://docs.oracle.com/en/java/)
+- [Java Tutorials - 数据类型](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
+- [菜鸟教程 - Java 数据类型](https://www.runoob.com/java/java-data-types.html)
+
+<a id="9.4"></a>
+### 9.4 个人实践总结
+- 根据实际需求选择合适的数据类型
+- 遵循命名规范，提高代码可读性
+- 注意类型转换的安全性，避免数据丢失
+- 正确处理用户输入，避免输入异常
+- 保持代码风格一致，使用适当的缩进和空格

@@ -1,0 +1,19 @@
+{
+  "editor.formatOnSave": true, // 保存时自动格式化；取值：true | false
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 默认格式化器使用 Prettier
+  "editor.tabSize": 4, // 默认缩进 4 空格
+  "files.insertFinalNewline": true, // 文件末尾强制换行
+  "files.trimTrailingWhitespace": true, // 自动修剪行尾空格
+  "[markdown]": {
+    "editor.wordWrap": "on", // Markdown 开启自动换行
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools" // C++ 使用 clang-format (由 C/C++ 插件提供)
+  },
+  "markdownlint.config": ".markdownlint.json" // 指定 markdownlint 配置文件
+}

@@ -1,0 +1,11 @@
+{
+  "name": "css-examples",
+  "version": "1.0.0",
+  "description": "CSS 布局实战示例 | CSS Layout Practical Examples",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": ["css", "layout", "flexbox", "grid", "responsive"],
+  "author": "Anonymous",
+  "license": "MIT"
+}

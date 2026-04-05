@@ -1,0 +1,11 @@
+{
+  "timeout": "20s", // 链接超时时间；取值：带单位的时间字符串
+  "retryOn429": true, // 遇到 429 错误时重试；取值：true | false
+  "retryCount": 3, // 最大重试次数；取值：整数
+  "aliveStatusCodes": [200, 206, 403], // 视为有效的 HTTP 状态码列表；取值：整数数组
+  "ignorePatterns": [
+    {
+      "pattern": "^https://github.com/fanquanpp/MyNotebook" // 忽略本仓库链接（CI 中可能无法访问）
+    }
+  ]
+}

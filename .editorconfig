@@ -1,21 +1,23 @@
-root = true
+# 仓库说明与维护总览见「笔记库务/」目录；本文件须保留在根目录供编辑器读取。
+root = true # 声明这是根配置文件，停止向上搜索；取值：true | false
 
 [*]
-indent_style = space
-indent_size = 4
-charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
-end_of_line = lf
+indent_style = space # 强制使用空格缩进；取值：space | tab
+indent_size = 4 # 缩进宽度为 4；取值：整数
+charset = utf-8 # 文件编码使用 UTF-8；取值：utf-8 | latin1 | utf-16be | utf-16le
+trim_trailing_whitespace = true # 自动删除行尾多余空格；取值：true | false
+insert_final_newline = true # 强制在文件末尾插入空行；取值：true | false
+end_of_line = lf # 统一换行符为 LF (Linux/macOS)；取值：lf | cr | crlf
 
 [*.md]
-max_line_length = 80
+# 不限制行长，便于长表格、长链接与深度教程无限扩展
+max_line_length = off # 关闭行宽限制；取值：off | 整数
 
 [*.py]
-indent_size = 4
+indent_size = 4 # Python 遵循 PEP8 规范；取值：4
 
-[*.{js,ts,java,c,cpp,h}]
-indent_size = 4
+[*.{js,ts,java,c,cpp,h,lua}]
+indent_size = 4 # C 族与 Java、Lua 统一使用 4 空格；取值：4
 
 [*.css]
-indent_size = 2
+indent_size = 2 # CSS 推荐使用 2 空格；取值：2

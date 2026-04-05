@@ -1,0 +1,99 @@
+name: Verify
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    - run: npm install -g markdownlint-cli
+    - run: markdownlint "**/*.md" -c .markdownlint.json --ignore node_modules --ignore .git
+
+  markdown-links:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Markdown links
+      uses: gaurav-nelson/github-action-markdown-link-check@v1
+      with:
+        use-quiet-mode: 'yes'
+        folder-path: '.'
+        config-file: '.markdown-link-check.json'
+
+  c-syntax:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install GCC
+      run: sudo apt-get install -y gcc
+    - run: find . -name "*.c" -not -path "*/node_modules/*" -not -path "*/.git/*" -exec gcc -fsyntax-only {} \;
+
+  java-syntax:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Java
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+    - run: find . -name "*.java" -not -path "*/node_modules/*" -not -path "*/.git/*" -exec javac -syntaxCheck {} \;
+
+  python-syntax:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    - run: find . -name "*.py" -not -path "*/node_modules/*" -not -path "*/.git/*" -exec python -m py_compile {} \;
+
+  javascript-syntax:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    - run: find . -name "*.js" -not -path "*/node_modules/*" -not -path "*/.git/*" -exec node -c {} \;
+
+  typescript-syntax:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    - run: npm install -g typescript
+    - run: find . -name "*.ts" -not -path "*/node_modules/*" -not -path "*/.git/*" -exec tsc --noEmit {} \;
+
+  css-syntax:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    - run: npm install -g stylelint
+    - run: stylelint "**/*.css" --ignore-path .gitignore
+
+  sql-syntax:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install SQL linter
+      run: sudo apt-get install -y sqlfluff
+    - run: find . -name "*.sql" -not -path "*/node_modules/*" -not -path "*/.git/*" -exec sqlfluff lint {} \;

@@ -1,0 +1,34 @@
+{
+  "default": true, // 启用所有默认规则；取值：true | false
+  "MD013": false, // 关闭行宽限制 (Line length)；原因：长表格/链接不换行
+  "MD041": false, // 关闭文档第一行必须是 H1 限制；取值：true | false
+  "MD033": false, // 允许 HTML 标签；原因：锚点与样式增强
+  "MD022": false, // 允许标题前后无空行；取值：true | false
+  "MD031": false, // 允许代码块前后无空行；取值：true | false
+  "MD032": false, // 允许列表前后无空行；取值：true | false
+  "MD051": false, // 允许跨文档锚点链接；取值：true | false
+  "MD060": false, // 允许列表缩进不一致；取值：true | false
+  "MD024": false, // 允许重复的标题内容；取值：true | false
+  "MD025": false, // 允许一个文档有多个一级标题；取值：true | false
+  "MD036": false, // 允许使用加粗代替标题；取值：true | false
+  "MD029": false, // 允许有序列表编号不连续；取值：true | false
+  "MD040": false, // 允许代码块不写语言标签（但在本项目中强制要求）；取值：true | false
+  "MD034": false, // 允许裸链接；取值：true | false
+  "MD001": false, // 允许标题级别跳跃 (H1 -> H3)；取值：true | false
+  "MD007": { "indent": 4 }, // 列表缩进统一为 4 空格；取值：整数
+  "MD009": false, // 允许行尾空格；取值：true | false
+  "MD012": false, // 允许连续空行；取值：true | false
+  "MD026": false, // 允许标题以标点结尾；取值：true | false
+  "MD037": false, // 允许加粗符号周围有空格；取值：true | false
+  "MD046": false, // 允许混用缩进与围栏代码块；取值：true | false
+  "MD047": false, // 允许文件末尾无空行；取值：true | false
+  "MD010": false, // 允许使用 Tab (尽管 .editorconfig 强制空格)；取值：true | false
+  "MD019": false, // 允许标题符号后有多个空格；取值：true | false
+  "MD004": false, // 允许混用不同列表符号 (*, -, +)；取值：true | false
+  "MD058": false, // 允许 HTML 块周围无空行；取值：true | false
+  "MD056": false, // 允许表格列数不匹配；取值：true | false
+  "MD028": false, // 允许列表项之间有空行；取值：true | false
+  "MD049": false, // 允许混用斜体符号；取值：true | false
+  "MD050": false, // 允许混用加粗符号；取值：true | false
+  "MD030": false  // 允许列表符号后有多个空格；取值：true | false
+}
