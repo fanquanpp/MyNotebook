@@ -1,6 +1,8 @@
 # 算法库 | Algorithms Library (GDScript)
 
-本文档列出了 Godot 引擎中常用的算法实现。
+> 此目录包含 Godot 引擎中常用的算法实现，采用 GDScript 语言编写。
+
+## 算法列表 | Algorithm List
 
 | 算法名称 (Algorithm) | 源码文件 (Source) | 难度 (Difficulty) | 说明 (Description) |
 | :--- | :--- | :--- | :--- |
@@ -17,3 +19,7 @@ graph LR
     Heuristic --> Close(Closed Set)
     Close --> End(End Node)
 ```
+
+---
+### 更新日志 (Changelog)
+- 2026-04-06: 更新优化 README.md 文件，完善内容结构和格式

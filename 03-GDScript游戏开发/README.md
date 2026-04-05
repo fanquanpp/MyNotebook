@@ -3,7 +3,7 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.0
+版本：v1.0.1
 -->
 
 > **路径**：`03-GDScript游戏开发/` | **GDScript（Godot 脚本语言）** + **Godot（游戏引擎）**
@@ -16,10 +16,24 @@ This module focuses on GDScript, the default scripting language for Godot engine
 
 ## 2. 目录索引 | Directory Index
 
-- [GDScript 基础 (一知识点一文件) | Basics](./基础/README.md)
-- [进阶特性与优化 | Advanced](./进阶/01-信号与异步.md)
-- [算法实现 | Algorithms](./算法/README.md)
-- [数据结构 | Data Structures](./数据结构/README.md)
+### 基础篇 | Basics
+- [01-概述与环境.md](./基础/01-概述与环境.md)
+- [02-基础语法.md](./基础/02-基础语法.md)
+- [03-函数与面向对象.md](./基础/03-函数与面向对象.md)
+- [基础篇 README](./基础/README.md)
+
+### 进阶篇 | Advanced
+- [01-信号与异步.md](./进阶/01-信号与异步.md)
+- [02-性能优化与版本差异.md](./进阶/02-性能优化与版本差异.md)
+
+### 算法篇 | Algorithms
+- [astar_gd.gd](./算法/astar_gd.gd)
+- [bubble_sort_gd.gd](./算法/bubble_sort_gd.gd)
+- [算法篇 README](./算法/README.md)
+
+### 数据结构篇 | Data Structures
+- [event_bus_gd.gd](./数据结构/event_bus_gd.gd)
+- [数据结构篇 README](./数据结构/README.md)
 
 ## 3. 环境要求 | Environment Requirements
 
@@ -30,20 +44,20 @@ This module focuses on GDScript, the default scripting language for Godot engine
 
 ## 4. 快速开始 | Quick Start
 
-1. 下载并安装 Godot 4.0+。
-2. 创建新项目并选择 GDScript 作为脚本语言。
-3. 编写第一个脚本并运行。
+1. 下载并安装 Godot 4.0+
+2. 创建新项目并选择 GDScript 作为脚本语言
+3. 编写第一个脚本并运行
 
 ## 5. 学习路线 | Learning Path
 
-`01` → `02` → `03` → `04` → `05`
+`概述与环境` → `基础语法` → `函数与面向对象` → `信号与异步` → `性能优化与版本差异` → `算法与数据结构`
 
 ## 6. 核心特色 | Key Features
 
-- **深度解析**：每个知识点独立成文件，详细讲解原理与应用。
-- **代码示例**：提供完整可运行的代码示例，包含详细注释。
-- **性能优化**：重点讲解 GDScript 性能优化技巧与最佳实践。
-- **版本迁移**：提供 Godot 3.x 到 4.x 的迁移指南。
+- **深度解析**：每个知识点独立成文件，详细讲解原理与应用
+- **代码示例**：提供完整可运行的代码示例，包含详细注释
+- **性能优化**：重点讲解 GDScript 性能优化技巧与最佳实践
+- **版本迁移**：提供 Godot 3.x 到 4.x 的迁移指南
 
 ## 7. 关联章节 | Related Modules
 
@@ -52,18 +66,19 @@ This module focuses on GDScript, the default scripting language for Godot engine
 
 ## 8. 贡献指南 | Contribution Guide
 
-- 代码示例需符合 Godot 官方风格指南。
-- 提供完整的项目结构和场景文件。
-- 包含性能测试结果和优化建议。
+- 代码示例需符合 Godot 官方风格指南
+- 提供完整的项目结构和场景文件
+- 包含性能测试结果和优化建议
 
 ## 9. 许可证信息 | License
 
-- **SPDX-Identifier**: [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- **Copyright**: 2024-2026 fanquanpp
+- **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**：2024-2026 fanquanpp
 
 ---
 
 **更新日志 | Changelog**
 
-- 2026-04-05：统一模块说明，与 Godot 4.x 主线对齐表述。
-- 2026-10-04：更新优化 README.md 文件，统一结构和格式。
+- 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1
+- 2026-04-05: 统一模块说明，与 Godot 4.x 主线对齐表述
+- 2026-10-04: 更新优化 README.md 文件，统一结构和格式

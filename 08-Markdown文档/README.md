@@ -3,7 +3,7 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.0
+版本：v1.0.1
 -->
 
 ## 1. 项目简介 | Introduction
@@ -20,8 +20,19 @@ This module covers Markdown basic syntax and advanced typesetting techniques, ai
 
 ## 3. 目录索引 | Directory Index
 
-- [Markdown 基础 (一知识点一文件) | Basics](./基础/01-Markdown概述.md)
-- [核心语法汇总 | Advanced](./进阶/01-核心语法汇总.md)
+### 基础篇 | Basics
+- [01-Markdown概述.md](./基础/01-Markdown概述.md)
+- [02-基础语法.md](./基础/02-基础语法.md)
+- [03-标题与段落.md](./基础/03-标题与段落.md)
+- [04-文本格式化.md](./基础/04-文本格式化.md)
+- [05-列表与引用.md](./基础/05-列表与引用.md)
+- [06-链接与图片.md](./基础/06-链接与图片.md)
+- [07-代码块与语法高亮.md](./基础/07-代码块与语法高亮.md)
+- [08-表格.md](./基础/08-表格.md)
+
+### 进阶篇 | Advanced
+- [01-核心语法汇总.md](./进阶/01-核心语法汇总.md)
+- [02-排版技巧.md](./进阶/02-排版技巧.md)
 
 ## 4. 环境要求 | Environment Requirements
 
@@ -31,35 +42,36 @@ This module covers Markdown basic syntax and advanced typesetting techniques, ai
 
 ## 5. 快速开始 | Quick Start
 
-1. 学习基本语法：阅读 `0.0-Markdown基础.md`。
-2. 实验列表嵌套：查阅 `1.3-Markdown列表语法.md`。
-3. 在 VS Code 中开启预览：`Ctrl + Shift + V`。
+1. 学习基本语法：阅读 [02-基础语法.md](./基础/02-基础语法.md)
+2. 实验列表嵌套：查阅 [05-列表与引用.md](./基础/05-列表与引用.md)
+3. 在 VS Code 中开启预览：`Ctrl + Shift + V`
 
 ## 6. 学习路线 | Learning Path
 
-`0.0-基础` -> `1.0-标题` -> `1.1-段落` -> `1.2-文本格式` -> `1.3-列表` -> `2.0-核心知识点`
+`Markdown概述` → `基础语法` → `标题与段落` → `文本格式化` → `列表与引用` → `链接与图片` → `代码块与语法高亮` → `表格` → `核心语法汇总` → `排版技巧`
 
 ## 7. 核心特色 | Key Features
 
-- **统一规范**：建立一套统一的 Markdown 编写规范。
-- **排版技巧**：提供高级排版技巧，提升文档美观度。
-- **工具推荐**：推荐适合 Markdown 编写的工具和插件。
-- **最佳实践**：收录 Markdown 文档编写的最佳实践。
+- **统一规范**：建立一套统一的 Markdown 编写规范
+- **排版技巧**：提供高级排版技巧，提升文档美观度
+- **工具推荐**：推荐适合 Markdown 编写的工具和插件
+- **最佳实践**：收录 Markdown 文档编写的最佳实践
 
 ## 8. 贡献指南 | Contribution Guide
 
-- 遵循 CJK/Alphanumeric 间距规范（中英文间留一空格）。
-- 图片资源存放在 `assets/` 目录下，使用相对路径引用。
-- 提供完整的 Markdown 示例和渲染效果。
+- 遵循 CJK/Alphanumeric 间距规范（中英文间留一空格）
+- 图片资源存放在 `assets/` 目录下，使用相对路径引用
+- 提供完整的 Markdown 示例和渲染效果
 
 ## 9. 许可证信息 | License
 
-- **SPDX-Identifier**: [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- **Copyright**: 2024-2026 fanquanpp
+- **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**：2024-2026 fanquanpp
 
 ---
 
 **更新日志 | Changelog**
 
-- 2026-04-05: 初始化 Markdown 基础语法与核心排版笔记。
-- 2026-10-04: 更新优化 README.md 文件，统一结构和格式。
+- 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1
+- 2026-04-05: 初始化 Markdown 基础语法与核心排版笔记
+- 2026-10-04: 更新优化 README.md 文件，统一结构和格式

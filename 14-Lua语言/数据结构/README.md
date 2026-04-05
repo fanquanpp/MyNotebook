@@ -1,13 +1,23 @@
-# 数据结构库 | Data Structures Library (Lua)
+# Lua 数据结构 (Lua Data Structures)
 
-本文档列出了 Lua 语言实现的核心数据结构。
+> 此目录收录了使用 Lua 实现的经典数据结构。
 
-| 数据结构 (Data Structure) | 源码文件 (Source) | 说明 (Description) |
-| :--- | :--- | :--- |
-| Table 高级用法 | [table_advanced_lua.lua](./table_advanced_lua.lua) | 模拟集合、栈与类 |
-| 单链表 | [linked_list_lua.lua](./linked_list_lua.lua) | 基础链表实现 |
+## 1. 数据结构列表 (Data Structure List)
 
-## 可视化 | Visualization
+| 结构名称 | 源码文件 | 难度 | 标签 | 说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| **Table 高级用法** | [table_advanced_lua.lua](./table_advanced_lua.lua) | 基础 | 基础 | 模拟集合、栈与类 |
+| **单链表** | [linked_list_lua.lua](./linked_list_lua.lua) | 基础 | 链表 | 基础链表实现 |
+| **并查集** | [union_find_lua.lua](./union_find_lua.lua) | 进阶 | 图论 | 路径压缩与按秩合并优化 |
+
+## 2. 运行指南 (How to Run)
+```bash
+# 运行数据结构示例
+lua linked_list_lua.lua
+lua union_find_lua.lua
+```
+
+## 3. 可视化 | Visualization
 
 ### Lua Table 的多重身份
 ```mermaid
@@ -18,3 +28,7 @@ mindmap
     Set(集合 - 值为 true)
     Object(对象 - 元表模拟)
 ```
+
+---
+### 更新日志 (Changelog)
+- 2026-04-06: 更新优化 README.md 文件，完善内容结构和格式

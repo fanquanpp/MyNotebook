@@ -3,7 +3,7 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.0
+版本：v1.0.1
 -->
 
 ## 1. 项目简介 | Introduction
@@ -14,9 +14,20 @@ This module covers HTML5 core tags, global attributes, and advanced Web APIs. Ba
 
 ## 2. 目录索引 | Directory Index
 
-- [HTML5 基础 (一知识点一文件) | Basics](./基础/README.md)
-- [前端框架 (Vue 等) | Frameworks](./框架/README.md)
-- [交互示例 | Examples](./示例/web_components.html)
+### 基础篇 | Basics
+- [01-概述与语义化.md](./基础/01-概述与语义化.md)
+- [02-基础标签与全局属性.md](./基础/02-基础标签与全局属性.md)
+- [03-表单与验证.md](./基础/03-表单与验证.md)
+- [04-多媒体与Canvas.md](./基础/04-多媒体与Canvas.md)
+- [05-存储与WebAPI.md](./基础/05-存储与WebAPI.md)
+- [基础篇 README](./基础/README.md)
+
+### 框架篇 | Frameworks
+- [01-Vue核心与实战.md](./框架/01-Vue核心与实战.md)
+- [框架篇 README](./框架/README.md)
+
+### 示例篇 | Examples
+- [web_components.html](./示例/web_components.html)
 
 ## 3. 环境要求 | Environment Requirements
 
@@ -26,35 +37,36 @@ This module covers HTML5 core tags, global attributes, and advanced Web APIs. Ba
 
 ## 4. 快速开始 | Quick Start
 
-1. 编写第一个语义化页面：参考 `0.0-HTML5基础概念与特性.md`。
-2. 实验表单验证：查阅 `1.0-HTML5表单增强与验证.md`。
-3. 本地预览：在浏览器中打开 HTML 文件。
+1. 编写第一个语义化页面：参考 [01-概述与语义化.md](./基础/01-概述与语义化.md)
+2. 实验表单验证：查阅 [03-表单与验证.md](./基础/03-表单与验证.md)
+3. 本地预览：在浏览器中打开 HTML 文件
 
 ## 5. 学习路线 | Learning Path
 
-`0.0-基础概念` -> `0.1-基础标签` -> `03-全局属性` -> `1.0-表单增强` -> `1.1-多媒体` -> `1.2-Web API`
+`概述与语义化` → `基础标签与全局属性` → `表单与验证` → `多媒体与Canvas` → `存储与WebAPI` → `Vue核心与实战`
 
 ## 6. 核心特色 | Key Features
 
-- **语义化标签**：详细讲解 HTML5 语义化标签的使用场景与最佳实践。
-- **Web API**：收录常用 Web API 的使用方法与示例。
-- **浏览器兼容性**：提供各标签和 API 的浏览器支持情况。
-- **可访问性**：重点讲解网页可访问性的实现方法。
+- **语义化标签**：详细讲解 HTML5 语义化标签的使用场景与最佳实践
+- **Web API**：收录常用 Web API 的使用方法与示例
+- **浏览器兼容性**：提供各标签和 API 的浏览器支持情况
+- **可访问性**：重点讲解网页可访问性的实现方法
 
 ## 7. 贡献指南 | Contribution Guide
 
-- 新增标签说明需包含：语法、属性、浏览器兼容性、示例。
-- 推荐使用 `<section>`, `<article>`, `<aside>` 等语义化容器。
-- 提供完整的 HTML 示例代码。
+- 新增标签说明需包含：语法、属性、浏览器兼容性、示例
+- 推荐使用 `<section>`, `<article>`, `<aside>` 等语义化容器
+- 提供完整的 HTML 示例代码
 
 ## 8. 许可证信息 | License
 
-- **SPDX-Identifier**: [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- **Copyright**: 2024-2026 fanquanpp
+- **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**：2024-2026 fanquanpp
 
 ---
 
 **更新日志 | Changelog**
 
-- 2026-04-05: 初始化 HTML5 核心标签与 API 笔记。
-- 2026-10-04: 更新优化 README.md 文件，统一结构和格式。
+- 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1
+- 2026-04-05: 初始化 HTML5 核心标签与 API 笔记
+- 2026-10-04: 更新优化 README.md 文件，统一结构和格式
