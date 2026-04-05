@@ -13,7 +13,9 @@ This module explores TypeScript's strong typing system and its application in la
 ## 2. 目录索引 | Directory Index
 - [TS 基础 (一知识点一文件) | Basics](./basics/README.md)
 - [进阶技巧与实战 | Advanced](./advanced/01-编译与性能优化.md)
-- [代码示例 | Examples](./examples/advanced_types.ts)
+- [算法实现 | Algorithms](./算法/README.md)
+- [数据结构 | Data Structures](./数据结构/README.md)
+- [代码示例 | Examples](./示例/advanced_types.ts)
 
 ## 3. 环境要求 | Environment Requirements
 - **操作系统**：Windows 10+, Ubuntu 22.04+, macOS 14+

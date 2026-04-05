@@ -13,7 +13,7 @@ This module covers C language basics, memory management, and classic algorithms 
 ## 2. 目录索引 | Directory Index
 - [基础语法 (一知识点一文件) | Basics](./basics/README.md)
 - [算法实现 (C 实现) | Algorithms](./algorithms/README.md)
-- [数据结构 (C 实现) | Data Structures](./data-structures/README.md)
+- [数据结构 (C 实现) | Data Structures](./数据结构/README.md)
 
 ## 3. 环境要求 | Environment Requirements
 - **操作系统**：Windows 10+, Ubuntu 22.04+, macOS 14+
