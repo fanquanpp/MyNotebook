@@ -20,6 +20,7 @@
 
 ## 7. 更新日志
 - **2026-04-05**: 增加 Flexbox 可视化指南与 Grid 布局进阶内容。
+- **2026-10-04**: 添加Canvas绘图知识点，包含基础绘图、动画效果和实战示例。
 
 ## 8. 许可证信息
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
