@@ -6,25 +6,12 @@
 
 聚焦 **Godot** 引擎默认脚本语言 **GDScript** 的语法、信号与异步、性能与版本迁移，服务于 2D/3D 游戏逻辑与工具脚本开发
 
-## 2. 技术栈与工具（双语）
+## 2. 目录索引 | Directory Index
+- [GDScript 基础 (一知识点一文件) | Basics](./basics/README.md)
+- [进阶特性与优化 | Advanced](./advanced/01_signals_async.md)
+- [算法实现 | Algorithms](./algorithms/README.md)
+- [数据结构 | Data Structures](./data-structures/README.md)
 
-| 英文（中文） | 说明 |
-| :--- | :--- |
-| **Godot Engine（Godot 引擎）** | 4.x 主版本线 |
-| **GDScript** | 与引擎深度集成的脚本语言 |
-| **Signal（信号）** / **await（异步等待）** | 常见并发与解耦模式 |
-
-## 3. 本目录组织方式
-
-| 文件 | 说明 |
-| :--- | :--- |
-| `01-GDScript基础概念与语法.md` | 概念与语法入口 |
-| `02-基础语法详解.md` | 变量、控制流、内置类型 |
-| `03-进阶特性.md` | 信号、协程、元编程等 |
-| `04-性能优化最佳实践.md` | 性能与资源管理 |
-| `05-版本差异对比.md` | 3.x → 4.x 迁移指南 |
-
-另含 `00-快速入门.md` 等基准文件时，以目录内实际 `.md` 文件为准；完整索引见 [SUMMARY.md](../SUMMARY.md)
 
 ## 4. 推荐学习路线
 

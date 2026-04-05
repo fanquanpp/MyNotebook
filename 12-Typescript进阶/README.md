@@ -11,11 +11,9 @@
 This module explores TypeScript's strong typing system and its application in large-scale engineering, from basic types to complex configurations.
 
 ## 2. 目录索引 | Directory Index
-- [基础语法 | Basic Syntax](./基础/TS-基础语法-1.0.md)
-- [基础类型 | Basic Types](./基础/TS-基础类型-1.0.md)
-- [进阶核心 | Advanced Core](./进阶/TS-进阶核心-1.0.md)
-- [工程化配置 | Engineering](./进阶/TS-工程化配置-1.0.md)
-- [编译优化 | Optimization](./05-编译性能优化.md)
+- [TS 基础 (一知识点一文件) | Basics](./basics/README.md)
+- [进阶技巧与实战 | Advanced](./advanced/compilation_performance.md)
+- [代码示例 | Examples](./examples/advanced_types.ts)
 
 ## 3. 环境要求 | Environment Requirements
 - **操作系统**：Windows 10+, Ubuntu 22.04+, macOS 14+

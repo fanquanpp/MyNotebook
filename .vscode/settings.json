@@ -18,5 +18,14 @@
   "markdownlint.config": ".markdownlint.json",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "files.exclude": {
+    "**/*.rpyc": true,
+    "**/*.rpa": true,
+    "**/*.rpymc": true,
+    "**/cache/": true
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
   } // 指定 markdownlint 配置文件
 }

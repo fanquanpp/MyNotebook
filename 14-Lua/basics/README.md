@@ -1,0 +1,15 @@
+# Lua 基础体系 (Lua Basics)
+
+> 此目录包含 Lua 语言的核心语法、内置数据结构 Table 及常用函数，采用“一知识点一文件”的结构。
+
+## 1. 语法基础 (Syntax Foundations)
+
+| 序号 | 知识点 (Topic) | 文件 (File) | 核心内容 |
+|---|---|---|---|
+| 01 | **概述与环境** | [01_introduction_env.md](./01_introduction_env.md) | Lua 设计哲学、嵌入式开发、安装配置 |
+| 02 | **基本语法** | [02_syntax_fundamentals.md](./02_syntax_fundamentals.md) | 变量作用域、控制流、数值/泛型 for |
+| 03 | **数据类型与 Table** | [03_data_types_table.md](./03_data_types_table.md) | Lua 8 种基础类型、Table 深度解析 |
+
+---
+### 更新日志 (Changelog)
+- 2026-04-05: 体系化构建“一知识点一文件”Lua 基础目录。

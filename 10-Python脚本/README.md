@@ -11,10 +11,9 @@
 This module focuses on Python scripting, covering environments, core syntax, algorithms, and data structures for automation and data analysis.
 
 ## 2. 目录索引 | Directory Index
-- [环境配置 | Environment](./环境/基础/Windows安装配置.md)
-- [语法核心 | Core Syntax](./语法/基础/核心概念.md)
-- [算法基础 | Algorithms](./algorithms/basic/README.md)
-- [数据结构 | Data Structures](./data_structures/basic/README.md)
+- [Python 基础 (一知识点一文件) | Basics](./basics/README.md)
+- [算法实现 | Algorithms](./algorithms/README.md)
+- [数据结构 | Data Structures](./data-structures/README.md)
 
 ## 3. 环境要求 | Environment Requirements
 - **操作系统**：Windows 10+, Ubuntu 22.04+, macOS 14+

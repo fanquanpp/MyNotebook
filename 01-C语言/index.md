@@ -18,9 +18,9 @@ graph TD
 
 | 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
 | :--- | :--- | :--- | :--- |
-| 入门 | [C 基础语法](../01-C语言/01-基础概念与语法.md) | 20h | 无 |
-| 进阶 | [指针深度解析](../01-C语言/README.md) | 15h | 基础语法 |
-| 初级 | [排序与搜索 (C)](../01-C语言/algorithms/README.md) | 10h | 指针、数组 |
+| 入门 | [C 基础语法体系 (Basics)](./basics/01_introduction.md) | 20h | 无 |
+| 进阶 | [指针深度解析 (Pointers)](./basics/09_pointers.md) | 15h | 基础语法 |
+| 初级 | [排序与搜索 (C)](./algorithms/README.md) | 10h | 指针、数组 |
 | 中级 | [C++ 面向对象](../13-C++系统编程/基础/CPP-核心语法-1.0.md) | 20h | C 基础 |
 | 中级 | [STL 实战](../13-C++系统编程/实战/CPP-常用代码片段-1.0.md) | 15h | C++ 语法 |
 | 高级 | [图论与 DP (C++)](../13-C++系统编程/algorithms/README.md) | 30h | 数据结构、STL |

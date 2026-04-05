@@ -13,20 +13,9 @@
 
 **GitHub** 是全球使用最广泛的代码协作平台之一，在 **Git（分布式版本控制系统）** 之上提供 Web 界面、权限、审查与自动化。本教程与仓库内 [`04-Git版本控制`](../04-Git版本控制/README.md) 互补：后者讲命令与概念，本系列讲 **GitHub 网页端与平台能力**。
 
-## 学习路线（入门 → 进阶 → 实战 → 排错）
-
-| 阶段 | 文档 | 说明 |
-| :--- | :--- | :--- |
-| 入门 | [01-账户注册与双因素认证](01-账户注册与双因素认证.md) | 账号安全基线 |
-| 入门 | [02-SSH与HTTPS远程配置](02-SSH与HTTPS远程配置.md) | 克隆与推送前的必备配置 |
-| 实战 | [03-仓库创建克隆归档删除](03-仓库创建克隆归档删除.md) | 仓库全生命周期 |
-| 进阶 | [04-分支模型与分支保护规则](04-分支模型与分支保护规则.md) | Git Flow / GitHub Flow |
-| 实战 | [05-PullRequest完整协作流程](05-PullRequest完整协作流程.md) | Fork 到合并的完整链路 |
-| 进阶 | [06-Issues模板标签与里程碑](06-Issues模板标签与里程碑.md) | 需求与缺陷管理 |
-| 实战 | [07-GitHubActions与CI示例](07-GitHubActions与CI示例.md) | CI/CD 与多语言示例 |
-| 实战 | [08-GitHubPages多站点方案](08-GitHubPages多站点方案.md) | Jekyll / VitePress / Hugo |
-| 进阶 | [09-协作规范与贡献协议](09-协作规范与贡献协议.md) | Commit、PR、Review、CLA/DCO |
-| 排错 | [10-常见问题与故障诊断](10-常见问题与故障诊断.md) | 权限、大文件、换行、子模块等 |
+## 2. 目录索引 | Directory Index
+- [GitHub 基础 (一知识点一文件) | Basics](./basics/01_account_setup.md)
+- [协作与高级特性 | Advanced](./advanced/04_branch_protection.md)
 
 ## 截图与自动化说明
 

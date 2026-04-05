@@ -3,19 +3,11 @@
 ## 1. 项目概述
 本目录收录了 HTML5 核心标签、全局属性及高级 Web API。基于 MDN 官方文档与最新 Web 标准，旨在构建语义化、高性能、可访问的现代网页结构。
 
-## 2. 技术栈说明
-- **语言标准**: HTML5.2 / Living Standard
-- **核心组件**: Canvas API, Web Storage, Geolocation, Form Validation
-- **渲染引擎**: Webkit / Blink / Gecko
+## 2. 目录索引 | Directory Index
+- [HTML5 基础 (一知识点一文件) | Basics](./basics/README.md)
+- [前端框架 (Vue 等) | Frameworks](./frameworks/README.md)
+- [交互示例 | Examples](./examples/web_components.html)
 
-## 3. 目录结构
-- `0.0-HTML5基础概念与特性.md`: 语义化标签、文档结构、新特性概览
-- `0.1-HTML5基础标签.md`: 块级、行内、嵌入式元素
-- `03-HTML5全局属性.md`: `id`, `class`, `style`, `data-*` 等通用属性
-- `1.0-HTML5表单增强与验证.md`: 输入类型、约束验证 API、表单控件
-- `1.1-HTML5多媒体与Canvas.md`: `<video>`, `<audio>`, 2D 绘图基础
-- `1.2-HTML5本地存储与地理定位.md`: `localStorage`, `sessionStorage`, `navigator.geolocation`
-- `2.0-HTML5核心知识点.md`: 最佳实践、离线缓存、Web Workers 简介
 
 ## 4. 快速开始
 1. 编写第一个语义化页面：参考 `0.0-HTML5基础概念与特性.md`。

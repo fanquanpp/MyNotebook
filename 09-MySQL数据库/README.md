@@ -11,11 +11,9 @@
 This module covers MySQL core concepts, installation, SQL syntax, and data modeling practices for building efficient persistence layers.
 
 ## 2. 目录索引 | Directory Index
-- [01. MySQL 简介 | Introduction](./01-MySQL简介.md)
-- [02. 安装与配置 | Installation](./02-MySQL安装与配置.md)
-- [03. 基本概念 | Basic Concepts](./03-MySQL基本概念.md)
-- [04. SQL 基础语法 | SQL Syntax](./04-MySQL_SQL基础语法.md)
-- [05. 数据类型 | Data Types](./05-MySQL数据类型.md)
+- [MySQL 基础 (一知识点一文件) | Basics](./basics/README.md)
+- [MySQL 进阶与架构 | Advanced](./advanced/README.md)
+- [查询示例 | Examples](./examples/advanced_sql_queries.sql)
 
 ## 3. 环境要求 | Environment Requirements
 - **操作系统**：Windows 10+, Ubuntu 22.04+, macOS 14+

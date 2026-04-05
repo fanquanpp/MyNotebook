@@ -1,0 +1,27 @@
+# C 语言基础体系 (C Language Basics)
+
+> 此目录包含 C 语言的基础语法与核心概念，采用“一知识点一文件”的结构，深度解析每一个核心要点。
+
+## 1. 基础内容 (Fundamentals)
+
+| 序号 | 知识点 (Topic) | 文件 (File) | 核心内容 (Core Content) |
+|---|---|---|---|
+| 01 | **概述** | [01_introduction.md](./01_introduction.md) | 发展史、应用领域、环境搭建 |
+| 02 | **程序结构** | [02_syntax_structure.md](./02_syntax_structure.md) | 注释、标识符、编译过程 |
+| 03 | **数据类型** | [03_data_types.md](./03_data_types.md) | 整型、浮点型、内存布局、类型转换 |
+| 04 | **变量与常量** | [04_variables_constants.md](./04_variables_constants.md) | 作用域、存储类、宏定义、枚举 |
+| 05 | **运算符** | [05_operators_expressions.md](./05_operators_expressions.md) | 算术、位运算、优先级、三目运算符 |
+| 06 | **控制流** | [06_control_flow.md](./06_control_flow.md) | if-else, switch, for, while, do-while |
+| 07 | **函数** | [07_functions.md](./07_functions.md) | 参数传递、递归、内联函数、可变参数 |
+| 08 | **数组** | [08_arrays.md](./08_arrays.md) | 一维/多维数组、字符串、内存布局 |
+| 09 | **指针** | [09_pointers.md](./09_pointers.md) | 指针运算、函数指针、多级指针、野指针 |
+| 10 | **复合类型** | [10_structures_unions.md](./10_structures_unions.md) | 结构体对齐、联合体共享、typedef |
+| 11 | **文件操作** | [11_file_io.md](./11_file_io.md) | 文件流、二进制读写、文件定位、错误处理 |
+
+## 2. 进阶提示 (Advanced Tips)
+- **内存管理**：基础掌握后，请参考 [数据结构](../data-structures/README.md) 部分了解动态内存分配。
+- **编码规范**：建议阅读 [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) 中的 C 部分。
+
+---
+### 更新日志 (Changelog)
+- 2026-04-05: 体系化构建“一知识点一文件”基础目录。

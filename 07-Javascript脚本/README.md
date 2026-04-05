@@ -13,17 +13,11 @@
 | **V8（JavaScript 引擎）** | Chrome / Node 常用引擎 |
 | **Chrome DevTools（Chrome 开发者工具）** | 调试与性能分析工具 |
 
-## 3. 本目录组织方式
-
-| 类型 | 主要文件 |
-| :--- | :--- |
-| 入门 | `00-快速入门.md` |
-| 核心 | `01-核心概念与语法.md` |
-| 片段 | `02-常用代码片段.md` |
-| 调试与性能 | `03-调试与性能优化.md` |
-| 实战 | `04-典型项目实战.md` |
-
-完整索引见 [SUMMARY.md](../SUMMARY.md)「07-Javascript 脚本」
+## 2. 目录索引 | Directory Index
+- [JS 基础 (一知识点一文件) | Basics](./basics/README.md)
+- [进阶技巧与实战 | Advanced](./advanced/debugging_performance.md)
+- [算法实现 | Algorithms](./algorithms/README.md)
+- [交互示例 | Examples](./examples/dom_manipulation.js)
 
 ## 4. 推荐学习路线
 

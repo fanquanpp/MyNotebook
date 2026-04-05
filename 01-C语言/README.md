@@ -11,9 +11,9 @@
 This module covers C language basics, memory management, and classic algorithms for systems and high-performance programming.
 
 ## 2. 目录索引 | Directory Index
-- [基础概念与语法 | Basics](./01-基础概念与语法.md)
-- [算法实现 | Algorithms](./算法/基础/Algorithm-排序算法-1.0.md)
-- [数据结构 | Data Structures](./算法/基础/Algorithm-数据结构基础-1.0.md)
+- [基础语法 (一知识点一文件) | Basics](./basics/01_introduction.md)
+- [算法实现 (C 实现) | Algorithms](./algorithms/README.md)
+- [数据结构 (C 实现) | Data Structures](./data-structures/README.md)
 
 ## 3. 环境要求 | Environment Requirements
 - **操作系统**：Windows 10+, Ubuntu 22.04+, macOS 14+

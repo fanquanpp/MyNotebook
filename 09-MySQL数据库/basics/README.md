@@ -1,0 +1,20 @@
+# MySQL 基础知识体系 (MySQL Basics)
+
+> 此目录包含 MySQL 的概述、基本 SQL 语法及进阶查询，采用“一知识点一文件”的结构。
+
+## 1. 入门与基础 (Foundations)
+
+| 序号 | 知识点 (Topic) | 文件 (File) | 核心内容 |
+|---|---|---|---|
+| 01 | **概述与环境** | [01_introduction_env.md](./01_introduction_env.md) | RDBMS 特点、Docker 安装、管理工具 |
+| 02 | **SQL 基础语法** | [02_sql_fundamentals.md](./02_sql_fundamentals.md) | DDL/DML/DQL、聚合函数、约束 |
+
+## 2. 核心操作 (Core Operations)
+
+| 序号 | 知识点 (Topic) | 文件 (File) | 核心内容 |
+|---|---|---|---|
+| 03 | **进阶查询与联查** | [03_query_advanced.md](./03_query_advanced.md) | 多表 Join、子查询、分组、窗口函数 |
+
+---
+### 更新日志 (Changelog)
+- 2026-04-05: 体系化构建“一知识点一文件”MySQL 基础目录。

@@ -18,12 +18,9 @@ graph TD
 
 | 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
 | :--- | :--- | :--- | :--- |
-| 入门 | [Java 基础](../06-Java后端开发/基础/Java-基础入门-1.0.md) | 20h | 无 |
-| 初级 | [面向对象](../06-Java后端开发/基础/Java-基础语法-1.0.md) | 15h | 基础语法 |
-| 初级 | [常用算法 (Java)](../06-Java后端开发/algorithms/README.md) | 10h | 基础语法 |
-| 中级 | [Java 深度解析](../06-Java后端开发/基础/Java-深度解析-1.0.md) | 25h | OOP 进阶 |
-| 中级 | [MySQL 基础](../09-MySQL数据库/01-MySQL简介.md) | 15h | 无 |
-| 高级 | [Spring Boot 实战](../06-Java后端开发/框架/Java-SpringBoot-1.0.md) | 40h | Java 进阶、MySQL |
+| 入门 | [Java 基础知识体系](./basics/README.md) | 30h | 无 |
+| 进阶 | [数据结构与算法 (Java)](./algorithms/README.md) | 20h | 基础语法 |
+| 框架 | [Spring Boot 核心实战](./frameworks/spring_boot_notes.md) | 25h | Java 基础 |
 
 ## 3. 学习提示 | Tips
 - **代码重构**：尝试使用 Java 8+ 的 `Stream API` 和 `Optional` 来简化逻辑。

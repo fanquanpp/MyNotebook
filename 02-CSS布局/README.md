@@ -3,20 +3,9 @@
 ## 1. 项目概述
 本目录涵盖现代 Web 开发中的核心布局技术，重点介绍 Flexbox、Grid 及传统布局方案。
 
-## 2. 技术栈说明
-- **核心标准**: CSS3
-- **辅助工具**: Flexbox Labs 可视化工具
-- **关键概念**: 盒模型、选择器权重、响应式设计。
-
-## 3. 目录结构
-- `01-CSS3基础语法.md`: 属性声明与规则
-- `02-代码快速参考.md`: 常用样式片段
-- `03-选择器系统.md`: 伪类、伪元素与层叠逻辑
-- `04-盒模型原理.md`: Margin/Padding/Border 详解
-- `05-Flexbox弹性布局.md`: 一维布局核心属性
-- `06-Flexbox可视化指南.md`: 基于实验工具的图解
-- `07-Grid网格布局.md`: 二维布局进阶
-- `08-传统布局技术.md`: Float, Position 等回溯
+## 2. 目录索引 | Directory Index
+- [CSS 基础 (一知识点一文件) | Basics](./basics/README.md)
+- [布局示例 | Examples](./examples/responsive_layout.html)
 
 ## 4. 快速开始
 1. 学习 `04-盒模型原理.md` 理解空间占用。

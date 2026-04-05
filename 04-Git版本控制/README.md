@@ -8,13 +8,9 @@
 - **平台**: GitHub / GitLab / Gitee
 - **协议**: SSH / HTTPS
 
-## 3. 目录结构
-- `0.0-Git基础概念与核心特点.md`: 分布式系统、三级区、HEAD 概念
-- `0.1-Git环境配置与初始化.md`: 全局配置、仓库初始化、`.gitignore`
-- `1.0-Git基本操作.md`: 提交、暂存、差异比较、撤销
-- `1.1-Git分支管理.md`: 创建、切换、合并、变基
-- `1.2-Git远程仓库操作.md`: 推送、拉取、冲突解决
-- `2.0-Git核心知识点.md`: 底层实现、常用命令速查
+## 2. 目录索引 | Directory Index
+- [Git 基础 (一知识点一文件) | Basics](./basics/01_introduction.md)
+- [Git 原理与进阶 | Advanced](./advanced/core_internals.md)
 
 ## 4. 快速开始
 1. 配置个人信息：`git config --global user.name "Your Name"`
