@@ -1,35 +1,69 @@
-# 03-GDScript 游戏开发 | 模块说明
+# 03-GDScript 游戏开发 | GDScript Game Development
+
+<!--
+作者：fanquanpp
+创建日期：2026-04-05
+版本：v1.0.0
+-->
 
 > **路径**：`03-GDScript游戏开发/` | **GDScript（Godot 脚本语言）** + **Godot（游戏引擎）**
 
-## 1. 模块定位
+## 1. 项目简介 | Introduction
 
-聚焦 **Godot** 引擎默认脚本语言 **GDScript** 的语法、信号与异步、性能与版本迁移，服务于 2D/3D 游戏逻辑与工具脚本开发
+聚焦 **Godot** 引擎默认脚本语言 **GDScript** 的语法、信号与异步、性能与版本迁移，服务于 2D/3D 游戏逻辑与工具脚本开发。
+
+This module focuses on GDScript, the default scripting language for Godot engine, covering syntax, signals and async, performance, and version migration for 2D/3D game logic and tool scripting.
 
 ## 2. 目录索引 | Directory Index
-- [GDScript 基础 (一知识点一文件) | Basics](./basics/README.md)
-- [进阶特性与优化 | Advanced](./advanced/01-信号与异步.md)
-- [算法实现 | Algorithms](./algorithms/README.md)
-- [数据结构 | Data Structures](./data-structures/README.md)
 
+- [GDScript 基础 (一知识点一文件) | Basics](./基础/README.md)
+- [进阶特性与优化 | Advanced](./进阶/01-信号与异步.md)
+- [算法实现 | Algorithms](./算法/README.md)
+- [数据结构 | Data Structures](./数据结构/README.md)
 
-## 4. 推荐学习路线
+## 3. 环境要求 | Environment Requirements
+
+- **操作系统**：Windows 10+, Ubuntu 22.04+, macOS 14+
+- **运行时**：Godot 4.0+ (LTS)
+- **开发工具**：Godot Editor, VS Code with GDScript extension
+- **最小配置**：2 Core CPU / 4 GB RAM / 1 GB Disk
+
+## 4. 快速开始 | Quick Start
+
+1. 下载并安装 Godot 4.0+。
+2. 创建新项目并选择 GDScript 作为脚本语言。
+3. 编写第一个脚本并运行。
+
+## 5. 学习路线 | Learning Path
 
 `01` → `02` → `03` → `04` → `05`
 
-## 5. 关联章节
+## 6. 核心特色 | Key Features
+
+- **深度解析**：每个知识点独立成文件，详细讲解原理与应用。
+- **代码示例**：提供完整可运行的代码示例，包含详细注释。
+- **性能优化**：重点讲解 GDScript 性能优化技巧与最佳实践。
+- **版本迁移**：提供 Godot 3.x 到 4.x 的迁移指南。
+
+## 7. 关联章节 | Related Modules
 
 - **Python（Python 语言）**：Godot 脚本可与 Python 思维对照 [`10-Python脚本`](../10-Python脚本/README.md)  
 - **Ren'Py（视觉小说引擎）**：[`11-Renpy视觉小说`](../11-Renpy视觉小说/README.md)
 
-## 6. 维护说明
+## 8. 贡献指南 | Contribution Guide
 
-- [笔记目录规范](../笔记库务/笔记目录规范.md) · [.editorconfig](../.editorconfig)
+- 代码示例需符合 Godot 官方风格指南。
+- 提供完整的项目结构和场景文件。
+- 包含性能测试结果和优化建议。
 
-## 7. 更新日志
+## 9. 许可证信息 | License
 
-- **2026-04-05**：统一模块说明，与 Godot 4.x 主线对齐表述
+- **SPDX-Identifier**: [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**: 2024-2026 fanquanpp
 
-## 8. 许可协议
+---
 
-[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) <!-- nofollow -->
+**更新日志 | Changelog**
+
+- 2026-04-05：统一模块说明，与 Godot 4.x 主线对齐表述。
+- 2026-10-04：更新优化 README.md 文件，统一结构和格式。

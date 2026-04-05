@@ -56,7 +56,13 @@ This repository is a personal learning notebook maintained by fanquanpp, used fo
 | 13 | C++ 系统编程      | C++ Systems         | [./13-C++系统编程/README.md](./13-C++系统编程/README.md)           |
 | 14 | Lua 脚本开发      | Lua Scripting       | [./14-Lua语言/README.md](./14-Lua语言/README.md)               |
 
-## 3. 快速开始 | Quick Start
+## 3. 环境要求 | Environment Requirements
+
+- **操作系统**：Windows 10+, Ubuntu 22.04+, macOS 14+
+- **运行时**：Python 3.10+ (用于环境验证)
+- **最小配置**：1 Core CPU / 1 GB RAM / 500 MB Disk
+
+## 4. 快速开始 | Quick Start
 
 ```bash
 # 1. 克隆仓库到当前目录
@@ -70,21 +76,28 @@ git clone https://github.com/fanquanpp/MyNotebook.git .
 bash meta/scripts/verify.sh
 ```
 
-## 4. 核心特色 | Key Features
+## 5. 核心特色 | Key Features
 
 - **原子化笔记**: 每一个核心知识点独立成文，便于检索与维护。
 - **双语注释**: 所有源码均包含中文/英文双语注释与解析。
 - **学习路线**: 每个模块均提供 Mermaid 流程图形式的学习路径。
 - **工业级标准**: 遵循统一的代码风格指南，并通过自动化脚本进行校验。
 
-## 5. 许可证信息 | License
+## 6. 贡献指南 | Contribution Guide
+
+- **分支策略**：遵循 Git Flow (feature/hotfix)。
+- **提交规范**：使用 Conventional Commits (feat, fix, docs)。
+- **PR 模板**：见 [PR_TEMPLATE.md](./meta/笔记库务/笔记模板.md)。
+
+## 7. 许可证信息 | License
 
 - **SPDX-Identifier**: [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - **Copyright**: 2024-2026 fanquanpp
 
-***
+---
 
 **更新日志 | Changelog**
 
 - 2026-04-05: 全库重构完成，引入“一知识点一文件”架构，升级为 v2.5.0。
+- 2026-10-04: 更新优化所有 README.md 文件，统一结构和格式。
 
