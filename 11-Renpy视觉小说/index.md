@@ -6,12 +6,12 @@
 
 ```mermaid
 graph TD
-    A[剧本基础 (Say/Menu) | Scripting Basics] --> B[角色与立绘 | Characters & Images]
-    B --> C[ATL 动画语言 | ATL Animation]
-    C --> D[变量与条件判断 | Logic & Variables]
-    D --> E[Python 脚本集成 | Python Integration]
-    E --> F[Screen 界面系统 | Screens UI]
-    F --> G[多语言与存档优化 | Localization & Save Optimization]
+    A["剧本基础 (Say/Menu) | Scripting Basics"] --> B["角色与立绘 | Characters & Images"]
+    B --> C["ATL 动画语言 | ATL Animation"]
+    C --> D["变量与条件判断 | Logic & Variables"]
+    D --> E["Python 脚本集成 | Python Integration"]
+    E --> F["Screen 界面系统 | Screens UI"]
+    F --> G["多语言与存档优化 | Localization & Save Optimization"]
 ```
 
 ## 2. 详细路径 | Detailed Path

@@ -6,12 +6,12 @@
 
 ```mermaid
 graph TD
-    A[C 基础语法 | C Basics] --> B[指针与内存 | Pointers & Memory]
-    B --> C[数据结构 (C 实现) | Data Structures in C]
-    C --> D[C++ 核心语法 | C++ Core Syntax]
-    D --> E[STL & 泛型编程 | STL & Generic Programming]
-    E --> F[系统编程 & 并发 | Systems & Concurrency]
-    F --> G[大型项目实战 | Large-scale Projects]
+    A["C 基础语法 | C Basics"] --> B["指针与内存 | Pointers & Memory"]
+    B --> C["数据结构 (C 实现) | Data Structures in C"]
+    C --> D["C++ 核心语法 | C++ Core Syntax"]
+    D --> E["STL & 泛型编程 | STL & Generic Programming"]
+    E --> F["系统编程 & 并发 | Systems & Concurrency"]
+    F --> G["大型项目实战 | Large-scale Projects"]
 ```
 
 ## 2. 详细路径 | Detailed Path

@@ -6,12 +6,12 @@
 
 ```mermaid
 graph TD
-    A[HTML5 & CSS3 基础 | HTML & CSS Basics] --> B[响应式布局 | Responsive Layouts]
-    B --> C[JS 核心语法 | JS Core Syntax]
-    C --> D[DOM 操作 & Web API | DOM & Web API]
-    D --> E[TypeScript 进阶 | TypeScript Advanced]
-    E --> F[现代框架 (Vue/React) | Modern Frameworks]
-    F --> G[前端工程化与性能优化 | Tooling & Performance]
+    A["HTML5 & CSS3 基础 | HTML & CSS Basics"] --> B["响应式布局 | Responsive Layouts"]
+    B --> C["JS 核心语法 | JS Core Syntax"]
+    C --> D["DOM 操作 & Web API | DOM & Web API"]
+    D --> E["TypeScript 进阶 | TypeScript Advanced"]
+    E --> F["现代框架 (Vue/React) | Modern Frameworks"]
+    F --> G["前端工程化与性能优化 | Tooling & Performance"]
 ```
 
 ## 2. 详细路径 | Detailed Path

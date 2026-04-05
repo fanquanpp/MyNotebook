@@ -6,13 +6,13 @@
 
 ```mermaid
 graph TD
-    A[SQL 基础 (CRUD) | SQL Basics] --> B[数据类型与约束 | Data Types]
-    B --> C[函数与聚合 | Functions]
-    C --> D[多表联查 (Joins) | Joins]
-    D --> E[索引与性能优化 | Indexing]
-    E --> F[高级查询 (CTE/Window) | Advanced SQL]
-    F --> G[事务与并发控制 | Transactions]
-    G --> H[架构设计与分库分表 | Architecture]
+    A["SQL 基础 (CRUD) | SQL Basics"] --> B["数据类型与约束 | Data Types"]
+    B --> C["函数与聚合 | Functions"]
+    C --> D["多表联查 (Joins) | Joins"]
+    D --> E["索引与性能优化 | Indexing"]
+    E --> F["高级查询 (CTE/Window) | Advanced SQL"]
+    F --> G["事务与并发控制 | Transactions"]
+    G --> H["架构设计与分库分表 | Architecture"]
 ```
 
 ## 2. 详细路径 | Detailed Path

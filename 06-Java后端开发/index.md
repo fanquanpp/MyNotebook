@@ -6,12 +6,12 @@
 
 ```mermaid
 graph TD
-    A[Java 基础语法 | Java Basics] --> B[面向对象进阶 | Advanced OOP]
-    B --> C[数据结构 (Java) | Data Structures in Java]
-    C --> D[Java 核心库 (Collections/Concurrency) | Core Java Libraries]
-    D --> E[MySQL 数据库基础 | MySQL Basics]
-    E --> F[Spring Boot 框架 | Spring Boot Framework]
-    F --> G[RESTful 服务开发 | RESTful Services]
+    A["Java 基础语法 | Java Basics"] --> B["面向对象进阶 | Advanced OOP"]
+    B --> C["数据结构 (Java) | Data Structures in Java"]
+    C --> D["Java 核心库 (Collections/Concurrency) | Core Java Libraries"]
+    D --> E["MySQL 数据库基础 | MySQL Basics"]
+    E --> F["Spring Boot 框架 | Spring Boot Framework"]
+    F --> G["RESTful 服务开发 | RESTful Services"]
 ```
 
 ## 2. 详细路径 | Detailed Path

@@ -6,12 +6,12 @@
 
 ```mermaid
 graph TD
-    A[基础语法 | Basic Syntax] --> B[Table 深度解析 | Table in Depth]
-    B --> C[函数式特性 | Functional Lua]
-    C --> D[元表与面向对象 | Metatables & OOP]
-    D --> E[协程与并发 | Coroutines]
-    E --> F[Lua 与 C 交互 | C API & Interop]
-    F --> G[引擎实战 (Redis/Nginx/Love2D) | Real-world Use]
+    A["基础语法 | Basic Syntax"] --> B["Table 深度解析 | Table in Depth"]
+    B --> C["函数式特性 | Functional Lua"]
+    C --> D["元表与面向对象 | Metatables & OOP"]
+    D --> E["协程与并发 | Coroutines"]
+    E --> F["Lua 与 C 交互 | C API & Interop"]
+    F --> G["引擎实战 (Redis/Nginx/Love2D) | Real-world Use"]
 ```
 
 ## 2. 详细路径 | Detailed Path

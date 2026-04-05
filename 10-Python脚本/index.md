@@ -6,14 +6,14 @@
 
 ```mermaid
 graph TD
-    A[基础语法 | Basic Syntax] --> B[常用算法 | Common Algorithms]
-    B --> B1[排序 | Sorting]
-    B --> B2[搜索 | Searching]
-    B1 --> C[高级算法 | Advanced Algorithms]
+    A["基础语法 | Basic Syntax"] --> B["常用算法 | Common Algorithms"]
+    B --> B1["排序 | Sorting"]
+    B --> B2["搜索 | Searching"]
+    B1 --> C["高级算法 | Advanced Algorithms"]
     B2 --> C
-    C --> C1[动态规划 | Dynamic Programming]
-    C --> C2[图论 | Graph Theory]
-    C1 --> D[实战项目 | Real-world Projects]
+    C --> C1["动态规划 | Dynamic Programming"]
+    C --> C2["图论 | Graph Theory"]
+    C1 --> D["实战项目 | Real-world Projects"]
     C2 --> D
 ```
 
