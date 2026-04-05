@@ -1,14 +1,20 @@
-# MyNotebook | 个人学习笔记库
+# MyNotebook | 个人综合学习笔记库
 
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v2.5.1
+版本：v2.5.2
 -->
 
 ## 1. 项目简介 | Introduction
 
-MyNotebook 是一个综合性个人学习笔记库，用于日常学习和复习查阅。涵盖 C/C++、Web 前端、Python/Java 后端、MySQL 数据库及游戏开发等多个技术领域。采用「一知识点一文件」的深度解析模式，旨在提供工业级的自学参考资料。
+MyNotebook 是 fanquanpp 维护的综合性个人学习笔记库，专注于提供高质量、系统化的技术学习资料。本仓库采用「一知识点一文件」的深度解析模式，涵盖 C/C++、Web 前端、Python/Java 后端、MySQL 数据库及游戏开发等多个技术领域，旨在为自学者提供工业级的参考资料。
+
+### 仓库定位
+
+- **学习资源中心**：汇集各领域核心知识点，形成完整的学习体系
+- **技术文档库**：提供详细的技术解析和实践指南
+- **个人知识管理**：系统化整理个人学习成果，便于复习和查阅
 
 **使用说明：**
 
@@ -22,7 +28,13 @@ MyNotebook 是一个综合性个人学习笔记库，用于日常学习和复习
 - QQ：1839243393
 - 欢迎提意见交流或反馈问题
 
-This repository is a comprehensive personal learning notebook maintained by fanquanpp, used for daily learning and future review. It covers multiple technical domains including C/C++, Web frontend, Python/Java backend, MySQL database, and game development. It adopts a "one knowledge point per file" structure for in-depth analysis, aiming to provide industrial-grade self-learning references.
+This repository is a comprehensive personal learning notebook maintained by fanquanpp, dedicated to providing high-quality, systematic technical learning materials. Adopting a "one knowledge point per file" structure for in-depth analysis, it covers multiple technical domains including C/C++, Web frontend, Python/Java backend, MySQL database, and game development, aiming to provide industrial-grade references for self-learners.
+
+### Repository Positioning
+
+- **Learning Resource Center**: Collects core knowledge points from various fields to form a complete learning system
+- **Technical Documentation Library**: Provides detailed technical analysis and practical guides
+- **Personal Knowledge Management**: Systematically organizes personal learning achievements for easy review and reference
 
 **Usage Notes:**
 
@@ -84,6 +96,8 @@ bash meta/scripts/verify.sh
 - **工业级标准**：遵循统一的代码风格指南，并通过自动化脚本进行校验
 - **全面覆盖**：涵盖从基础语法到高级应用的完整知识体系
 - **实战导向**：提供丰富的代码示例和实际应用场景
+- **结构清晰**：采用系统化的目录结构，便于导航和查找
+- **持续更新**：定期更新内容，保持知识的时效性和准确性
 
 ## 6. 贡献指南 | Contribution Guide
 
