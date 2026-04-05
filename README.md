@@ -1,4 +1,4 @@
-# MyNotebook |个人向资料阅览站
+# MyNotebook | 个人向资料阅览站
 
 <!--
 作者：fanquanpp
@@ -33,7 +33,7 @@ This repository is a personal learning notebook maintained by fanquanpp, used fo
 **Contact Information:**
 
 - Email: <fanquanpangpiing@163.com>
-- QQ： 1839243393&#x20;
+- QQ： 1839243393
 - Welcome to provide feedback or exchange ideas
 
 ## 2. 目录索引 | Directory Index
@@ -100,4 +100,5 @@ bash meta/scripts/verify.sh
 
 - 2026-04-05: 全库重构完成，引入“一知识点一文件”架构，升级为 v2.5.0。
 - 2026-10-04: 更新优化所有 README.md 文件，统一结构和格式。
+- 2026-04-06: 再次更新优化 README.md 文件，确保内容一致性。
 
