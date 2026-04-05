@@ -12,7 +12,7 @@ This module explores TypeScript's strong typing system and its application in la
 
 ## 2. 目录索引 | Directory Index
 - [TS 基础 (一知识点一文件) | Basics](./basics/README.md)
-- [进阶技巧与实战 | Advanced](./advanced/compilation_performance.md)
+- [进阶技巧与实战 | Advanced](./advanced/01-编译与性能优化.md)
 - [代码示例 | Examples](./examples/advanced_types.ts)
 
 ## 3. 环境要求 | Environment Requirements
@@ -29,7 +29,7 @@ npm install -g typescript
 tsc --version
 
 # 3. 运行首个示例
-tsc --strict 基础/TS-基础类型-1.0.md --noEmit
+tsc --strict basics/02-基础类型系统.md --noEmit
 ```
 
 ## 5. 贡献指南 | Contribution Guide

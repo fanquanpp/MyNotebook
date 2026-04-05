@@ -12,7 +12,7 @@ This module covers Ren'Py engine core development, including scripting, ATL, SL2
 
 ## 2. 目录索引 | Directory Index
 - [Ren'Py 基础 (一知识点一文件) | Basics](./basics/README.md)
-- [动画与高级特性 | Advanced](./advanced/01_atl_animations.md)
+- [动画与高级特性 | Advanced](./advanced/01-ATL动画语言.md)
 - [核心逻辑示例 | Examples](./algorithms/save_load_optimization.rpy)
 
 ## 3. 环境要求 | Environment Requirements

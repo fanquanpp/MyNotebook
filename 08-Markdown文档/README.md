@@ -9,8 +9,8 @@
 - **编辑器推荐**: VS Code + Markdown All in One / Typora
 
 ## 3. 目录索引 | Directory Index
-- [Markdown 基础 (一知识点一文件) | Basics](./basics/01_introduction.md)
-- [核心语法汇总 | Advanced](./advanced/core_syntax.md)
+- [Markdown 基础 (一知识点一文件) | Basics](./basics/01-Markdown概述.md)
+- [核心语法汇总 | Advanced](./advanced/01-核心语法汇总.md)
 
 ## 4. 快速开始
 1. 学习基本语法：阅读 `0.0-Markdown基础.md`。

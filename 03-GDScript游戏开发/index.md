@@ -18,13 +18,9 @@ graph TD
 
 | 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
 | :--- | :--- | :--- | :--- |
-| 入门 | [Lua 基础语法](../14-Lua/Lua-基础语法-1.0.md) | 10h | 无 |
-| 初级 | [GDScript 基础](../03-GDScript游戏开发/01-GDScript基础概念与语法.md) | 15h | 无 |
-| 初级 | [Ren'Py 入门](../11-Renpy视觉小说/语法/基础/入门语法.md) | 10h | 无 |
-| 中级 | [GDScript 进阶](../03-GDScript游戏开发/03-进阶特性.md) | 20h | GDScript 基础 |
-| 中级 | [ATL 动画语言 (Ren'Py)](../11-Renpy视觉小说/视觉/中级/ATL动画语言.md) | 15h | Ren'Py 基础 |
-| 高级 | [游戏性能优化](../03-GDScript游戏开发/04-性能优化最佳实践.md) | 25h | 进阶语法 |
-| 高级 | [打字机效果 (Ren'Py)](../11-Renpy视觉小说/algorithms/typewriter_renpy.rpy) | 5h | Ren'Py 进阶 |
+| 入门 | [GDScript 基础体系](./basics/README.md) | 15h | 无 |
+| 进阶 | [信号、异步与注解](./advanced/01-信号与异步.md) | 10h | 基础语法 |
+| 实战 | [性能优化与进阶技巧](./advanced/02-性能优化与版本差异.md) | 10h | GDScript 基础 |
 
 ## 3. 学习提示 | Tips
 - **代码重构**：在 Godot 中优先使用 `Signals` 而不是硬编码引用。

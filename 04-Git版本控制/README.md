@@ -9,8 +9,8 @@
 - **协议**: SSH / HTTPS
 
 ## 2. 目录索引 | Directory Index
-- [Git 基础 (一知识点一文件) | Basics](./basics/01_introduction.md)
-- [Git 原理与进阶 | Advanced](./advanced/core_internals.md)
+- [Git 基础 (一知识点一文件) | Basics](./basics/01-Git概述.md)
+- [Git 原理与进阶 | Advanced](./advanced/01-Git原理与对象模型.md)
 
 ## 4. 快速开始
 1. 配置个人信息：`git config --global user.name "Your Name"`

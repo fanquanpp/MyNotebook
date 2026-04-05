@@ -20,7 +20,7 @@ graph TD
 | :--- | :--- | :--- | :--- |
 | 入门 | [Java 基础知识体系](./basics/README.md) | 30h | 无 |
 | 进阶 | [数据结构与算法 (Java)](./algorithms/README.md) | 20h | 基础语法 |
-| 框架 | [Spring Boot 核心实战](./frameworks/spring_boot_notes.md) | 25h | Java 基础 |
+| 框架 | [Spring Boot 核心实战](./frameworks/01-SpringBoot核心实战.md) | 25h | Java 基础 |
 
 ## 3. 学习提示 | Tips
 - **代码重构**：尝试使用 Java 8+ 的 `Stream API` 和 `Optional` 来简化逻辑。

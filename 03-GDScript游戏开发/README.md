@@ -8,7 +8,7 @@
 
 ## 2. 目录索引 | Directory Index
 - [GDScript 基础 (一知识点一文件) | Basics](./basics/README.md)
-- [进阶特性与优化 | Advanced](./advanced/01_signals_async.md)
+- [进阶特性与优化 | Advanced](./advanced/01-信号与异步.md)
 - [算法实现 | Algorithms](./algorithms/README.md)
 - [数据结构 | Data Structures](./data-structures/README.md)
 

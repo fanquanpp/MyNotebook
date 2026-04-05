@@ -10,7 +10,7 @@
 
 ## 2. 目录索引 | Directory Index
 - [Lua 基础 (一知识点一文件) | Basics](./basics/README.md)
-- [高级特性与元表 | Advanced](./advanced/01_metatables_oop.md)
+- [高级特性与元表 | Advanced](./advanced/01-元表与OOP.md)
 - [算法实现 | Algorithms](./algorithms/README.md)
 - [数据结构 | Data Structures](./data-structures/README.md)
 

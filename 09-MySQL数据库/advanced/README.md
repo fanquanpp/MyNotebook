@@ -6,13 +6,13 @@
 
 | 序号 | 知识点 (Topic) | 文件 (File) | 核心内容 |
 |---|---|---|---|
-| 01 | **索引原理与优化** | [01_index_optimization.md](./01_index_optimization.md) | B+ 树、聚簇索引、执行计划、Explain |
+| 01 | **索引原理与优化** | [01-索引与优化.md](./01-索引与优化.md) | B+ 树、聚簇索引、执行计划、Explain |
 
 ## 2. 事务与架构 (Transactions & Architecture)
 
 | 序号 | 知识点 (Topic) | 文件 (File) | 核心内容 |
 |---|---|---|---|
-| 02 | **事务与锁机制** | [02_transactions_locks.md](./02_transactions_locks.md) | ACID、隔离级别、MVCC 原理、死锁 |
+| 02 | **事务与锁机制** | [02-事务与锁.md](./02-事务与锁.md) | ACID、隔离级别、MVCC 原理、死锁 |
 
 ---
 ### 更新日志 (Changelog)

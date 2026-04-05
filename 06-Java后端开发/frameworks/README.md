@@ -6,7 +6,7 @@
 
 | 框架名称 | 源码/笔记文件 | 核心内容 |
 |---|---|---|
-| **Spring Boot** | [spring_boot_notes.md](./spring_boot_notes.md) | 自动配置、起步依赖、实战应用、监控日志 |
+| **Spring Boot** | [01-SpringBoot核心实战.md](./01-SpringBoot核心实战.md) | 自动配置、起步依赖、实战应用、监控日志 |
 
 ## 2. 学习建议 (Learning Tips)
 - **底层原理**: 建议先掌握 [Java 基础知识](../basics/README.md) 后再深入框架源码。

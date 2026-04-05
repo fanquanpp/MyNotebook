@@ -11,7 +11,7 @@
 This module covers C language basics, memory management, and classic algorithms for systems and high-performance programming.
 
 ## 2. 目录索引 | Directory Index
-- [基础语法 (一知识点一文件) | Basics](./basics/01_introduction.md)
+- [基础语法 (一知识点一文件) | Basics](./basics/README.md)
 - [算法实现 (C 实现) | Algorithms](./algorithms/README.md)
 - [数据结构 (C 实现) | Data Structures](./data-structures/README.md)
 

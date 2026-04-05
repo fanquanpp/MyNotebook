@@ -6,16 +6,16 @@
 
 | 序号 | 知识点 (Topic) | 文件 (File) | 核心内容 |
 |---|---|---|---|
-| 01 | **概述与环境** | [01_introduction_env.md](./01_introduction_env.md) | GDScript 特点、Godot 集成、脚本基本结构 |
-| 02 | **基础语法** | [02_syntax_fundamentals.md](./02_syntax_fundamentals.md) | 静态类型、Vector2/3 类型、控制流、模式匹配 |
-| 03 | **函数与面向对象** | [03_functions_oop.md](./03_functions_oop.md) | 类定义、继承、构造函数、Lambda 表达式 |
+| 01 | **概述与环境** | [01-概述与环境.md](./01-概述与环境.md) | GDScript 特点、Godot 集成、脚本基本结构 |
+| 02 | **基础语法** | [02-基础语法.md](./02-基础语法.md) | 静态类型、Vector2/3 类型、控制流、模式匹配 |
+| 03 | **函数与面向对象** | [03-函数与面向对象.md](./03-函数与面向对象.md) | 类定义、继承、构造函数、Lambda 表达式 |
 
 ## 2. 进阶特性 (Advanced Features)
 
 | 序号 | 知识点 (Topic) | 文件 (File) | 核心内容 |
 |---|---|---|---|
-| 04 | **信号、异步与注解** | [01_signals_async.md](../advanced/01_signals_async.md) | 观察者模式、Await 协程、@export 注解体系 |
-| 05 | **优化与进阶技巧** | [02_performance_meta.md](../advanced/02_performance_meta.md) | 静态类型优化、内存管理、元编程、版本差异 |
+| 04 | **信号、异步与注解** | [01-信号与异步.md](../advanced/01-信号与异步.md) | 观察者模式、Await 协程、@export 注解体系 |
+| 05 | **优化与进阶技巧** | [02-性能优化与版本差异.md](../advanced/02-性能优化与版本差异.md) | 静态类型优化、内存管理、元编程、版本差异 |
 
 ---
 ### 更新日志 (Changelog)

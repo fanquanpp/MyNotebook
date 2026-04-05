@@ -6,20 +6,20 @@
 
 | 序号 | 知识点 (Topic) | 文件 (File) | 核心内容 |
 |---|---|---|---|
-| 01 | **概述与原理** | [01_introduction_env.md](./01_introduction_env.md) | 引擎特点、层级结构、回滚机制、环境搭建 |
-| 02 | **基础脚本语法** | [02_scripting_fundamentals.md](./02_scripting_fundamentals.md) | 角色定义、对话、图像控制、Jump/Call 逻辑 |
+| 01 | **概述与原理** | [01-概述与原理.md](./01-概述与原理.md) | 引擎特点、层级结构、回滚机制、环境搭建 |
+| 02 | **基础脚本语法** | [02-基础脚本语法.md](./02-基础脚本语法.md) | 角色定义、对话、图像控制、Jump/Call 逻辑 |
 
 ## 2. 视觉与动画 (Visuals)
 
 | 序号 | 知识点 (Topic) | 文件 (File) | 核心内容 |
 |---|---|---|---|
-| 03 | **ATL 动画语言** | [01_atl_animations.md](../advanced/01_atl_animations.md) | 线性插值、平滑变换、呼吸/抖动效果实战 |
+| 03 | **ATL 动画语言** | [01-ATL动画语言.md](../advanced/01-ATL动画语言.md) | 线性插值、平滑变换、呼吸/抖动效果实战 |
 
 ## 3. 进阶与工程化 (Advanced)
 
 | 序号 | 知识点 (Topic) | 文件 (File) | 核心内容 |
 |---|---|---|---|
-| 04 | **高级特性与发布** | [02_advanced_features.md](../advanced/02_advanced_features.md) | 屏幕系统、Python 集成、持久化数据、构建打包 |
+| 04 | **高级特性与发布** | [02-高级特性与发布.md](../advanced/02-高级特性与发布.md) | 屏幕系统、Python 集成、持久化数据、构建打包 |
 
 ---
 ### 更新日志 (Changelog)

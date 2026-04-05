@@ -6,18 +6,18 @@
 
 | 序号 | 知识点 (Topic) | 文件 (File) | 核心内容 |
 |---|---|---|---|
-| 01 | **概述与环境** | [01_introduction_env.md](./01_introduction_env.md) | JS 特点、Node vs Browser、ES 标准演进 |
-| 02 | **基本语法** | [02_syntax_fundamentals.md](./02_syntax_fundamentals.md) | 引入方式、let/const、命名规范、严格模式 |
-| 03 | **数据类型与运算** | [03_data_types_operators.md](./03_data_types_operators.md) | 原始/引用类型、typeof、严格相等、?? 运算符 |
-| 04 | **控制流** | [04_control_flow.md](./04_control_flow.md) | switch、for...of 迭代、try-catch 异常处理 |
+| 01 | **概述与环境** | [01-概述与环境.md](./01-概述与环境.md) | JS 特点、Node vs Browser、ES 标准演进 |
+| 02 | **基本语法** | [02-程序结构与基础语法.md](./02-程序结构与基础语法.md) | 引入方式、let/const、命名规范、严格模式 |
+| 03 | **数据类型与运算** | [03-数据类型与运算符.md](./03-数据类型与运算符.md) | 原始/引用类型、typeof、严格相等、?? 运算符 |
+| 04 | **控制流** | [04-控制流.md](./04-控制流.md) | switch、for...of 迭代、try-catch 异常处理 |
 
 ## 2. 核心特性 (Core Features)
 
 | 序号 | 知识点 (Topic) | 文件 (File) | 核心内容 |
 |---|---|---|---|
-| 05 | **函数与闭包** | [05_functions_scope.md](./05_functions_scope.md) | 箭头函数、词法作用域、闭包原理、This 指向 |
-| 06 | **对象与数组** | [06_objects_arrays.md](./06_objects_arrays.md) | 原型链、高阶方法 (map/reduce)、解构赋值 |
-| 07 | **异步编程** | [07_async_promises.md](./07_async_promises.md) | 事件循环、Promise 链式调用、Async/Await |
+| 05 | **函数与闭包** | [05-函数作用域与闭包.md](./05-函数作用域与闭包.md) | 箭头函数、词法作用域、闭包原理、This 指向 |
+| 06 | **对象与数组** | [06-对象与数组.md](./06-对象与数组.md) | 原型链、高阶方法 (map/reduce)、解构赋值 |
+| 07 | **异步编程** | [07-异步编程.md](./07-异步编程.md) | 事件循环、Promise 链式调用、Async/Await |
 
 ---
 ### 更新日志 (Changelog)

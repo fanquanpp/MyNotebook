@@ -15,7 +15,7 @@
 
 ## 2. 目录索引 | Directory Index
 - [JS 基础 (一知识点一文件) | Basics](./basics/README.md)
-- [进阶技巧与实战 | Advanced](./advanced/debugging_performance.md)
+- [进阶技巧与实战 | Advanced](./advanced/01-调试与性能优化.md)
 - [算法实现 | Algorithms](./algorithms/README.md)
 - [交互示例 | Examples](./examples/dom_manipulation.js)
 

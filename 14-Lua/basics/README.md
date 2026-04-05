@@ -6,9 +6,9 @@
 
 | 序号 | 知识点 (Topic) | 文件 (File) | 核心内容 |
 |---|---|---|---|
-| 01 | **概述与环境** | [01_introduction_env.md](./01_introduction_env.md) | Lua 设计哲学、嵌入式开发、安装配置 |
-| 02 | **基本语法** | [02_syntax_fundamentals.md](./02_syntax_fundamentals.md) | 变量作用域、控制流、数值/泛型 for |
-| 03 | **数据类型与 Table** | [03_data_types_table.md](./03_data_types_table.md) | Lua 8 种基础类型、Table 深度解析 |
+| 01 | **概述与环境** | [01-概述与环境.md](./01-概述与环境.md) | Lua 设计哲学、嵌入式开发、安装配置 |
+| 02 | **基本语法** | [02-基础语法.md](./02-基础语法.md) | 变量作用域、控制流、数值/泛型 for |
+| 03 | **数据类型与 Table** | [03-数据类型与Table.md](./03-数据类型与Table.md) | Lua 8 种基础类型、Table 深度解析 |
 
 ---
 ### 更新日志 (Changelog)
