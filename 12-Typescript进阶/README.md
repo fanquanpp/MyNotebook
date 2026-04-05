@@ -3,14 +3,26 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.1
+版本：v1.0.2
 -->
 
 ## 1. 项目简介 | Introduction
 
-本分册深入探讨 TypeScript 强类型系统及其在大型工程中的应用，涵盖从基础类型到复杂工程化配置的全过程。
+本模块是 fanquanpp 个人综合学习笔记库中的 TypeScript 进阶部分，深入探讨 TypeScript 强类型系统及其在大型工程中的应用，涵盖从基础类型到复杂工程化配置的全过程。
 
 This module explores TypeScript's strong typing system and its application in large-scale engineering, from basic types to complex configurations.
+
+### 仓库定位
+
+- **学习资源中心**：提供从基础到高级的 TypeScript 学习指南
+- **技术文档库**：详细解析 TypeScript 核心概念和工程化实践
+- **个人知识管理**：系统化整理 TypeScript 相关知识，便于复习和查阅
+
+**使用说明：**
+
+- 本仓库已开放为公共，允许他人访问和克隆
+- 禁止直接修改本仓库内容
+- 他人使用本仓库内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
 
@@ -45,7 +57,7 @@ This module explores TypeScript's strong typing system and its application in la
 
 - **操作系统**：Windows 10+, Ubuntu 22.04+, macOS 14+
 - **运行时**：Node.js 18+, TypeScript 5.x
-- **最小配置**：2 Core CPU / 4GB RAM / 1GB Disk
+- **最小配置**：2 核心 CPU / 4GB 内存 / 1GB 磁盘
 
 ## 4. 快速开始 | Quick Start
 
@@ -70,15 +82,36 @@ tsc --strict 基础/02-基础类型系统.ts --noEmit
 - **类型系统**：深入探讨 TypeScript 强类型系统的设计与应用
 - **工程化**：涵盖大型 TypeScript 项目的配置与优化
 - **性能优化**：重点讲解 TypeScript 编译与运行性能优化
+- **结构清晰**：按照基础、进阶、算法和数据结构组织内容
+- **双语注释**：关键概念和代码提供中英文对照注释
 
-## 7. 贡献指南 | Contribution Guide
+## 7. 阅读建议 | Reading Guide
+
+1. 按照学习路线的顺序学习，从概述与环境开始，逐步掌握 TypeScript 的各种特性
+2. 结合实际项目练习，加深对 TypeScript 类型系统的理解
+3. 特别关注泛型与工具类型和高级类型技巧部分，这是 TypeScript 的核心
+4. 尝试使用 TypeScript 构建一个完整的项目，巩固所学知识
+
+## 8. 延伸阅读 | Further Reading
+
+- [TypeScript 官方文档](https://www.typescriptlang.org/docs/) <!-- nofollow -->
+- [TypeScript 手册](https://www.typescriptlang.org/docs/handbook/intro.html) <!-- nofollow -->
+- [TypeScript 编程规范](https://github.com/microsoft/TypeScript/wiki/Coding-guidelines) <!-- nofollow -->
+
+## 9. 贡献指南 | Contribution Guide
 
 - **编码规范**：遵循 [TypeScript Style Guide](https://github.com/microsoft/TypeScript/wiki/Coding-guidelines)
 - **严苛模式**：所有示例代码必须通过 `--strict` 校验
 - **提交规范**：使用 Conventional Commits
 - **测试**：提供完整的类型测试和运行测试
 
-## 8. 许可证信息 | License
+## 10. 联系方式 | Contact Information
+
+- 邮箱：<fanquanpangpiing@163.com>
+- QQ：1839243393
+- 欢迎提意见交流或反馈问题
+
+## 11. 许可证信息 | License
 
 - **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - **Copyright**：2024-2026 fanquanpp
@@ -87,6 +120,7 @@ tsc --strict 基础/02-基础类型系统.ts --noEmit
 
 **更新日志 | Changelog**
 
+- 2026-04-06: 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.2
 - 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1
 - 2026-04-05: 体系化升级 README，补全分册索引、环境要求与快速开始
 - 2026-10-04: 更新优化 README.md 文件，统一结构和格式

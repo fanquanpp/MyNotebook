@@ -3,16 +3,28 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.1
+版本：v1.0.2
 -->
 
 > **路径**：`07-Javascript脚本/` | **JavaScript（脚本语言，缩写 JS）**：浏览器与 **Node.js（Node 运行时）** 通用语法与实战
 
 ## 1. 项目简介 | Introduction
 
-收录 **ECMAScript（ECMAScript 语言标准）** 语法、**DOM（文档对象模型）**、异步与模块化及调试优化；目录名保留历史拼写 **Javascript**，正文中统一使用 **JavaScript（JavaScript 脚本语言）**。
+本模块是 fanquanpp 个人综合学习笔记库中的 JavaScript 脚本部分，收录 **ECMAScript（ECMAScript 语言标准）** 语法、**DOM（文档对象模型）**、异步与模块化及调试优化；目录名保留历史拼写 **Javascript**，正文中统一使用 **JavaScript（JavaScript 脚本语言）**。
 
 This module covers ECMAScript syntax, DOM manipulation, asynchronous programming, modularization, and debugging optimization for both browser and Node.js environments.
+
+### 仓库定位
+
+- **学习资源中心**：提供从基础到高级的 JavaScript 脚本学习指南
+- **技术文档库**：详细解析 JavaScript 核心概念和实战技巧
+- **个人知识管理**：系统化整理 JavaScript 相关知识，便于复习和查阅
+
+**使用说明：**
+
+- 本仓库已开放为公共，允许他人访问和克隆
+- 禁止直接修改本仓库内容
+- 他人使用本仓库内容时出现的任何问题与作者无关
 
 ## 2. 技术栈与工具（双语）
 
@@ -70,19 +82,40 @@ This module covers ECMAScript syntax, DOM manipulation, asynchronous programming
 - **代码示例**：提供完整可运行的代码示例，包含详细注释
 - **异步编程**：重点讲解 Promise、async/await 等异步编程模式
 - **模块化**：涵盖 CommonJS、ES 模块等模块化方案
+- **结构清晰**：按照基础、进阶、算法和示例组织内容
+- **双语注释**：关键概念和代码提供中英文对照注释
 
-## 8. 关联章节 | Related Modules
+## 8. 阅读建议 | Reading Guide
+
+1. 按照学习路线的顺序学习，从概述与环境开始，逐步掌握 JavaScript 的各种特性
+2. 结合实际项目练习，加深对 JavaScript 概念的理解
+3. 特别关注异步编程和原型与继承部分，这是 JavaScript 的核心特性
+4. 尝试使用 JavaScript 实现一些交互功能，巩固所学知识
+
+## 9. 延伸阅读 | Further Reading
+
+- [MDN JavaScript 文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript) <!-- nofollow -->
+- [ECMAScript 官方规范](https://tc39.es/ecma262/) <!-- nofollow -->
+- 本仓库：[05-HTML5网页开发](../05-HTML5网页开发/README.md)、[12-Typescript进阶](../12-Typescript进阶/README.md)
+
+## 10. 关联章节 | Related Modules
 
 - **TypeScript（静态类型 JavaScript）**：[`12-Typescript进阶`](../12-Typescript进阶/README.md)  
 - **HTML / CSS**：[`05-HTML5网页开发`](../05-HTML5网页开发/README.md)、[`02-CSS布局`](../02-CSS布局/README.md)
 
-## 9. 贡献指南 | Contribution Guide
+## 11. 贡献指南 | Contribution Guide
 
 - 代码示例需符合 ESLint 规范
 - 提供完整的运行环境和依赖说明
 - 包含性能测试和优化建议
 
-## 10. 许可证信息 | License
+## 12. 联系方式 | Contact Information
+
+- 邮箱：<fanquanpangpiing@163.com>
+- QQ：1839243393
+- 欢迎提意见交流或反馈问题
+
+## 13. 许可证信息 | License
 
 - **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - **Copyright**：2024-2026 fanquanpp
@@ -91,6 +124,7 @@ This module covers ECMAScript syntax, DOM manipulation, asynchronous programming
 
 **更新日志 | Changelog**
 
+- 2026-04-06: 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.2
 - 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1
 - 2026-04-05：说明文件夹名与「JavaScript」标准拼写关系
 - 2026-10-04：更新优化 README.md 文件，统一结构和格式

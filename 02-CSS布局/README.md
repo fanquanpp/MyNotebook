@@ -3,14 +3,26 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.1
+版本：v1.0.2
 -->
 
 ## 1. 项目简介 | Introduction
 
-本目录涵盖现代 Web 开发中的核心布局技术，重点介绍 Flexbox、Grid 及传统布局方案，同时包含 Canvas 绘图相关知识。
+本模块是 fanquanpp 个人综合学习笔记库中的 CSS 布局部分，涵盖现代 Web 开发中的核心布局技术，重点介绍 Flexbox、Grid 及传统布局方案，同时包含 Canvas 绘图相关知识。旨在为 Web 前端开发者提供全面、系统的布局技术指南。
 
-This module covers core layout techniques in modern web development, focusing on Flexbox, Grid, and traditional layout solutions, as well as Canvas drawing knowledge.
+This module covers core layout techniques in modern web development, focusing on Flexbox, Grid, and traditional layout solutions, as well as Canvas drawing knowledge, providing a comprehensive guide for web frontend developers.
+
+### 仓库定位
+
+- **学习资源中心**：提供从基础到高级的 CSS 布局技术学习指南
+- **技术文档库**：详细解析各种布局技术的原理和应用
+- **个人知识管理**：系统化整理 CSS 布局相关知识，便于复习和查阅
+
+**使用说明：**
+
+- 本仓库已开放为公共，允许他人访问和克隆
+- 禁止直接修改本仓库内容
+- 他人使用本仓库内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
 
@@ -51,14 +63,35 @@ This module covers core layout techniques in modern web development, focusing on
 - **浏览器兼容性**：提供各布局技术的浏览器支持情况
 - **性能优化**：包含布局性能优化的最佳实践
 - **Canvas绘图**：提供基础绘图、动画效果和实战示例
+- **结构清晰**：按照基础理论和实践示例组织内容
+- **双语注释**：关键概念和代码提供中英文对照注释
 
-## 7. 贡献指南 | Contribution Guide
+## 7. 阅读建议 | Reading Guide
+
+1. 按照学习路线的顺序学习，从盒模型开始，逐步掌握各种布局技术
+2. 结合实际项目练习，加深对布局技术的理解
+3. 特别关注 Flexbox 和 Grid 布局，这是现代 Web 开发的核心布局技术
+4. 尝试自己实现响应式布局，巩固所学知识
+
+## 8. 延伸阅读 | Further Reading
+
+- [MDN CSS 文档](https://developer.mozilla.org/en-US/docs/Web/CSS) <!-- nofollow -->
+- [CSS-Tricks](https://css-tricks.com/) <!-- nofollow -->
+- 本仓库：[05-HTML5网页开发](../05-HTML5网页开发/README.md)、[07-Javascript脚本](../07-Javascript脚本/README.md)
+
+## 9. 贡献指南 | Contribution Guide
 
 - 推荐使用动画 GIF 演示布局变化
 - 确保代码示例通过 W3C 校验
 - 提供跨浏览器兼容性测试结果
 
-## 8. 许可证信息 | License
+## 10. 联系方式 | Contact Information
+
+- 邮箱：<fanquanpangpiing@163.com>
+- QQ：1839243393
+- 欢迎提意见交流或反馈问题
+
+## 11. 许可证信息 | License
 
 - **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - **Copyright**：2024-2026 fanquanpp
@@ -67,6 +100,7 @@ This module covers core layout techniques in modern web development, focusing on
 
 **更新日志 | Changelog**
 
+- 2026-04-06: 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.2
 - 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1
 - 2026-04-05: 增加 Flexbox 可视化指南与 Grid 布局进阶内容
 - 2026-10-04: 添加 Canvas 绘图知识点，包含基础绘图、动画效果和实战示例

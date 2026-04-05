@@ -3,14 +3,26 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.1
+版本：v1.0.2
 -->
 
 ## 1. 项目简介 | Introduction
 
-本目录收录了 Markdown 基础语法与高级排版技巧，旨在建立一套统一、美观、易读的文档编写规范，确保知识库内容的专业呈现。
+本模块是 fanquanpp 个人综合学习笔记库中的 Markdown 文档部分，收录了 Markdown 基础语法与高级排版技巧，旨在建立一套统一、美观、易读的文档编写规范，确保知识库内容的专业呈现。
 
 This module covers Markdown basic syntax and advanced typesetting techniques, aiming to establish a unified, beautiful, and readable documentation writing standard to ensure professional presentation of knowledge base content.
+
+### 仓库定位
+
+- **学习资源中心**：提供从基础到高级的 Markdown 文档编写学习指南
+- **技术文档库**：详细解析 Markdown 语法和排版技巧
+- **个人知识管理**：系统化整理 Markdown 相关知识，便于复习和查阅
+
+**使用说明：**
+
+- 本仓库已开放为公共，允许他人访问和克隆
+- 禁止直接修改本仓库内容
+- 他人使用本仓库内容时出现的任何问题与作者无关
 
 ## 2. 技术栈说明
 
@@ -56,14 +68,35 @@ This module covers Markdown basic syntax and advanced typesetting techniques, ai
 - **排版技巧**：提供高级排版技巧，提升文档美观度
 - **工具推荐**：推荐适合 Markdown 编写的工具和插件
 - **最佳实践**：收录 Markdown 文档编写的最佳实践
+- **结构清晰**：按照基础和进阶组织内容，便于系统学习
+- **双语注释**：关键概念和示例提供中英文对照注释
 
-## 8. 贡献指南 | Contribution Guide
+## 8. 阅读建议 | Reading Guide
+
+1. 按照学习路线的顺序学习，从 Markdown 概述开始，逐步掌握 Markdown 的各种语法
+2. 结合实际文档编写练习，加深对 Markdown 语法的理解
+3. 特别关注排版技巧部分，这有助于提升文档的美观度和可读性
+4. 尝试使用 Markdown 编写一些实际文档，巩固所学知识
+
+## 9. 延伸阅读 | Further Reading
+
+- [CommonMark 官方规范](https://commonmark.org/) <!-- nofollow -->
+- [GitHub Flavored Markdown 指南](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) <!-- nofollow -->
+- [Markdown 指南](https://www.markdownguide.org/) <!-- nofollow -->
+
+## 10. 贡献指南 | Contribution Guide
 
 - 遵循 CJK/Alphanumeric 间距规范（中英文间留一空格）
 - 图片资源存放在 `assets/` 目录下，使用相对路径引用
 - 提供完整的 Markdown 示例和渲染效果
 
-## 9. 许可证信息 | License
+## 11. 联系方式 | Contact Information
+
+- 邮箱：<fanquanpangpiing@163.com>
+- QQ：1839243393
+- 欢迎提意见交流或反馈问题
+
+## 12. 许可证信息 | License
 
 - **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - **Copyright**：2024-2026 fanquanpp
@@ -72,6 +105,7 @@ This module covers Markdown basic syntax and advanced typesetting techniques, ai
 
 **更新日志 | Changelog**
 
+- 2026-04-06: 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.2
 - 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1
 - 2026-04-05: 初始化 Markdown 基础语法与核心排版笔记
 - 2026-10-04: 更新优化 README.md 文件，统一结构和格式

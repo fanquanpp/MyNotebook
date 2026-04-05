@@ -3,14 +3,26 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.1
+版本：v1.0.2
 -->
 
 ## 1. 项目简介 | Introduction
 
-本分册致力于 Python 脚本开发，涵盖环境搭建、核心语法、算法实现及数据结构。旨在通过 Python 的高效特性，实现办公自动化与数据处理。
+本模块是 fanquanpp 个人综合学习笔记库中的 Python 脚本部分，致力于 Python 脚本开发，涵盖环境搭建、核心语法、算法实现及数据结构。旨在通过 Python 的高效特性，实现办公自动化与数据处理。
 
 This module focuses on Python scripting, covering environments, core syntax, algorithms, and data structures for automation and data analysis.
+
+### 仓库定位
+
+- **学习资源中心**：提供从基础到高级的 Python 脚本学习指南
+- **技术文档库**：详细解析 Python 核心概念和实战技巧
+- **个人知识管理**：系统化整理 Python 相关知识，便于复习和查阅
+
+**使用说明：**
+
+- 本仓库已开放为公共，允许他人访问和克隆
+- 禁止直接修改本仓库内容
+- 他人使用本仓库内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
 
@@ -39,7 +51,7 @@ This module focuses on Python scripting, covering environments, core syntax, alg
 
 - **操作系统**：Windows 10+, Ubuntu 22.04+, macOS 14+
 - **运行时**：Python 3.10 / 3.12+
-- **最小配置**：1 Core CPU / 1GB RAM / 1GB Disk
+- **最小配置**：1 核心 CPU / 1GB 内存 / 1GB 磁盘
 
 ## 4. 快速开始 | Quick Start
 
@@ -66,15 +78,36 @@ source .venv/bin/activate  # Linux/macOS
 - **代码示例**：提供完整可运行的代码示例，包含详细注释
 - **自动化**：重点讲解办公自动化、数据处理等实用场景
 - **性能优化**：收录 Python 性能优化的最佳实践
+- **结构清晰**：按照基础、算法和数据结构组织内容，便于系统学习
+- **双语注释**：关键概念和代码提供中英文对照注释
 
-## 7. 贡献指南 | Contribution Guide
+## 7. 阅读建议 | Reading Guide
+
+1. 按照学习路线的顺序学习，从概述与环境开始，逐步掌握 Python 的各种特性
+2. 结合实际项目练习，加深对 Python 概念的理解
+3. 特别关注函数与模块和面向对象部分，这是 Python 编程的核心
+4. 尝试使用 Python 实现一些自动化脚本，巩固所学知识
+
+## 8. 延伸阅读 | Further Reading
+
+- [Python 官方文档](https://docs.python.org/3/) <!-- nofollow -->
+- [PEP 8 编码规范](https://peps.python.org/pep-0008/) <!-- nofollow -->
+- [Real Python](https://realpython.com/) <!-- nofollow -->
+
+## 9. 贡献指南 | Contribution Guide
 
 - **编码规范**：严格遵循 [PEP 8](https://peps.python.org/pep-0008/)
 - **提交规范**：使用 Conventional Commits
 - **Lint 工具**：推荐使用 `ruff` 或 `flake8`
 - **测试**：提供完整的测试用例
 
-## 8. 许可证信息 | License
+## 10. 联系方式 | Contact Information
+
+- 邮箱：<fanquanpangpiing@163.com>
+- QQ：1839243393
+- 欢迎提意见交流或反馈问题
+
+## 11. 许可证信息 | License
 
 - **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - **Copyright**：2024-2026 fanquanpp
@@ -83,6 +116,7 @@ source .venv/bin/activate  # Linux/macOS
 
 **更新日志 | Changelog**
 
+- 2026-04-06: 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.2
 - 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1
 - 2026-04-05: 体系化升级 README，补全分册索引、环境要求与快速开始
 - 2026-10-04: 更新优化 README.md 文件，统一结构和格式

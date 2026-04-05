@@ -3,14 +3,26 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.1
+版本：v1.0.2
 -->
 
 ## 1. 项目简介 | Introduction
 
-本目录收录了 HTML5 核心标签、全局属性及高级 Web API。基于 MDN 官方文档与最新 Web 标准，旨在构建语义化、高性能、可访问的现代网页结构。
+本模块是 fanquanpp 个人综合学习笔记库中的 HTML5 网页开发部分，收录了 HTML5 核心标签、全局属性及高级 Web API。基于 MDN 官方文档与最新 Web 标准，旨在构建语义化、高性能、可访问的现代网页结构。
 
 This module covers HTML5 core tags, global attributes, and advanced Web APIs. Based on MDN official documentation and the latest web standards, it aims to build semantic, high-performance, and accessible modern web page structures.
+
+### 仓库定位
+
+- **学习资源中心**：提供从基础到高级的 HTML5 网页开发学习指南
+- **技术文档库**：详细解析 HTML5 核心标签和 Web API 的使用方法
+- **个人知识管理**：系统化整理 HTML5 相关知识，便于复习和查阅
+
+**使用说明：**
+
+- 本仓库已开放为公共，允许他人访问和克隆
+- 禁止直接修改本仓库内容
+- 他人使用本仓库内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
 
@@ -51,14 +63,35 @@ This module covers HTML5 core tags, global attributes, and advanced Web APIs. Ba
 - **Web API**：收录常用 Web API 的使用方法与示例
 - **浏览器兼容性**：提供各标签和 API 的浏览器支持情况
 - **可访问性**：重点讲解网页可访问性的实现方法
+- **结构清晰**：按照基础、框架和示例组织内容，便于系统学习
+- **双语注释**：关键概念和代码提供中英文对照注释
 
-## 7. 贡献指南 | Contribution Guide
+## 7. 阅读建议 | Reading Guide
+
+1. 按照学习路线的顺序学习，从概述与语义化开始，逐步掌握 HTML5 的各种特性
+2. 结合实际项目练习，加深对 HTML5 标签和 API 的理解
+3. 特别关注语义化标签的使用，这是现代网页开发的基础
+4. 尝试使用 Web API 实现一些交互功能，巩固所学知识
+
+## 8. 延伸阅读 | Further Reading
+
+- [MDN HTML 文档](https://developer.mozilla.org/en-US/docs/Web/HTML) <!-- nofollow -->
+- [HTML5 官方规范](https://html.spec.whatwg.org/) <!-- nofollow -->
+- 本仓库：[02-CSS布局](../02-CSS布局/README.md)、[07-Javascript脚本](../07-Javascript脚本/README.md)
+
+## 9. 贡献指南 | Contribution Guide
 
 - 新增标签说明需包含：语法、属性、浏览器兼容性、示例
 - 推荐使用 `<section>`, `<article>`, `<aside>` 等语义化容器
 - 提供完整的 HTML 示例代码
 
-## 8. 许可证信息 | License
+## 10. 联系方式 | Contact Information
+
+- 邮箱：<fanquanpangpiing@163.com>
+- QQ：1839243393
+- 欢迎提意见交流或反馈问题
+
+## 11. 许可证信息 | License
 
 - **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - **Copyright**：2024-2026 fanquanpp
@@ -67,6 +100,7 @@ This module covers HTML5 core tags, global attributes, and advanced Web APIs. Ba
 
 **更新日志 | Changelog**
 
+- 2026-04-06: 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.2
 - 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1
 - 2026-04-05: 初始化 HTML5 核心标签与 API 笔记
 - 2026-10-04: 更新优化 README.md 文件，统一结构和格式
