@@ -1,4 +1,4 @@
-# MyNotebook |学习笔记记录
+# MyNotebook |个人向资料阅览站
 
 <!--
 作者：fanquanpp
@@ -8,7 +8,7 @@
 
 ## 1. 项目简介 | Introduction
 
-本仓库是 fanquanpp 的个人学习笔记记录仓库，用于日常学习和后续复习查阅。涵盖 C/C++、Web 前端、Python/Java 后端、MySQL 数据库及游戏开发等领域。采用“一知识点一文件”的深度解析模式，旨在提供工业级的自学参考。
+本仓库是 fanquanpp 的个人综合资料阅览仓库，用于日常学习和后续复习查阅。涵盖 C/C++、Web 前端、Python/Java 后端、MySQL 数据库及游戏开发等领域。采用“一知识点一文件”的深度解析模式，旨在提供工业级的自学参考。
 
 **使用说明：**
 
@@ -38,23 +38,23 @@ This repository is a personal learning notebook maintained by fanquanpp, used fo
 
 ## 2. 目录索引 | Directory Index
 
-| 序号 | 模块名称 | 英文名称 | 路径 |
-| :--- | :--- | :--- | :--- |
-| 00 | GitHub 完整教程 | GitHub Tutorial | [./00-Github完整教程/README.md](./00-Github完整教程/README.md) |
-| 01 | C 语言与算法 | C & Algorithms | [./01-C语言/README.md](./01-C语言/README.md) |
-| 02 | CSS 布局 | CSS Layouts | [./02-CSS布局/README.md](./02-CSS布局/README.md) |
-| 03 | GDScript 游戏开发 | GDScript | [./03-GDScript游戏开发/README.md](./03-GDScript游戏开发/README.md) |
-| 04 | Git 版本控制 | Git Version Control | [./04-Git版本控制/README.md](./04-Git版本控制/README.md) |
-| 05 | HTML5 网页开发 | HTML5 Web | [./05-HTML5网页开发/README.md](./05-HTML5网页开发/README.md) |
-| 06 | Java 后端开发 | Java Backend | [./06-Java后端开发/README.md](./06-Java后端开发/README.md) |
-| 07 | Javascript 脚本 | Javascript | [./07-Javascript脚本/README.md](./07-Javascript脚本/README.md) |
-| 08 | Markdown 文档 | Markdown Doc | [./08-Markdown文档/README.md](./08-Markdown文档/README.md) |
-| 09 | MySQL 数据库 | MySQL Database | [./09-MySQL数据库/README.md](./09-MySQL数据库/README.md) |
-| 10 | Python 脚本 | Python Automation | [./10-Python脚本/README.md](./10-Python脚本/README.md) |
-| 11 | Renpy 视觉小说 | Ren'Py Game | [./11-Renpy视觉小说/README.md](./11-Renpy视觉小说/README.md) |
-| 12 | Typescript 进阶 | TypeScript | [./12-Typescript进阶/README.md](./12-Typescript进阶/README.md) |
-| 13 | C++ 系统编程 | C++ Systems | [./13-C++系统编程/README.md](./13-C++系统编程/README.md) |
-| 14 | Lua 脚本开发 | Lua Scripting | [./14-Lua语言/README.md](./14-Lua语言/README.md) |
+| 序号 | 模块名称          | 英文名称                | 路径                                                         |
+| :- | :------------ | :------------------ | :--------------------------------------------------------- |
+| 00 | GitHub 完整教程   | GitHub Tutorial     | [./00-Github完整教程/README.md](./00-Github完整教程/README.md)     |
+| 01 | C 语言与算法       | C & Algorithms      | [./01-C语言/README.md](./01-C语言/README.md)                   |
+| 02 | CSS 布局        | CSS Layouts         | [./02-CSS布局/README.md](./02-CSS布局/README.md)               |
+| 03 | GDScript 游戏开发 | GDScript            | [./03-GDScript游戏开发/README.md](./03-GDScript游戏开发/README.md) |
+| 04 | Git 版本控制      | Git Version Control | [./04-Git版本控制/README.md](./04-Git版本控制/README.md)           |
+| 05 | HTML5 网页开发    | HTML5 Web           | [./05-HTML5网页开发/README.md](./05-HTML5网页开发/README.md)       |
+| 06 | Java 后端开发     | Java Backend        | [./06-Java后端开发/README.md](./06-Java后端开发/README.md)         |
+| 07 | Javascript 脚本 | Javascript          | [./07-Javascript脚本/README.md](./07-Javascript脚本/README.md) |
+| 08 | Markdown 文档   | Markdown Doc        | [./08-Markdown文档/README.md](./08-Markdown文档/README.md)     |
+| 09 | MySQL 数据库     | MySQL Database      | [./09-MySQL数据库/README.md](./09-MySQL数据库/README.md)         |
+| 10 | Python 脚本     | Python Automation   | [./10-Python脚本/README.md](./10-Python脚本/README.md)         |
+| 11 | Renpy 视觉小说    | Ren'Py Game         | [./11-Renpy视觉小说/README.md](./11-Renpy视觉小说/README.md)       |
+| 12 | Typescript 进阶 | TypeScript          | [./12-Typescript进阶/README.md](./12-Typescript进阶/README.md) |
+| 13 | C++ 系统编程      | C++ Systems         | [./13-C++系统编程/README.md](./13-C++系统编程/README.md)           |
+| 14 | Lua 脚本开发      | Lua Scripting       | [./14-Lua语言/README.md](./14-Lua语言/README.md)               |
 
 ## 3. 快速开始 | Quick Start
 
@@ -87,3 +87,4 @@ bash meta/scripts/verify.sh
 **更新日志 | Changelog**
 
 - 2026-04-05: 全库重构完成，引入“一知识点一文件”架构，升级为 v2.5.0。
+

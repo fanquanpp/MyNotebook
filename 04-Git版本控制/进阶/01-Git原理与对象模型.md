@@ -1,5 +1,5 @@
 <a id="title"></a>
-# Git 核心知识点
+# Git 原理与对象模型
 
 <a id="1"></a>
 ## 1 . Git 概述
@@ -421,24 +421,440 @@ npm run lint
 10. **删除分支**：`git branch -d feature/issue-123`
 
 <a id="11"></a>
-## 11 . 总结
-
-Git 是一个强大的版本控制系统，它提供了一套完整的工具来管理代码的变更和协作。通过掌握 Git 的核心概念和命令，你可以更有效地管理代码，提高开发效率，减少错误。
+## 11 . Git 核心原理
 
 <a id="11.1"></a>
-### 11.1 核心要点
-- **分布式架构**：每个开发者都有完整的代码仓库
-- **三个区域**：工作区、暂存区、版本库
-- **分支系统**：灵活的分支管理
-- **远程协作**：通过远程仓库进行团队协作
-- **工作流程**：选择适合项目的工作流程
+### 11.1 Git 对象模型
+
+Git 使用四种基本对象来存储数据：
+
+#### 11.1.1 Blob 对象
+- 存储文件内容
+- 不包含文件名和路径信息
+- 通过 SHA-1 哈希值唯一标识
+
+```bash
+# 查看 blob 对象
+# 创建一个 blob 对象
+echo "Hello, Git!" | git hash-object -w --stdin
+# 查看 blob 对象内容
+git cat-file -p <blob-hash>
+```
+
+#### 11.1.2 Tree 对象
+- 存储目录结构
+- 包含文件名、权限和指向 blob 或其他 tree 的引用
+- 通过 SHA-1 哈希值唯一标识
+
+```bash
+# 查看 tree 对象
+# 创建一个 tree 对象（Git 内部操作）
+git write-tree
+# 查看 tree 对象内容
+git cat-file -p <tree-hash>
+```
+
+#### 11.1.3 Commit 对象
+- 存储提交信息
+- 包含作者、日期、提交信息、指向 tree 对象的引用
+- 通过 SHA-1 哈希值唯一标识
+
+```bash
+# 查看 commit 对象
+# 查看提交的内容
+git cat-file -p <commit-hash>
+```
+
+#### 11.1.4 Tag 对象
+- 存储标签信息
+- 包含标签名称、创建者、日期、标签信息、指向 commit 对象的引用
+- 通过 SHA-1 哈希值唯一标识
+
+```bash
+# 查看 tag 对象
+# 创建一个带注释的标签
+git tag -a v1.0.0 -m "Version 1.0.0"
+# 查看 tag 对象内容
+git cat-file -p v1.0.0
+```
 
 <a id="11.2"></a>
-### 11.2 学习建议
-- **实践**：通过实际项目练习 Git 命令
-- **理解**：掌握 Git 的核心概念和工作原理
-- **规范**：遵循 Git 最佳实践和团队规范
-- **工具**：使用合适的 Git 工具提高效率
+### 11.2 Git 存储机制
+
+#### 11.2.1 对象存储
+- Git 将对象存储在 `.git/objects` 目录中
+- 对象按哈希值的前两位作为目录名，后38位作为文件名
+- 采用压缩存储，节省空间
+
+```bash
+# 查看对象存储目录
+ls -la .git/objects/
+```
+
+#### 11.2.2 引用存储
+- 分支：`.git/refs/heads/`
+- 标签：`.git/refs/tags/`
+- 远程分支：`.git/refs/remotes/`
+
+```bash
+# 查看分支引用
+cat .git/refs/heads/main
+```
+
+#### 11.2.3 HEAD 引用
+- 指向当前所在的分支或提交
+- 存储在 `.git/HEAD` 文件中
+
+```bash
+# 查看 HEAD 引用
+cat .git/HEAD
+```
+
+<a id="11.3"></a>
+### 11.3 Git 哈希算法
+
+- 使用 SHA-1 哈希算法
+- 生成 40 位十六进制字符串
+- 确保数据完整性
+- 用于唯一标识 Git 对象
+
+```bash
+# 计算文件的哈希值
+git hash-object <file>
+```
+
+<a id="11.4"></a>
+### 11.4 Git 分支实现原理
+
+- 分支本质上是指向提交的指针
+- 创建分支只是创建一个新的指针文件
+- 切换分支只是修改 HEAD 指向
+
+```bash
+# 创建分支的底层操作
+# 手动创建一个分支
+echo <commit-hash> > .git/refs/heads/new-branch
+```
+
+<a id="11.5"></a>
+### 11.5 Git 合并机制
+
+#### 11.5.1 快进合并（Fast-forward）
+- 当目标分支是当前分支的直接祖先时
+- 只需移动分支指针
+
+#### 11.5.2 三方合并（3-way merge）
+- 当两个分支有不同的提交历史时
+- 找到共同祖先，合并三个版本
+
+#### 11.5.3 冲突解决
+- 当两个分支修改了同一文件的同一部分时
+- 需要手动解决冲突
+
+<a id="11.6"></a>
+### 11.6 Git 垃圾回收
+
+- Git 自动进行垃圾回收
+- 清理未引用的对象
+- 压缩对象存储
+
+```bash
+# 手动执行垃圾回收
+git gc
+# 查看垃圾回收统计信息
+git gc --verbose
+```
+
+<a id="11.7"></a>
+### 11.7 Git 索引（暂存区）
+
+- 存储在 `.git/index` 文件中
+- 是工作区和版本库之间的桥梁
+- 记录文件的状态和元数据
+
+```bash
+# 查看索引内容
+git ls-files --stage
+```
+
+<a id="12"></a>
+## 12 . Git 内部操作
+
+<a id="12.1"></a>
+### 12.1 底层命令
+
+```bash
+# 查看 Git 版本
+git --version
+
+# 查看 Git 配置
+git config --list
+
+# 查看 Git 状态
+git status
+
+# 查看 Git 提交历史
+git log
+
+# 查看 Git 对象
+git cat-file -t <hash>  # 查看对象类型
+git cat-file -p <hash>  # 查看对象内容
+
+# 查看 Git 引用
+git show-ref
+
+# 查看 Git 分支
+git branch -v
+
+# 查看 Git 远程仓库
+git remote -v
+
+# 查看 Git 标签
+git tag -l
+```
+
+<a id="12.2"></a>
+### 12.2 内部原理示例
+
+#### 12.2.1 提交过程
+
+1. **git add**：将文件内容添加到暂存区，创建 blob 对象
+2. **git commit**：创建 tree 对象和 commit 对象
+3. **更新分支指针**：将当前分支指向新的 commit 对象
+
+#### 12.2.2 分支创建与切换
+
+1. **git branch**：创建新的分支指针文件
+2. **git checkout**：修改 HEAD 指向新的分支
+
+#### 12.2.3 合并过程
+
+1. **git merge**：找到共同祖先
+2. **分析差异**：比较三个版本的差异
+3. **生成新提交**：创建合并提交
+
+<a id="13"></a>
+## 13 . 实际应用案例
+
+<a id="13.1"></a>
+### 13.1 大型项目管理
+
+#### 13.1.1 分支策略
+
+```bash
+# 主分支
+main  # 稳定版本
+
+# 开发分支
+develop  # 集成新功能
+
+# 功能分支
+feature/issue-123  # 开发特定功能
+
+# 发布分支
+release/v1.0.0  # 准备发布
+
+# 热修复分支
+hotfix/bug-456  # 紧急修复
+```
+
+#### 13.1.2 提交规范
+
+```bash
+# 提交消息格式
+<type>(<scope>): <subject>
+
+<body>
+
+<footer>
+
+# 类型
+feat: 新功能
+fix: 修复 bug
+docs: 文档更改
+style: 代码风格更改
+refactor: 代码重构
+test: 测试更改
+chore: 构建或依赖更改
+perf: 性能优化
+revert: 回滚提交
+```
+
+<a id="13.2"></a>
+### 13.2 团队协作
+
+#### 13.2.1 代码审查流程
+
+1. **创建 PR**：开发者创建 Pull Request
+2. **代码审查**：团队成员审查代码
+3. **反馈修改**：开发者根据反馈修改代码
+4. **合并 PR**：代码通过审查后合并
+5. **删除分支**：合并后删除功能分支
+
+#### 13.2.2 冲突解决策略
+
+1. **预防冲突**：频繁拉取和合并
+2. **解决冲突**：仔细检查冲突内容
+3. **测试验证**：解决冲突后进行测试
+
+<a id="13.3"></a>
+### 13.3 持续集成/持续部署
+
+#### 13.3.1 CI/CD 配置
+
+```yaml
+# .github/workflows/ci.yml
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm ci
+      - name: Run tests
+        run: npm test
+      - name: Build
+        run: npm run build
+```
+
+<a id="14"></a>
+## 14 . 常见问题与解决方案（进阶）
+
+<a id="14.1"></a>
+### 14.1 性能问题
+
+**问题**：大型仓库操作缓慢
+**解决方案**：
+- 启用 Git 压缩：`git config --global core.compression 9`
+- 清理垃圾对象：`git gc --aggressive`
+- 使用浅克隆：`git clone --depth 1 <repository-url>`
+- 配置大文件存储：`git lfs install`
+
+**问题**：提交历史过大
+**解决方案**：
+- 使用 `git rebase` 压缩提交
+- 清理历史中的大文件：`git filter-branch` 或 BFG Repo-Cleaner
+
+<a id="14.2"></a>
+### 14.2 安全问题
+
+**问题**：提交了敏感信息
+**解决方案**：
+- 使用 `git filter-branch` 或 BFG Repo-Cleaner 移除敏感信息
+- 重置远程仓库：`git push --force`
+- 通知团队成员重新克隆仓库
+
+**问题**：SSH 密钥管理
+**解决方案**：
+- 生成 SSH 密钥：`ssh-keygen -t ed25519 -C "your.email@example.com"`
+- 添加 SSH 密钥到 ssh-agent：`ssh-add ~/.ssh/id_ed25519`
+- 配置 SSH config 文件：`~/.ssh/config`
+
+<a id="14.3"></a>
+### 14.3 高级操作问题
+
+**问题**：需要修改历史提交
+**解决方案**：
+- 使用 `git rebase -i` 交互式重写历史
+- 注意：不要重写已推送到远程的提交
+
+**问题**：分支管理混乱
+**解决方案**：
+- 定期清理无用分支：`git branch -d <branch-name>`
+- 使用分支命名规范：`feature/`, `bugfix/`, `hotfix/`
+- 定期同步远程分支：`git fetch --prune`
+
+<a id="14.4"></a>
+### 14.4 远程协作问题
+
+**问题**：远程仓库冲突
+**解决方案**：
+- 先拉取远程更改：`git pull --rebase`
+- 解决冲突后再推送：`git push`
+
+**问题**：网络连接问题
+**解决方案**：
+- 配置 HTTP 代理：`git config --global http.proxy http://proxy:port`
+- 使用 SSH 协议替代 HTTPS：`git remote set-url origin git@github.com:user/repo.git`
+
+<a id="15"></a>
+## 15 . Git 最佳实践（进阶）
+
+<a id="15.1"></a>
+### 15.1 性能优化
+
+1. **使用 Git LFS**：管理大文件
+2. **启用自动垃圾回收**：`git config --global gc.auto 256`
+3. **配置 pack 窗口大小**：`git config --global pack.windowMemory 512m`
+4. **使用引用日志**：`git reflog` 查看操作历史
+
+<a id="15.2"></a>
+### 15.2 安全性
+
+1. **使用 SSH 协议**：更安全的认证方式
+2. **签名提交**：`git config --global user.signingkey <gpg-key-id>`
+3. **验证签名**：`git log --show-signature`
+4. **使用 .gitignore**：排除敏感文件
+
+<a id="15.3"></a>
+### 15.3 团队协作
+
+1. **统一分支策略**：使用 GitFlow 或其他标准工作流
+2. **自动化测试**：集成 CI/CD
+3. **代码审查**：使用 Pull Request
+4. **文档管理**：维护 README 和贡献指南
+
+<a id="15.4"></a>
+### 15.4 工具链
+
+1. **Git 客户端**：选择适合自己的客户端
+2. **Git 钩子**：自动化工作流程
+3. **Git 扩展**：git-extras、git-flow 等
+4. **IDE 集成**：利用 IDE 的 Git 集成功能
+
+<a id="16"></a>
+## 16 . 延伸阅读
+
+- [Git 官方文档](https://git-scm.com/doc) <!-- nofollow -->
+- [Pro Git 书籍](https://git-scm.com/book/en/v2) <!-- nofollow -->
+- [GitHub 文档](https://docs.github.com/en/get-started) <!-- nofollow -->
+- [GitLab 文档](https://docs.gitlab.com/) <!-- nofollow -->
+- [Bitbucket 文档](https://support.atlassian.com/bitbucket-cloud/docs/) <!-- nofollow -->
+- [Git 内部原理](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain) <!-- nofollow -->
+- [Git 工作流程](https://www.atlassian.com/git/tutorials/comparing-workflows) <!-- nofollow -->
+
+<a id="17"></a>
+## 17 . 总结
+
+Git 是一个强大的版本控制系统，它的核心是基于对象模型的存储机制。通过理解 Git 的内部原理，你可以更有效地使用 Git，解决复杂的版本控制问题，提高开发效率。
+
+<a id="17.1"></a>
+### 17.1 核心要点
+- **对象模型**：Blob、Tree、Commit、Tag 四种基本对象
+- **存储机制**：基于哈希的高效存储
+- **分支实现**：轻量级的指针系统
+- **合并机制**：快进合并和三方合并
+- **垃圾回收**：自动清理未引用对象
+- **分布式架构**：每个开发者都有完整的仓库
+
+<a id="17.2"></a>
+### 17.2 学习建议
+- **深入理解**：掌握 Git 的内部原理
+- **实践练习**：通过实际项目练习高级操作
+- **工具使用**：利用 Git 工具提高效率
+- **团队协作**：遵循团队的 Git 规范
 - **持续学习**：关注 Git 的新特性和最佳实践
 
-通过不断学习和实践，你将能够熟练使用 Git，成为一名高效的开发者。
+通过不断学习和实践，你将能够熟练使用 Git，成为一名高效的开发者，为项目的成功做出贡献。
