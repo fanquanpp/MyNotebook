@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components & Shadow DOM | 网页组件与影子 DOM</title>
+    <!--
+     * @Author:      Anonymous
+     * @Algorithm:   Web Components (Shadow DOM & Custom Elements)
+     * @Language:    HTML5 & JavaScript (ES2022)
+     * @Description: 演示如何创建自定义 HTML 标签并使用 Shadow DOM 实现样式封装。 | Demonstrate creating custom HTML elements and using Shadow DOM for style encapsulation.
+     * @Teaching:    掌握 customElements.define, attachShadow, slot 等核心 API。 | Mastering customElements.define, attachShadow, slot APIs.
+     -->
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #f0f2f5;
+            padding: 40px;
+        }
+        .outer-style {
+            color: red; /* 这不会影响组件内部的颜色 | This will not affect the color inside the component */
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Components 演示 | Web Components Demo</h1>
+    <p class="outer-style">外部样式：红色 | Outer style: Red</p>
+
+    <!-- 使用自定义组件 | Use the custom component -->
+    <user-card name="Alice" avatar="https://api.dicebear.com/7.x/avataaars/svg?seed=Alice">
+        <span slot="bio">热爱编码的前端工程师。 | Frontend engineer who loves coding.</span>
+    </user-card>
+
+    <user-card name="Bob" avatar="https://api.dicebear.com/7.x/avataaars/svg?seed=Bob">
+        <span slot="bio">喜欢旅行的 UI 设计师。 | UI designer who loves traveling.</span>
+    </user-card>
+
+    <template id="user-card-template">
+        <style>
+            :host {
+                display: block;
+                background: white;
+                border-radius: 8px;
+                padding: 16px;
+                margin-bottom: 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                max-width: 400px;
+            }
+            .card-header {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 12px;
+            }
+            img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                background: #eee;
+            }
+            h2 {
+                margin: 0;
+                color: #1a73e8;
+            }
+            .bio {
+                color: #5f6368;
+                font-style: italic;
+            }
+        </style>
+        <div class="card-header">
+            <img src="" alt="avatar">
+            <h2></h2>
+        </div>
+        <div class="bio">
+            <slot name="bio">这里是默认简介。 | Default bio here.</slot>
+        </div>
+    </template>
+
+    <script>
+        class UserCard extends HTMLElement {
+            constructor() {
+                super();
+                // 1. 附加 Shadow Root | Attach Shadow Root
+                const shadowRoot = this.attachShadow({ mode: 'open' });
+                
+                // 2. 获取模板内容 | Get template content
+                const template = document.getElementById('user-card-template');
+                const content = template.content.cloneNode(true);
+                
+                // 3. 填充数据 | Populate data
+                const name = this.getAttribute('name');
+                const avatar = this.getAttribute('avatar');
+                
+                content.querySelector('h2').textContent = name;
+                content.querySelector('img').src = avatar;
+                
+                // 4. 将内容添加到 Shadow Root | Append content to Shadow Root
+                shadowRoot.appendChild(content);
+            }
+        }
+
+        // 5. 注册自定义组件 | Register the custom element
+        customElements.define('user-card', UserCard);
+    </script>
+</body>
+</html>
