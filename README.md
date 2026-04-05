@@ -52,21 +52,22 @@ This repository is a comprehensive personal learning notebook maintained by fanq
 
 | 序号 | 模块名称          | 英文名称                | 路径                                                         |
 | :--- | :---------------- | :---------------------- | :----------------------------------------------------------- |
-| 00   | GitHub 完整教程   | GitHub Tutorial         | [./00-Github完整教程/README.md](./00-Github完整教程/README.md)     |
-| 01   | C 语言与算法      | C & Algorithms          | [./01-C语言/README.md](./01-C语言/README.md)                   |
-| 02   | CSS 布局          | CSS Layouts             | [./02-CSS布局/README.md](./02-CSS布局/README.md)               |
-| 03   | GDScript 游戏开发 | GDScript Game Development | [./03-GDScript游戏开发/README.md](./03-GDScript游戏开发/README.md) |
-| 04   | Git 版本控制      | Git Version Control     | [./04-Git版本控制/README.md](./04-Git版本控制/README.md)           |
+| 01   | GitHub 完整教程   | GitHub Tutorial         | [./01-Github完整教程/README.md](./01-Github完整教程/README.md)     |
+| 02   | C 语言与算法      | C & Algorithms          | [./02-C语言/README.md](./02-C语言/README.md)                   |
+| 03   | Python 脚本       | Python Scripting        | [./03-Python脚本/README.md](./03-Python脚本/README.md)         |
+| 04   | Java 后端开发     | Java Backend Development | [./04-Java后端开发/README.md](./04-Java后端开发/README.md)         |
 | 05   | HTML5 网页开发    | HTML5 Web Development   | [./05-HTML5网页开发/README.md](./05-HTML5网页开发/README.md)       |
-| 06   | Java 后端开发     | Java Backend Development | [./06-Java后端开发/README.md](./06-Java后端开发/README.md)         |
-| 07   | JavaScript 脚本   | JavaScript              | [./07-Javascript脚本/README.md](./07-Javascript脚本/README.md) |
-| 08   | Markdown 文档     | Markdown Documentation  | [./08-Markdown文档/README.md](./08-Markdown文档/README.md)     |
-| 09   | MySQL 数据库      | MySQL Database          | [./09-MySQL数据库/README.md](./09-MySQL数据库/README.md)         |
-| 10   | Python 脚本       | Python Scripting        | [./10-Python脚本/README.md](./10-Python脚本/README.md)         |
-| 11   | Ren'Py 视觉小说   | Ren'Py Visual Novel     | [./11-Renpy视觉小说/README.md](./11-Renpy视觉小说/README.md)       |
+| 06   | CSS 布局          | CSS Layouts             | [./06-CSS布局/README.md](./06-CSS布局/README.md)               |
+| 07   | Git 版本控制      | Git Version Control     | [./07-Git版本控制/README.md](./07-Git版本控制/README.md)           |
+| 08   | JavaScript 脚本   | JavaScript              | [./08-Javascript脚本/README.md](./08-Javascript脚本/README.md) |
+| 09   | Markdown 文档     | Markdown Documentation  | [./09-Markdown文档/README.md](./09-Markdown文档/README.md)     |
+| 10   | MySQL 数据库      | MySQL Database          | [./10-MySQL数据库/README.md](./10-MySQL数据库/README.md)         |
 | 12   | TypeScript 进阶   | TypeScript Advanced     | [./12-Typescript进阶/README.md](./12-Typescript进阶/README.md) |
-| 13   | C++ 系统编程      | C++ Systems Programming | [./13-C++系统编程/README.md](./13-C++系统编程/README.md)           |
-| 14   | Lua 语言          | Lua Language            | [./14-Lua语言/README.md](./14-Lua语言/README.md)               |
+| 13   | Vue3              | Vue3 Framework          | [./13-Vue3/README.md](./13-Vue3/README.md)                   |
+| 14   | C++ 系统编程      | C++ Systems Programming | [./14-C++系统编程/README.md](./14-C++系统编程/README.md)           |
+| 15   | Lua 语言          | Lua Language            | [./15-Lua语言/README.md](./15-Lua语言/README.md)               |
+| 16   | GDScript 游戏开发 | GDScript Game Development | [./16-GDScript游戏开发/README.md](./16-GDScript游戏开发/README.md) |
+| 17   | Ren'Py 视觉小说   | Ren'Py Visual Novel     | [./17-Renpy视觉小说/README.md](./17-Renpy视觉小说/README.md)       |
 
 ## 3. 环境要求 | Environment Requirements
 
