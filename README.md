@@ -42,10 +42,10 @@ npm install -g markdownlint-cli markdown-link-check
 
 # 3. 执行全局质量检查
 # Windows (PowerShell):
-./verify.ps1
+./meta/scripts/verify.ps1
 
 # Linux/macOS (Bash):
-bash meta/scripts/validate.sh --strict
+bash meta/scripts/verify.sh
 ```
 
 ## 5. 维护者入口 | Maintainer Only
@@ -62,11 +62,11 @@ bash meta/scripts/validate.sh --strict
 
 ### 常用运维命令
 - **Windows (PowerShell)**:
-  - `./verify.ps1`: 执行源码规范校验。
+  - `./meta/scripts/verify.ps1`: 执行源码规范校验。
 - **Linux/macOS (Bash)**:
-  - `bash meta/scripts/validate.sh`: 执行全库质量校验。
+  - `bash meta/scripts/verify.sh`: 执行源码规范校验。
 - **Python 直接运行**:
-  - `python verify.py`: 仅执行源码规范校验。
+  - `python meta/scripts/verify.py`: 仅执行源码规范校验。
   - `python meta/scripts/cleanup.py`: 执行冗余文件清理。
 </details>
 

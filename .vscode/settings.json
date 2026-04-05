@@ -15,5 +15,8 @@
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools" // C++ 使用 clang-format (由 C/C++ 插件提供)
   },
-  "markdownlint.config": ".markdownlint.json" // 指定 markdownlint 配置文件
+  "markdownlint.config": ".markdownlint.json",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  } // 指定 markdownlint 配置文件
 }
