@@ -62,12 +62,12 @@ This repository is a comprehensive personal learning notebook maintained by fanq
 | 08   | JavaScript 脚本   | JavaScript              | [./08-Javascript脚本/README.md](./08-Javascript脚本/README.md) |
 | 09   | Markdown 文档     | Markdown Documentation  | [./09-Markdown文档/README.md](./09-Markdown文档/README.md)     |
 | 10   | MySQL 数据库      | MySQL Database          | [./10-MySQL数据库/README.md](./10-MySQL数据库/README.md)         |
-| 12   | TypeScript 进阶   | TypeScript Advanced     | [./12-Typescript进阶/README.md](./12-Typescript进阶/README.md) |
-| 13   | Vue3              | Vue3 Framework          | [./13-Vue3/README.md](./13-Vue3/README.md)                   |
-| 14   | C++ 系统编程      | C++ Systems Programming | [./14-C++系统编程/README.md](./14-C++系统编程/README.md)           |
-| 15   | Lua 语言          | Lua Language            | [./15-Lua语言/README.md](./15-Lua语言/README.md)               |
-| 16   | GDScript 游戏开发 | GDScript Game Development | [./16-GDScript游戏开发/README.md](./16-GDScript游戏开发/README.md) |
-| 17   | Ren'Py 视觉小说   | Ren'Py Visual Novel     | [./17-Renpy视觉小说/README.md](./17-Renpy视觉小说/README.md)       |
+| 11   | TypeScript 进阶   | TypeScript Advanced     | [./11-Typescript进阶/README.md](./11-Typescript进阶/README.md) |
+| 12   | Vue3              | Vue3 Framework          | [./12-Vue3/README.md](./12-Vue3/README.md)                   |
+| 13   | C++ 系统编程      | C++ Systems Programming | [./13-C++系统编程/README.md](./13-C++系统编程/README.md)           |
+| 14   | Lua 语言          | Lua Language            | [./14-Lua语言/README.md](./14-Lua语言/README.md)               |
+| 15   | GDScript 游戏开发 | GDScript Game Development | [./15-GDScript游戏开发/README.md](./15-GDScript游戏开发/README.md) |
+| 16   | Ren'Py 视觉小说   | Ren'Py Visual Novel     | [./16-Renpy视觉小说/README.md](./16-Renpy视觉小说/README.md)       |
 
 ## 3. 环境要求 | Environment Requirements
 

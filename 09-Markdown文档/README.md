@@ -1,4 +1,4 @@
-# 08-Markdown 文档 | Markdown Documentation
+# 09-Markdown 文档 | Markdown Documentation
 
 <!--
 作者：fanquanpp
@@ -65,11 +65,12 @@ This module focuses on Markdown basic syntax, advanced typesetting techniques, a
 
 ## 7. 核心特色 | Key Features
 
-- **统一规范**：建立一套统一的 Markdown 编写规范
-- **排版技巧**：提供高级排版技巧，提升文档美观度
-- **工具推荐**：推荐适合 Markdown 编写的工具和插件
-- **最佳实践**：收录 Markdown 文档编写的最佳实践
-- **结构清晰**：按照基础和进阶组织内容，便于系统学习
+- **语法规范**：建立一套统一的 Markdown 编写规范和标准
+- **排版技巧**：提供高级排版技巧，提升文档美观度和可读性
+- **工具生态**：推荐适合 Markdown 编写的工具、编辑器和插件
+- **最佳实践**：收录 Markdown 文档编写的最佳实践和常见问题
+- **多平台支持**：讲解不同平台（GitHub、GitLab、Gitee）的 Markdown 特性
+- **结构化文档**：提供如何使用 Markdown 创建结构化文档的方法
 - **双语注释**：关键概念和示例提供中英文对照注释
 
 ## 8. 阅读建议 | Reading Guide

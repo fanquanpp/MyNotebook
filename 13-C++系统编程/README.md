@@ -96,7 +96,7 @@ cmake --build .
 
 ## 10. 关联章节 | Related Sections
 
-- **C（C 语言）**：[`01-C语言`](../01-C语言/README.md)
+- **C（C 语言）**：[`02-C语言`](../02-C语言/README.md)
 
 ## 11. 维护说明 | Maintenance
 

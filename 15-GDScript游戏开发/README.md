@@ -1,4 +1,4 @@
-# 03-GDScript 游戏开发 | GDScript Game Development
+# 15-GDScript 游戏开发 | GDScript Game Development
 
 <!--
 作者：fanquanpp
@@ -6,7 +6,7 @@
 版本：v1.0.2
 -->
 
-> **路径**：`03-GDScript游戏开发/` | **GDScript（Godot 脚本语言）** + **Godot（游戏引擎）**
+> **路径**：`15-GDScript游戏开发/` | **GDScript（Godot 脚本语言）** + **Godot（游戏引擎）**
 
 ## 1. 项目简介 | Introduction
 
@@ -67,11 +67,13 @@ This module focuses on GDScript, the default scripting language for Godot engine
 
 ## 6. 核心特色 | Key Features
 
-- **深度解析**：每个知识点独立成文件，详细讲解原理与应用
-- **代码示例**：提供完整可运行的代码示例，包含详细注释
+- **游戏开发专用**：专为 Godot 游戏引擎设计的脚本语言
+- **Python 风格**：语法类似 Python，学习曲线平缓
+- **信号系统**：强大的信号机制，简化游戏对象间通信
 - **性能优化**：重点讲解 GDScript 性能优化技巧与最佳实践
 - **版本迁移**：提供 Godot 3.x 到 4.x 的迁移指南
-- **结构清晰**：按照基础、进阶、算法和数据结构组织内容
+- **游戏逻辑**：专注于游戏逻辑、AI 行为等游戏开发相关内容
+- **集成开发**：与 Godot 编辑器无缝集成
 - **双语注释**：关键概念和代码提供中英文对照注释
 
 ## 7. 阅读建议 | Reading Guide
@@ -85,12 +87,12 @@ This module focuses on GDScript, the default scripting language for Godot engine
 
 - [Godot 官方文档](https://docs.godotengine.org/) <!-- nofollow -->
 - [GDScript 官方指南](https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/gdscript_basics.html) <!-- nofollow -->
-- 本仓库：[10-Python脚本](../10-Python脚本/README.md)、[11-Renpy视觉小说](../11-Renpy视觉小说/README.md)
+- 本仓库：[03-Python脚本](../03-Python脚本/README.md)、[17-Renpy视觉小说](../17-Renpy视觉小说/README.md)
 
 ## 9. 关联章节 | Related Modules
 
-- **Python（Python 语言）**：Godot 脚本可与 Python 思维对照 [`10-Python脚本`](../10-Python脚本/README.md)  
-- **Ren'Py（视觉小说引擎）**：[`11-Renpy视觉小说`](../11-Renpy视觉小说/README.md)
+- **Python（Python 语言）**：Godot 脚本可与 Python 思维对照 [`03-Python脚本`](../03-Python脚本/README.md)  
+- **Ren'Py（视觉小说引擎）**：[`17-Renpy视觉小说`](../17-Renpy视觉小说/README.md)
 
 ## 10. 贡献指南 | Contribution Guide
 

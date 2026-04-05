@@ -1,4 +1,4 @@
-# 12-Typescript 进阶 | Advanced TypeScript Engineering
+# 11-Typescript 进阶 | Advanced TypeScript Engineering
 
 <!--
 作者：fanquanpp
@@ -79,11 +79,12 @@ tsc --strict 基础/02-基础类型系统.ts --noEmit
 
 ## 6. 核心特色 | Key Features
 
-- **深度解析**：每个知识点独立成文件，详细讲解原理与应用
-- **类型系统**：深入探讨 TypeScript 强类型系统的设计与应用
-- **工程化**：涵盖大型 TypeScript 项目的配置与优化
+- **类型安全**：深入探讨 TypeScript 强类型系统的设计与应用
+- **工程化支持**：提供大型 TypeScript 项目的配置、构建和优化方案
+- **高级类型**：详细讲解泛型、工具类型、条件类型等高级类型特性
+- **JavaScript 兼容**：讲解 TypeScript 与 JavaScript 的互操作
 - **性能优化**：重点讲解 TypeScript 编译与运行性能优化
-- **结构清晰**：按照基础、进阶、算法和数据结构组织内容
+- **IDE 支持**：突出 TypeScript 对现代 IDE 的良好支持
 - **双语注释**：关键概念和代码提供中英文对照注释
 
 ## 7. 阅读建议 | Reading Guide

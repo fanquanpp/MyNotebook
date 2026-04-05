@@ -1,4 +1,4 @@
-# 09-MySQL 数据库 | MySQL Database Persistence
+# 10-MySQL 数据库 | MySQL Database Persistence
 
 <!--
 作者：fanquanpp
@@ -71,11 +71,12 @@ mysql> SELECT VERSION();
 
 ## 6. 核心特色 | Key Features
 
-- **深度解析**：每个知识点独立成文件，详细讲解原理与应用
-- **实战示例**：提供完整可运行的 SQL 示例，包含详细注释
-- **性能优化**：重点讲解 MySQL 性能调优技巧与最佳实践
-- **数据建模**：收录常见业务场景的数据建模案例
-- **结构清晰**：按照基础、进阶和示例组织内容，便于系统学习
+- **关系型数据库**：详细讲解 MySQL 关系型数据库的核心概念和特性
+- **SQL 语法**：提供完整的 SQL 语法参考和实战示例
+- **性能优化**：深入讲解 MySQL 性能调优技巧，包括索引设计、查询优化等
+- **数据建模**：收录常见业务场景的数据建模案例和设计原则
+- **高可用架构**：讲解 MySQL 高可用架构的实现方法
+- **事务管理**：详细分析事务的 ACID 特性和并发控制
 - **双语注释**：关键概念和 SQL 语句提供中英文对照注释
 
 ## 7. 阅读建议 | Reading Guide
@@ -89,7 +90,7 @@ mysql> SELECT VERSION();
 
 - [MySQL 官方文档](https://dev.mysql.com/doc/) <!-- nofollow -->
 - [SQL 标准文档](https://www.iso.org/standard/76451.html) <!-- nofollow -->
-- 本仓库：[06-Java后端开发](../06-Java后端开发/README.md)
+- 本仓库：[04-Java后端开发](../04-Java后端开发/README.md)
 
 ## 9. 贡献指南 | Contribution Guide
 

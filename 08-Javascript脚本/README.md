@@ -79,11 +79,12 @@ This module focuses on ECMAScript syntax standards, DOM manipulation, asynchrono
 
 ## 7. 核心特色 | Key Features
 
-- **深度解析**：每个知识点独立成文件，详细讲解原理与应用
-- **代码示例**：提供完整可运行的代码示例，包含详细注释
-- **异步编程**：重点讲解 Promise、async/await 等异步编程模式
-- **模块化**：涵盖 CommonJS、ES 模块等模块化方案
-- **结构清晰**：按照基础、进阶、算法和示例组织内容
+- **全栈应用**：涵盖浏览器端和 Node.js 服务端的 JavaScript 应用
+- **异步编程**：深入讲解 Promise、async/await 等现代异步编程模式
+- **模块化开发**：涵盖 CommonJS、ES 模块等多种模块化方案
+- **DOM 操作**：详细讲解浏览器 DOM 操作和事件处理
+- **原型继承**：解析 JavaScript 独特的原型继承机制
+- **性能优化**：提供 JavaScript 性能优化的技巧和最佳实践
 - **双语注释**：关键概念和代码提供中英文对照注释
 
 ## 8. 阅读建议 | Reading Guide
@@ -97,11 +98,11 @@ This module focuses on ECMAScript syntax standards, DOM manipulation, asynchrono
 
 - [MDN JavaScript 文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript) <!-- nofollow -->
 - [ECMAScript 官方规范](https://tc39.es/ecma262/) <!-- nofollow -->
-- 本仓库：[05-HTML5网页开发](../05-HTML5网页开发/README.md)、[12-Typescript进阶](../12-Typescript进阶/README.md)
+- 本仓库：[05-HTML5网页开发](../05-HTML5网页开发/README.md)、[11-Typescript进阶](../11-Typescript进阶/README.md)
 
 ## 10. 关联章节 | Related Modules
 
-- **TypeScript（静态类型 JavaScript）**：[`12-Typescript进阶`](../12-Typescript进阶/README.md)  
+- **TypeScript（静态类型 JavaScript）**：[`11-Typescript进阶`](../11-Typescript进阶/README.md)  
 - **HTML / CSS**：[`05-HTML5网页开发`](../05-HTML5网页开发/README.md)、[`06-CSS布局`](../06-CSS布局/README.md)
 
 ## 11. 贡献指南 | Contribution Guide
