@@ -80,13 +80,6 @@ This repository is a comprehensive personal learning notebook maintained by fanq
 ```bash
 # 1. 克隆仓库到当前目录
 git clone https://github.com/fanquanpp/MyNotebook.git .
-
-# 2. 运行环境验证 (需 Python 3.10+)
-# Windows (PowerShell):
-./meta/scripts/verify.ps1
-
-# Linux/macOS (Bash):
-bash meta/scripts/verify.sh
 ```
 
 ## 5. 核心特色 | Key Features
@@ -104,7 +97,6 @@ bash meta/scripts/verify.sh
 
 - **分支策略**：遵循 Git Flow (feature/hotfix) 工作流
 - **提交规范**：使用 Conventional Commits 规范 (feat, fix, docs)
-- **PR 模板**：见 [PR_TEMPLATE.md](./meta/笔记库务/笔记模板.md)
 
 ## 7. 许可证信息 | License
 
@@ -119,4 +111,3 @@ bash meta/scripts/verify.sh
 - 2026-04-06: 更新优化所有 README.md 文件，统一结构和格式，升级为 v2.5.1
 - 2026-04-06: 再次更新优化 README.md 文件，确保内容一致性和准确性
 - 2026-04-06: 深度优化 README.md 描述内容，增加仓库定位说明，提升文档专业性，升级为 v2.5.2
-

@@ -29,13 +29,18 @@ This module focuses on Python scripting, office automation, and data processing.
 
 ### 基础篇 | Basics
 - [01-概述与环境.md](./基础/01-概述与环境.md)
-- [02-基础语法.md](./基础/02-基础语法.md)
-- [03-数据类型与操作.md](./基础/03-数据类型与操作.md)
-- [04-控制流.md](./基础/04-控制流.md)
-- [05-函数与模块.md](./基础/05-函数与模块.md)
-- [06-面向对象.md](./基础/06-面向对象.md)
-- [07-文件操作.md](./基础/07-文件操作.md)
-- [08-异常处理.md](./基础/08-异常处理.md)
+- [02-程序结构与基础语法.md](./基础/02-程序结构与基础语法.md)
+- [03-基础数据类型.md](./基础/03-基础数据类型.md)
+- [04-变量与常量.md](./基础/04-变量与常量.md)
+- [05-运算符与表达式.md](./基础/05-运算符与表达式.md)
+- [06-控制流.md](./基础/06-控制流.md)
+- [07-函数与Lambda.md](./基础/07-函数与Lambda.md)
+- [08-内置数据结构.md](./基础/08-内置数据结构.md)
+- [09-推导式与生成器.md](./基础/09-推导式与生成器.md)
+- [10-面向对象.md](./基础/10-面向对象.md)
+- [11-异常处理.md](./基础/11-异常处理.md)
+- [12-文件IO与with.md](./基础/12-文件IO与with.md)
+- [13-模块与包.md](./基础/13-模块与包.md)
 - [基础篇 README](./基础/README.md)
 
 ### 算法篇 | Algorithms
@@ -44,8 +49,13 @@ This module focuses on Python scripting, office automation, and data processing.
 - [算法篇 README](./算法/README.md)
 
 ### 数据结构篇 | Data Structures
-- [linked_list_py.py](./数据结构/linked_list_py.py)
-- [union_find_py.py](./数据结构/union_find_py.py)
+- [binary_search_tree_py.py](./数据结构/data_structures/binary_search_tree_py.py)
+- [fenwick_tree_py.py](./数据结构/data_structures/fenwick_tree_py.py)
+- [heap_py.py](./数据结构/data_structures/heap_py.py)
+- [linked_list_py.py](./数据结构/data_structures/linked_list_py.py)
+- [segment_tree_py.py](./数据结构/data_structures/segment_tree_py.py)
+- [trie_py.py](./数据结构/data_structures/trie_py.py)
+- [union_find_py.py](./数据结构/data_structures/union_find_py.py)
 - [数据结构篇 README](./数据结构/README.md)
 
 ## 3. 环境要求 | Environment Requirements
@@ -71,7 +81,7 @@ source .venv/bin/activate  # Linux/macOS
 
 ## 5. 学习路线 | Learning Path
 
-`概述与环境` → `基础语法` → `数据类型与操作` → `控制流` → `函数与模块` → `面向对象` → `文件操作` → `异常处理` → `算法实现` → `数据结构`
+`概述与环境` → `程序结构与基础语法` → `基础数据类型` → `变量与常量` → `运算符与表达式` → `控制流` → `函数与Lambda` → `内置数据结构` → `推导式与生成器` → `面向对象` → `异常处理` → `文件IO与with` → `模块与包` → `算法实现` → `数据结构`
 
 ## 6. 核心特色 | Key Features
 

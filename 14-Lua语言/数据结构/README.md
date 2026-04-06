@@ -8,13 +8,11 @@
 | :--- | :--- | :--- | :--- | :--- |
 | **Table 高级用法** | [table_advanced_lua.lua](./table_advanced_lua.lua) | 基础 | 基础 | 模拟集合、栈与类 |
 | **单链表** | [linked_list_lua.lua](./linked_list_lua.lua) | 基础 | 链表 | 基础链表实现 |
-| **并查集** | [union_find_lua.lua](./union_find_lua.lua) | 进阶 | 图论 | 路径压缩与按秩合并优化 |
 
 ## 2. 运行指南 (How to Run)
 ```bash
 # 运行数据结构示例
 lua linked_list_lua.lua
-lua union_find_lua.lua
 ```
 
 ## 3. 可视化 | Visualization

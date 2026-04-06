@@ -63,7 +63,7 @@
 ## 5. 延伸阅读 | Further Reading
 
 - [GitHub 官方文档](https://docs.github.com/) <!-- nofollow -->
-- 本仓库：[07-Git版本控制](../07-Git版本控制/README.md)、[术语表](../笔记库务/术语表.md)
+- 本仓库：[07-Git版本控制](../07-Git版本控制/README.md)
 
 ## 6. 联系方式 | Contact Information
 

@@ -19,9 +19,9 @@ graph TD
 
 | 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
 | :--- | :--- | :--- | :--- |
-| 入门 | [MySQL 基础知识体系](./basics/README.md) | 15h | 无 |
-| 进阶 | [索引原理与优化](./advanced/01_index_optimization.md) | 10h | SQL 基础 |
-| 核心 | [事务与锁机制](./advanced/02_transactions_locks.md) | 10h | 数据库基础 |
+| 入门 | [MySQL 基础知识体系](./基础/README.md) | 15h | 无 |
+| 进阶 | [索引原理与优化](./进阶/01-索引与优化.md) | 10h | SQL 基础 |
+| 核心 | [事务与锁机制](./进阶/02-事务与锁.md) | 10h | 数据库基础 |
 
 ## 3. 学习提示 | Tips
 - **实战**：多使用 `EXPLAIN` 分析你的慢查询。

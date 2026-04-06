@@ -28,14 +28,30 @@ This module focuses on modern C++ features from C++11 onwards, object-oriented p
 ## 2. 目录索引 | Directory Index
 
 ### 基础篇 | Basics
-- [00-快速入门.md](./基础/00-快速入门.md)
-- [01-核心概念与语法.md](./基础/01-核心概念与语法.md)
-- [02-常用代码片段.md](./基础/02-常用代码片段.md)
+- [01-概述与标准.md](./基础/01-概述与标准.md)
+- [02-基础语法与类型系统.md](./基础/02-基础语法与类型系统.md)
+- [03-指针引用与内存管理.md](./基础/03-指针引用与内存管理.md)
+- [04-面向对象.md](./基础/04-面向对象.md)
+- [05-模板与STL.md](./基础/05-模板与STL.md)
+- [06-异常与性能优化.md](./基础/06-异常与性能优化.md)
 - [基础篇 README](./基础/README.md)
 
 ### 进阶篇 | Advanced
-- [03-调试与性能优化.md](./进阶/03-调试与性能优化.md)
-- [04-典型项目实战.md](./进阶/04-典型项目实战.md)
+- [01-调试与性能分析.md](./进阶/01-调试与性能分析.md)
+- [02-项目实战.md](./进阶/02-项目实战.md)
+- [进阶篇 README](./进阶/README.md)
+
+### 数据结构篇 | Data Structures
+- [数据结构篇 README](./数据结构/README.md)
+
+### 算法篇 | Algorithms
+- [dijkstra_cpp.cpp](./算法/dijkstra_cpp.cpp)
+- [kruskal_cpp.cpp](./算法/kruskal_cpp.cpp)
+- [lcs_cpp.cpp](./算法/lcs_cpp.cpp)
+- [lis_cpp.cpp](./算法/lis_cpp.cpp)
+- [merge_sort_cpp.cpp](./算法/merge_sort_cpp.cpp)
+- [segment_tree_cpp.cpp](./算法/segment_tree_cpp.cpp)
+- [trie_cpp.cpp](./算法/trie_cpp.cpp)
 
 ## 3. 环境要求 | Environment Requirements
 
@@ -51,18 +67,13 @@ This module focuses on modern C++ features from C++11 onwards, object-oriented p
 g++ --version
 
 # 2. 编译并运行示例
-g++ -std=c++11 example.cpp -o example
-./example
-
-# 3. 使用 CMake 构建
-mkdir build && cd build
-cmake ..
-cmake --build .
+g++ -std=c++17 算法/merge_sort_cpp.cpp -o merge_sort
+./merge_sort
 ```
 
 ## 5. 学习路线 | Learning Path
 
-`快速入门` → `核心概念与语法` → `常用代码片段` → `调试与性能优化` → `典型项目实战`
+`概述与标准` → `基础语法与类型系统` → `指针引用与内存管理` → `面向对象` → `模板与STL` → `异常与性能优化` → `调试与性能分析` → `项目实战`
 
 ## 6. 核心特色 | Key Features
 
@@ -98,17 +109,13 @@ cmake --build .
 
 - **C（C 语言）**：[`02-C语言`](../02-C语言/README.md)
 
-## 11. 维护说明 | Maintenance
-
-- [笔记目录规范](../笔记库务/笔记目录规范.md) · [.editorconfig](../.editorconfig)
-
-## 12. 联系方式 | Contact Information
+## 11. 联系方式 | Contact Information
 
 - 邮箱：<fanquanpangpiing@163.com>
 - QQ：1839243393
 - 欢迎提意见交流或反馈问题
 
-## 13. 许可证信息 | License
+## 12. 许可证信息 | License
 
 - **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - **Copyright**：2024-2026 fanquanpp

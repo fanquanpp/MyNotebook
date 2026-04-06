@@ -18,9 +18,9 @@ graph TD
 
 | 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
 | :--- | :--- | :--- | :--- |
-| 入门 | [Ren'Py 基础体系](./basics/README.md) | 10h | 无 |
-| 进阶 | [ATL 动画实战](./advanced/01-ATL动画语言.md) | 15h | Ren'Py 基础 |
-| 实战 | [高级特性与发布](./advanced/02-高级特性与发布.md) | 10h | Python 基础 |
+| 入门 | [Ren'Py 基础体系](./基础/README.md) | 10h | 无 |
+| 进阶 | [ATL 动画实战](./进阶/01-ATL动画语言.md) | 15h | Ren'Py 基础 |
+| 实战 | [高级特性与发布](./进阶/02-高级特性与发布.md) | 10h | Python 基础 |
 
 ## 3. 学习提示 | Tips
 - **代码整洁**：将 Python 逻辑尽量放在 `init python` 块中。

@@ -1,4 +1,4 @@
-# 16-Renpy 视觉小说 | Ren'Py Visual Novel Engine
+# 16-Ren'Py 视觉小说 | Ren'Py Visual Novel Engine
 
 <!--
 作者：fanquanpp
@@ -28,20 +28,22 @@ This module focuses on Ren'Py engine core development techniques, including scri
 ## 2. 目录索引 | Directory Index
 
 ### 基础篇 | Basics
-- [01-概述与环境.md](./基础/01-概述与环境.md)
+- [01-概述与原理.md](./基础/01-概述与原理.md)
 - [02-基础脚本语法.md](./基础/02-基础脚本语法.md)
-- [03-角色与对话.md](./基础/03-角色与对话.md)
-- [04-场景与转场.md](./基础/04-场景与转场.md)
-- [05-屏幕与界面.md](./基础/05-屏幕与界面.md)
 - [基础篇 README](./基础/README.md)
 
 ### 进阶篇 | Advanced
 - [01-ATL动画语言.md](./进阶/01-ATL动画语言.md)
-- [02-高级屏幕语言.md](./进阶/02-高级屏幕语言.md)
-- [03-游戏机制.md](./进阶/03-游戏机制.md)
+- [02-高级特性与发布.md](./进阶/02-高级特性与发布.md)
+- [进阶篇 README](./进阶/README.md)
 
 ### 示例篇 | Examples
-- [save_load_optimization.rpy](./示例/save_load_optimization.rpy)
+- [save_load_optimization.rpy](./算法/save_load_optimization.rpy)
+- [typewriter_renpy.rpy](./算法/typewriter_renpy.rpy)
+- [算法篇 README](./算法/README.md)
+
+### 数据结构篇 | Data Structures
+- [数据结构篇 README](./数据结构/README.md)
 
 ## 3. 环境要求 | Environment Requirements
 
@@ -65,7 +67,7 @@ label start:
 
 ## 5. 学习路线 | Learning Path
 
-`概述与环境` → `基础脚本语法` → `角色与对话` → `场景与转场` → `屏幕与界面` → `ATL动画语言` → `高级屏幕语言` → `游戏机制`
+`概述与原理` → `基础脚本语法` → `ATL动画语言` → `高级特性与发布`
 
 ## 6. 核心特色 | Key Features
 

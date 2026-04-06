@@ -30,7 +30,7 @@ This module focuses on Lua's minimalist syntax, Table core data structure, metat
 ### 基础篇 | Basics
 - [01-概述与环境.md](./基础/01-概述与环境.md)
 - [02-基础语法.md](./基础/02-基础语法.md)
-- [03-Table核心.md](./基础/03-Table核心.md)
+- [03-数据类型与Table.md](./基础/03-数据类型与Table.md)
 - [04-函数与闭包.md](./基础/04-函数与闭包.md)
 - [05-协程与异步.md](./基础/05-协程与异步.md)
 - [基础篇 README](./基础/README.md)
@@ -46,7 +46,7 @@ This module focuses on Lua's minimalist syntax, Table core data structure, metat
 
 ### 数据结构篇 | Data Structures
 - [linked_list_lua.lua](./数据结构/linked_list_lua.lua)
-- [union_find_lua.lua](./数据结构/union_find_lua.lua)
+- [table_advanced_lua.lua](./数据结构/table_advanced_lua.lua)
 - [数据结构篇 README](./数据结构/README.md)
 
 ## 3. 环境要求 | Environment Requirements
@@ -72,7 +72,7 @@ lua script.lua
 
 ## 5. 学习路线 | Learning Path
 
-`概述与环境` → `基础语法` → `Table核心` → `函数与闭包` → `协程与异步` → `元表与OOP` → `模块与包`
+`概述与环境` → `基础语法` → `数据类型与Table` → `函数与闭包` → `协程与异步` → `元表与OOP` → `模块与包`
 
 ## 6. 核心特色 | Key Features
 

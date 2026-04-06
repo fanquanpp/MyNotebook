@@ -14,31 +14,12 @@ This directory contains various data structures and tools implemented with Ren'P
 
 ## 2. 数据结构列表 | Data Structures List
 
-| 数据结构 (Data Structure) | 源码文件 (Source) | 难度 (Difficulty) | 标签 (Tags) | 说明 (Description) |
-| :--- | :--- | :--- | :--- | :--- |
-| 事件总线 (Event Bus) | [event_bus_renpy.rpy](./event_bus_renpy.rpy) | 中级 | 事件 | 用于游戏内事件的发布和订阅 |
-| 存档系统 (Save System) | [save_system_renpy.rpy](./save_system_renpy.rpy) | 高级 | 存档 | 自定义存档系统，支持额外数据 |
-| 状态管理 (State Management) | [state_management_renpy.rpy](./state_management_renpy.rpy) | 中级 | 状态 | 管理游戏状态和变量 |
-| 对话系统 (Dialogue System) | [dialogue_system_renpy.rpy](./dialogue_system_renpy.rpy) | 高级 | 对话 | 自定义对话系统，支持复杂对话逻辑 |
+当前目录仅提供数据结构与工具的索引说明；独立 `.rpy` 工具脚本后续补充。
 
 ## 3. 运行指南 | How to Run
 
 ```bash
-# 在 Ren'Py 项目中使用
-# 将 .rpy 文件复制到项目的 game 目录
-# 在脚本中导入并使用
-
-# 示例：使用事件总线
-# 在 script.rpy 中
-init python:
-    from event_bus_renpy import EventBus
-    event_bus = EventBus()
-
-# 订阅事件
-event_bus.subscribe("player_joined", handle_player_joined)
-
-# 发布事件
-event_bus.publish("player_joined", player_name="Alice")
+# 暂无可直接复用的独立工具脚本
 ```
 
 ## 4. 核心特色 | Key Features

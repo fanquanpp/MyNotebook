@@ -87,12 +87,12 @@ This module focuses on GDScript, the default scripting language for Godot engine
 
 - [Godot 官方文档](https://docs.godotengine.org/) <!-- nofollow -->
 - [GDScript 官方指南](https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/gdscript_basics.html) <!-- nofollow -->
-- 本仓库：[03-Python脚本](../03-Python脚本/README.md)、[17-Renpy视觉小说](../17-Renpy视觉小说/README.md)
+- 本仓库：[03-Python脚本](../03-Python脚本/README.md)、[16-Renpy视觉小说](../16-Renpy视觉小说/README.md)
 
 ## 9. 关联章节 | Related Modules
 
 - **Python（Python 语言）**：Godot 脚本可与 Python 思维对照 [`03-Python脚本`](../03-Python脚本/README.md)  
-- **Ren'Py（视觉小说引擎）**：[`17-Renpy视觉小说`](../17-Renpy视觉小说/README.md)
+- **Ren'Py（视觉小说引擎）**：[`16-Renpy视觉小说`](../16-Renpy视觉小说/README.md)
 
 ## 10. 贡献指南 | Contribution Guide
 

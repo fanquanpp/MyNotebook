@@ -14,36 +14,18 @@ This directory contains C++ implementations of core data structures, including l
 
 ## 2. 数据结构列表 | Data Structures List
 
-| 数据结构 (Data Structure) | 源码文件 (Source) | 难度 (Difficulty) | 标签 (Tags) | 说明 (Description) |
-| :--- | :--- | :--- | :--- | :--- |
-| 单链表 (Singly Linked List) | [linked_list_cpp.cpp](./linked_list_cpp.cpp) | 基础 | 链表 | 支持插入、删除、遍历操作 |
-| 栈 (Stack) | [stack_cpp.cpp](./stack_cpp.cpp) | 基础 | 栈 | 后进先出 (LIFO) 数据结构 |
-| 队列 (Queue) | [queue_cpp.cpp](./queue_cpp.cpp) | 基础 | 队列 | 先进先出 (FIFO) 数据结构 |
-| 二叉搜索树 (Binary Search Tree) | [binary_search_tree_cpp.cpp](./binary_search_tree_cpp.cpp) | 中级 | 树 | 左小右大，支持有序遍历 |
-| 图 (Graph) | [graph_cpp.cpp](./graph_cpp.cpp) | 高级 | 图 | 支持邻接表表示和遍历算法 |
-| 哈希表 (Hash Table) | [hash_table_cpp.cpp](./hash_table_cpp.cpp) | 中级 | 哈希 | 支持快速查找和插入 |
+当前目录仅提供数据结构目录说明；独立 C++ 数据结构源码文件后续补充。算法示例见上级目录的 `算法/`。
 
 ## 3. 运行指南 | How to Run
 
 ```bash
-# 编译并运行数据结构示例
-g++ -std=c++11 linked_list_cpp.cpp -o linked_list
-g++ -std=c++11 stack_cpp.cpp -o stack
-g++ -std=c++11 queue_cpp.cpp -o queue
-
-# 运行示例
-./linked_list
-./stack
-./queue
+# 暂无可直接运行的独立源码文件
 ```
 
 ## 4. 核心特色 | Key Features
 
 - **现代 C++**：使用 C++11 及以上标准的特性
-- **完整实现**：每个数据结构都有完整的实现和测试用例
-- **详细注释**：代码中包含详细的中英文注释，便于理解
-- **性能分析**：提供时间复杂度和空间复杂度分析
-- **STL 兼容**：设计风格与 STL 保持一致，便于集成
+- **结构化整理**：按数据结构类别组织，便于查阅与扩展
 
 ## 5. 学习建议 | Learning Guide
 

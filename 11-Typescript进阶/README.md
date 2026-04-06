@@ -30,29 +30,27 @@ This module focuses on TypeScript's strong typing system, advanced type techniqu
 ### 基础篇 | Basics
 - [01-概述与环境.md](./基础/01-概述与环境.md)
 - [02-基础类型系统.md](./基础/02-基础类型系统.md)
-- [03-接口与类型.md](./基础/03-接口与类型.md)
-- [04-泛型与工具类型.md](./基础/04-泛型与工具类型.md)
-- [05-模块与命名空间.md](./基础/05-模块与命名空间.md)
-- [06-高级类型技巧.md](./基础/06-高级类型技巧.md)
+- [03-接口与类型别名.md](./基础/03-接口与类型别名.md)
+- [04-函数与泛型.md](./基础/04-函数与泛型.md)
+- [05-类与装饰器.md](./基础/05-类与装饰器.md)
+- [06-高级类型与演算.md](./基础/06-高级类型与演算.md)
 - [基础篇 README](./基础/README.md)
 
 ### 进阶篇 | Advanced
 - [01-编译与性能优化.md](./进阶/01-编译与性能优化.md)
-- [02-工程化配置.md](./进阶/02-工程化配置.md)
-- [03-类型声明与模块解析.md](./进阶/03-类型声明与模块解析.md)
+- [02-JS迁移实战.md](./进阶/02-JS迁移实战.md)
+- [03-工程化配置.md](./进阶/03-工程化配置.md)
+- [04-类型声明与模块解析.md](./进阶/04-类型声明与模块解析.md)
 
 ### 算法篇 | Algorithms
-- [binary_search_ts.ts](./算法/binary_search_ts.ts)
-- [quick_sort_ts.ts](./算法/quick_sort_ts.ts)
 - [算法篇 README](./算法/README.md)
 
 ### 数据结构篇 | Data Structures
-- [linked_list_ts.ts](./数据结构/linked_list_ts.ts)
-- [union_find_ts.ts](./数据结构/union_find_ts.ts)
 - [数据结构篇 README](./数据结构/README.md)
 
 ### 示例篇 | Examples
 - [advanced_types.ts](./示例/advanced_types.ts)
+- [design_patterns_ts.ts](./示例/design_patterns_ts.ts)
 
 ## 3. 环境要求 | Environment Requirements
 
@@ -70,12 +68,12 @@ npm install -g typescript
 tsc --version
 
 # 3. 运行首个示例
-tsc --strict 基础/02-基础类型系统.ts --noEmit
+tsc --strict 示例/advanced_types.ts --noEmit
 ```
 
 ## 5. 学习路线 | Learning Path
 
-`概述与环境` → `基础类型系统` → `接口与类型` → `泛型与工具类型` → `模块与命名空间` → `高级类型技巧` → `编译与性能优化` → `工程化配置` → `类型声明与模块解析`
+`概述与环境` → `基础类型系统` → `接口与类型别名` → `函数与泛型` → `类与装饰器` → `高级类型与演算` → `编译与性能优化` → `JS迁移实战` → `工程化配置` → `类型声明与模块解析`
 
 ## 6. 核心特色 | Key Features
 

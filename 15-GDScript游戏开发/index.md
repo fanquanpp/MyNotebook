@@ -18,9 +18,9 @@ graph TD
 
 | 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
 | :--- | :--- | :--- | :--- |
-| 入门 | [GDScript 基础体系](./basics/README.md) | 15h | 无 |
-| 进阶 | [信号、异步与注解](./advanced/01-信号与异步.md) | 10h | 基础语法 |
-| 实战 | [性能优化与进阶技巧](./advanced/02-性能优化与版本差异.md) | 10h | GDScript 基础 |
+| 入门 | [GDScript 基础体系](./基础/README.md) | 15h | 无 |
+| 进阶 | [信号、异步与注解](./进阶/01-信号与异步.md) | 10h | 基础语法 |
+| 实战 | [性能优化与进阶技巧](./进阶/02-性能优化与版本差异.md) | 10h | GDScript 基础 |
 
 ## 3. 学习提示 | Tips
 - **代码重构**：在 Godot 中优先使用 `Signals` 而不是硬编码引用。

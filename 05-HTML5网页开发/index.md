@@ -18,8 +18,8 @@ graph TD
 
 | 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
 | :--- | :--- | :--- | :--- |
-| 入门 | [HTML5 基础体系](./basics/README.md) | 15h | 无 |
-| 进阶 | [Vue 核心与实战](./frameworks/01-Vue核心与实战.md) | 30h | HTML5, JS |
+| 入门 | [HTML5 基础体系](./基础/README.md) | 15h | 无 |
+| 进阶 | [Vue 核心与实战](./框架/01-Vue核心与实战.md) | 30h | HTML5, JS |
 
 ## 3. 学习提示 | Tips
 - **代码重构**：优先使用 ES6+ 的语法特性（解构、箭头函数、模板字符串）。

@@ -18,9 +18,9 @@ graph TD
 
 | 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
 | :--- | :--- | :--- | :--- |
-| 入门 | [Lua 基础体系](./basics/README.md) | 10h | 无 |
-| 进阶 | [元表与 OOP 模拟](./advanced/01-元表与OOP.md) | 10h | 基础语法、Table |
-| 实战 | [数据结构与算法 (Lua)](./algorithms/README.md) | 15h | Lua 基础 |
+| 入门 | [Lua 基础体系](./基础/README.md) | 10h | 无 |
+| 进阶 | [元表与 OOP 模拟](./进阶/01-元表与OOP.md) | 10h | 基础语法、Table |
+| 实战 | [数据结构与算法 (Lua)](./算法/README.md) | 15h | Lua 基础 |
 
 ## 3. 学习提示 | Tips
 - **索引**：记住 Lua 的 Table 索引默认从 **1** 开始。

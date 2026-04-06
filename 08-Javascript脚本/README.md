@@ -38,13 +38,14 @@ This module focuses on ECMAScript syntax standards, DOM manipulation, asynchrono
 
 ### 基础篇 | Basics
 - [01-概述与环境.md](./基础/01-概述与环境.md)
+- [02-程序结构与基础语法.md](./基础/02-程序结构与基础语法.md)
 - [02-变量与数据类型.md](./基础/02-变量与数据类型.md)
 - [03-运算符与表达式.md](./基础/03-运算符与表达式.md)
 - [04-控制流.md](./基础/04-控制流.md)
 - [05-函数与作用域.md](./基础/05-函数与作用域.md)
 - [06-对象与数组.md](./基础/06-对象与数组.md)
-- [07-原型与继承.md](./基础/07-原型与继承.md)
-- [08-异步编程.md](./基础/08-异步编程.md)
+- [07-异步编程.md](./基础/07-异步编程.md)
+- [08-原型与继承.md](./基础/08-原型与继承.md)
 - [09-模块化.md](./基础/09-模块化.md)
 - [10-DOM操作.md](./基础/10-DOM操作.md)
 - [基础篇 README](./基础/README.md)
@@ -58,7 +59,8 @@ This module focuses on ECMAScript syntax standards, DOM manipulation, asynchrono
 - [算法篇 README](./算法/README.md)
 
 ### 示例篇 | Examples
-- [dom_manipulation.js](./示例/dom_manipulation.js)
+- [示例篇 README](./示例/README.md)
+- [dom-manipulation.html](./示例/dom-manipulation.html)
 
 ## 4. 环境要求 | Environment Requirements
 
@@ -75,7 +77,7 @@ This module focuses on ECMAScript syntax standards, DOM manipulation, asynchrono
 
 ## 6. 学习路线 | Learning Path
 
-`概述与环境` → `变量与数据类型` → `运算符与表达式` → `控制流` → `函数与作用域` → `对象与数组` → `原型与继承` → `异步编程` → `模块化` → `DOM操作` → `调试与性能优化`
+`概述与环境` → `程序结构与基础语法` → `变量与数据类型` → `运算符与表达式` → `控制流` → `函数与作用域` → `对象与数组` → `异步编程` → `原型与继承` → `模块化` → `DOM操作` → `调试与性能优化`
 
 ## 7. 核心特色 | Key Features
 
