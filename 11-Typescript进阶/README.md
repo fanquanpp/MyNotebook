@@ -43,14 +43,17 @@ This module focuses on TypeScript's strong typing system, advanced type techniqu
 - [04-类型声明与模块解析.md](./进阶/04-类型声明与模块解析.md)
 
 ### 算法篇 | Algorithms
+- [binary_search_ts.ts](./算法/binary_search_ts.ts)
 - [算法篇 README](./算法/README.md)
 
 ### 数据结构篇 | Data Structures
+- [binary_search_tree_ts.ts](./数据结构/binary_search_tree_ts.ts)
 - [数据结构篇 README](./数据结构/README.md)
 
 ### 示例篇 | Examples
 - [advanced_types.ts](./示例/advanced_types.ts)
 - [design_patterns_ts.ts](./示例/design_patterns_ts.ts)
+- [package.json](./示例/package.json)
 
 ## 3. 环境要求 | Environment Requirements
 

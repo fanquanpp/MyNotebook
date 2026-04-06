@@ -42,6 +42,7 @@ This module focuses on modern C++ features from C++11 onwards, object-oriented p
 - [进阶篇 README](./进阶/README.md)
 
 ### 数据结构篇 | Data Structures
+- [linked_list_cpp.cpp](./数据结构/linked_list_cpp.cpp)
 - [数据结构篇 README](./数据结构/README.md)
 
 ### 算法篇 | Algorithms

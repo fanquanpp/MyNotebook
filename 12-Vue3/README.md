@@ -47,9 +47,11 @@ This module focuses on Vue3 framework, covering core features, Composition API, 
 - [框架篇 README](./框架/README.md)
 
 ### 数据结构篇 | Data Structures
+- [reactive_collections.ts](./数据结构/reactive_collections.ts)
 - [数据结构篇 README](./数据结构/README.md)
 
 ### 算法篇 | Algorithms
+- [debounce_throttle.ts](./算法/debounce_throttle.ts)
 - [算法篇 README](./算法/README.md)
 
 ### 示例篇 | Examples
