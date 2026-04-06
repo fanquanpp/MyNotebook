@@ -43,6 +43,9 @@ This module focuses on Markdown basic syntax, advanced typesetting techniques, a
 - [07-代码块与语法高亮.md](./基础/07-代码块与语法高亮.md)
 - [08-表格.md](./基础/08-表格.md)
 
+### 高级篇 | Advanced
+- [01-Markdown高级语法与文档自动化.md](./高级/01-Markdown高级语法与文档自动化.md)
+
 ### 进阶篇 | Advanced
 - [01-核心语法汇总.md](./进阶/01-核心语法汇总.md)
 - [进阶篇 README](./进阶/README.md)

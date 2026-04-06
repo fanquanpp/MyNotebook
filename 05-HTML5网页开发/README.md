@@ -39,6 +39,9 @@ This module focuses on HTML5 core tags, semantic structures, form validation, mu
 - [01-Vue核心与实战.md](./框架/01-Vue核心与实战.md)
 - [框架篇 README](./框架/README.md)
 
+### 高级篇 | Advanced
+- [01-WebComponents与PWA.md](./高级/01-WebComponents与PWA.md)
+
 ### 示例篇 | Examples
 - [web_components.html](./示例/web_components.html)
 

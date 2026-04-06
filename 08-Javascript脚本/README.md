@@ -50,6 +50,9 @@ This module focuses on ECMAScript syntax standards, DOM manipulation, asynchrono
 - [10-DOM操作.md](./基础/10-DOM操作.md)
 - [基础篇 README](./基础/README.md)
 
+### 高级篇 | Advanced
+- [01-Node.js高级特性与性能优化.md](./高级/01-Node.js高级特性与性能优化.md)
+
 ### 进阶篇 | Advanced
 - [01-调试与性能优化.md](./进阶/01-调试与性能优化.md)
 

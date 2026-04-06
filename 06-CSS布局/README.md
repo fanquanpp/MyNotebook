@@ -42,6 +42,9 @@ This module focuses on core layout techniques in modern web development, includi
 - [knowledge_pitfalls.md](./示例/knowledge_pitfalls.md)
 - [package.json](./示例/package.json)
 
+### 高级篇 | Advanced
+- [01-CSS-in-JS与高级布局.md](./高级/01-CSS-in-JS与高级布局.md)
+
 ### 进阶篇 | Advanced
 - [01-响应式设计.md](./进阶/01-响应式设计.md)
 - [进阶篇 README](./进阶/README.md)

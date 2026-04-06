@@ -35,6 +35,9 @@ This module focuses on Git core concepts, command operations, and team collabora
 - [05-远程仓库操作.md](./基础/05-远程仓库操作.md)
 - [基础篇 README](./基础/README.md)
 
+### 高级篇 | Advanced
+- [01-Git钩子与Git LFS.md](./高级/01-Git钩子与Git LFS.md)
+
 ### 进阶篇 | Advanced
 - [01-Git原理与对象模型.md](./进阶/01-Git原理与对象模型.md)
 

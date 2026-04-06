@@ -60,6 +60,9 @@ This module focuses on Java core concepts, object-oriented programming, JVM fund
 - [union_find_java.java](./数据结构/union_find_java.java)
 - [数据结构篇 README](./数据结构/README.md)
 
+### 高级篇 | Advanced
+- [01-SpringCloud微服务.md](./高级/01-SpringCloud微服务.md)
+
 ### 快速入门
 - [00-快速入门.md](./00-快速入门.md)
 
