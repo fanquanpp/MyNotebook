@@ -3,7 +3,7 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.2
+版本：v1.0.3
 -->
 
 > **路径**：`08-Javascript脚本/` | **JavaScript（脚本语言，缩写 JS）**：浏览器与 **Node.js（Node 运行时）** 通用语法与实战
@@ -128,6 +128,7 @@ This module focuses on ECMAScript syntax standards, DOM manipulation, asynchrono
 
 **更新日志 | Changelog**
 
+- 2026-04-06: 新增「原型与继承 / 模块化 / DOM 操作」知识点，补全基础篇索引与学习路线，升级为 v1.0.3
 - 2026-04-06: 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.2
 - 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1
 - 2026-04-05：说明文件夹名与「JavaScript」标准拼写关系
