@@ -80,7 +80,7 @@ This module focuses on HTML5 core tags, semantic structures, form validation, mu
 
 - [MDN HTML 文档](https://developer.mozilla.org/en-US/docs/Web/HTML) <!-- nofollow -->
 - [HTML5 官方规范](https://html.spec.whatwg.org/) <!-- nofollow -->
-- 本仓库：[02-CSS布局](../02-CSS布局/README.md)、[07-Javascript脚本](../07-Javascript脚本/README.md)
+- 本仓库：[06-CSS布局](../06-CSS布局/README.md)、[08-Javascript脚本](../08-Javascript脚本/README.md)
 
 ## 9. 贡献指南 | Contribution Guide
 
