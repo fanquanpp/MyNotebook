@@ -3,7 +3,7 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v2.5.5
+版本：v2.5.6
 -->
 
 <br />
@@ -12,18 +12,15 @@
 
 ### 外部GitHub仓库推荐
 
-#### JavaScript相关
-- **JavaScript笔记**：[anbang/javascript-notes](https://github.com/anbang/javascript-notes.git) - 全面的JavaScript学习笔记和示例
-
-#### 算法相关
-- **算法可视化器**：[algorithm-visualizer/algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer.git) - 通过可视化方式理解各种算法的执行过程
-- **LeetCode算法题详解**：[doocs/leetcode](https://github.com/doocs/leetcode.git) - 包含详细的LeetCode题目解析和解决方案
-- **算法问题集合**：[MTrajK/coding-problems](https://github.com/MTrajK/coding-problems.git) - 收集了各种编程算法问题和解答
-- **数据结构与算法（普拉特）**：[thepranaygupta/Data-Structures-and-Algorithms](https://github.com/thepranaygupta/Data-Structures-and-Algorithms.git) - 全面的数据结构与算法实现
-- **算法与数据结构（开尔文）**：[kelvins/algorithms-and-data-structures](https://github.com/kelvins/algorithms-and-data-structures.git) - 多种编程语言实现的算法与数据结构
-
-#### TypeScript相关
-- **多行文本测量和布局**：[chenglou/pretext](https://github.com/chenglou/pretext.git) - 专注于文本测量和布局的TypeScript库
+| 分类 | 资源名称 | 仓库地址 | 描述 |
+| :--- | :--- | :--- | :--- |
+| JavaScript相关 | JavaScript笔记 | [anbang/javascript-notes](https://github.com/anbang/javascript-notes.git) | 全面的JavaScript学习笔记和示例 |
+| 算法相关 | 算法可视化器 | [algorithm-visualizer/algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer.git) | 通过可视化方式理解各种算法的执行过程 |
+| 算法相关 | LeetCode算法题详解 | [doocs/leetcode](https://github.com/doocs/leetcode.git) | 包含详细的LeetCode题目解析和解决方案 |
+| 算法相关 | 算法问题集合 | [MTrajK/coding-problems](https://github.com/MTrajK/coding-problems.git) | 收集了各种编程算法问题和解答 |
+| 算法相关 | 数据结构与算法（普拉特） | [thepranaygupta/Data-Structures-and-Algorithms](https://github.com/thepranaygupta/Data-Structures-and-Algorithms.git) | 全面的数据结构与算法实现 |
+| 算法相关 | 算法与数据结构（开尔文） | [kelvins/algorithms-and-data-structures](https://github.com/kelvins/algorithms-and-data-structures.git) | 多种编程语言实现的算法与数据结构 |
+| TypeScript相关 | 多行文本测量和布局 | [chenglou/pretext](https://github.com/chenglou/pretext.git) | 专注于文本测量和布局的TypeScript库 |
 <br />
 
 <br />
@@ -220,4 +217,5 @@ cd 03-Python脚本
 - 2026-04-06: 补充各模块高级文件夹和内容，完善数据结构和算法实现，升级为 v2.5.4
 - 2026-04-06: 重构项目根目录 README.md，优化结构和可读性，增加学习顺序说明和技术模块依赖关系图
 - 2026-04-07: 优化 README.md 中外部资源推荐部分的结构与描述，升级为 v2.5.5
+- 2026-04-07: 将优质资源推荐部分从列表格式改为表格格式，提升可读性，升级为 v2.5.6
 
