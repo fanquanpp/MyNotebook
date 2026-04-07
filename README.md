@@ -3,7 +3,7 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v2.5.8
+版本：v2.5.9
 -->
 
 <br />
@@ -63,6 +63,17 @@
 | 资源名称 | 仓库地址 | 描述 |
 | :--- | :--- | :--- |
 | Godot Engine | [godotengine/godot](https://github.com/godotengine/godot.git) | 跨平台的2D和3D游戏引擎，免费开源，支持多平台导出 |
+
+#### Python相关
+| 资源名称 | 仓库地址 | 描述 |
+| :--- | :--- | :--- |
+| Python Mastery | [dabeaz-course/python-mastery](https://github.com/dabeaz-course/python-mastery.git) | David Beazley的高级Python编程课程，包含练习和解决方案 |
+
+#### 工具相关
+| 资源名称 | 仓库地址 | 描述 |
+| :--- | :--- | :--- |
+| NoteGen | [codexu/note-gen](https://github.com/codexu/note-gen.git) | 跨平台的Markdown AI笔记软件，致力于使用AI连接记录和写作 |
+| Reference | [jaywcjlove/reference](https://github.com/jaywcjlove/reference.git) | 面向开发者的技术速查清单集合，整理常见技术、工具与开发流程 |
 <br />
 
 <br />
@@ -262,4 +273,5 @@ cd 03-Python脚本
 - 2026-04-07: 将优质资源推荐部分从列表格式改为表格格式，提升可读性，升级为 v2.5.6
 - 2026-04-07: 将优质资源推荐部分从单一表格拆分为多个表格，按分类组织，提升可读性，升级为 v2.5.7
 - 2026-04-08: 补充多个优质GitHub仓库推荐，包括算法、Java、C++、CSS、Git、游戏开发等多个领域，升级为 v2.5.8
+- 2026-04-08: 补充三个优质GitHub仓库推荐：Python Mastery、NoteGen和Reference，升级为 v2.5.9
 
