@@ -3,7 +3,7 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v2.5.7
+版本：v2.5.8
 -->
 
 <br />
@@ -16,6 +16,7 @@
 | 资源名称 | 仓库地址 | 描述 |
 | :--- | :--- | :--- |
 | JavaScript笔记 | [anbang/javascript-notes](https://github.com/anbang/javascript-notes.git) | 全面的JavaScript学习笔记和示例 |
+| Airbnb JavaScript风格指南 | [airbnb/javascript](https://github.com/airbnb/javascript.git) | 业界广泛采用的JavaScript代码风格指南 |
 
 #### 算法相关
 | 资源名称 | 仓库地址 | 描述 |
@@ -25,11 +26,43 @@
 | 算法问题集合 | [MTrajK/coding-problems](https://github.com/MTrajK/coding-problems.git) | 收集了各种编程算法问题和解答 |
 | 数据结构与算法（普拉特） | [thepranaygupta/Data-Structures-and-Algorithms](https://github.com/thepranaygupta/Data-Structures-and-Algorithms.git) | 全面的数据结构与算法实现 |
 | 算法与数据结构（开尔文） | [kelvins/algorithms-and-data-structures](https://github.com/kelvins/algorithms-and-data-structures.git) | 多种编程语言实现的算法与数据结构 |
+| ApacheCN算法译文集 | [apachecn/apachecn-algo-zh](https://github.com/apachecn/apachecn-algo-zh.git) | 数据结构与算法的中文译文集，包含LeetCode题解 |
+| Hello 算法 | [krahets/hello-algo](https://github.com/krahets/hello-algo.git) | 动画图解、一键运行的数据结构与算法教程，支持多语言实现 |
 
 #### TypeScript相关
 | 资源名称 | 仓库地址 | 描述 |
 | :--- | :--- | :--- |
 | 多行文本测量和布局 | [chenglou/pretext](https://github.com/chenglou/pretext.git) | 专注于文本测量和布局的TypeScript库 |
+
+#### Java相关
+| 资源名称 | 仓库地址 | 描述 |
+| :--- | :--- | :--- |
+| toBeBetterJavaer | [itwanger/toBeBetterJavaer](https://github.com/itwanger/toBeBetterJavaer.git) | 通俗易懂、风趣幽默的Java学习指南，涵盖Java基础、并发编程、虚拟机等核心知识点 |
+
+#### C++相关
+| 资源名称 | 仓库地址 | 描述 |
+| :--- | :--- | :--- |
+| CppGuide | [balloonwj/CppGuide](https://github.com/balloonwj/CppGuide.git) | C++后端开发进阶学习资料，包含C++必知必会的知识点和游戏服务器端架构等内容 |
+
+#### CSS相关
+| 资源名称 | 仓库地址 | 描述 |
+| :--- | :--- | :--- |
+| Flexbox-Labs | [prazzon/Flexbox-Labs](https://github.com/prazzon/Flexbox-Labs.git) | 基于Web的CSS Flexbox布局工具，提供直观界面和实时预览功能 |
+
+#### Git相关
+| 资源名称 | 仓库地址 | 描述 |
+| :--- | :--- | :--- |
+| Pro Git 2 中文翻译 | [progit/progit2-zh](https://github.com/progit/progit2-zh.git) | Git权威书籍《Pro Git》第二版的中文翻译版本 |
+
+#### 开源社区相关
+| 资源名称 | 仓库地址 | 描述 |
+| :--- | :--- | :--- |
+| HelloGitHub | [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub.git) | 分享GitHub上有趣、入门级的开源项目，每月28号以月刊形式更新 |
+
+#### 游戏开发相关
+| 资源名称 | 仓库地址 | 描述 |
+| :--- | :--- | :--- |
+| Godot Engine | [godotengine/godot](https://github.com/godotengine/godot.git) | 跨平台的2D和3D游戏引擎，免费开源，支持多平台导出 |
 <br />
 
 <br />
@@ -228,4 +261,5 @@ cd 03-Python脚本
 - 2026-04-07: 优化 README.md 中外部资源推荐部分的结构与描述，升级为 v2.5.5
 - 2026-04-07: 将优质资源推荐部分从列表格式改为表格格式，提升可读性，升级为 v2.5.6
 - 2026-04-07: 将优质资源推荐部分从单一表格拆分为多个表格，按分类组织，提升可读性，升级为 v2.5.7
+- 2026-04-08: 补充多个优质GitHub仓库推荐，包括算法、Java、C++、CSS、Git、游戏开发等多个领域，升级为 v2.5.8
 
