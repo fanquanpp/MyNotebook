@@ -3,7 +3,7 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.2
+版本：v3.0.0
 -->
 
 ## 1. 项目简介 | Introduction
@@ -25,29 +25,50 @@ This module focuses on Lua's minimalist syntax, Table core data structure, metat
 - 禁止直接修改本仓库内容
 - 他人使用本模块内容时出现的任何问题与作者无关
 
-## 2. 目录索引 | Directory Index
+## 2. 学习路线图 | Learning Roadmap
 
-### 基础篇 | Basics
-- [01-概述与环境.md](./基础/01-概述与环境.md)
-- [02-基础语法.md](./基础/02-基础语法.md)
-- [03-数据类型与Table.md](./基础/03-数据类型与Table.md)
-- [04-函数与闭包.md](./基础/04-函数与闭包.md)
-- [05-协程与异步.md](./基础/05-协程与异步.md)
-- [基础篇 README](./基础/README.md)
+```mermaid
+graph TD
+    A["基础语法 | Basic Syntax"] --> B["Table 深度解析 | Table in Depth"]
+    B --> C["函数式特性 | Functional Lua"]
+    C --> D["元表与面向对象 | Metatables & OOP"]
+    D --> E["协程与并发 | Coroutines"]
+    E --> F["Lua 与 C 交互 | C API & Interop"]
+    F --> G["引擎实战 (Redis/Nginx/Love2D) | Real-world Use"]
+```
 
-### 进阶篇 | Advanced
-- [01-元表与OOP.md](./进阶/01-元表与OOP.md)
-- [02-模块与包.md](./进阶/02-模块与包.md)
+### 详细路径 | Detailed Path
 
-### 算法篇 | Algorithms
-- [binary_search_lua.lua](./算法/binary_search_lua.lua)
-- [quick_sort_lua.lua](./算法/quick_sort_lua.lua)
-- [算法篇 README](./算法/README.md)
+| 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
+| :--- | :--- | :--- | :--- |
+| 入门 | Lua 基础体系 | 10h | 无 |
+| 进阶 | 元表与 OOP 模拟 | 10h | 基础语法、Table |
+| 实战 | 数据结构与算法 (Lua) | 15h | Lua 基础 |
 
-### 数据结构篇 | Data Structures
-- [linked_list_lua.lua](./数据结构/linked_list_lua.lua)
-- [table_advanced_lua.lua](./数据结构/table_advanced_lua.lua)
-- [数据结构篇 README](./数据结构/README.md)
+### 学习提示 | Tips
+- **索引**：记住 Lua 的 Table 索引默认从 **1** 开始。
+- **性能**：避免在循环中频繁创建 Table，优先复用。
+- **扩展**：学习 LuaJIT 以获得接近 C 的执行速度。
+
+## 3. 目录索引 | Directory Index
+
+### 基础语法 | Basics
+- [C14_101-概述与环境.md](./C14_101-概述与环境.md)
+- [C14_102-基础语法.md](./C14_102-基础语法.md)
+- [C14_103-数据类型与Table.md](./C14_103-数据类型与Table.md)
+- [C14_104-函数与闭包.md](./C14_104-函数与闭包.md)
+- [C14_105-协程与异步.md](./C14_105-协程与异步.md)
+
+### 高级特性 | Advanced
+- [G14_201-元表与OOP.md](./G14_201-元表与OOP.md)
+- [G14_202-模块与包.md](./G14_202-模块与包.md)
+
+### 算法与数据结构 | Algorithms & Data Structures
+- [SFDE14_301-binary_search_lua.lua](./算法与数据结构/代码示例/SFDE14_301-binary_search_lua.lua)
+- [SFDE14_302-dfs_bfs_lua.lua](./算法与数据结构/代码示例/SFDE14_302-dfs_bfs_lua.lua)
+- [SFDE14_303-quick_sort_lua.lua](./算法与数据结构/代码示例/SFDE14_303-quick_sort_lua.lua)
+- [SFDE14_401-linked_list_lua.lua](./算法与数据结构/代码示例/SFDE14_401-linked_list_lua.lua)
+- [SFDE14_402-table_advanced_lua.lua](./算法与数据结构/代码示例/SFDE14_402-table_advanced_lua.lua)
 
 ## 3. 环境要求 | Environment Requirements
 
@@ -117,6 +138,7 @@ lua script.lua
 
 **更新日志 | Changelog**
 
+- 2026-04-18: 完成GitHub仓库3.0结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
 - 2026-04-06: 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.2
 - 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1
 - 2026-04-05: 体系化重构 Lua 目录结构

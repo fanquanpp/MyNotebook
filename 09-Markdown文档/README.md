@@ -3,7 +3,7 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.2
+版本：v3.0.0
 -->
 
 ## 1. 项目简介 | Introduction
@@ -34,21 +34,18 @@ This module focuses on Markdown basic syntax, advanced typesetting techniques, a
 ## 3. 目录索引 | Directory Index
 
 ### 基础篇 | Basics
-- [01-Markdown概述.md](./基础/01-Markdown概述.md)
-- [02-标题语法.md](./基础/02-标题语法.md)
-- [03-段落与换行.md](./基础/03-段落与换行.md)
-- [04-文本格式.md](./基础/04-文本格式.md)
-- [05-列表语法.md](./基础/05-列表语法.md)
-- [06-链接与图片.md](./基础/06-链接与图片.md)
-- [07-代码块与语法高亮.md](./基础/07-代码块与语法高亮.md)
-- [08-表格.md](./基础/08-表格.md)
+- [C09_101-Markdown概述.md](./C09_101-Markdown概述.md)
+- [C09_102-标题语法.md](./C09_102-标题语法.md)
+- [C09_103-段落与换行.md](./C09_103-段落与换行.md)
+- [C09_104-文本格式.md](./C09_104-文本格式.md)
+- [C09_105-列表语法.md](./C09_105-列表语法.md)
+- [C09_106-链接与图片.md](./C09_106-链接与图片.md)
+- [C09_107-代码块与语法高亮.md](./C09_107-代码块与语法高亮.md)
+- [C09_108-表格.md](./C09_108-表格.md)
 
 ### 高级篇 | Advanced
-- [01-Markdown高级语法与文档自动化.md](./高级/01-Markdown高级语法与文档自动化.md)
-
-### 进阶篇 | Advanced
-- [01-核心语法汇总.md](./进阶/01-核心语法汇总.md)
-- [进阶篇 README](./进阶/README.md)
+- [G09_201-Markdown高级语法与文档自动化.md](./G09_201-Markdown高级语法与文档自动化.md)
+- [G09_202-核心语法汇总.md](./G09_202-核心语法汇总.md)
 
 ## 4. 环境要求 | Environment Requirements
 
@@ -58,8 +55,8 @@ This module focuses on Markdown basic syntax, advanced typesetting techniques, a
 
 ## 5. 快速开始 | Quick Start
 
-1. 学习标题与结构：阅读 [02-标题语法.md](./基础/02-标题语法.md)
-2. 实验列表嵌套：查阅 [05-列表语法.md](./基础/05-列表语法.md)
+1. 学习标题与结构：阅读 [C09_102-标题语法.md](./C09_102-标题语法.md)
+2. 实验列表嵌套：查阅 [C09_105-列表语法.md](./C09_105-列表语法.md)
 3. 在 VS Code 中开启预览：`Ctrl + Shift + V`
 
 ## 6. 学习路线 | Learning Path
@@ -110,6 +107,7 @@ This module focuses on Markdown basic syntax, advanced typesetting techniques, a
 
 **更新日志 | Changelog**
 
+- 2026-04-18: 完成GitHub仓库3.0结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
 - 2026-04-06: 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.2
 - 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1
 - 2026-04-05: 初始化 Markdown 基础语法与核心排版笔记

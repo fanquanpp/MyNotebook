@@ -3,7 +3,7 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.3
+版本：v3.0.0
 -->
 
 > **路径**：`08-Javascript脚本/` | **JavaScript（脚本语言，缩写 JS）**：浏览器与 **Node.js（Node 运行时）** 通用语法与实战
@@ -37,32 +37,27 @@ This module focuses on ECMAScript syntax standards, DOM manipulation, asynchrono
 ## 3. 目录索引 | Directory Index
 
 ### 基础篇 | Basics
-- [01-概述与环境.md](./基础/01-概述与环境.md)
-- [02-程序结构与基础语法.md](./基础/02-程序结构与基础语法.md)
-- [02-变量与数据类型.md](./基础/02-变量与数据类型.md)
-- [03-运算符与表达式.md](./基础/03-运算符与表达式.md)
-- [04-控制流.md](./基础/04-控制流.md)
-- [05-函数与作用域.md](./基础/05-函数与作用域.md)
-- [06-对象与数组.md](./基础/06-对象与数组.md)
-- [07-异步编程.md](./基础/07-异步编程.md)
-- [08-原型与继承.md](./基础/08-原型与继承.md)
-- [09-模块化.md](./基础/09-模块化.md)
-- [10-DOM操作.md](./基础/10-DOM操作.md)
-- [基础篇 README](./基础/README.md)
+- [C08_101-概述与环境.md](./C08_101-概述与环境.md)
+- [C08_102-程序结构与基础语法.md](./C08_102-程序结构与基础语法.md)
+- [C08_103-变量与数据类型.md](./C08_103-变量与数据类型.md)
+- [C08_104-运算符与表达式.md](./C08_104-运算符与表达式.md)
+- [C08_105-控制流.md](./C08_105-控制流.md)
+- [C08_106-函数与作用域.md](./C08_106-函数与作用域.md)
+- [C08_107-对象与数组.md](./C08_107-对象与数组.md)
+- [C08_108-异步编程.md](./C08_108-异步编程.md)
+- [C08_109-原型与继承.md](./C08_109-原型与继承.md)
+- [C08_110-模块化.md](./C08_110-模块化.md)
+- [C08_111-DOM操作.md](./C08_111-DOM操作.md)
 
 ### 高级篇 | Advanced
-- [01-Node.js高级特性与性能优化.md](./高级/01-Node.js高级特性与性能优化.md)
+- [G08_201-Node.js高级特性与性能优化.md](./G08_201-Node.js高级特性与性能优化.md)
+- [G08_202-调试与性能优化.md](./G08_202-调试与性能优化.md)
 
-### 进阶篇 | Advanced
-- [01-调试与性能优化.md](./进阶/01-调试与性能优化.md)
-
-### 算法篇 | Algorithms
-- [binary_search_js.js](./算法/binary_search_js.js)
-- [quick_sort_js.js](./算法/quick_sort_js.js)
-- [算法篇 README](./算法/README.md)
+### 算法与数据结构 | Algorithms & Data Structures
+- [SFDE08_301-binary_search_js.js](./算法与数据结构/代码示例/SFDE08_301-binary_search_js.js)
+- [SFDE08_302-quick_sort_js.js](./算法与数据结构/代码示例/SFDE08_302-quick_sort_js.js)
 
 ### 示例篇 | Examples
-- [示例篇 README](./示例/README.md)
 - [dom-manipulation.html](./示例/dom-manipulation.html)
 
 ## 4. 环境要求 | Environment Requirements
@@ -131,6 +126,7 @@ This module focuses on ECMAScript syntax standards, DOM manipulation, asynchrono
 
 **更新日志 | Changelog**
 
+- 2026-04-18: 完成GitHub仓库3.0结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
 - 2026-04-06: 新增「原型与继承 / 模块化 / DOM 操作」知识点，补全基础篇索引与学习路线，升级为 v1.0.3
 - 2026-04-06: 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.2
 - 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1

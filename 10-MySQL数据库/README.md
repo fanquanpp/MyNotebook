@@ -3,7 +3,7 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.3
+版本：v3.0.0
 -->
 
 ## 1. 项目简介 | Introduction
@@ -25,24 +25,48 @@ This module focuses on MySQL relational database core concepts, installation, SQ
 - 禁止直接修改本仓库内容
 - 他人使用本模块内容时出现的任何问题与作者无关
 
-## 2. 目录索引 | Directory Index
+## 2. 学习路线图 | Learning Roadmap
 
-### 基础篇 | Basics
-- [01-概述与环境.md](./基础/01-概述与环境.md)
-- [02-SQL基础语法.md](./基础/02-SQL基础语法.md)
-- [03-进阶查询与联查.md](./基础/03-进阶查询与联查.md)
-- [04-控制器与应用.md](./基础/04-控制器与应用.md)
-- [05-数据类型与约束.md](./基础/05-数据类型与约束.md)
-- [06-索引与执行计划.md](./基础/06-索引与执行计划.md)
-- [基础篇 README](./基础/README.md)
+```mermaid
+graph TD
+    A["SQL 基础 (CRUD) | SQL Basics"] --> B["数据类型与约束 | Data Types"]
+    B --> C["函数与聚合 | Functions"]
+    C --> D["多表联查 (Joins) | Joins"]
+    D --> E["索引与性能优化 | Indexing"]
+    E --> F["高级查询 (CTE/Window) | Advanced SQL"]
+    F --> G["事务与并发控制 | Transactions"]
+    G --> H["架构设计与分库分表 | Architecture"]
+```
 
-### 进阶篇 | Advanced
-- [01-索引与优化.md](./进阶/01-索引与优化.md)
-- [02-事务与锁.md](./进阶/02-事务与锁.md)
-- [进阶篇 README](./进阶/README.md)
+### 详细路径 | Detailed Path
 
-### 示例篇 | Examples
-- [advanced_sql_queries.sql](./示例/advanced_sql_queries.sql)
+| 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
+| :--- | :--- | :--- | :--- |
+| 入门 | MySQL 基础知识体系 | 15h | 无 |
+| 进阶 | 索引原理与优化 | 10h | SQL 基础 |
+| 核心 | 事务与锁机制 | 10h | 数据库基础 |
+
+### 学习提示 | Tips
+- **实战**：多使用 `EXPLAIN` 分析你的慢查询。
+- **规范**：遵循阿里巴巴 Java 开发手册中的数据库设计规范。
+- **面试**：深入理解 InnoDB 存储引擎的 B+ 树索引原理。
+
+## 3. 目录索引 | Directory Index
+
+### 基础语法 | Basics
+- [C10_101-概述与环境.md](./C10_101-概述与环境.md)
+- [C10_102-SQL基础语法.md](./C10_102-SQL基础语法.md)
+- [C10_103-进阶查询与联查.md](./C10_103-进阶查询与联查.md)
+- [C10_104-控制器与应用.md](./C10_104-控制器与应用.md)
+- [C10_105-数据类型与约束.md](./C10_105-数据类型与约束.md)
+- [C10_106-索引与执行计划.md](./C10_106-索引与执行计划.md)
+
+### 高级特性 | Advanced
+- [G10_201-索引与优化.md](./G10_201-索引与优化.md)
+- [G10_202-事务与锁.md](./G10_202-事务与锁.md)
+
+### 专项内容 | Specialized
+- [Z10_301-advanced_sql_queries.sql](./Z10_301-advanced_sql_queries.sql)
 
 ## 3. 环境要求 | Environment Requirements
 
@@ -110,6 +134,7 @@ mysql> SELECT VERSION();
 
 **更新日志 | Changelog**
 
+- 2026-04-18: 完成GitHub仓库3.0结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
 - 2026-04-06: 新增「数据类型与约束 / 索引与执行计划」知识点，补全基础篇索引与学习路线，升级为 v1.0.3
 - 2026-04-06: 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.2
 - 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1

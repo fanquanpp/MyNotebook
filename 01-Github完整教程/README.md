@@ -29,21 +29,88 @@
 ## 2. 目录索引 | Directory Index
 
 ### 基础篇 | Basics
-- [01-账户与安全.md](./基础/01-账户与安全.md)
-- [02-SSH与HTTPS.md](./基础/02-SSH与HTTPS.md)
-- [03-仓库创建与管理.md](./基础/03-仓库创建与管理.md)
-- [基础篇 README](./基础/README.md)
+- [C01_101-账户与安全.md](./C01_101-账户与安全.md)
+- [C01_102-SSH与HTTPS.md](./C01_102-SSH与HTTPS.md)
+- [C01_103-仓库创建与管理.md](./C01_103-仓库创建与管理.md)
 
 ### 进阶篇 | Advanced
-- [04-分支保护规则.md](./进阶/04-分支保护规则.md)
-- [05-PullRequest协作流程.md](./进阶/05-PullRequest协作流程.md)
-- [06-Issues与里程碑.md](./进阶/06-Issues与里程碑.md)
-- [07-Actions与CI.md](./进阶/07-Actions与CI.md)
-- [08-GitHubPages.md](./进阶/08-GitHubPages.md)
-- [09-协作规范.md](./进阶/09-协作规范.md)
-- [10-常见问题与排查.md](./进阶/10-常见问题与排查.md)
+- [G01_201-分支保护规则.md](./G01_201-分支保护规则.md)
+- [G01_202-PullRequest协作流程.md](./G01_202-PullRequest协作流程.md)
+- [G01_203-Issues与里程碑.md](./G01_203-Issues与里程碑.md)
+- [G01_204-Actions与CI.md](./G01_204-Actions与CI.md)
+- [G01_205-GitHubPages.md](./G01_205-GitHubPages.md)
+- [G01_206-协作规范.md](./G01_206-协作规范.md)
+- [G01_207-常见问题与排查.md](./G01_207-常见问题与排查.md)
+- [G01_208-GitHub Actions与Pages.md](./G01_208-GitHub Actions与Pages.md)
 
-## 3. 内容特色 | Key Features
+## 3. 基础篇详细内容 | Basics Details
+
+### 3.1 基础篇概述 | Basics Overview
+
+GitHub 基础篇涵盖了 GitHub 平台的核心概念和基本使用方法，包括账号安全、连接方式、仓库创建与管理等内容。通过学习基础篇，你将掌握 GitHub 的基本操作，为后续的协作开发打下基础。
+
+### 3.2 目录索引 | Directory Index
+
+| 序号 | 文件名 | 描述 |
+| :--- | :--- | :--- |
+| 01 | [C01_101-账户与安全.md](./C01_101-账户与安全.md) | GitHub 账号体系、2FA 配置、安全最佳实践、密钥与令牌管理 |
+| 02 | [C01_102-SSH与HTTPS.md](./C01_102-SSH与HTTPS.md) | SSH 与 HTTPS 连接方式对比、密钥配置、常见错误排查 |
+| 03 | [C01_103-仓库创建与管理.md](./C01_103-仓库创建与管理.md) | 仓库的创建、克隆、权限管理、README 与 LICENSE 配置、分支与标签管理 |
+
+### 3.3 学习路线 | Learning Path
+
+```
+账号与安全 → SSH 与 HTTPS → 仓库创建与管理
+```
+
+### 3.4 核心知识点 | Core Knowledge Points
+
+#### 3.4.1 账号与安全
+
+- GitHub 账号体系与注册流程
+- 两步验证 (2FA) 的配置与使用
+- 安全最佳实践与注意事项
+- 个人访问令牌 (PAT) 的创建与管理
+- 密钥管理与安全边界
+
+#### 3.4.2 SSH 与 HTTPS
+
+- SSH 与 HTTPS 连接方式的区别
+- SSH 密钥的生成与配置
+- HTTPS 认证方式与凭据管理
+- 常见连接错误的排查方法
+- 多账号环境的配置技巧
+
+#### 3.4.3 仓库创建与管理
+
+- 仓库的创建与初始化
+- README.md 与 LICENSE 文件的配置
+- 仓库权限的设置与管理
+- 分支的创建、合并与管理
+- 标签的使用与版本管理
+- 仓库的克隆与同步
+
+### 3.5 学习建议 | Learning Suggestions
+
+1. **循序渐进**：按照学习路线的顺序学习，从账号与安全开始，逐步掌握 GitHub 的各项功能
+2. **实践为主**：结合实际操作练习，加深对 GitHub 概念的理解
+3. **重点关注**：特别关注安全配置和连接方式的设置，这是使用 GitHub 的基础
+4. **查阅文档**：遇到问题时，参考 GitHub 官方文档和相关资源
+5. **代码规范**：遵循 Git 提交规范，养成良好的版本控制习惯
+
+### 3.6 延伸阅读 | Further Reading
+
+- [GitHub 官方文档](https://docs.github.com/) <!-- nofollow -->
+- [Git 官方文档](https://git-scm.com/doc) <!-- nofollow -->
+- [GitHub 技能认证](https://skills.github.com/) <!-- nofollow -->
+
+### 3.7 小结 | Summary
+
+GitHub 基础篇提供了 GitHub 平台的核心概念和基本使用方法，是学习 GitHub 的起点。通过学习基础篇，你已经了解了 GitHub 的账号安全、连接方式和仓库管理等内容，为后续的协作开发打下了基础。
+
+在学习过程中，要注重实践，通过实际操作来巩固所学知识，同时要关注 GitHub 的最佳实践，以构建高质量的项目和良好的协作环境。
+
+## 4. 内容特色 | Key Features
 
 - **平台聚焦**：专注于 GitHub 平台特有功能，与 Git 命令行形成互补
 - **实战导向**：提供从创建仓库到 CI/CD 部署的全流程实战指南
@@ -53,26 +120,27 @@
 - **双语注释**：关键概念和术语提供中英文对照，便于理解和记忆
 - **图文并茂**：各子文档内含截图占位区块，便于后续补充图文教程
 
-## 4. 阅读建议 | Reading Guide
+## 5. 阅读建议 | Reading Guide
 
 1. 建议先阅读 [`07-Git版本控制`](../07-Git版本控制/README.md) 的基础内容，了解 Git 的核心概念和基本命令
 2. 按照基础篇到进阶篇的顺序学习，循序渐进
 3. 结合实际操作练习，加深对 GitHub 平台功能的理解
 4. 遇到问题时参考「常见问题与排查」部分
 
-## 5. 延伸阅读 | Further Reading
+## 6. 延伸阅读 | Further Reading
 
 - [GitHub 官方文档](https://docs.github.com/) <!-- nofollow -->
 - 本仓库：[07-Git版本控制](../07-Git版本控制/README.md)
 
-## 6. 联系方式 | Contact Information
+## 7. 联系方式 | Contact Information
 
 - 邮箱：<fanquanpangpiing@163.com>
 - QQ：1839243393
 - 欢迎提意见交流或反馈问题
 
-## 7. 更新日志 | Changelog
+## 8. 更新日志 | Changelog
 
+- **2026-04-18**：完成GitHub仓库3.0结构优化规划，统一文件命名规范，优化目录结构
 - **2026-04-06**：深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分
 - **2026-04-06**：更新优化 README.md 文件，完善目录索引和内容结构
 - **2026-04-05**：补充路径说明、与 Git 分册的关联及双语标题

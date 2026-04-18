@@ -3,7 +3,7 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.2
+版本：v3.0.0
 -->
 
 ## 1. 项目简介 | Introduction
@@ -28,14 +28,13 @@ This module focuses on core layout techniques in modern web development, includi
 ## 2. 目录索引 | Directory Index
 
 ### 基础篇 | Basics
-- [01-概述与语法.md](./基础/01-概述与语法.md)
-- [02-选择器系统.md](./基础/02-选择器系统.md)
-- [03-盒模型.md](./基础/03-盒模型.md)
-- [04-Flex布局.md](./基础/04-Flex布局.md)
-- [05-Grid布局.md](./基础/05-Grid布局.md)
-- [06-传统布局与定位.md](./基础/06-传统布局与定位.md)
-- [07-Canvas绘图.md](./基础/07-Canvas绘图.md)
-- [基础篇 README](./基础/README.md)
+- [C06_101-概述与语法.md](./C06_101-概述与语法.md)
+- [C06_102-选择器系统.md](./C06_102-选择器系统.md)
+- [C06_103-盒模型.md](./C06_103-盒模型.md)
+- [C06_104-Flex布局.md](./C06_104-Flex布局.md)
+- [C06_105-Grid布局.md](./C06_105-Grid布局.md)
+- [C06_106-传统布局与定位.md](./C06_106-传统布局与定位.md)
+- [C06_107-Canvas绘图.md](./C06_107-Canvas绘图.md)
 
 ### 示例篇 | Examples
 - [responsive_layout.html](./示例/responsive_layout.html)
@@ -43,11 +42,8 @@ This module focuses on core layout techniques in modern web development, includi
 - [package.json](./示例/package.json)
 
 ### 高级篇 | Advanced
-- [01-CSS-in-JS与高级布局.md](./高级/01-CSS-in-JS与高级布局.md)
-
-### 进阶篇 | Advanced
-- [01-响应式设计.md](./进阶/01-响应式设计.md)
-- [进阶篇 README](./进阶/README.md)
+- [G06_201-CSS-in-JS与高级布局.md](./G06_201-CSS-in-JS与高级布局.md)
+- [G06_202-响应式设计.md](./G06_202-响应式设计.md)
 
 ## 3. 环境要求 | Environment Requirements
 
@@ -57,8 +53,8 @@ This module focuses on core layout techniques in modern web development, includi
 
 ## 4. 快速开始 | Quick Start
 
-1. 学习 [03-盒模型.md](./基础/03-盒模型.md) 理解空间占用
-2. 配合 [04-Flex布局.md](./基础/04-Flex布局.md) 在浏览器中实时测试样式
+1. 学习 [C06_103-盒模型.md](./C06_103-盒模型.md) 理解空间占用
+2. 配合 [C06_104-Flex布局.md](./C06_104-Flex布局.md) 在浏览器中实时测试样式
 
 ## 5. 学习路线 | Learning Path
 
@@ -109,6 +105,7 @@ This module focuses on core layout techniques in modern web development, includi
 
 **更新日志 | Changelog**
 
+- 2026-04-18: 完成GitHub仓库3.0结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
 - 2026-04-06: 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.2
 - 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1
 - 2026-04-05: 增加 Flexbox 可视化指南与 Grid 布局进阶内容

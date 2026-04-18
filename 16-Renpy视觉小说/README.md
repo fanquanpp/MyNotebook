@@ -3,7 +3,7 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.2
+版本：v3.0.0
 -->
 
 ## 1. 项目简介 | Introduction
@@ -25,25 +25,47 @@ This module focuses on Ren'Py engine core development techniques, including scri
 - 禁止直接修改本仓库内容
 - 他人使用本模块内容时出现的任何问题与作者无关
 
-## 2. 目录索引 | Directory Index
+## 2. 学习路线图 | Learning Roadmap
 
-### 基础篇 | Basics
-- [01-概述与原理.md](./基础/01-概述与原理.md)
-- [02-基础脚本语法.md](./基础/02-基础脚本语法.md)
-- [基础篇 README](./基础/README.md)
+```mermaid
+graph TD
+    A["剧本基础 (Say/Menu) | Scripting Basics"] --> B["角色与立绘 | Characters & Images"]
+    B --> C["ATL 动画语言 | ATL Animation"]
+    C --> D["变量与条件判断 | Logic & Variables"]
+    D --> E["Python 脚本集成 | Python Integration"]
+    E --> F["Screen 界面系统 | Screens UI"]
+    F --> G["多语言与存档优化 | Localization & Save Optimization"]
+```
 
-### 进阶篇 | Advanced
-- [01-ATL动画语言.md](./进阶/01-ATL动画语言.md)
-- [02-高级特性与发布.md](./进阶/02-高级特性与发布.md)
-- [进阶篇 README](./进阶/README.md)
+### 详细路径 | Detailed Path
 
-### 示例篇 | Examples
-- [save_load_optimization.rpy](./算法/save_load_optimization.rpy)
-- [typewriter_renpy.rpy](./算法/typewriter_renpy.rpy)
-- [算法篇 README](./算法/README.md)
+| 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
+| :--- | :--- | :--- | :--- |
+| 入门 | Ren'Py 基础体系 | 10h | 无 |
+| 进阶 | ATL 动画实战 | 15h | Ren'Py 基础 |
+| 实战 | 高级特性与发布 | 10h | Python 基础 |
 
-### 数据结构篇 | Data Structures
-- [数据结构篇 README](./数据结构/README.md)
+### 学习提示 | Tips
+- **代码整洁**：将 Python 逻辑尽量放在 `init python` 块中。
+- **性能**：大量立绘切换时使用 `image` 语句预定义以优化加载速度。
+- **UI**：Screen 语言是 Ren'Py 最强大的部分，值得深入研究。
+
+## 3. 目录索引 | Directory Index
+
+### 基础语法 | Basics
+- [C16_101-概述与原理.md](./C16_101-概述与原理.md)
+- [C16_102-基础脚本语法.md](./C16_102-基础脚本语法.md)
+
+### 高级特性 | Advanced
+- [G16_201-ATL动画语言.md](./G16_201-ATL动画语言.md)
+- [G16_202-高级特性与发布.md](./G16_202-高级特性与发布.md)
+
+### 算法与数据结构 | Algorithms & Data Structures
+- [SFDE16_301-save_load_optimization.rpy](./算法与数据结构/代码示例/SFDE16_301-save_load_optimization.rpy)
+- [SFDE16_302-typewriter_renpy.rpy](./算法与数据结构/代码示例/SFDE16_302-typewriter_renpy.rpy)
+
+### 官方文档 | Official Documentation
+- [Renpy官方教程文档](./Renpy官方教程文档/index.html)
 
 ## 3. 环境要求 | Environment Requirements
 
@@ -114,6 +136,7 @@ label start:
 
 **更新日志 | Changelog**
 
+- 2026-04-18: 完成GitHub仓库3.0结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
 - 2026-04-06: 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.2
 - 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，修正路径错误，升级为 v1.0.1
 - 2026-04-05: 体系化升级 README，补全分册索引、环境要求与快速开始

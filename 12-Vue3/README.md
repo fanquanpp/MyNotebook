@@ -3,7 +3,7 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-06
-版本：v1.0.0
+版本：v3.0.0
 -->
 
 ## 1. 项目简介 | Introduction
@@ -25,36 +25,63 @@ This module focuses on Vue3 framework, covering core features, Composition API, 
 - 禁止直接修改本仓库内容
 - 他人使用本模块内容时出现的任何问题与作者无关
 
-## 2. 目录索引 | Directory Index
+## 2. 学习路线图 | Learning Roadmap
 
-### 基础篇 | Basics
-- [01-概述与环境.md](./基础/01-概述与环境.md)
-- [02-组合式API.md](./基础/02-组合式API.md)
-- [03-响应式系统.md](./基础/03-响应式系统.md)
-- [04-组件系统.md](./基础/04-组件系统.md)
-- [05-模板语法.md](./基础/05-模板语法.md)
-- [06-指令系统.md](./基础/06-指令系统.md)
-- [基础篇 README](./基础/README.md)
+```mermaid
+graph TD
+    A["Vue3 基础"] --> B["环境搭建与项目创建"]
+    B --> C["组合式 API 基础"]
+    C --> D["响应式系统"]
+    D --> E["组件系统"]
+    E --> F["Vue Router 路由"]
+    F --> G["Pinia 状态管理"]
+    G --> H["TypeScript 集成"]
+    H --> I["性能优化"]
+    I --> J["高级特性"]
+    J --> K["实战项目"]
+    
+    subgraph 基础阶段
+    B
+    C
+    D
+    E
+    end
+    
+    subgraph 进阶阶段
+    F
+    G
+    H
+    I
+    J
+    K
+    end
+```
 
-### 进阶篇 | Advanced
-- [01-性能优化.md](./进阶/01-性能优化.md)
-- [02-TypeScript集成.md](./进阶/02-TypeScript集成.md)
-- [03-高级组件特性.md](./进阶/03-高级组件特性.md)
+## 3. 目录索引 | Directory Index
 
-### 框架篇 | Framework
-- [01-Vue Router.md](./框架/01-Vue Router.md)
-- [02-Pinia 状态管理.md](./框架/02-Pinia 状态管理.md)
-- [框架篇 README](./框架/README.md)
+### 基础语法 | Basics
+- [C12_101-概述与环境.md](./C12_101-概述与环境.md)
+- [C12_102-组合式API.md](./C12_102-组合式API.md)
+- [C12_103-响应式系统.md](./C12_103-响应式系统.md)
+- [C12_104-组件系统.md](./C12_104-组件系统.md)
+- [C12_105-模板语法.md](./C12_105-模板语法.md)
+- [C12_106-指令系统.md](./C12_106-指令系统.md)
 
-### 数据结构篇 | Data Structures
-- [reactive_collections.ts](./数据结构/reactive_collections.ts)
-- [数据结构篇 README](./数据结构/README.md)
+### 高级特性 | Advanced
+- [G12_201-性能优化.md](./G12_201-性能优化.md)
+- [G12_202-TypeScript集成.md](./G12_202-TypeScript集成.md)
+- [G12_203-高级组件特性.md](./G12_203-高级组件特性.md)
+- [G12_204-Vue Router.md](./G12_204-Vue Router.md)
+- [G12_205-Pinia 状态管理.md](./G12_205-Pinia 状态管理.md)
 
-### 算法篇 | Algorithms
-- [debounce_throttle.ts](./算法/debounce_throttle.ts)
-- [算法篇 README](./算法/README.md)
+### 算法与数据结构 | Algorithms & Data Structures
+- [SFDE12_301-debounce_throttle.ts](./算法与数据结构/代码示例/SFDE12_301-debounce_throttle.ts)
+- [SFDE12_401-reactive_collections.ts](./算法与数据结构/代码示例/SFDE12_401-reactive_collections.ts)
 
-### 示例篇 | Examples
+### 快速入门
+- [C12_100-快速入门.md](./C12_100-快速入门.md)
+
+### 示例 | Examples
 - [basic_components.vue](./示例/basic_components.vue)
 - [composition_api_demo.vue](./示例/composition_api_demo.vue)
 - [ChildComponent.vue](./示例/ChildComponent.vue)
@@ -63,6 +90,40 @@ This module focuses on Vue3 framework, covering core features, Composition API, 
 - [vue_router_demo.vue](./示例/vue_router_demo.vue)
 - [pinia_demo.vue](./示例/pinia_demo.vue)
 - [typescript_integration.vue](./示例/typescript_integration.vue)
+
+## 4. 学习建议
+
+1. **循序渐进**：从基础开始，逐步深入学习各个核心概念
+2. **实践为主**：通过实际项目练习巩固所学知识
+3. **查阅文档**：遇到问题时参考官方文档
+4. **参与社区**：加入 Vue 社区，与其他开发者交流
+5. **持续学习**：关注 Vue 的最新特性和最佳实践
+
+## 5. 推荐资源
+
+- [Vue3 官方文档](https://v3.vuejs.org/)
+- [Vue 3 教程 - 中文](https://cn.vuejs.org/)
+- [Vite 官方文档](https://vitejs.dev/)
+- [Vue Router 官方文档](https://router.vuejs.org/)
+- [Pinia 官方文档](https://pinia.vuejs.org/)
+- [TypeScript 官方文档](https://www.typescriptlang.org/)
+
+## 6. 常见问题
+
+### Q: Vue3 和 Vue2 的主要区别是什么？
+A: Vue3 引入了组合式 API、更好的 TypeScript 支持、更高效的响应式系统、Fragment、Teleport、Suspense 等新特性。
+
+### Q: 如何从 Vue2 迁移到 Vue3？
+A: 可以使用官方提供的迁移工具，逐步迁移代码，注意组合式 API 和选项式 API 的差异。
+
+### Q: Vue3 的性能比 Vue2 好多少？
+A: Vue3 在渲染性能、内存使用、包大小等方面都有显著提升，特别是在大型应用中。
+
+### Q: 什么时候应该使用组合式 API，什么时候应该使用选项式 API？
+A: 组合式 API 更适合复杂逻辑的复用和组织，选项式 API 更适合简单组件和快速开发。
+
+### Q: Vue3 支持 IE11 吗？
+A: Vue3 本身不支持 IE11，但可以通过 polyfill 和 Babel 配置来支持。
 
 ## 3. 环境要求 | Environment Requirements
 
@@ -137,4 +198,5 @@ npm run dev
 
 **更新日志 | Changelog**
 
+- 2026-04-18: 完成GitHub仓库3.0结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
 - 2026-04-06: 创建 Vue3 模块目录结构，添加 README.md 文件，版本为 v1.0.0

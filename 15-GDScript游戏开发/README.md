@@ -3,7 +3,7 @@
 <!--
 作者：fanquanpp
 创建日期：2026-04-05
-版本：v1.0.2
+版本：v3.0.0
 -->
 
 > **路径**：`15-GDScript游戏开发/` | **GDScript（Godot 脚本语言）** + **Godot（游戏引擎）**
@@ -27,26 +27,47 @@ This module focuses on GDScript, the default scripting language for Godot engine
 - 禁止直接修改本仓库内容
 - 他人使用本模块内容时出现的任何问题与作者无关
 
-## 2. 目录索引 | Directory Index
+## 2. 学习路线图 | Learning Roadmap
 
-### 基础篇 | Basics
-- [01-概述与环境.md](./基础/01-概述与环境.md)
-- [02-基础语法.md](./基础/02-基础语法.md)
-- [03-函数与面向对象.md](./基础/03-函数与面向对象.md)
-- [基础篇 README](./基础/README.md)
+```mermaid
+graph TD
+    A["编程语言基础 (Lua/GDScript) | Language Basics"] --> B["引擎核心概念 | Engine Core Concepts"]
+    B --> C["场景、节点与资源 | Scenes, Nodes & Resources"]
+    C --> D["2D/3D 渲染与物理 | Rendering & Physics"]
+    D --> E["脚本编写与 AI | Scripting & AI"]
+    E --> F["UI、音效与后期 | UI, Audio & VFX"]
+    F --> G["游戏发布与多平台 | Publishing & Multi-platform"]
+```
 
-### 进阶篇 | Advanced
-- [01-信号与异步.md](./进阶/01-信号与异步.md)
-- [02-性能优化与版本差异.md](./进阶/02-性能优化与版本差异.md)
+### 详细路径 | Detailed Path
 
-### 算法篇 | Algorithms
-- [astar_gd.gd](./算法/astar_gd.gd)
-- [bubble_sort_gd.gd](./算法/bubble_sort_gd.gd)
-- [算法篇 README](./算法/README.md)
+| 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
+| :--- | :--- | :--- | :--- |
+| 入门 | GDScript 基础体系 | 15h | 无 |
+| 进阶 | 信号、异步与注解 | 10h | 基础语法 |
+| 实战 | 性能优化与进阶技巧 | 10h | GDScript 基础 |
 
-### 数据结构篇 | Data Structures
-- [event_bus_gd.gd](./数据结构/event_bus_gd.gd)
-- [数据结构篇 README](./数据结构/README.md)
+### 学习提示 | Tips
+- **代码重构**：在 Godot 中优先使用 `Signals` 而不是硬编码引用。
+- **性能优化**：掌握 `Object Pooling`, `Draw Call Optimization`, `Culling`。
+- **面试重点**：理解 `Scene Tree`, `Entity-Component System`, `State Machines`。
+- **实战建议**：从制作一个简单的 `2D Platformer` 或 `Visual Novel` 开始。
+
+## 3. 目录索引 | Directory Index
+
+### 基础语法 | Basics
+- [C15_101-概述与环境.md](./C15_101-概述与环境.md)
+- [C15_102-基础语法.md](./C15_102-基础语法.md)
+- [C15_103-函数与面向对象.md](./C15_103-函数与面向对象.md)
+
+### 高级特性 | Advanced
+- [G15_201-信号与异步.md](./G15_201-信号与异步.md)
+- [G15_202-性能优化与版本差异.md](./G15_202-性能优化与版本差异.md)
+
+### 算法与数据结构 | Algorithms & Data Structures
+- [SFDE15_301-astar_gd.gd](./算法与数据结构/代码示例/SFDE15_301-astar_gd.gd)
+- [SFDE15_302-bubble_sort_gd.gd](./算法与数据结构/代码示例/SFDE15_302-bubble_sort_gd.gd)
+- [SFDE15_401-event_bus_gd.gd](./算法与数据结构/代码示例/SFDE15_401-event_bus_gd.gd)
 
 ## 3. 环境要求 | Environment Requirements
 
@@ -115,6 +136,7 @@ This module focuses on GDScript, the default scripting language for Godot engine
 
 **更新日志 | Changelog**
 
+- 2026-04-18: 完成GitHub仓库3.0结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
 - 2026-04-06: 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.2
 - 2026-04-06: 更新优化 README.md 文件，完善目录索引和内容结构，升级为 v1.0.1
 - 2026-04-05: 统一模块说明，与 Godot 4.x 主线对齐表述
