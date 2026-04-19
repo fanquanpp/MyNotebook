@@ -343,7 +343,7 @@ gcc hello.c -o hello
 
 - [C 语言标准文档](https://www.iso.org/standard/74528.html) <!-- nofollow -->
 - [The C Programming Language](https://www.amazon.com/C-Programming-Language-2nd/dp/0131103628) by Brian Kernighan and Dennis Ritchie
-- 本仓库：[13-C++系统编程](../13-C++系统编程/README.md)
+- 本仓库：[13-C++](../13-C++/README.md)
 
 ## 11. 贡献指南 | Contribution Guide
 

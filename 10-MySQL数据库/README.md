@@ -112,7 +112,7 @@ mysql> SELECT VERSION();
 
 - [MySQL 官方文档](https://dev.mysql.com/doc/) <!-- nofollow -->
 - [SQL 标准文档](https://www.iso.org/standard/76451.html) <!-- nofollow -->
-- 本仓库：[04-Java后端开发](../04-Java后端开发/README.md)
+- 本仓库：[04-Java](../04-Java/README.md)
 
 ## 9. 贡献指南 | Contribution Guide
 

@@ -78,7 +78,7 @@ This module focuses on Git core concepts, command operations, and team collabora
 
 - [Git 官方文档](https://git-scm.com/doc) <!-- nofollow -->
 - [Pro Git](https://git-scm.com/book/en/v2) <!-- nofollow -->
-- 本仓库：[01-Github完整教程](../01-Github完整教程/README.md)
+- 本仓库：[01-Github平台](../01-Github平台/README.md)
 
 ## 9. 贡献指南 | Contribution Guide
 

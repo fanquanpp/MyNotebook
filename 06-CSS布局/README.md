@@ -82,7 +82,7 @@ This module focuses on core layout techniques in modern web development, includi
 
 - [MDN CSS 文档](https://developer.mozilla.org/en-US/docs/Web/CSS) <!-- nofollow -->
 - [CSS-Tricks](https://css-tricks.com/) <!-- nofollow -->
-- 本仓库：[05-HTML5网页开发](../05-HTML5网页开发/README.md)、[08-Javascript脚本](../08-Javascript脚本/README.md)
+- 本仓库：[05-HTML5网页](../05-HTML5网页/README.md)、[08-Javascript](../08-Javascript/README.md)
 
 ## 9. 贡献指南 | Contribution Guide
 
