@@ -28,13 +28,8 @@ This module focuses on C language fundamentals, memory management, pointer opera
 ## 2. 学习路线图 | Learning Roadmap
 
 ```mermaid
-graph TD
-    A["C 基础语法 | C Basics"] --> B["指针与内存 | Pointers & Memory"]
-    B --> C["数据结构 (C 实现) | Data Structures in C"]
-    C --> D["C++ 核心语法 | C++ Core Syntax"]
-    D --> E["STL & 泛型编程 | STL & Generic Programming"]
-    E --> F["系统编程 & 并发 | Systems & Concurrency"]
-    F --> G["大型项目实战 | Large-scale Projects"]
+graph LR
+    A[C基础] --> B[指针内存] --> C[数据结构] --> D[C++] --> E[系统编程]
 ```
 
 ### 详细路径 | Detailed Path
@@ -236,20 +231,13 @@ C 语言基础篇提供了 C 语言的核心概念和基本语法，是学习 C 
 #### 4.2.1 单向链表 | Linked List
 ```mermaid
 graph LR
-    A[Head] --> B[Node 1]
-    B --> C[Node 2]
-    C --> D[Node 3]
-    D --> E[NULL]
+    A[Head] --> B --> C --> D --> NULL
 ```
 
 #### 4.2.2 循环队列 | Circular Queue
 ```mermaid
 graph TD
-    A[Rear] --> B[Front]
-    B --> C[Data 1]
-    C --> D[Data 2]
-    D --> E[Data 3]
-    E --> A
+    A[Rear] --> B[Front] --> C --> D --> E --> A
 ```
 
 ### 4.3 运行指南 | How to Run
@@ -274,26 +262,16 @@ gcc SFDE02_403-stack_c.c -o stack_test
 
 #### 5.2.1 快速排序分治流程 | Quick Sort Flow
 ```mermaid
-graph TD
-    A[待排序数组] --> B{选择基准 Pivot}
-    B --> C[左侧子数组 < Pivot]
-    B --> D[右侧子数组 > Pivot]
-    C --> E[递归排序]
-    D --> F[递归排序]
-    E --> G[合并结果]
-    F --> G
+graph LR
+    A[数组] --> B[Pivot] --> C[Left] --> D[Recurse]
+    B --> E[Right] --> D
 ```
 
 #### 5.2.2 二分搜索流程 | Binary Search Flow
 ```mermaid
 graph LR
-    A[Start] --> B[mid = low + (high-low)/2]
-    B --> C{arr[mid] == target?}
-    C -- Yes --> D[Return mid]
-    C -- No, < target --> E[low = mid + 1]
-    C -- No, > target --> F[high = mid - 1]
-    E --> B
-    F --> B
+    A[Start] --> B[mid] --> C{Found?} --> D[Return]
+    C --> E[Adjust] --> B
 ```
 
 ### 5.3 运行指南 | How to Run

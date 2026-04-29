@@ -28,13 +28,8 @@ This module focuses on Java core concepts, object-oriented programming, JVM fund
 ## 2. 学习路线图 | Learning Roadmap
 
 ```mermaid
-graph TD
-    A["Java 基础语法 | Java Basics"] --> B["面向对象进阶 | Advanced OOP"]
-    B --> C["数据结构 (Java) | Data Structures in Java"]
-    C --> D["Java 核心库 (Collections/Concurrency) | Core Java Libraries"]
-    D --> E["MySQL 数据库基础 | MySQL Basics"]
-    E --> F["Spring Boot 框架 | Spring Boot Framework"]
-    F --> G["RESTful 服务开发 | RESTful Services"]
+graph LR
+    A[Java基础] --> B[OOP进阶] --> C[数据结构] --> D[Spring Boot] --> E[REST服务]
 ```
 
 ### 详细路径 | Detailed Path
@@ -354,7 +349,7 @@ java SFDE04_401-linked_list_java
 
 - [Oracle Java 官方文档](https://docs.oracle.com/en/java/) <!-- nofollow -->
 - [Spring Boot 官方文档](https://spring.io/projects/spring-boot) <!-- nofollow -->
-- 本仓库：[10-MySQL数据库](../10-MySQL数据库/README.md)
+- 本仓库：[10-MySQL](../10-MySQL/README.md)
 
 ## 12. 贡献指南 | Contribution Guide
 

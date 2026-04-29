@@ -28,16 +28,8 @@ This module focuses on Python scripting, office automation, and data processing.
 ## 2. 学习路线图 | Learning Roadmap
 
 ```mermaid
-graph TD
-    A["基础语法 | Basic Syntax"] --> B["常用算法 | Common Algorithms"]
-    B --> B1["排序 | Sorting"]
-    B --> B2["搜索 | Searching"]
-    B1 --> C["高级算法 | Advanced Algorithms"]
-    B2 --> C
-    C --> C1["动态规划 | Dynamic Programming"]
-    C --> C2["图论 | Graph Theory"]
-    C1 --> D["实战项目 | Real-world Projects"]
-    C2 --> D
+graph LR
+    A[基础语法] --> B[常用算法] --> C[高级算法] --> D[实战项目]
 ```
 
 ### 详细路径 | Detailed Path
@@ -316,35 +308,24 @@ python 算法与数据结构/代码示例/SFDE03_301-binary_search_py.py
 
 #### 5.3.1 快速排序 | Quick Sort
 ```mermaid
-graph TD
-    A[Pivot] --> B[Left Subarray]
-    A --> C[Right Subarray]
-    B --> B1[Recursive Quick Sort]
-    C --> C1[Recursive Quick Sort]
+graph LR
+    A[Pivot] --> B[Left]
+    A --> C[Right]
 ```
 
 #### 5.3.2 归并排序 | Merge Sort
 ```mermaid
-graph TD
-    A[Array] --> B[Split Left]
-    A --> C[Split Right]
-    B --> D[Sort Left]
-    C --> E[Sort Right]
-    D --> F[Merge Both]
-    E --> F
+graph LR
+    A[Array] --> B[Split] --> C[Sort] --> D[Merge]
 ```
 
 #### 5.3.3 狄克斯特拉 | Dijkstra
 ```mermaid
 graph LR
-    A -- 1 --> B
-    A -- 4 --> C
-    B -- 2 --> C
-    B -- 5 --> D
-    C -- 1 --> D
-    style A fill:#f9f,stroke:#333,stroke-width:4px
+    A --> B --> C --> D
+    A --> C
+    B --> D
 ```
-*注：从 A 到 D 的最短路径为 A -> B -> C -> D，总权重为 1+2+1=4。*
 
 ## 6. 环境要求 | Environment Requirements
 
