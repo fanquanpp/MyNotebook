@@ -25,6 +25,7 @@ This module focuses on Vue3 framework, covering core features, Composition API, 
 - 禁止直接修改本仓库内容
 - 他人使用本模块内容时出现的任何问题与作者无关
 
+
 ## 2. 学习路线图 | Learning Roadmap
 
 ```mermaid
@@ -60,6 +61,8 @@ graph TD
 ## 3. 目录索引 | Directory Index
 
 ### 基础语法 | Basics
+
+- [V_12-Vue3名词注释查阅表.md](./V_12-Vue3名词注释查阅表.md)
 - [C12_101-概述与环境.md](./C12_101-概述与环境.md)
 - [C12_102-组合式API.md](./C12_102-组合式API.md)
 - [C12_103-响应式系统.md](./C12_103-响应式系统.md)

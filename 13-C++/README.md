@@ -28,6 +28,9 @@ This module focuses on modern C++ features from C++11 onwards, object-oriented p
 ## 2. 目录索引 | Directory Index
 
 ### 基础篇 | Basics
+
+- [V_13-C++名词注释查阅表.md](./V_13-C++名词注释查阅表.md)
+
 - [C13_101-概述与标准.md](./C13_101-概述与标准.md)
 - [C13_102-基础语法与类型系统.md](./C13_102-基础语法与类型系统.md)
 - [C13_103-指针引用与内存管理.md](./C13_103-指针引用与内存管理.md)

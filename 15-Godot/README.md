@@ -27,6 +27,7 @@ This module focuses on GDScript, the default scripting language for Godot engine
 - 禁止直接修改本仓库内容
 - 他人使用本模块内容时出现的任何问题与作者无关
 
+
 ## 2. 学习路线图 | Learning Roadmap
 
 ```mermaid
@@ -56,6 +57,8 @@ graph TD
 ## 3. 目录索引 | Directory Index
 
 ### 基础语法 | Basics
+
+- [V_15-Godot名词注释查阅表.md](./V_15-Godot名词注释查阅表.md)
 - [C15_101-概述与环境.md](./C15_101-概述与环境.md)
 - [C15_102-基础语法.md](./C15_102-基础语法.md)
 - [C15_103-函数与面向对象.md](./C15_103-函数与面向对象.md)

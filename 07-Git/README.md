@@ -28,6 +28,9 @@ This module focuses on Git core concepts, command operations, and team collabora
 ## 2. 目录索引 | Directory Index
 
 ### 基础篇 | Basics
+
+- [V_07-Git名词注释查阅表.md](./V_07-Git名词注释查阅表.md)
+
 - [C07_101-Git概述.md](./C07_101-Git概述.md)
 - [C07_102-环境配置与初始化.md](./C07_102-环境配置与初始化.md)
 - [C07_103-基本操作.md](./C07_103-基本操作.md)

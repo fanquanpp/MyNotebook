@@ -26,6 +26,7 @@ This module focuses on Ren'Py engine core development techniques, including scri
 - 禁止直接修改本仓库内容
 - 他人使用本模块内容时出现的任何问题与作者无关
 
+
 ## 2. 学习路线图 | Learning Roadmap
 
 ```mermaid
@@ -73,6 +74,8 @@ graph TD
 ## 3. 目录索引 | Directory Index
 
 ### 基础语法 | Basics
+
+- [V_16-Ren'Py名词注释查阅表.md](./V_16-Ren'Py名词注释查阅表.md)
 - [C16_101-概述与原理.md](./C16_101-概述与原理.md) - Ren'Py 引擎概述、工作原理、官方文档索引
 - [C16_102-基础脚本语法.md](./C16_102-基础脚本语法.md) - 语言基础、标签、对话、图像显示、菜单控制
 - [C16_103-文本处理.md](./C16_103-文本处理.md) - 文本样式、文本标签、文本输入、翻译

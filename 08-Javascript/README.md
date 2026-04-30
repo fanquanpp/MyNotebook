@@ -36,7 +36,10 @@ This module focuses on ECMAScript syntax standards, DOM manipulation, asynchrono
 
 ## 3. 目录索引 | Directory Index
 
+
 ### 基础篇 | Basics
+
+- [V_08-JavaScript名词注释查阅表.md](./V_08-JavaScript名词注释查阅表.md)
 - [C08_101-概述与环境.md](./C08_101-概述与环境.md)
 - [C08_102-程序结构与基础语法.md](./C08_102-程序结构与基础语法.md)
 - [C08_103-变量与数据类型.md](./C08_103-变量与数据类型.md)

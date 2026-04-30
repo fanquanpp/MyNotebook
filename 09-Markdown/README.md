@@ -33,7 +33,10 @@ This module focuses on Markdown basic syntax, advanced typesetting techniques, a
 
 ## 3. 目录索引 | Directory Index
 
+
 ### 基础篇 | Basics
+
+- [V_09-Markdown名词注释查阅表.md](./V_09-Markdown名词注释查阅表.md)
 - [C09_101-Markdown概述.md](./C09_101-Markdown概述.md)
 - [C09_102-标题语法.md](./C09_102-标题语法.md)
 - [C09_103-段落与换行.md](./C09_103-段落与换行.md)

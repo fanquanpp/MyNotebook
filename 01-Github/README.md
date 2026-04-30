@@ -29,6 +29,9 @@
 ## 2. 目录索引 | Directory Index
 
 ### 基础篇 | Basics
+
+- [V_01-GitHub名词注释查阅表.md](./V_01-GitHub名词注释查阅表.md)
+
 - [C01_101-账户与安全.md](./C01_101-账户与安全.md)
 - [C01_102-SSH与HTTPS.md](./C01_102-SSH与HTTPS.md)
 - [C01_103-仓库创建与管理.md](./C01_103-仓库创建与管理.md)

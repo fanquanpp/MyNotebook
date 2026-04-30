@@ -25,6 +25,7 @@ This module focuses on Python scripting, office automation, and data processing.
 - 禁止直接修改本仓库内容
 - 他人使用本模块内容时出现的任何问题与作者无关
 
+
 ## 2. 学习路线图 | Learning Roadmap
 
 ```mermaid
@@ -51,6 +52,8 @@ graph LR
 ## 3. 目录索引 | Directory Index
 
 ### 基础语法 | Basics
+
+- [V_03-Python名词注释查阅表.md](./V_03-Python名词注释查阅表.md)
 - [C03_101-概述与环境.md](./C03_101-概述与环境.md)
 - [C03_102-程序结构与基础语法.md](./C03_102-程序结构与基础语法.md)
 - [C03_103-基础数据类型.md](./C03_103-基础数据类型.md)

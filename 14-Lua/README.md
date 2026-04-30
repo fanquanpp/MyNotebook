@@ -25,6 +25,7 @@ This module focuses on Lua's minimalist syntax, Table core data structure, metat
 - 禁止直接修改本仓库内容
 - 他人使用本模块内容时出现的任何问题与作者无关
 
+
 ## 2. 学习路线图 | Learning Roadmap
 
 ```mermaid
@@ -53,6 +54,8 @@ graph TD
 ## 3. 目录索引 | Directory Index
 
 ### 基础语法 | Basics
+
+- [V_14-Lua名词注释查阅表.md](./V_14-Lua名词注释查阅表.md)
 - [C14_101-概述与环境.md](./C14_101-概述与环境.md)
 - [C14_102-基础语法.md](./C14_102-基础语法.md)
 - [C14_103-数据类型与Table.md](./C14_103-数据类型与Table.md)

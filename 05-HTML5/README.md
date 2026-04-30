@@ -25,6 +25,7 @@ This module focuses on HTML5 core tags, semantic structures, form validation, mu
 - 禁止直接修改本仓库内容
 - 他人使用本模块内容时出现的任何问题与作者无关
 
+
 ## 2. 学习路线图 | Learning Roadmap
 
 ```mermaid
@@ -53,6 +54,8 @@ graph TD
 ## 3. 目录索引 | Directory Index
 
 ### 基础语法 | Basics
+
+- [V_05-HTML5名词注释查阅表.md](./V_05-HTML5名词注释查阅表.md)
 - [C05_101-概述与语义化.md](./C05_101-概述与语义化.md)
 - [C05_102-基础标签与全局属性.md](./C05_102-基础标签与全局属性.md)
 - [C05_103-表单与验证.md](./C05_103-表单与验证.md)

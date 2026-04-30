@@ -28,6 +28,9 @@ This module focuses on core layout techniques in modern web development, includi
 ## 2. 目录索引 | Directory Index
 
 ### 基础篇 | Basics
+
+- [V_06-CSS名词注释查阅表.md](./V_06-CSS名词注释查阅表.md)
+
 - [C06_101-概述与语法.md](./C06_101-概述与语法.md)
 - [C06_102-选择器系统.md](./C06_102-选择器系统.md)
 - [C06_103-盒模型.md](./C06_103-盒模型.md)

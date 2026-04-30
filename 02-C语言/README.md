@@ -25,6 +25,7 @@ This module focuses on C language fundamentals, memory management, pointer opera
 - 禁止直接修改本仓库内容
 - 他人使用本模块内容时出现的任何问题与作者无关
 
+
 ## 2. 学习路线图 | Learning Roadmap
 
 ```mermaid
@@ -51,6 +52,8 @@ graph LR
 ## 3. 目录索引 | Directory Index
 
 ### 基础语法 | Basics
+
+- [V_02-C语言名词注释查阅表.md](./V_02-C语言名词注释查阅表.md)
 - [C02_101-概述.md](./C02_101-概述.md)
 - [C02_102-程序结构与语法.md](./C02_102-程序结构与语法.md)
 - [C02_103-数据类型.md](./C02_103-数据类型.md)
