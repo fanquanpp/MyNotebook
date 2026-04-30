@@ -70,6 +70,7 @@ graph TD
 
 ### 专项内容 | Specialized
 - [Z10_301-advanced_sql_queries.sql](./Z10_301-advanced_sql_queries.sql)
+- [Z10_302-comminfo_practice.sql](./Z10_302-comminfo_practice.sql) - 商品管理系统实战案例
 
 ## 3. 环境要求 | Environment Requirements
 
@@ -137,6 +138,7 @@ mysql> SELECT VERSION();
 
 **更新日志 | Changelog**
 
+- 2026-04-30: 大幅细化所有文档内容，C10_101 新增 MySQL 架构详解、安装配置详细步骤；C10_102 新增约束类型、索引设计原则、数据类型选择指南、聚合函数详解、连接类型图解等；新增商品管理系统实战案例 Z10_302-comminfo_practice.sql；整合 KE-326/330/409/413/423/427 内容
 - 2026-04-18: 完成GitHub仓库3.0结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
 - 2026-04-06: 新增「数据类型与约束 / 索引与执行计划」知识点，补全基础篇索引与学习路线，升级为 v1.0.3
 - 2026-04-06: 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.2
