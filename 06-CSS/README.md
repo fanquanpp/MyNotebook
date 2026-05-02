@@ -1,108 +1,108 @@
-# 06-CSS 布局 | CSS Layouts
+﻿# 06-CSS 甯冨眬 | CSS Layouts
 
 > @Author: fanquanpp
-> @Version: v3.0.0
+> @Version: v3.5.0
 > @Created: 2026-04-05
 
-## 1. 简介 | Introduction
+## 1. 绠€浠?| Introduction
 
-专注于现代 Web 开发中的核心布局技术，包括 Flexbox、Grid、传统布局方案以及 Canvas 绘图。作为前端开发的重要组成部分，布局技术直接影响网站的视觉效果和用户体验，本模块旨在为开发者提供从基础到高级的系统化布局技术指南。
+涓撴敞浜庣幇浠?Web 寮€鍙戜腑鐨勬牳蹇冨竷灞€鎶€鏈紝鍖呮嫭 Flexbox銆丟rid銆佷紶缁熷竷灞€鏂规浠ュ強 Canvas 缁樺浘銆備綔涓哄墠绔紑鍙戠殑閲嶈缁勬垚閮ㄥ垎锛屽竷灞€鎶€鏈洿鎺ュ奖鍝嶇綉绔欑殑瑙嗚鏁堟灉鍜岀敤鎴蜂綋楠岋紝鏈ā鍧楁棬鍦ㄤ负寮€鍙戣€呮彁渚涗粠鍩虹鍒伴珮绾х殑绯荤粺鍖栧竷灞€鎶€鏈寚鍗椼€?
 
-## 2. 目录索引 | Directory Index
+## 2. 鐩綍绱㈠紩 | Directory Index
 
-### 基础篇 | Basics
+### 鍩虹绡?| Basics
 
-- [V06_101-CSS名词注释查阅表.md](./V06_101-CSS名词注释查阅表.md)
+- [V06_101-CSS鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md](./V06_101-CSS鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md)
 
-- [C06_101-概述与语法.md](./C06_101-概述与语法.md)
-- [C06_102-选择器系统.md](./C06_102-选择器系统.md)
-- [C06_103-盒模型.md](./C06_103-盒模型.md)
-- [C06_104-Flex布局.md](./C06_104-Flex布局.md)
-- [C06_105-Grid布局.md](./C06_105-Grid布局.md)
-- [C06_106-传统布局与定位.md](./C06_106-传统布局与定位.md)
-- [C06_107-Canvas绘图.md](./C06_107-Canvas绘图.md)
+- [C06_101-姒傝堪涓庤娉?md](./C06_101-姒傝堪涓庤娉?md)
+- [C06_102-閫夋嫨鍣ㄧ郴缁?md](./C06_102-閫夋嫨鍣ㄧ郴缁?md)
+- [C06_103-鐩掓ā鍨?md](./C06_103-鐩掓ā鍨?md)
+- [C06_104-Flex甯冨眬.md](./C06_104-Flex甯冨眬.md)
+- [C06_105-Grid甯冨眬.md](./C06_105-Grid甯冨眬.md)
+- [C06_106-浼犵粺甯冨眬涓庡畾浣?md](./C06_106-浼犵粺甯冨眬涓庡畾浣?md)
+- [C06_107-Canvas缁樺浘.md](./C06_107-Canvas缁樺浘.md)
 
-### 示例篇 | Examples
-- [responsive_layout.html](./示例/responsive_layout.html)
-- [knowledge_pitfalls.md](./示例/knowledge_pitfalls.md)
-- [package.json](./示例/package.json)
+### 绀轰緥绡?| Examples
+- [responsive_layout.html](./绀轰緥/responsive_layout.html)
+- [knowledge_pitfalls.md](./绀轰緥/knowledge_pitfalls.md)
+- [package.json](./绀轰緥/package.json)
 
-### 高级篇 | Advanced
-- [G06_201-响应式设计.md](./G06_201-响应式设计.md)
-- [G06_202-CSS-in-JS与高级布局.md](./G06_202-CSS-in-JS与高级布局.md)
+### 楂樼骇绡?| Advanced
+- [G06_201-鍝嶅簲寮忚璁?md](./G06_201-鍝嶅簲寮忚璁?md)
+- [G06_202-CSS-in-JS涓庨珮绾у竷灞€.md](./G06_202-CSS-in-JS涓庨珮绾у竷灞€.md)
 
-## 3. 环境要求 | Environment Requirements
+## 3. 鐜瑕佹眰 | Environment Requirements
 
-- **浏览器**：Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
-- **开发工具**：VS Code, Sublime Text, 或任何文本编辑器
-- **在线工具**：[Codepen](https://codepen.io/), [JSFiddle](https://jsfiddle.net/)
+- **娴忚鍣?*锛欳hrome 90+, Firefox 88+, Safari 14+, Edge 90+
+- **寮€鍙戝伐鍏?*锛歏S Code, Sublime Text, 鎴栦换浣曟枃鏈紪杈戝櫒
+- **鍦ㄧ嚎宸ュ叿**锛歔Codepen](https://codepen.io/), [JSFiddle](https://jsfiddle.net/)
 
-## 4. 快速开始 | Quick Start
+## 4. 蹇€熷紑濮?| Quick Start
 
-1. 学习 [C06_103-盒模型.md](./C06_103-盒模型.md) 理解空间占用
-2. 配合 [C06_104-Flex布局.md](./C06_104-Flex布局.md) 在浏览器中实时测试样式
+1. 瀛︿範 [C06_103-鐩掓ā鍨?md](./C06_103-鐩掓ā鍨?md) 鐞嗚В绌洪棿鍗犵敤
+2. 閰嶅悎 [C06_104-Flex甯冨眬.md](./C06_104-Flex甯冨眬.md) 鍦ㄦ祻瑙堝櫒涓疄鏃舵祴璇曟牱寮?
 
-## 5. 学习路线 | Learning Path
+## 5. 瀛︿範璺嚎 | Learning Path
 
-`盒模型` -> `选择器` -> `Flexbox` -> `Grid` -> `传统布局` -> `Canvas绘图` -> `综合实战`
+`鐩掓ā鍨媊 -> `閫夋嫨鍣╜ -> `Flexbox` -> `Grid` -> `浼犵粺甯冨眬` -> `Canvas缁樺浘` -> `缁煎悎瀹炴垬`
 
-## 6. 核心特色 | Key Features
+## 6. 鏍稿績鐗硅壊 | Key Features
 
-- **现代布局技术**：深入讲解 Flexbox 和 Grid 等现代 CSS 布局技术
-- **响应式设计**：提供响应式布局的实现方法和最佳实践
-- **可视化学习**：包含 Flexbox 和 Grid 的可视化学习资源
-- **布局技巧**：收录常见布局问题的解决方案，如居中、多列布局等
-- **性能优化**：讲解 CSS 布局性能优化的技巧和策略
-- **Canvas 绘图**：提供基础绘图、动画效果和实战示例
-- **浏览器兼容性**：提供各布局技术的浏览器支持情况
-- **双语注释**：关键概念和代码提供中英文对照注释
+- **鐜颁唬甯冨眬鎶€鏈?*锛氭繁鍏ヨ瑙?Flexbox 鍜?Grid 绛夌幇浠?CSS 甯冨眬鎶€鏈?
+- **鍝嶅簲寮忚璁?*锛氭彁渚涘搷搴斿紡甯冨眬鐨勫疄鐜版柟娉曞拰鏈€浣冲疄璺?
+- **鍙鍖栧涔?*锛氬寘鍚?Flexbox 鍜?Grid 鐨勫彲瑙嗗寲瀛︿範璧勬簮
+- **甯冨眬鎶€宸?*锛氭敹褰曞父瑙佸竷灞€闂鐨勮В鍐虫柟妗堬紝濡傚眳涓€佸鍒楀竷灞€绛?
+- **鎬ц兘浼樺寲**锛氳瑙?CSS 甯冨眬鎬ц兘浼樺寲鐨勬妧宸у拰绛栫暐
+- **Canvas 缁樺浘**锛氭彁渚涘熀纭€缁樺浘銆佸姩鐢绘晥鏋滃拰瀹炴垬绀轰緥
+- **娴忚鍣ㄥ吋瀹规€?*锛氭彁渚涘悇甯冨眬鎶€鏈殑娴忚鍣ㄦ敮鎸佹儏鍐?
+- **鍙岃娉ㄩ噴**锛氬叧閿蹇靛拰浠ｇ爜鎻愪緵涓嫳鏂囧鐓ф敞閲?
 
-## 7. 阅读建议 | Reading Guide
+## 7. 闃呰寤鸿 | Reading Guide
 
-1. 按照学习路线的顺序学习，从盒模型开始，逐步掌握各种布局技术
-2. 结合实际项目练习，加深对布局技术的理解
-3. 特别关注 Flexbox 和 Grid 布局，这是现代 Web 开发的核心布局技术
-4. 尝试自己实现响应式布局，巩固所学知识
+1. 鎸夌収瀛︿範璺嚎鐨勯『搴忓涔狅紝浠庣洅妯″瀷寮€濮嬶紝閫愭鎺屾彙鍚勭甯冨眬鎶€鏈?
+2. 缁撳悎瀹為檯椤圭洰缁冧範锛屽姞娣卞甯冨眬鎶€鏈殑鐞嗚В
+3. 鐗瑰埆鍏虫敞 Flexbox 鍜?Grid 甯冨眬锛岃繖鏄幇浠?Web 寮€鍙戠殑鏍稿績甯冨眬鎶€鏈?
+4. 灏濊瘯鑷繁瀹炵幇鍝嶅簲寮忓竷灞€锛屽珐鍥烘墍瀛︾煡璇?
 
-## 8. 延伸阅读 | Further Reading
+## 8. 寤朵几闃呰 | Further Reading
 
-- [MDN CSS 文档](https://developer.mozilla.org/en-US/docs/Web/CSS) <!-- nofollow -->
+- [MDN CSS 鏂囨。](https://developer.mozilla.org/en-US/docs/Web/CSS) <!-- nofollow -->
 - [CSS-Tricks](https://css-tricks.com/) <!-- nofollow -->
-- 本仓库：[05-HTML5网页](../05-HTML5网页/README.md)、[08-Javascript](../08-Javascript/README.md)
+- 鏈粨搴擄細[05-HTML5缃戦〉](../05-HTML5缃戦〉/README.md)銆乕08-Javascript](../08-Javascript/README.md)
 
-## 9. 贡献指南 | Contribution Guide
+## 9. 璐＄尞鎸囧崡 | Contribution Guide
 
-- 推荐使用动画 GIF 演示布局变化
-- 确保代码示例通过 W3C 校验
-- 提供跨浏览器兼容性测试结果
+- 鎺ㄨ崘浣跨敤鍔ㄧ敾 GIF 婕旂ず甯冨眬鍙樺寲
+- 纭繚浠ｇ爜绀轰緥閫氳繃 W3C 鏍￠獙
+- 鎻愪緵璺ㄦ祻瑙堝櫒鍏煎鎬ф祴璇曠粨鏋?
 
-## 10. 联系方式 | Contact Information
+## 10. 鑱旂郴鏂瑰紡 | Contact Information
 
-- 邮箱：<fanquanpangpiing@163.com>
-- QQ：1839243393
-- 欢迎提意见交流或反馈问题
+- 閭锛?fanquanpangpiing@163.com>
+- QQ锛?839243393
+- 娆㈣繋鎻愭剰瑙佷氦娴佹垨鍙嶉闂
 
-## 11. 许可证信息 | License
+## 11. 璁稿彲璇佷俊鎭?| License
 
-- **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- **Copyright**：2024-2026 fanquanpp
+- **SPDX-Identifier**锛歔CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**锛?024-2026 fanquanpp
 
 ---
 
-**更新日志 | Changelog**
+**鏇存柊鏃ュ織 | Changelog**
 
 - **2026-05-02**
-  - 全面检查项目结构，确保一致性
+  - 鍏ㄩ潰妫€鏌ラ」鐩粨鏋勶紝纭繚涓€鑷存€?
 
 - **2026-04-18**
-  - 完成 GitHub 仓库 3.0 结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
+  - 瀹屾垚 GitHub 浠撳簱 3.0 缁撴瀯浼樺寲瑙勫垝锛岀粺涓€鏂囦欢鍛藉悕瑙勮寖锛屼紭鍖栫洰褰曠粨鏋勶紝鍗囩骇涓?v3.0.0
 
 - **2026-04-06**
-  - 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.1 ~ v1.0.2
+  - 娣卞害浼樺寲 README.md 鏂囦欢锛屽畬鍠勭粨鏋勫拰鍐呭锛屽鍔犱粨搴撳畾浣嶃€佷娇鐢ㄨ鏄庣瓑閮ㄥ垎锛屽崌绾т负 v1.0.1 ~ v1.0.2
 
 - **2026-04-05**
-  - 增加 Flexbox 可视化指南与 Grid 布局进阶内容
+  - 澧炲姞 Flexbox 鍙鍖栨寚鍗椾笌 Grid 甯冨眬杩涢樁鍐呭
 
 - **2026-10-04**
-  - 添加 Canvas 绘图知识点，包含基础绘图、动画效果和实战示例
-  - 更新优化 README.md 文件，统一结构和格式
+  - 娣诲姞 Canvas 缁樺浘鐭ヨ瘑鐐癸紝鍖呭惈鍩虹缁樺浘銆佸姩鐢绘晥鏋滃拰瀹炴垬绀轰緥
+  - 鏇存柊浼樺寲 README.md 鏂囦欢锛岀粺涓€缁撴瀯鍜屾牸寮?

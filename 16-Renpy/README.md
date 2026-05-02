@@ -1,172 +1,154 @@
-# 16-Ren'Py 视觉小说 | Ren'Py Visual Novel Engine
+﻿# 16-Ren'Py 瑙嗚灏忚 | Ren'Py Visual Novel Engine
 
 > @Author: fanquanpp
-> @Version: v4.0.0
+> @Version: v3.5.0
 > @Created: 2026-04-05
 
-## 1. 简介 | Introduction
+## 1. 绠€浠?| Introduction
 
-专注于 Ren'Py 引擎的核心开发技术，包括脚本语法、ATL 动画语言、屏幕系统、游戏机制设计以及发布流程等内容。作为一款专为视觉小说和互动叙事游戏设计的引擎，Ren'Py 以其易用性和强大的功能而受到开发者的喜爱，本模块旨在为创作者提供从入门到进阶的系统化 Ren'Py 学习路径。
+涓撴敞浜?Ren'Py 寮曟搸鐨勬牳蹇冨紑鍙戞妧鏈紝鍖呮嫭鑴氭湰璇硶銆丄TL 鍔ㄧ敾璇█銆佸睆骞曠郴缁熴€佹父鎴忔満鍒惰璁′互鍙婂彂甯冩祦绋嬬瓑鍐呭銆備綔涓轰竴娆句笓涓鸿瑙夊皬璇村拰浜掑姩鍙欎簨娓告垙璁捐鐨勫紩鎿庯紝Ren'Py 浠ュ叾鏄撶敤鎬у拰寮哄ぇ鐨勫姛鑳借€屽彈鍒板紑鍙戣€呯殑鍠滅埍锛屾湰妯″潡鏃ㄥ湪涓哄垱浣滆€呮彁渚涗粠鍏ラ棬鍒拌繘闃剁殑绯荤粺鍖?Ren'Py 瀛︿範璺緞銆?
+## 2. 瀛︿範璺嚎鍥?| Learning Roadmap
 
-## 2. 学习路线图 | Learning Roadmap
+### 璇︾粏璺緞 | Detailed Path
 
-### 详细路径 | Detailed Path
-
-| 阶段 | 模块 | 内容 | 预计耗时 |
+| 闃舵 | 妯″潡 | 鍐呭 | 棰勮鑰楁椂 |
 | :--- | :--- | :--- | :--- |
-| 入门 | 基础入门 | 概述与原理、基础脚本语法、文本处理 | 15h |
-| 进阶 | 进阶特性 | ATL动画语言、高级特性与发布 | 25h |
-| 进阶 | 界面设计 | 屏幕系统、UI设计、转场效果、分层图像 | 20h |
-| 进阶 | 音视频 | 音视频系统 | 10h |
-| 高级 | 存储与系统 | 存储与回滚 | 10h |
-| 高级 | 配置与构建 | 配置与构建 | 10h |
-| 参考 | API参考 | 名词解释 | - |
+| 鍏ラ棬 | 鍩虹鍏ラ棬 | 姒傝堪涓庡師鐞嗐€佸熀纭€鑴氭湰璇硶銆佹枃鏈鐞?| 15h |
+| 杩涢樁 | 杩涢樁鐗规€?| ATL鍔ㄧ敾璇█銆侀珮绾х壒鎬т笌鍙戝竷 | 25h |
+| 杩涢樁 | 鐣岄潰璁捐 | 灞忓箷绯荤粺銆乁I璁捐銆佽浆鍦烘晥鏋溿€佸垎灞傚浘鍍?| 20h |
+| 杩涢樁 | 闊宠棰?| 闊宠棰戠郴缁?| 10h |
+| 楂樼骇 | 瀛樺偍涓庣郴缁?| 瀛樺偍涓庡洖婊?| 10h |
+| 楂樼骇 | 閰嶇疆涓庢瀯寤?| 閰嶇疆涓庢瀯寤?| 10h |
+| 鍙傝€?| API鍙傝€?| 鍚嶈瘝瑙ｉ噴 | - |
 
-### 官方文档章节对应 | Official Documentation Mapping
+### 瀹樻柟鏂囨。绔犺妭瀵瑰簲 | Official Documentation Mapping
 
-| 官方文档章节 | 对应笔记 |
+| 瀹樻柟鏂囨。绔犺妭 | 瀵瑰簲绗旇 |
 | :--- | :--- |
-| Language Basics | [C16_101-概述与原理.md](./C16_101-概述与原理.md) |
-| Labels &amp; Control Flow | [C16_102-基础脚本语法.md](./C16_102-基础脚本语法.md) |
-| Dialogue and Narration | [C16_103-文本处理.md](./C16_103-文本处理.md) |
-| Transforms (含 ATL) | [G16_201-ATL动画语言.md](./G16_201-ATL动画语言.md) |
-| Audio | [G16_401-音视频系统.md](./G16_401-音视频系统.md) |
-| Saving, Loading &amp; Rollback | [G16_501-存储与回滚.md](./G16_501-存储与回滚.md) |
-| Configuration Variables | [G16_601-配置与构建.md](./G16_601-配置与构建.md) |
-| Building Distributions | [G16_601-配置与构建.md](./G16_601-配置与构建.md) |
+| Language Basics | [C16_101-姒傝堪涓庡師鐞?md](./C16_101-姒傝堪涓庡師鐞?md) |
+| Labels &amp; Control Flow | [C16_102-鍩虹鑴氭湰璇硶.md](./C16_102-鍩虹鑴氭湰璇硶.md) |
+| Dialogue and Narration | [C16_103-鏂囨湰澶勭悊.md](./C16_103-鏂囨湰澶勭悊.md) |
+| Transforms (鍚?ATL) | [G16_201-ATL鍔ㄧ敾璇█.md](./G16_201-ATL鍔ㄧ敾璇█.md) |
+| Audio | [G16_401-闊宠棰戠郴缁?md](./G16_401-闊宠棰戠郴缁?md) |
+| Saving, Loading &amp; Rollback | [G16_501-瀛樺偍涓庡洖婊?md](./G16_501-瀛樺偍涓庡洖婊?md) |
+| Configuration Variables | [G16_601-閰嶇疆涓庢瀯寤?md](./G16_601-閰嶇疆涓庢瀯寤?md) |
+| Building Distributions | [G16_601-閰嶇疆涓庢瀯寤?md](./G16_601-閰嶇疆涓庢瀯寤?md) |
 
-## 3. 目录索引 | Directory Index
+## 3. 鐩綍绱㈠紩 | Directory Index
 
-### 基础入门 | Basics
+### 鍩虹鍏ラ棬 | Basics
 
-- [C16_101-概述与原理.md](./C16_101-概述与原理.md) - Ren'Py 引擎概述、工作原理、官方文档索引
-- [C16_102-基础脚本语法.md](./C16_102-基础脚本语法.md) - 语言基础、标签、对话、图像显示、菜单控制
-- [C16_103-文本处理.md](./C16_103-文本处理.md) - 文本样式、文本标签、文本输入、翻译
+- [C16_101-姒傝堪涓庡師鐞?md](./C16_101-姒傝堪涓庡師鐞?md) - Ren'Py 寮曟搸姒傝堪銆佸伐浣滃師鐞嗐€佸畼鏂规枃妗ｇ储寮?- [C16_102-鍩虹鑴氭湰璇硶.md](./C16_102-鍩虹鑴氭湰璇硶.md) - 璇█鍩虹銆佹爣绛俱€佸璇濄€佸浘鍍忔樉绀恒€佽彍鍗曟帶鍒?- [C16_103-鏂囨湰澶勭悊.md](./C16_103-鏂囨湰澶勭悊.md) - 鏂囨湰鏍峰紡銆佹枃鏈爣绛俱€佹枃鏈緭鍏ャ€佺炕璇?
+### 杩涢樁鐗规€?| Advanced Features
 
-### 进阶特性 | Advanced Features
+- [G16_201-ATL鍔ㄧ敾璇█.md](./G16_201-ATL鍔ㄧ敾璇█.md) - ATL 鍔ㄧ敾璇█銆佸姩鐢昏鍙ャ€佸唴缃彉鎹?- [G16_202-楂樼骇鐗规€т笌鍙戝竷.md](./G16_202-楂樼骇鐗规€т笌鍙戝竷.md) - Python 闆嗘垚銆丩ive2D銆佹瀯寤哄彂甯?
+### 鐣岄潰璁捐 | UI Design
 
-- [G16_201-ATL动画语言.md](./G16_201-ATL动画语言.md) - ATL 动画语言、动画语句、内置变换
-- [G16_202-高级特性与发布.md](./G16_202-高级特性与发布.md) - Python 集成、Live2D、构建发布
+- [G16_301-灞忓箷绯荤粺涓嶶I璁捐.md](./G16_301-灞忓箷绯荤粺涓嶶I璁捐.md) - 灞忓箷瀹氫箟銆佸竷灞€绯荤粺銆佹帶浠躲€佸姩浣溿€佹牱寮?- [G16_302-杞満鏁堟灉.md](./G16_302-杞満鏁堟灉.md) - 鍐呯疆杞満銆佽嚜瀹氫箟杞満銆佽浆鍦烘帶鍒?- [G16_303-鍒嗗眰鍥惧儚.md](./G16_303-鍒嗗眰鍥惧儚.md) - 鍥惧眰缁勩€佸睘鎬х粍鍚堛€佸姩鎬佽鑹?
+### 闊宠棰?| Audio &amp; Video
 
-### 界面设计 | UI Design
+- [G16_401-闊宠棰戠郴缁?md](./G16_401-闊宠棰戠郴缁?md) - 闊抽绯荤粺銆佽儗鏅煶涔愩€侀煶鏁堛€佽闊炽€佽棰戞挱鏀?
+### 瀛樺偍涓庣郴缁?| Storage &amp; System
 
-- [G16_301-屏幕系统与UI设计.md](./G16_301-屏幕系统与UI设计.md) - 屏幕定义、布局系统、控件、动作、样式
-- [G16_302-转场效果.md](./G16_302-转场效果.md) - 内置转场、自定义转场、转场控制
-- [G16_303-分层图像.md](./G16_303-分层图像.md) - 图层组、属性组合、动态角色
+- [G16_501-瀛樺偍涓庡洖婊?md](./G16_501-瀛樺偍涓庡洖婊?md) - 瀛樻。绯荤粺銆佽妗ｆ満鍒躲€佸洖婊氬姛鑳姐€佹寔涔呭寲鏁版嵁
 
-### 音视频 | Audio &amp; Video
+### 閰嶇疆涓庢瀯寤?| Configuration &amp; Build
 
-- [G16_401-音视频系统.md](./G16_401-音视频系统.md) - 音频系统、背景音乐、音效、语音、视频播放
+- [G16_601-閰嶇疆涓庢瀯寤?md](./G16_601-閰嶇疆涓庢瀯寤?md) - 閰嶇疆椤瑰彉閲忋€佹父鎴忚缃€佹瀯寤哄彂甯冩祦绋?
+### 鍚嶈瘝娉ㄩ噴鏌ラ槄琛?| Glossary
 
-### 存储与系统 | Storage &amp; System
+- [V16_101-Ren'Py鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md](./V16_101-Ren'Py鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md) - Ren'Py 鏍稿績鍚嶈瘝鏈瑙ｉ噴
+- [V16_102-鍚嶈瘝瑙ｉ噴.md](./V16_102-鍚嶈瘝瑙ｉ噴.md) - 琛ュ厖鍚嶈瘝璇存槑
 
-- [G16_501-存储与回滚.md](./G16_501-存储与回滚.md) - 存档系统、读档机制、回滚功能、持久化数据
+### 瀹樻柟鏂囨。 | Official Documentation
 
-### 配置与构建 | Configuration &amp; Build
+- [Renpydoc-English](./Renpydoc-English/index.html) - Ren'Py 鑻辨枃瀹樻柟鏂囨。
 
-- [G16_601-配置与构建.md](./G16_601-配置与构建.md) - 配置项变量、游戏设置、构建发布流程
+## 4. 鐜瑕佹眰 | Environment Requirements
 
-### 名词注释查阅表 | Glossary
+- **鎿嶄綔绯荤粺**锛歐indows 10+, macOS 12+, Linux (x86_64)
+- **杩愯鏃?*锛歊en'Py 8.5 / 8.6 (Python 3 based)
+- **鏈€灏忛厤缃?*锛? 鏍稿績 CPU / 4GB 鍐呭瓨 / 500MB 纾佺洏
+- **鎺ㄨ崘閰嶇疆**锛? 鏍稿績 CPU / 8GB 鍐呭瓨 / 1GB 纾佺洏
 
-- [V16_101-Ren'Py名词注释查阅表.md](./V16_101-Ren'Py名词注释查阅表.md) - Ren'Py 核心名词术语解释
-- [V16_102-名词解释.md](./V16_102-名词解释.md) - 补充名词说明
-
-### 官方文档 | Official Documentation
-
-- [Renpydoc-English](./Renpydoc-English/index.html) - Ren'Py 英文官方文档
-
-## 4. 环境要求 | Environment Requirements
-
-- **操作系统**：Windows 10+, macOS 12+, Linux (x86_64)
-- **运行时**：Ren'Py 8.5 / 8.6 (Python 3 based)
-- **最小配置**：2 核心 CPU / 4GB 内存 / 500MB 磁盘
-- **推荐配置**：4 核心 CPU / 8GB 内存 / 1GB 磁盘
-
-## 5. 快速开始 | Quick Start
+## 5. 蹇€熷紑濮?| Quick Start
 
 ```bash
-# 1. 下载 Ren'Py Launcher
-# 访问: https://www.renpy.org/latest.html
+# 1. 涓嬭浇 Ren'Py Launcher
+# 璁块棶: https://www.renpy.org/latest.html
 
-# 2. 创建新项目
-# 在 Ren'Py Launcher 中点击 "Create New Project"
+# 2. 鍒涘缓鏂伴」鐩?# 鍦?Ren'Py Launcher 涓偣鍑?"Create New Project"
 
-# 3. 编辑 game/script.rpy
+# 3. 缂栬緫 game/script.rpy
 label start:
     "Hello, Ren'Py!"
     return
 
-# 4. 启动游戏 (Shift + R)
+# 4. 鍚姩娓告垙 (Shift + R)
 ```
 
 ```renpy
-# 完整示例
+# 瀹屾暣绀轰緥
 define config.name = "My Visual Novel"
 define e = Character("Eileen", color="#c8ffc8")
 
 label start:
     scene bg room
     show eileen happy
-    e "欢迎来到 Ren'Py 世界！"
+    e "娆㈣繋鏉ュ埌 Ren'Py 涓栫晫锛?
     menu:
-        "选择一":
+        "閫夋嫨涓€":
             jump choice_one
-        "选择二":
+        "閫夋嫨浜?:
             jump choice_two
 
 label choice_one:
-    e "你选择了第一个选项。"
+    e "浣犻€夋嫨浜嗙涓€涓€夐」銆?
     return
 
 label choice_two:
-    e "你选择了第二个选项。"
+    e "浣犻€夋嫨浜嗙浜屼釜閫夐」銆?
     return
 ```
 
-## 6. 核心特色 | Key Features
+## 6. 鏍稿績鐗硅壊 | Key Features
 
-| 特性 | 说明 |
+| 鐗规€?| 璇存槑 |
 | :--- | :--- |
-| 视觉小说专用 | 专为视觉小说和互动叙事游戏设计的引擎 |
-| 脚本系统 | 详细讲解 Ren'Py 脚本的基本语法和结构 |
-| ATL 动画 | 深入解析 ATL 动画语言的使用方法 |
-| SL2 屏幕 | 全面介绍 SL2 屏幕语言的界面设计 |
-| 音视频系统 | 背景音乐、音效、语音和视频播放控制 |
-| 存储系统 | 存档、读档、回滚和持久化数据管理 |
-| 跨平台发布 | 支持 Windows、Mac、Linux、Android、iOS、Web |
+| 瑙嗚灏忚涓撶敤 | 涓撲负瑙嗚灏忚鍜屼簰鍔ㄥ彊浜嬫父鎴忚璁＄殑寮曟搸 |
+| 鑴氭湰绯荤粺 | 璇︾粏璁茶В Ren'Py 鑴氭湰鐨勫熀鏈娉曞拰缁撴瀯 |
+| ATL 鍔ㄧ敾 | 娣卞叆瑙ｆ瀽 ATL 鍔ㄧ敾璇█鐨勪娇鐢ㄦ柟娉?|
+| SL2 灞忓箷 | 鍏ㄩ潰浠嬬粛 SL2 灞忓箷璇█鐨勭晫闈㈣璁?|
+| 闊宠棰戠郴缁?| 鑳屾櫙闊充箰銆侀煶鏁堛€佽闊冲拰瑙嗛鎾斁鎺у埗 |
+| 瀛樺偍绯荤粺 | 瀛樻。銆佽妗ｃ€佸洖婊氬拰鎸佷箙鍖栨暟鎹鐞?|
+| 璺ㄥ钩鍙板彂甯?| 鏀寔 Windows銆丮ac銆丩inux銆丄ndroid銆乮OS銆乄eb |
 
-## 7. 学习提示 | Tips
+## 7. 瀛︿範鎻愮ず | Tips
 
-- **代码整洁**：将 Python 逻辑尽量放在 `init python` 块中
-- **性能优化**：大量立绘切换时使用 `image` 语句预定义
-- **UI 设计**：Screen 语言是 Ren'Py 最强大的部分，值得深入研究
-- **ATL 动画**：ATL 是 Transforms 文档的一部分，包含丰富的动画语句
-- **最佳实践**：遵循官方推荐的开发规范和性能优化技巧
+- **浠ｇ爜鏁存磥**锛氬皢 Python 閫昏緫灏介噺鏀惧湪 `init python` 鍧椾腑
+- **鎬ц兘浼樺寲**锛氬ぇ閲忕珛缁樺垏鎹㈡椂浣跨敤 `image` 璇彞棰勫畾涔?- **UI 璁捐**锛歋creen 璇█鏄?Ren'Py 鏈€寮哄ぇ鐨勯儴鍒嗭紝鍊煎緱娣卞叆鐮旂┒
+- **ATL 鍔ㄧ敾**锛欰TL 鏄?Transforms 鏂囨。鐨勪竴閮ㄥ垎锛屽寘鍚赴瀵岀殑鍔ㄧ敾璇彞
+- **鏈€浣冲疄璺?*锛氶伒寰畼鏂规帹鑽愮殑寮€鍙戣鑼冨拰鎬ц兘浼樺寲鎶€宸?
+## 8. 寤朵几闃呰 | Further Reading
 
-## 8. 延伸阅读 | Further Reading
+- [Ren'Py 瀹樻柟鏂囨。](https://www.renpy.org/doc.html)
+- [Ren'Py 鏁欑▼](https://www.renpy.org/doc/html/tutorial.html)
+- [Ren'Py 璁哄潧](https://lemmasoft.renai.us/forums/)
+- [Ren'Py 涓枃绀惧尯](https://www.renpy.cn/)
 
-- [Ren'Py 官方文档](https://www.renpy.org/doc.html)
-- [Ren'Py 教程](https://www.renpy.org/doc/html/tutorial.html)
-- [Ren'Py 论坛](https://lemmasoft.renai.us/forums/)
-- [Ren'Py 中文社区](https://www.renpy.cn/)
+## 9. 璁稿彲璇佷俊鎭?| License
 
-## 9. 许可证信息 | License
-
-- **SPDX-Identifier**：CC-BY-NC-SA-4.0
-- **Copyright**：2024-2026 fanquanpp
+- **SPDX-Identifier**锛欳C-BY-NC-SA-4.0
+- **Copyright**锛?024-2026 fanquanpp
 
 ---
 
-**更新日志 | Changelog**
+**鏇存柊鏃ュ織 | Changelog**
 
 - **2026-05-02**
-  - 全面检查项目结构，确保一致性
-  - 重构目录结构，升级为 v4.0.0（扁平化重组）
-  - 清理 Renpydoc-Chinese 文件夹
-  - 清理 Renpydoc-English：移除重复/未使用的版本（保留最新 Bootstrap 3.4.1）
-
+  - 鍏ㄩ潰妫€鏌ラ」鐩粨鏋勶紝纭繚涓€鑷存€?  - 閲嶆瀯鐩綍缁撴瀯锛屽崌绾т负 v4.0.0锛堟墎骞冲寲閲嶇粍锛?  - 娓呯悊 Renpydoc-Chinese 鏂囦欢澶?  - 娓呯悊 Renpydoc-English锛氱Щ闄ら噸澶?鏈娇鐢ㄧ殑鐗堟湰锛堜繚鐣欐渶鏂?Bootstrap 3.4.1锛?
 - **2026-04-19**
-  - 根据官方文档重构优化所有内容，补充缺失的官方文档内容，升级为 v3.1.0 ~ v3.3.0
+  - 鏍规嵁瀹樻柟鏂囨。閲嶆瀯浼樺寲鎵€鏈夊唴瀹癸紝琛ュ厖缂哄け鐨勫畼鏂规枃妗ｅ唴瀹癸紝鍗囩骇涓?v3.1.0 ~ v3.3.0
 
 - **2026-04-18**
-  - 完成 GitHub 仓库 3.0 结构优化规划，升级为 v3.0.0
+  - 瀹屾垚 GitHub 浠撳簱 3.0 缁撴瀯浼樺寲瑙勫垝锛屽崌绾т负 v3.0.0

@@ -1,126 +1,114 @@
-# 14-Lua 语言 | Lua Scripting
+﻿# 14-Lua 璇█ | Lua Scripting
 
 > @Author: fanquanpp
-> @Version: v3.0.0
+> @Version: v3.5.0
 > @Created: 2026-04-05
 
-## 1. 简介 | Introduction
+## 1. 绠€浠?| Introduction
 
-专注于 Lua 语言的极简语法、Table 核心数据结构、元表机制、协程以及在游戏开发和嵌入式系统中的应用。作为一种轻量级、高效的脚本语言，Lua 以其简洁的语法和强大的扩展能力而广泛应用于游戏逻辑、嵌入式系统、Nginx 扩展等场景，本模块旨在为开发者提供从基础语法到高级应用的系统化 Lua 学习路径。
+涓撴敞浜?Lua 璇█鐨勬瀬绠€璇硶銆乀able 鏍稿績鏁版嵁缁撴瀯銆佸厓琛ㄦ満鍒躲€佸崗绋嬩互鍙婂湪娓告垙寮€鍙戝拰宓屽叆寮忕郴缁熶腑鐨勫簲鐢ㄣ€備綔涓轰竴绉嶈交閲忕骇銆侀珮鏁堢殑鑴氭湰璇█锛孡ua 浠ュ叾绠€娲佺殑璇硶鍜屽己澶х殑鎵╁睍鑳藉姏鑰屽箍娉涘簲鐢ㄤ簬娓告垙閫昏緫銆佸祵鍏ュ紡绯荤粺銆丯ginx 鎵╁睍绛夊満鏅紝鏈ā鍧楁棬鍦ㄤ负寮€鍙戣€呮彁渚涗粠鍩虹璇硶鍒伴珮绾у簲鐢ㄧ殑绯荤粺鍖?Lua 瀛︿範璺緞銆?
+## 2. 瀛︿範璺嚎鍥?| Learning Roadmap
 
-## 2. 学习路线图 | Learning Roadmap
+### 璇︾粏璺緞 | Detailed Path
 
-### 详细路径 | Detailed Path
-
-| 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
+| 闃舵 (Stage) | 鐭ヨ瘑鐐?(Topic) | 棰勮鑰楁椂 (Estimated Time) | 鍓嶇疆瑕佹眰 (Prerequisites) |
 | :--- | :--- | :--- | :--- |
-| 入门 | Lua 基础体系 | 10h | 无 |
-| 进阶 | 元表与 OOP 模拟 | 10h | 基础语法、Table |
-| 实战 | 数据结构与算法 (Lua) | 15h | Lua 基础 |
+| 鍏ラ棬 | Lua 鍩虹浣撶郴 | 10h | 鏃?|
+| 杩涢樁 | 鍏冭〃涓?OOP 妯℃嫙 | 10h | 鍩虹璇硶銆乀able |
+| 瀹炴垬 | 鏁版嵁缁撴瀯涓庣畻娉?(Lua) | 15h | Lua 鍩虹 |
 
-### 学习提示 | Tips
-- **索引**：记住 Lua 的 Table 索引默认从 **1** 开始。
-- **性能**：避免在循环中频繁创建 Table，优先复用。
-- **扩展**：学习 LuaJIT 以获得接近 C 的执行速度。
+### 瀛︿範鎻愮ず | Tips
+- **绱㈠紩**锛氳浣?Lua 鐨?Table 绱㈠紩榛樿浠?**1** 寮€濮嬨€?- **鎬ц兘**锛氶伩鍏嶅湪寰幆涓绻佸垱寤?Table锛屼紭鍏堝鐢ㄣ€?- **鎵╁睍**锛氬涔?LuaJIT 浠ヨ幏寰楁帴杩?C 鐨勬墽琛岄€熷害銆?
+## 3. 鐩綍绱㈠紩 | Directory Index
 
-## 3. 目录索引 | Directory Index
+### 鍩虹璇硶 | Basics
 
-### 基础语法 | Basics
+- [V14_101-Lua鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md](./V14_101-Lua鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md)
+- [C14_101-姒傝堪涓庣幆澧?md](./C14_101-姒傝堪涓庣幆澧?md)
+- [C14_102-鍩虹璇硶.md](./C14_102-鍩虹璇硶.md)
+- [C14_103-鏁版嵁绫诲瀷涓嶵able.md](./C14_103-鏁版嵁绫诲瀷涓嶵able.md)
+- [C14_104-鍑芥暟涓庨棴鍖?md](./C14_104-鍑芥暟涓庨棴鍖?md)
+- [C14_105-鍗忕▼涓庡紓姝?md](./C14_105-鍗忕▼涓庡紓姝?md)
 
-- [V14_101-Lua名词注释查阅表.md](./V14_101-Lua名词注释查阅表.md)
-- [C14_101-概述与环境.md](./C14_101-概述与环境.md)
-- [C14_102-基础语法.md](./C14_102-基础语法.md)
-- [C14_103-数据类型与Table.md](./C14_103-数据类型与Table.md)
-- [C14_104-函数与闭包.md](./C14_104-函数与闭包.md)
-- [C14_105-协程与异步.md](./C14_105-协程与异步.md)
+### 楂樼骇鐗规€?| Advanced
+- [G14_201-鍏冭〃涓嶰OP.md](./G14_201-鍏冭〃涓嶰OP.md)
+- [G14_202-妯″潡涓庡寘.md](./G14_202-妯″潡涓庡寘.md)
 
-### 高级特性 | Advanced
-- [G14_201-元表与OOP.md](./G14_201-元表与OOP.md)
-- [G14_202-模块与包.md](./G14_202-模块与包.md)
+### 绠楁硶涓庢暟鎹粨鏋?| Algorithms & Data Structures
+- [SFDE14_301-binary_search_lua.lua](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE14_301-binary_search_lua.lua)
+- [SFDE14_302-dfs_bfs_lua.lua](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE14_302-dfs_bfs_lua.lua)
+- [SFDE14_303-quick_sort_lua.lua](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE14_303-quick_sort_lua.lua)
+- [SFDE14_401-linked_list_lua.lua](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE14_401-linked_list_lua.lua)
+- [SFDE14_402-table_advanced_lua.lua](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE14_402-table_advanced_lua.lua)
 
-### 算法与数据结构 | Algorithms & Data Structures
-- [SFDE14_301-binary_search_lua.lua](./算法与数据结构/代码示例/SFDE14_301-binary_search_lua.lua)
-- [SFDE14_302-dfs_bfs_lua.lua](./算法与数据结构/代码示例/SFDE14_302-dfs_bfs_lua.lua)
-- [SFDE14_303-quick_sort_lua.lua](./算法与数据结构/代码示例/SFDE14_303-quick_sort_lua.lua)
-- [SFDE14_401-linked_list_lua.lua](./算法与数据结构/代码示例/SFDE14_401-linked_list_lua.lua)
-- [SFDE14_402-table_advanced_lua.lua](./算法与数据结构/代码示例/SFDE14_402-table_advanced_lua.lua)
+## 3. 鐜瑕佹眰 | Environment Requirements
 
-## 3. 环境要求 | Environment Requirements
+- **Lua 鐗堟湰**锛?.4+ (鏍囧噯鐗? / LuaJIT (楂樻€ц兘鐗?
+- **杩愯鐜**锛氱嫭绔嬭В閲婂櫒銆丯ginx (OpenResty)銆丟odot (閫氳繃鎵╁睍)
+- **鏈€灏忛厤缃?*锛? 鏍稿績 CPU / 1GB 鍐呭瓨 / 50MB 纾佺洏
 
-- **Lua 版本**：5.4+ (标准版) / LuaJIT (高性能版)
-- **运行环境**：独立解释器、Nginx (OpenResty)、Godot (通过扩展)
-- **最小配置**：1 核心 CPU / 1GB 内存 / 50MB 磁盘
-
-## 4. 快速开始 | Quick Start
+## 4. 蹇€熷紑濮?| Quick Start
 
 ```bash
-# 1. 安装 Lua
-# Windows: 下载 LuaForWindows
+# 1. 瀹夎 Lua
+# Windows: 涓嬭浇 LuaForWindows
 # Linux: sudo apt install lua5.4
 # macOS: brew install lua
 
-# 2. 验证安装
+# 2. 楠岃瘉瀹夎
 lua -v
 
-# 3. 运行首个脚本
+# 3. 杩愯棣栦釜鑴氭湰
 lua script.lua
 ```
 
-## 5. 学习路线 | Learning Path
+## 5. 瀛︿範璺嚎 | Learning Path
 
-`概述与环境` → `基础语法` → `数据类型与Table` → `函数与闭包` → `协程与异步` → `元表与OOP` → `模块与包`
+`姒傝堪涓庣幆澧僠 鈫?`鍩虹璇硶` 鈫?`鏁版嵁绫诲瀷涓嶵able` 鈫?`鍑芥暟涓庨棴鍖卄 鈫?`鍗忕▼涓庡紓姝 鈫?`鍏冭〃涓嶰OP` 鈫?`妯″潡涓庡寘`
 
-## 6. 核心特色 | Key Features
+## 6. 鏍稿績鐗硅壊 | Key Features
 
-- **极简语法**：简洁易读的语法设计，学习曲线平缓
-- **Table 核心**：统一的表结构，灵活的数据组织
-- **元表机制**：强大的元编程能力，支持面向对象编程
-- **协程支持**：轻量级线程，简化异步编程
-- **结构清晰**：按照基础、进阶、算法和数据结构组织内容
-- **双语注释**：关键概念和代码提供中英文对照注释
+- **鏋佺畝璇硶**锛氱畝娲佹槗璇荤殑璇硶璁捐锛屽涔犳洸绾垮钩缂?- **Table 鏍稿績**锛氱粺涓€鐨勮〃缁撴瀯锛岀伒娲荤殑鏁版嵁缁勭粐
+- **鍏冭〃鏈哄埗**锛氬己澶х殑鍏冪紪绋嬭兘鍔涳紝鏀寔闈㈠悜瀵硅薄缂栫▼
+- **鍗忕▼鏀寔**锛氳交閲忕骇绾跨▼锛岀畝鍖栧紓姝ョ紪绋?- **缁撴瀯娓呮櫚**锛氭寜鐓у熀纭€銆佽繘闃躲€佺畻娉曞拰鏁版嵁缁撴瀯缁勭粐鍐呭
+- **鍙岃娉ㄩ噴**锛氬叧閿蹇靛拰浠ｇ爜鎻愪緵涓嫳鏂囧鐓ф敞閲?
+## 7. 闃呰寤鸿 | Reading Guide
 
-## 7. 阅读建议 | Reading Guide
+1. 鎸夌収瀛︿範璺嚎鐨勯『搴忓涔狅紝浠庢杩颁笌鐜寮€濮嬶紝閫愭鎺屾彙 Lua 鐨勫悇绉嶇壒鎬?2. 缁撳悎瀹為檯椤圭洰缁冧範锛屽姞娣卞 Lua 璇█鐨勭悊瑙?3. 鐗瑰埆鍏虫敞 Table 鏍稿績鍜屽厓琛ㄦ満鍒堕儴鍒嗭紝杩欐槸 Lua 鐨勬牳蹇冪壒鎬?4. 灏濊瘯浣跨敤 Lua 鏋勫缓涓€涓畝鍗曠殑娓告垙閫昏緫鎴栧祵鍏ュ紡鎵╁睍锛屽珐鍥烘墍瀛︾煡璇?
+## 8. 寤朵几闃呰 | Further Reading
 
-1. 按照学习路线的顺序学习，从概述与环境开始，逐步掌握 Lua 的各种特性
-2. 结合实际项目练习，加深对 Lua 语言的理解
-3. 特别关注 Table 核心和元表机制部分，这是 Lua 的核心特性
-4. 尝试使用 Lua 构建一个简单的游戏逻辑或嵌入式扩展，巩固所学知识
-
-## 8. 延伸阅读 | Further Reading
-
-- [Lua 官方文档](https://www.lua.org/docs.html) <!-- nofollow -->
-- [Lua 5.4 参考手册](https://www.lua.org/manual/5.4/) <!-- nofollow -->
+- [Lua 瀹樻柟鏂囨。](https://www.lua.org/docs.html) <!-- nofollow -->
+- [Lua 5.4 鍙傝€冩墜鍐宂(https://www.lua.org/manual/5.4/) <!-- nofollow -->
 - [Programming in Lua](https://www.lua.org/pil/) <!-- nofollow -->
 
-## 9. 技术栈与工具 | Technology Stack & Tools
+## 9. 鎶€鏈爤涓庡伐鍏?| Technology Stack & Tools
 
-- **Lua Engine**：5.4+ (标准版) / LuaJIT (高性能版)
-- **开发环境**：独立解释器、Nginx (OpenResty)、Godot (通过扩展)
-- **编辑器**：VS Code + Lua 插件、Sublime Text
+- **Lua Engine**锛?.4+ (鏍囧噯鐗? / LuaJIT (楂樻€ц兘鐗?
+- **寮€鍙戠幆澧?*锛氱嫭绔嬭В閲婂櫒銆丯ginx (OpenResty)銆丟odot (閫氳繃鎵╁睍)
+- **缂栬緫鍣?*锛歏S Code + Lua 鎻掍欢銆丼ublime Text
 
-## 10. 联系方式 | Contact Information
+## 10. 鑱旂郴鏂瑰紡 | Contact Information
 
-- 邮箱：<fanquanpangpiing@163.com>
-- QQ：1839243393
-- 欢迎提意见交流或反馈问题
+- 閭锛?fanquanpangpiing@163.com>
+- QQ锛?839243393
+- 娆㈣繋鎻愭剰瑙佷氦娴佹垨鍙嶉闂
 
-## 11. 许可证信息 | License
+## 11. 璁稿彲璇佷俊鎭?| License
 
-- **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- **Copyright**：2024-2026 fanquanpp
+- **SPDX-Identifier**锛歔CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**锛?024-2026 fanquanpp
 
 ---
 
-**更新日志 | Changelog**
+**鏇存柊鏃ュ織 | Changelog**
 
 - **2026-05-02**
-  - 全面检查项目结构，确保一致性
-
+  - 鍏ㄩ潰妫€鏌ラ」鐩粨鏋勶紝纭繚涓€鑷存€?
 - **2026-04-18**
-  - 完成 GitHub 仓库 3.0 结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
+  - 瀹屾垚 GitHub 浠撳簱 3.0 缁撴瀯浼樺寲瑙勫垝锛岀粺涓€鏂囦欢鍛藉悕瑙勮寖锛屼紭鍖栫洰褰曠粨鏋勶紝鍗囩骇涓?v3.0.0
 
 - **2026-04-06**
-  - 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.1 ~ v1.0.2
+  - 娣卞害浼樺寲 README.md 鏂囦欢锛屽畬鍠勭粨鏋勫拰鍐呭锛屽鍔犱粨搴撳畾浣嶃€佷娇鐢ㄨ鏄庣瓑閮ㄥ垎锛屽崌绾т负 v1.0.1 ~ v1.0.2
 
 - **2026-04-05**
-  - 体系化重构 Lua 目录结构
+  - 浣撶郴鍖栭噸鏋?Lua 鐩綍缁撴瀯

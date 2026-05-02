@@ -1,194 +1,166 @@
-# 05-HTML5 网页开发 | HTML5 Web Development
+﻿# 05-HTML5 缃戦〉寮€鍙?| HTML5 Web Development
 
 > @Author: fanquanpp
-> @Version: v3.0.0
+> @Version: v3.5.0
 > @Created: 2026-04-05
 
-## 1. 简介 | Introduction
+## 1. 绠€浠?| Introduction
 
-专注于 HTML5 核心标签、语义化结构、表单验证、多媒体处理以及高级 Web API 的学习与应用。作为现代网页开发的基础，HTML5 提供了丰富的语义化标签和强大的 Web API，本模块旨在帮助开发者构建语义化、高性能、可访问的现代网页结构。
+涓撴敞浜?HTML5 鏍稿績鏍囩銆佽涔夊寲缁撴瀯銆佽〃鍗曢獙璇併€佸濯掍綋澶勭悊浠ュ強楂樼骇 Web API 鐨勫涔犱笌搴旂敤銆備綔涓虹幇浠ｇ綉椤靛紑鍙戠殑鍩虹锛孒TML5 鎻愪緵浜嗕赴瀵岀殑璇箟鍖栨爣绛惧拰寮哄ぇ鐨?Web API锛屾湰妯″潡鏃ㄥ湪甯姪寮€鍙戣€呮瀯寤鸿涔夊寲銆侀珮鎬ц兘銆佸彲璁块棶鐨勭幇浠ｇ綉椤电粨鏋勩€?
+## 2. 瀛︿範璺嚎鍥?| Learning Roadmap
 
-## 2. 学习路线图 | Learning Roadmap
+### 璇︾粏璺緞 | Detailed Path
 
-### 详细路径 | Detailed Path
-
-| 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
+| 闃舵 (Stage) | 鐭ヨ瘑鐐?(Topic) | 棰勮鑰楁椂 (Estimated Time) | 鍓嶇疆瑕佹眰 (Prerequisites) |
 | :--- | :--- | :--- | :--- |
-| 入门 | HTML5 基础体系 | 15h | 无 |
-| 进阶 | Vue 核心与实战 | 30h | HTML5, JS |
+| 鍏ラ棬 | HTML5 鍩虹浣撶郴 | 15h | 鏃?|
+| 杩涢樁 | Vue 鏍稿績涓庡疄鎴?| 30h | HTML5, JS |
 
-### 学习提示 | Tips
-- **代码重构**：优先使用 ES6+ 的语法特性（解构、箭头函数、模板字符串）。
-- **性能优化**：掌握 `Tree-shaking`, `Code Splitting`, `Lazy Loading`。
-- **面试重点**：掌握 `Closure`, `Event Loop`, `Promise`, `TypeScript Generics`。
-- **实战建议**：使用 `Vite` 构建你的第一个 `Vue` 或 `React` 项目。
+### 瀛︿範鎻愮ず | Tips
+- **浠ｇ爜閲嶆瀯**锛氫紭鍏堜娇鐢?ES6+ 鐨勮娉曠壒鎬э紙瑙ｆ瀯銆佺澶村嚱鏁般€佹ā鏉垮瓧绗︿覆锛夈€?- **鎬ц兘浼樺寲**锛氭帉鎻?`Tree-shaking`, `Code Splitting`, `Lazy Loading`銆?- **闈㈣瘯閲嶇偣**锛氭帉鎻?`Closure`, `Event Loop`, `Promise`, `TypeScript Generics`銆?- **瀹炴垬寤鸿**锛氫娇鐢?`Vite` 鏋勫缓浣犵殑绗竴涓?`Vue` 鎴?`React` 椤圭洰銆?
+## 3. 鐩綍绱㈠紩 | Directory Index
 
-## 3. 目录索引 | Directory Index
+### 鍩虹璇硶 | Basics
 
-### 基础语法 | Basics
+- [V05_101-HTML5鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md](./V05_101-HTML5鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md)
+- [C05_101-姒傝堪涓庤涔夊寲.md](./C05_101-姒傝堪涓庤涔夊寲.md)
+- [C05_102-鍩虹鏍囩涓庡叏灞€灞炴€?md](./C05_102-鍩虹鏍囩涓庡叏灞€灞炴€?md)
+- [C05_103-琛ㄥ崟涓庨獙璇?md](./C05_103-琛ㄥ崟涓庨獙璇?md)
+- [C05_104-澶氬獟浣撲笌Canvas.md](./C05_104-澶氬獟浣撲笌Canvas.md)
+- [C05_105-瀛樺偍涓嶹ebAPI.md](./C05_105-瀛樺偍涓嶹ebAPI.md)
 
-- [V05_101-HTML5名词注释查阅表.md](./V05_101-HTML5名词注释查阅表.md)
-- [C05_101-概述与语义化.md](./C05_101-概述与语义化.md)
-- [C05_102-基础标签与全局属性.md](./C05_102-基础标签与全局属性.md)
-- [C05_103-表单与验证.md](./C05_103-表单与验证.md)
-- [C05_104-多媒体与Canvas.md](./C05_104-多媒体与Canvas.md)
-- [C05_105-存储与WebAPI.md](./C05_105-存储与WebAPI.md)
+### 楂樼骇鐗规€?| Advanced
+- [G05_201-Vue鏍稿績涓庡疄鎴?md](./G05_201-Vue鏍稿績涓庡疄鎴?md)
+- [G05_202-WebComponents涓嶱WA.md](./G05_202-WebComponents涓嶱WA.md)
 
-### 高级特性 | Advanced
-- [G05_201-Vue核心与实战.md](./G05_201-Vue核心与实战.md)
-- [G05_202-WebComponents与PWA.md](./G05_202-WebComponents与PWA.md)
+### 绀轰緥 | Examples
+- [web_components.html](./绀轰緥/web_components.html)
 
-### 示例 | Examples
-- [web_components.html](./示例/web_components.html)
+## 3. 鍩虹绡囪缁嗗唴瀹?| Basics Details
 
-## 3. 基础篇详细内容 | Basics Details
+### 3.1 鍩虹绡囨杩?| Basics Overview
 
-### 3.1 基础篇概述 | Basics Overview
+HTML5 鍩虹绡囨兜鐩栦簡 HTML5 鐨勬牳蹇冩妧鏈紝鍖呮嫭璇箟鍖栨爣绛俱€佸熀纭€鏍囩涓庡睘鎬с€佽〃鍗曚笌楠岃瘉銆佸濯掍綋涓?Canvas銆佸瓨鍌ㄤ笌 Web API 绛夊唴瀹广€傞€氳繃瀛︿範鍩虹绡囷紝浣犲皢鎺屾彙 HTML5 鐨勫熀鏈娇鐢ㄦ柟娉曪紝涓哄悗缁殑鍓嶇寮€鍙戝涔犳墦涓嬪熀纭€銆?
+### 3.2 鐩綍绱㈠紩 | Directory Index
 
-HTML5 基础篇涵盖了 HTML5 的核心技术，包括语义化标签、基础标签与属性、表单与验证、多媒体与 Canvas、存储与 Web API 等内容。通过学习基础篇，你将掌握 HTML5 的基本使用方法，为后续的前端开发学习打下基础。
-
-### 3.2 目录索引 | Directory Index
-
-| 序号 | 文件名 | 描述 |
+| 搴忓彿 | 鏂囦欢鍚?| 鎻忚堪 |
 | :--- | :--- | :--- |
-| 01 | [C05_101-概述与语义化.md](./C05_101-概述与语义化.md) | HTML5 历史、文档结构、语义化标签布局 |
-| 02 | [C05_102-基础标签与全局属性.md](./C05_102-基础标签与全局属性.md) | 常用文本/媒体标签、data-* 属性、全局属性 |
-| 03 | [C05_103-表单与验证.md](./C05_103-表单与验证.md) | 新型 Input 类型、表单验证、datalist 建议 |
-| 04 | [C05_104-多媒体与Canvas.md](./C05_104-多媒体与Canvas.md) | 原生音视频、Canvas 2D 绘图、SVG 对比 |
-| 05 | [C05_105-存储与WebAPI.md](./C05_105-存储与WebAPI.md) | LocalStorage、Geolocation、Worker、Fetch API |
+| 01 | [C05_101-姒傝堪涓庤涔夊寲.md](./C05_101-姒傝堪涓庤涔夊寲.md) | HTML5 鍘嗗彶銆佹枃妗ｇ粨鏋勩€佽涔夊寲鏍囩甯冨眬 |
+| 02 | [C05_102-鍩虹鏍囩涓庡叏灞€灞炴€?md](./C05_102-鍩虹鏍囩涓庡叏灞€灞炴€?md) | 甯哥敤鏂囨湰/濯掍綋鏍囩銆乨ata-* 灞炴€с€佸叏灞€灞炴€?|
+| 03 | [C05_103-琛ㄥ崟涓庨獙璇?md](./C05_103-琛ㄥ崟涓庨獙璇?md) | 鏂板瀷 Input 绫诲瀷銆佽〃鍗曢獙璇併€乨atalist 寤鸿 |
+| 04 | [C05_104-澶氬獟浣撲笌Canvas.md](./C05_104-澶氬獟浣撲笌Canvas.md) | 鍘熺敓闊宠棰戙€丆anvas 2D 缁樺浘銆丼VG 瀵规瘮 |
+| 05 | [C05_105-瀛樺偍涓嶹ebAPI.md](./C05_105-瀛樺偍涓嶹ebAPI.md) | LocalStorage銆丟eolocation銆乄orker銆丗etch API |
 
-### 3.3 核心知识点 | Core Knowledge Points
+### 3.3 鏍稿績鐭ヨ瘑鐐?| Core Knowledge Points
 
-#### 3.3.1 概述与语义化
+#### 3.3.1 姒傝堪涓庤涔夊寲
 
-- HTML5 的发展历史和特点
-- HTML5 文档结构
-- 语义化标签的使用（header、nav、section、article、aside、footer 等）
-- 语义化布局的最佳实践
-- HTML5 文档类型和字符集
+- HTML5 鐨勫彂灞曞巻鍙插拰鐗圭偣
+- HTML5 鏂囨。缁撴瀯
+- 璇箟鍖栨爣绛剧殑浣跨敤锛坔eader銆乶av銆乻ection銆乤rticle銆乤side銆乫ooter 绛夛級
+- 璇箟鍖栧竷灞€鐨勬渶浣冲疄璺?- HTML5 鏂囨。绫诲瀷鍜屽瓧绗﹂泦
 
-#### 3.3.2 基础标签与全局属性
+#### 3.3.2 鍩虹鏍囩涓庡叏灞€灞炴€?
+- 甯哥敤鏂囨湰鏍囩锛坔1-h6銆乸銆乻pan銆乤 绛夛級
+- 濯掍綋鏍囩锛坕mg銆乿ideo銆乤udio锛?- 鍒楄〃鏍囩锛坲l銆乷l銆乴i銆乨l銆乨t銆乨d锛?- 琛ㄦ牸鏍囩锛坱able銆乼r銆乼d銆乼h锛?- 鍏ㄥ眬灞炴€э紙id銆乧lass銆乻tyle銆乨ata-* 绛夛級
+- 鏍囩鐨勮涔夊拰浣跨敤鍦烘櫙
 
-- 常用文本标签（h1-h6、p、span、a 等）
-- 媒体标签（img、video、audio）
-- 列表标签（ul、ol、li、dl、dt、dd）
-- 表格标签（table、tr、td、th）
-- 全局属性（id、class、style、data-* 等）
-- 标签的语义和使用场景
+#### 3.3.3 琛ㄥ崟涓庨獙璇?
+- 琛ㄥ崟鐨勫熀鏈粨鏋?- 鏂板瀷 Input 绫诲瀷锛坋mail銆乼el銆乽rl銆乶umber銆乨ate 绛夛級
+- 琛ㄥ崟楠岃瘉锛坮equired銆乸attern銆乵in銆乵ax 绛夛級
+- datalist 鍏冪礌鐨勪娇鐢?- 琛ㄥ崟鎻愪氦鍜屽鐞?- 琛ㄥ崟鐨勫彲璁块棶鎬?
+#### 3.3.4 澶氬獟浣撲笌 Canvas
 
-#### 3.3.3 表单与验证
+- 鍘熺敓闊抽鍜岃棰戠殑宓屽叆
+- video 鍜?audio 鏍囩鐨勫睘鎬у拰鏂规硶
+- Canvas 2D 缁樺浘 API
+- Canvas 鍩烘湰鎿嶄綔锛堢粯鍒跺浘褰€佹枃鏈€佸浘鍍忕瓑锛?- SVG 涓?Canvas 鐨勫姣?- 澶氬獟浣撳唴瀹圭殑浼樺寲
 
-- 表单的基本结构
-- 新型 Input 类型（email、tel、url、number、date 等）
-- 表单验证（required、pattern、min、max 等）
-- datalist 元素的使用
-- 表单提交和处理
-- 表单的可访问性
+#### 3.3.5 瀛樺偍涓?Web API
 
-#### 3.3.4 多媒体与 Canvas
+- LocalStorage 鍜?SessionStorage
+- IndexedDB 鏁版嵁搴?- Geolocation API锛堝湴鐞嗕綅缃級
+- Web Worker锛堝悗鍙扮嚎绋嬶級
+- Fetch API锛堢綉缁滆姹傦級
+- 鍏朵粬甯哥敤 Web API
 
-- 原生音频和视频的嵌入
-- video 和 audio 标签的属性和方法
-- Canvas 2D 绘图 API
-- Canvas 基本操作（绘制图形、文本、图像等）
-- SVG 与 Canvas 的对比
-- 多媒体内容的优化
+### 3.4 寤朵几闃呰 | Further Reading
 
-#### 3.3.5 存储与 Web API
+- [MDN HTML 鏂囨。](https://developer.mozilla.org/en-US/docs/Web/HTML) <!-- nofollow -->
+- [HTML5 瀹樻柟瑙勮寖](https://html.spec.whatwg.org/) <!-- nofollow -->
+- [HTML5 鏁欑▼](https://www.w3schools.com/html/) <!-- nofollow -->
 
-- LocalStorage 和 SessionStorage
-- IndexedDB 数据库
-- Geolocation API（地理位置）
-- Web Worker（后台线程）
-- Fetch API（网络请求）
-- 其他常用 Web API
+## 4. 妗嗘灦绡囪缁嗗唴瀹?| Frameworks Details
 
-### 3.4 延伸阅读 | Further Reading
+### 4.1 妗嗘灦鍒楄〃 | Framework List
 
-- [MDN HTML 文档](https://developer.mozilla.org/en-US/docs/Web/HTML) <!-- nofollow -->
-- [HTML5 官方规范](https://html.spec.whatwg.org/) <!-- nofollow -->
-- [HTML5 教程](https://www.w3schools.com/html/) <!-- nofollow -->
-
-## 4. 框架篇详细内容 | Frameworks Details
-
-### 4.1 框架列表 | Framework List
-
-| 框架名称 | 笔记文件 | 核心内容 |
+| 妗嗘灦鍚嶇О | 绗旇鏂囦欢 | 鏍稿績鍐呭 |
 | :--- | :--- | :--- |
-| **Vue** | [G05_201-Vue核心与实战.md](./G05_201-Vue核心与实战.md) | 核心语法、组件化、路由与状态管理、工程化实战 |
+| **Vue** | [G05_201-Vue鏍稿績涓庡疄鎴?md](./G05_201-Vue鏍稿績涓庡疄鎴?md) | 鏍稿績璇硶銆佺粍浠跺寲銆佽矾鐢变笌鐘舵€佺鐞嗐€佸伐绋嬪寲瀹炴垬 |
 
-## 5. 环境要求 | Environment Requirements
+## 5. 鐜瑕佹眰 | Environment Requirements
 
-- **浏览器**：Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
-- **开发工具**：VS Code, Sublime Text, 或任何文本编辑器
-- **在线工具**：[Codepen](https://codepen.io/), [JSFiddle](https://jsfiddle.net/)
+- **娴忚鍣?*锛欳hrome 90+, Firefox 88+, Safari 14+, Edge 90+
+- **寮€鍙戝伐鍏?*锛歏S Code, Sublime Text, 鎴栦换浣曟枃鏈紪杈戝櫒
+- **鍦ㄧ嚎宸ュ叿**锛歔Codepen](https://codepen.io/), [JSFiddle](https://jsfiddle.net/)
 
-## 6. 快速开始 | Quick Start
+## 6. 蹇€熷紑濮?| Quick Start
 
-1. 编写第一个语义化页面：参考 [C05_101-概述与语义化.md](./C05_101-概述与语义化.md)
-2. 实验表单验证：查阅 [C05_103-表单与验证.md](./C05_103-表单与验证.md)
-3. 本地预览：在浏览器中打开 HTML 文件
+1. 缂栧啓绗竴涓涔夊寲椤甸潰锛氬弬鑰?[C05_101-姒傝堪涓庤涔夊寲.md](./C05_101-姒傝堪涓庤涔夊寲.md)
+2. 瀹為獙琛ㄥ崟楠岃瘉锛氭煡闃?[C05_103-琛ㄥ崟涓庨獙璇?md](./C05_103-琛ㄥ崟涓庨獙璇?md)
+3. 鏈湴棰勮锛氬湪娴忚鍣ㄤ腑鎵撳紑 HTML 鏂囦欢
 
-## 7. 学习路线 | Learning Path
+## 7. 瀛︿範璺嚎 | Learning Path
 
-`概述与语义化` → `基础标签与全局属性` → `表单与验证` → `多媒体与Canvas` → `存储与WebAPI` → `Vue核心与实战`
+`姒傝堪涓庤涔夊寲` 鈫?`鍩虹鏍囩涓庡叏灞€灞炴€ 鈫?`琛ㄥ崟涓庨獙璇乣 鈫?`澶氬獟浣撲笌Canvas` 鈫?`瀛樺偍涓嶹ebAPI` 鈫?`Vue鏍稿績涓庡疄鎴榒
 
-## 8. 核心特色 | Key Features
+## 8. 鏍稿績鐗硅壊 | Key Features
 
-- **语义化结构**：详细讲解 HTML5 语义化标签的使用场景与最佳实践
-- **Web API 集成**：收录常用 Web API 的使用方法与示例，包括存储、地理定位等
-- **多媒体支持**：提供音频、视频和 Canvas 绘图的实现方法
-- **表单验证**：详细讲解 HTML5 表单验证的使用
-- **响应式设计**：与 CSS 布局结合，实现响应式网页设计
-- **可访问性**：重点讲解网页可访问性的实现方法，确保所有人都能访问
-- **浏览器兼容性**：提供各标签和 API 的浏览器支持情况
-- **双语注释**：关键概念和代码提供中英文对照注释
+- **璇箟鍖栫粨鏋?*锛氳缁嗚瑙?HTML5 璇箟鍖栨爣绛剧殑浣跨敤鍦烘櫙涓庢渶浣冲疄璺?- **Web API 闆嗘垚**锛氭敹褰曞父鐢?Web API 鐨勪娇鐢ㄦ柟娉曚笌绀轰緥锛屽寘鎷瓨鍌ㄣ€佸湴鐞嗗畾浣嶇瓑
+- **澶氬獟浣撴敮鎸?*锛氭彁渚涢煶棰戙€佽棰戝拰 Canvas 缁樺浘鐨勫疄鐜版柟娉?- **琛ㄥ崟楠岃瘉**锛氳缁嗚瑙?HTML5 琛ㄥ崟楠岃瘉鐨勪娇鐢?- **鍝嶅簲寮忚璁?*锛氫笌 CSS 甯冨眬缁撳悎锛屽疄鐜板搷搴斿紡缃戦〉璁捐
+- **鍙闂€?*锛氶噸鐐硅瑙ｇ綉椤靛彲璁块棶鎬х殑瀹炵幇鏂规硶锛岀‘淇濇墍鏈変汉閮借兘璁块棶
+- **娴忚鍣ㄥ吋瀹规€?*锛氭彁渚涘悇鏍囩鍜?API 鐨勬祻瑙堝櫒鏀寔鎯呭喌
+- **鍙岃娉ㄩ噴**锛氬叧閿蹇靛拰浠ｇ爜鎻愪緵涓嫳鏂囧鐓ф敞閲?
+## 9. 闃呰寤鸿 | Reading Guide
 
-## 9. 阅读建议 | Reading Guide
+1. 鎸夌収瀛︿範璺嚎鐨勯『搴忓涔狅紝浠庢杩颁笌璇箟鍖栧紑濮嬶紝閫愭鎺屾彙 HTML5 鐨勫悇绉嶇壒鎬?2. 缁撳悎瀹為檯椤圭洰缁冧範锛屽姞娣卞 HTML5 鏍囩鍜?API 鐨勭悊瑙?3. 鐗瑰埆鍏虫敞璇箟鍖栨爣绛剧殑浣跨敤锛岃繖鏄幇浠ｇ綉椤靛紑鍙戠殑鍩虹
+4. 灏濊瘯浣跨敤 Web API 瀹炵幇涓€浜涗氦浜掑姛鑳斤紝宸╁浐鎵€瀛︾煡璇?
+## 10. 寤朵几闃呰 | Further Reading
 
-1. 按照学习路线的顺序学习，从概述与语义化开始，逐步掌握 HTML5 的各种特性
-2. 结合实际项目练习，加深对 HTML5 标签和 API 的理解
-3. 特别关注语义化标签的使用，这是现代网页开发的基础
-4. 尝试使用 Web API 实现一些交互功能，巩固所学知识
+- [MDN HTML 鏂囨。](https://developer.mozilla.org/en-US/docs/Web/HTML) <!-- nofollow -->
+- [HTML5 瀹樻柟瑙勮寖](https://html.spec.whatwg.org/) <!-- nofollow -->
+- 鏈粨搴擄細[06-CSS](../06-CSS/README.md)銆乕08-Javascript](../08-Javascript/README.md)
 
-## 10. 延伸阅读 | Further Reading
+## 11. 璐＄尞鎸囧崡 | Contribution Guide
 
-- [MDN HTML 文档](https://developer.mozilla.org/en-US/docs/Web/HTML) <!-- nofollow -->
-- [HTML5 官方规范](https://html.spec.whatwg.org/) <!-- nofollow -->
-- 本仓库：[06-CSS](../06-CSS/README.md)、[08-Javascript](../08-Javascript/README.md)
+- 鏂板鏍囩璇存槑闇€鍖呭惈锛氳娉曘€佸睘鎬с€佹祻瑙堝櫒鍏煎鎬с€佺ず渚?- 鎺ㄨ崘浣跨敤 `<section>`, `<article>`, `<aside>` 绛夎涔夊寲瀹瑰櫒
+- 鎻愪緵瀹屾暣鐨?HTML 绀轰緥浠ｇ爜
 
-## 11. 贡献指南 | Contribution Guide
+## 12. 鑱旂郴鏂瑰紡 | Contact Information
 
-- 新增标签说明需包含：语法、属性、浏览器兼容性、示例
-- 推荐使用 `<section>`, `<article>`, `<aside>` 等语义化容器
-- 提供完整的 HTML 示例代码
+- 閭锛?fanquanpangpiing@163.com>
+- QQ锛?839243393
+- 娆㈣繋鎻愭剰瑙佷氦娴佹垨鍙嶉闂
 
-## 12. 联系方式 | Contact Information
+## 13. 璁稿彲璇佷俊鎭?| License
 
-- 邮箱：<fanquanpangpiing@163.com>
-- QQ：1839243393
-- 欢迎提意见交流或反馈问题
-
-## 13. 许可证信息 | License
-
-- **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- **Copyright**：2024-2026 fanquanpp
+- **SPDX-Identifier**锛歔CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**锛?024-2026 fanquanpp
 
 ---
 
-**更新日志 | Changelog**
+**鏇存柊鏃ュ織 | Changelog**
 
 - **2026-05-02**
-  - 全面检查项目结构，确保一致性
-
+  - 鍏ㄩ潰妫€鏌ラ」鐩粨鏋勶紝纭繚涓€鑷存€?
 - **2026-04-18**
-  - 完成 GitHub 仓库 3.0 结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
+  - 瀹屾垚 GitHub 浠撳簱 3.0 缁撴瀯浼樺寲瑙勫垝锛岀粺涓€鏂囦欢鍛藉悕瑙勮寖锛屼紭鍖栫洰褰曠粨鏋勶紝鍗囩骇涓?v3.0.0
 
 - **2026-04-06**
-  - 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.1 ~ v1.0.2
+  - 娣卞害浼樺寲 README.md 鏂囦欢锛屽畬鍠勭粨鏋勫拰鍐呭锛屽鍔犱粨搴撳畾浣嶃€佷娇鐢ㄨ鏄庣瓑閮ㄥ垎锛屽崌绾т负 v1.0.1 ~ v1.0.2
 
 - **2026-04-05**
-  - 初始化 HTML5 核心标签与 API 笔记
+  - 鍒濆鍖?HTML5 鏍稿績鏍囩涓?API 绗旇
 
 - **2026-10-04**
-  - 更新优化 README.md 文件，统一结构和格式
+  - 鏇存柊浼樺寲 README.md 鏂囦欢锛岀粺涓€缁撴瀯鍜屾牸寮?

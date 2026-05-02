@@ -1,109 +1,109 @@
-# 09-Markdown 文档 | Markdown Documentation
+﻿# 09-Markdown 鏂囨。 | Markdown Documentation
 
 > @Author: fanquanpp
-> @Version: v3.0.0
+> @Version: v3.5.0
 > @Created: 2026-04-05
 
-## 1. 简介 | Introduction
+## 1. 绠€浠?| Introduction
 
-专注于 Markdown 基础语法、高级排版技巧和文档编写规范。作为一种轻量级标记语言，Markdown 因其简洁易读的特性被广泛应用于文档编写、博客撰写和技术文档等场景，本模块旨在帮助用户掌握 Markdown 的各种语法和排版技巧，建立统一、美观、易读的文档编写规范。
+涓撴敞浜?Markdown 鍩虹璇硶銆侀珮绾ф帓鐗堟妧宸у拰鏂囨。缂栧啓瑙勮寖銆備綔涓轰竴绉嶈交閲忕骇鏍囪璇█锛孧arkdown 鍥犲叾绠€娲佹槗璇荤殑鐗规€ц骞挎硾搴旂敤浜庢枃妗ｇ紪鍐欍€佸崥瀹㈡挵鍐欏拰鎶€鏈枃妗ｇ瓑鍦烘櫙锛屾湰妯″潡鏃ㄥ湪甯姪鐢ㄦ埛鎺屾彙 Markdown 鐨勫悇绉嶈娉曞拰鎺掔増鎶€宸э紝寤虹珛缁熶竴銆佺編瑙傘€佹槗璇荤殑鏂囨。缂栧啓瑙勮寖銆?
 
-## 2. 技术栈说明
+## 2. 鎶€鏈爤璇存槑
 
-- **解析标准**: CommonMark / GFM (GitHub Flavored Markdown)
-- **排版引擎**: Docsify / VitePress / Pandoc
-- **编辑器推荐**: VS Code + Markdown All in One / Typora
+- **瑙ｆ瀽鏍囧噯**: CommonMark / GFM (GitHub Flavored Markdown)
+- **鎺掔増寮曟搸**: Docsify / VitePress / Pandoc
+- **缂栬緫鍣ㄦ帹鑽?*: VS Code + Markdown All in One / Typora
 
-## 3. 目录索引 | Directory Index
+## 3. 鐩綍绱㈠紩 | Directory Index
 
 
-### 基础篇 | Basics
+### 鍩虹绡?| Basics
 
-- [V09_101-Markdown名词注释查阅表.md](./V09_101-Markdown名词注释查阅表.md)
-- [C09_101-Markdown概述.md](./C09_101-Markdown概述.md)
-- [C09_102-标题语法.md](./C09_102-标题语法.md)
-- [C09_103-段落与换行.md](./C09_103-段落与换行.md)
-- [C09_104-文本格式.md](./C09_104-文本格式.md)
-- [C09_105-列表语法.md](./C09_105-列表语法.md)
-- [C09_106-链接与图片.md](./C09_106-链接与图片.md)
-- [C09_107-代码块与语法高亮.md](./C09_107-代码块与语法高亮.md)
-- [C09_108-表格.md](./C09_108-表格.md)
+- [V09_101-Markdown鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md](./V09_101-Markdown鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md)
+- [C09_101-Markdown姒傝堪.md](./C09_101-Markdown姒傝堪.md)
+- [C09_102-鏍囬璇硶.md](./C09_102-鏍囬璇硶.md)
+- [C09_103-娈佃惤涓庢崲琛?md](./C09_103-娈佃惤涓庢崲琛?md)
+- [C09_104-鏂囨湰鏍煎紡.md](./C09_104-鏂囨湰鏍煎紡.md)
+- [C09_105-鍒楄〃璇硶.md](./C09_105-鍒楄〃璇硶.md)
+- [C09_106-閾炬帴涓庡浘鐗?md](./C09_106-閾炬帴涓庡浘鐗?md)
+- [C09_107-浠ｇ爜鍧椾笌璇硶楂樹寒.md](./C09_107-浠ｇ爜鍧椾笌璇硶楂樹寒.md)
+- [C09_108-琛ㄦ牸.md](./C09_108-琛ㄦ牸.md)
 
-### 高级篇 | Advanced
-- [G09_201-核心语法汇总.md](./G09_201-核心语法汇总.md)
-- [G09_202-Markdown高级语法与文档自动化.md](./G09_202-Markdown高级语法与文档自动化.md)
+### 楂樼骇绡?| Advanced
+- [G09_201-鏍稿績璇硶姹囨€?md](./G09_201-鏍稿績璇硶姹囨€?md)
+- [G09_202-Markdown楂樼骇璇硶涓庢枃妗ｈ嚜鍔ㄥ寲.md](./G09_202-Markdown楂樼骇璇硶涓庢枃妗ｈ嚜鍔ㄥ寲.md)
 
-## 4. 环境要求 | Environment Requirements
+## 4. 鐜瑕佹眰 | Environment Requirements
 
-- **编辑器**: VS Code, Typora, Sublime Text, 或任何 Markdown 编辑器
-- **渲染工具**: GitHub, VS Code Markdown Preview, Docsify
-- **图片管理**: 图片资源存放在 `assets/` 目录下
+- **缂栬緫鍣?*: VS Code, Typora, Sublime Text, 鎴栦换浣?Markdown 缂栬緫鍣?
+- **娓叉煋宸ュ叿**: GitHub, VS Code Markdown Preview, Docsify
+- **鍥剧墖绠＄悊**: 鍥剧墖璧勬簮瀛樻斁鍦?`assets/` 鐩綍涓?
 
-## 5. 快速开始 | Quick Start
+## 5. 蹇€熷紑濮?| Quick Start
 
-1. 学习标题与结构：阅读 [C09_102-标题语法.md](./C09_102-标题语法.md)
-2. 实验列表嵌套：查阅 [C09_105-列表语法.md](./C09_105-列表语法.md)
-3. 在 VS Code 中开启预览：`Ctrl + Shift + V`
+1. 瀛︿範鏍囬涓庣粨鏋勶細闃呰 [C09_102-鏍囬璇硶.md](./C09_102-鏍囬璇硶.md)
+2. 瀹為獙鍒楄〃宓屽锛氭煡闃?[C09_105-鍒楄〃璇硶.md](./C09_105-鍒楄〃璇硶.md)
+3. 鍦?VS Code 涓紑鍚瑙堬細`Ctrl + Shift + V`
 
-## 6. 学习路线 | Learning Path
+## 6. 瀛︿範璺嚎 | Learning Path
 
-`Markdown概述` → `标题语法` → `段落与换行` → `文本格式` → `列表语法` → `链接与图片` → `代码块与语法高亮` → `表格` → `核心语法汇总`
+`Markdown姒傝堪` 鈫?`鏍囬璇硶` 鈫?`娈佃惤涓庢崲琛宍 鈫?`鏂囨湰鏍煎紡` 鈫?`鍒楄〃璇硶` 鈫?`閾炬帴涓庡浘鐗嘸 鈫?`浠ｇ爜鍧椾笌璇硶楂樹寒` 鈫?`琛ㄦ牸` 鈫?`鏍稿績璇硶姹囨€籤
 
-## 7. 核心特色 | Key Features
+## 7. 鏍稿績鐗硅壊 | Key Features
 
-- **语法规范**：建立一套统一的 Markdown 编写规范和标准
-- **排版技巧**：提供高级排版技巧，提升文档美观度和可读性
-- **工具生态**：推荐适合 Markdown 编写的工具、编辑器和插件
-- **最佳实践**：收录 Markdown 文档编写的最佳实践和常见问题
-- **多平台支持**：讲解不同平台（GitHub、GitLab、Gitee）的 Markdown 特性
-- **结构化文档**：提供如何使用 Markdown 创建结构化文档的方法
-- **双语注释**：关键概念和示例提供中英文对照注释
+- **璇硶瑙勮寖**锛氬缓绔嬩竴濂楃粺涓€鐨?Markdown 缂栧啓瑙勮寖鍜屾爣鍑?
+- **鎺掔増鎶€宸?*锛氭彁渚涢珮绾ф帓鐗堟妧宸э紝鎻愬崌鏂囨。缇庤搴﹀拰鍙鎬?
+- **宸ュ叿鐢熸€?*锛氭帹鑽愰€傚悎 Markdown 缂栧啓鐨勫伐鍏枫€佺紪杈戝櫒鍜屾彃浠?
+- **鏈€浣冲疄璺?*锛氭敹褰?Markdown 鏂囨。缂栧啓鐨勬渶浣冲疄璺靛拰甯歌闂
+- **澶氬钩鍙版敮鎸?*锛氳瑙ｄ笉鍚屽钩鍙帮紙GitHub銆丟itLab銆丟itee锛夌殑 Markdown 鐗规€?
+- **缁撴瀯鍖栨枃妗?*锛氭彁渚涘浣曚娇鐢?Markdown 鍒涘缓缁撴瀯鍖栨枃妗ｇ殑鏂规硶
+- **鍙岃娉ㄩ噴**锛氬叧閿蹇靛拰绀轰緥鎻愪緵涓嫳鏂囧鐓ф敞閲?
 
-## 8. 阅读建议 | Reading Guide
+## 8. 闃呰寤鸿 | Reading Guide
 
-1. 按照学习路线的顺序学习，从 Markdown 概述开始，逐步掌握 Markdown 的各种语法
-2. 结合实际文档编写练习，加深对 Markdown 语法的理解
-3. 特别关注排版技巧部分，这有助于提升文档的美观度和可读性
-4. 尝试使用 Markdown 编写一些实际文档，巩固所学知识
+1. 鎸夌収瀛︿範璺嚎鐨勯『搴忓涔狅紝浠?Markdown 姒傝堪寮€濮嬶紝閫愭鎺屾彙 Markdown 鐨勫悇绉嶈娉?
+2. 缁撳悎瀹為檯鏂囨。缂栧啓缁冧範锛屽姞娣卞 Markdown 璇硶鐨勭悊瑙?
+3. 鐗瑰埆鍏虫敞鎺掔増鎶€宸ч儴鍒嗭紝杩欐湁鍔╀簬鎻愬崌鏂囨。鐨勭編瑙傚害鍜屽彲璇绘€?
+4. 灏濊瘯浣跨敤 Markdown 缂栧啓涓€浜涘疄闄呮枃妗ｏ紝宸╁浐鎵€瀛︾煡璇?
 
-## 9. 延伸阅读 | Further Reading
+## 9. 寤朵几闃呰 | Further Reading
 
-- [CommonMark 官方规范](https://commonmark.org/) <!-- nofollow -->
-- [GitHub Flavored Markdown 指南](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) <!-- nofollow -->
-- [Markdown 指南](https://www.markdownguide.org/) <!-- nofollow -->
+- [CommonMark 瀹樻柟瑙勮寖](https://commonmark.org/) <!-- nofollow -->
+- [GitHub Flavored Markdown 鎸囧崡](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) <!-- nofollow -->
+- [Markdown 鎸囧崡](https://www.markdownguide.org/) <!-- nofollow -->
 
-## 10. 贡献指南 | Contribution Guide
+## 10. 璐＄尞鎸囧崡 | Contribution Guide
 
-- 遵循 CJK/Alphanumeric 间距规范（中英文间留一空格）
-- 图片资源存放在 `assets/` 目录下，使用相对路径引用
-- 提供完整的 Markdown 示例和渲染效果
+- 閬靛惊 CJK/Alphanumeric 闂磋窛瑙勮寖锛堜腑鑻辨枃闂寸暀涓€绌烘牸锛?
+- 鍥剧墖璧勬簮瀛樻斁鍦?`assets/` 鐩綍涓嬶紝浣跨敤鐩稿璺緞寮曠敤
+- 鎻愪緵瀹屾暣鐨?Markdown 绀轰緥鍜屾覆鏌撴晥鏋?
 
-## 11. 联系方式 | Contact Information
+## 11. 鑱旂郴鏂瑰紡 | Contact Information
 
-- 邮箱：<fanquanpangpiing@163.com>
-- QQ：1839243393
-- 欢迎提意见交流或反馈问题
+- 閭锛?fanquanpangpiing@163.com>
+- QQ锛?839243393
+- 娆㈣繋鎻愭剰瑙佷氦娴佹垨鍙嶉闂
 
-## 12. 许可证信息 | License
+## 12. 璁稿彲璇佷俊鎭?| License
 
-- **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- **Copyright**：2024-2026 fanquanpp
+- **SPDX-Identifier**锛歔CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**锛?024-2026 fanquanpp
 
 ---
 
-**更新日志 | Changelog**
+**鏇存柊鏃ュ織 | Changelog**
 
 - **2026-05-02**
-  - 全面检查项目结构，确保一致性
+  - 鍏ㄩ潰妫€鏌ラ」鐩粨鏋勶紝纭繚涓€鑷存€?
 
 - **2026-04-18**
-  - 完成 GitHub 仓库 3.0 结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
+  - 瀹屾垚 GitHub 浠撳簱 3.0 缁撴瀯浼樺寲瑙勫垝锛岀粺涓€鏂囦欢鍛藉悕瑙勮寖锛屼紭鍖栫洰褰曠粨鏋勶紝鍗囩骇涓?v3.0.0
 
 - **2026-04-06**
-  - 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.1 ~ v1.0.2
+  - 娣卞害浼樺寲 README.md 鏂囦欢锛屽畬鍠勭粨鏋勫拰鍐呭锛屽鍔犱粨搴撳畾浣嶃€佷娇鐢ㄨ鏄庣瓑閮ㄥ垎锛屽崌绾т负 v1.0.1 ~ v1.0.2
 
 - **2026-04-05**
-  - 初始化 Markdown 基础语法与核心排版笔记
+  - 鍒濆鍖?Markdown 鍩虹璇硶涓庢牳蹇冩帓鐗堢瑪璁?
 
 - **2026-10-04**
-  - 更新优化 README.md 文件，统一结构和格式
+  - 鏇存柊浼樺寲 README.md 鏂囦欢锛岀粺涓€缁撴瀯鍜屾牸寮?
