@@ -8,31 +8,7 @@
 
 专注于 C 语言基础语法、内存管理、指针操作及经典算法与数据结构的实现。作为系统编程的基础语言，C 语言是理解计算机底层原理的关键，本模块旨在为学习者提供从入门到进阶的系统化学习路径，为系统编程与高性能开发打下坚实基础。
 
-## 2. 学习路线图 | Learning Roadmap
-
-```mermaid
-graph LR
-    A[C基础] --&gt; B[指针内存] --&gt; C[数据结构] --&gt; D[C++] --&gt; E[系统编程]
-```
-
-### 详细路径 | Detailed Path
-
-| 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
-| :--- | :--- | :--- | :--- |
-| 入门 | C 基础语法体系 (Basics) | 20h | 无 |
-| 进阶 | 指针深度解析 (Pointers) | 15h | 基础语法 |
-| 初级 | 排序与搜索 (C) | 10h | 指针、数组 |
-| 中级 | C++ 基础体系 | 20h | C 基础 |
-| 中级 | STL 实战 | 15h | C++ 语法 |
-| 高级 | 图论与 DP (C++) | 30h | 数据结构、STL |
-
-### 学习提示 | Tips
-
-- **内存安全**：在 C 中务必手动 `free`；在 C++ 中优先使用 `std::unique_ptr` 或 `std::shared_ptr`。
-- **性能优化**：学习使用 `gprof` 或 `valgrind` 进行性能分析与内存泄漏检查。
-- **面试重点**：手写 `Quick Sort`, `Smart Pointer`, `String` 类。
-
-## 3. 目录索引 | Directory Index
+## 2. 目录索引 | Directory Index
 
 ### 快速查阅 | Quick Reference
 
@@ -66,7 +42,7 @@ graph LR
 - [SFDE02_402-queue_c.c](./算法与数据结构/代码示例/SFDE02_402-queue_c.c)
 - [SFDE02_403-stack_c.c](./算法与数据结构/代码示例/SFDE02_403-stack_c.c)
 
-## 4. 基础篇核心知识点 | Basics Core Knowledge
+## 3. 基础篇核心知识点 | Basics Core Knowledge
 
 - **概述**：C 语言发展历史与特点、应用领域、环境搭建、标准版本
 - **程序结构**：基本结构、注释、标识符、编译过程、预处理指令
@@ -80,7 +56,7 @@ graph LR
 - **结构体**：定义、内存对齐、联合体、typedef
 - **文件IO**：文件流、读写操作、定位、错误处理
 
-## 5. 数据结构与算法 | Data Structures &amp; Algorithms
+## 4. 数据结构与算法 | Data Structures &amp; Algorithms
 
 ### 数据结构列表 | Data Structures
 
@@ -109,7 +85,7 @@ gcc SFDE02_302-bubble_sort_c.c -o bubble_sort
 ./bubble_sort
 ```
 
-## 6. 环境要求与快速开始 | Environment &amp; Quick Start
+## 5. 环境要求与快速开始 | Environment &amp; Quick Start
 
 ### 环境要求 | Environment Requirements
 
@@ -129,16 +105,17 @@ gcc hello.c -o hello
 ./hello
 ```
 
-## 7. 延伸阅读 | Further Reading
+## 6. 延伸阅读 | Further Reading
 
 - [C 语言标准文档](https://www.iso.org/standard/74528.html)
 - [The C Programming Language](https://www.amazon.com/C-Programming-Language-2nd/dp/0131103628) - Brian W. Kernighan &amp; Dennis M. Ritchie
 - 本仓库：[13-C++](../13-C++/README.md)
 
-## 8. 更新日志 | Changelog
+## 7. 更新日志 | Changelog
 
 - **2026-05-02**
   - 优化 README 结构，删除重复内容，添加快速查阅索引
+  - 删除 mermaid 图表
 
 - **2026-04-18**
   - 完成仓库 3.0 结构优化规划，统一文件命名规范
