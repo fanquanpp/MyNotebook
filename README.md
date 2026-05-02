@@ -1,219 +1,214 @@
-﻿# MyNotebook | 涓汉缁煎悎璧勬枡绗旇搴?
+# MyNotebook | 个人综合资源笔记库
 
 > @Author: fanquanpp
 > @Version: v3.5.0
 > @Created: 2026-04-05
-> @Description: 缁煎悎鎬т釜浜鸿祫鏂欑瑪璁板簱锛屾兜鐩?C/C++銆乄eb 鍓嶇銆丳ython/Java 鍚庣銆丮ySQL 鏁版嵁搴撳強娓告垙寮€鍙戠瓑澶氫釜鎶€鏈鍩熴€?| Comprehensive personal knowledge notebook covering multiple technical fields.
+> @Description: 综合性个人资源笔记库，覆盖 C/C++、Web 前端、Python/Java 后端、MySQL 数据库及游戏开发等多个技术领域。| Comprehensive personal knowledge notebook covering multiple technical fields.
 
 <br />
 
-## 0. 浼樿川璧勬簮鎺ㄨ崘 | Recommended Resources
+## 0. 优质资源推荐 | Recommended Resources
 
-### 澶栭儴 GitHub 浠撳簱鎺ㄨ崘
+### 外部 GitHub 仓库推荐
 
-#### JavaScript 鐩稿叧
+#### JavaScript 相关
 
-- **JavaScript绗旇** 鈫?[anbang/javascript-notes](https://github.com/anbang/javascript-notes.git)
-  - 鍏ㄩ潰鐨?JavaScript 瀛︿範绗旇鍜岀ず渚?
-- **Airbnb JavaScript椋庢牸鎸囧崡** 鈫?[airbnb/javascript](https://github.com/airbnb/javascript.git)
-  - 涓氱晫骞挎硾閲囩敤鐨?JavaScript 浠ｇ爜椋庢牸鎸囧崡
+- **JavaScript笔记** → [anbang/javascript-notes](https://github.com/anbang/javascript-notes.git)
+  - 全面的 JavaScript 学习笔记和示例
+- **Airbnb JavaScript风格指南** → [airbnb/javascript](https://github.com/airbnb/javascript.git)
+  - 业界广泛使用的 JavaScript 代码风格指南
 
-#### 绠楁硶鐩稿叧
+#### 算法相关
 
-- **绠楁硶鍙鍖栧櫒** 鈫?[algorithm-visualizer/algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer.git)
-  - 閫氳繃鍙鍖栨柟寮忕悊瑙ｅ悇绉嶇畻娉曠殑鎵ц杩囩▼
-- **LeetCode绠楁硶棰樿瑙?* 鈫?[doocs/leetcode](https://github.com/doocs/leetcode.git)
-  - 鍖呭惈璇︾粏鐨?LeetCode 棰樼洰瑙ｆ瀽鍜岃В鍐虫柟妗?
-- **绠楁硶闂闆嗗悎** 鈫?[MTrajK/coding-problems](https://github.com/MTrajK/coding-problems.git)
-  - 鏀堕泦浜嗗悇绉嶇紪绋嬬畻娉曢棶棰樺拰瑙ｇ瓟
-- **鏁版嵁缁撴瀯涓庣畻娉曪紙鏅媺鐗癸級** 鈫?[thepranaygupta/Data-Structures-and-Algorithms](https://github.com/thepranaygupta/Data-Structures-and-Algorithms.git)
-  - 鍏ㄩ潰鐨勬暟鎹粨鏋勪笌绠楁硶瀹炵幇
-- **绠楁硶涓庢暟鎹粨鏋勶紙寮€灏旀枃锛?* 鈫?[kelvins/algorithms-and-data-structures](https://github.com/kelvins/algorithms-and-data-structures.git)
-  - 澶氱缂栫▼璇█瀹炵幇鐨勭畻娉曚笌鏁版嵁缁撴瀯
-- **ApacheCN绠楁硶璇戞枃闆?* 鈫?[apachecn/apachecn-algo-zh](https://github.com/apachecn/apachecn-algo-zh.git)
-  - 鏁版嵁缁撴瀯涓庣畻娉曠殑涓枃璇戞枃闆嗭紝鍖呭惈 LeetCode 棰樿В
-- **Hello 绠楁硶** 鈫?[krahets/hello-algo](https://github.com/krahets/hello-algo.git)
-  - 鍔ㄧ敾鍥捐В銆佷竴閿繍琛岀殑鏁版嵁缁撴瀯涓庣畻娉曟暀绋嬶紝鏀寔澶氳瑷€瀹炵幇
+- **算法可视化器** → [algorithm-visualizer/algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer.git)
+  - 通过可视化方式理解各种算法的运行过程
+- **LeetCode算法题解** → [doocs/leetcode](https://github.com/doocs/leetcode.git)
+  - 包含详细的 LeetCode 题目解析和解答方法
+- **算法问题合集** → [MTrajK/coding-problems](https://github.com/MTrajK/coding-problems.git)
+  - 收集了各种编程算法问题和答案
+- **数据结构与算法(斯洛伐克)** → [thepranaygupta/Data-Structures-and-Algorithms](https://github.com/thepranaygupta/Data-Structures-and-Algorithms.git)
+  - 全面的数据结构与算法实现
+- **算法与数据结构(开源书籍)** → [kelvins/algorithms-and-data-structures](https://github.com/kelvins/algorithms-and-data-structures.git)
+  - 多种编程语言实现的算法与数据结构
+- **ApacheCN算法译文集** → [apachecn/apachecn-algo-zh](https://github.com/apachecn/apachecn-algo-zh.git)
+  - 数据结构与算法的中文译文集，包含 LeetCode 题解
+- **Hello 算法** → [krahets/hello-algo](https://github.com/krahets/hello-algo.git)
+  - 图解代码、一键运行的数据结构与算法教程，支持多语言实现
 
-#### TypeScript 鐩稿叧
+#### TypeScript 相关
 
-- **澶氳鏂囨湰娴嬮噺鍜屽竷灞€** 鈫?[chenglou/pretext](https://github.com/chenglou/pretext.git)
-  - 涓撴敞浜庢枃鏈祴閲忓拰甯冨眬鐨?TypeScript 搴?
+- **多行文本测量和排版** → [chenglou/pretext](https://github.com/chenglou/pretext.git)
+  - 专注于文本测量和排版的 TypeScript 库
 
-#### Java 鐩稿叧
+#### Java 相关
 
-- **toBeBetterJavaer** 鈫?[itwanger/toBeBetterJavaer](https://github.com/itwanger/toBeBetterJavaer.git)
-  - 閫氫織鏄撴噦銆侀瓒ｅ菇榛樼殑 Java 瀛︿範鎸囧崡锛屾兜鐩?Java 鍩虹銆佸苟鍙戠紪绋嬨€佽櫄鎷熸満绛夋牳蹇冪煡璇嗙偣
+- **toBeBetterJavaer** → [itwanger/toBeBetterJavaer](https://github.com/itwanger/toBeBetterJavaer.git)
+  - 通俗易懂、风趣幽默的 Java 学习指南，覆盖 Java 基础、并发编程、虚拟机等核心知识点
 
-#### C++ 鐩稿叧
+#### C++ 相关
 
-- **CppGuide** 鈫?[balloonwj/CppGuide](https://github.com/balloonwj/CppGuide.git)
-  - C++ 鍚庣寮€鍙戣繘闃跺涔犺祫鏂欙紝鍖呭惈 C++ 蹇呯煡蹇呬細鐨勭煡璇嗙偣鍜屾父鎴忔湇鍔″櫒绔灦鏋勭瓑鍐呭
+- **CppGuide** → [balloonwj/CppGuide](https://github.com/balloonwj/CppGuide.git)
+  - C++ 后台开发进阶学习资料，包含 C++ 必知必会的知识点和常见服务器架构等内容
 
-#### CSS 鐩稿叧
+#### CSS 相关
 
-- **Flexbox-Labs** 鈫?[prazzon/Flexbox-Labs](https://github.com/prazzon/Flexbox-Labs.git)
-  - 鍩轰簬 Web 鐨?CSS Flexbox 甯冨眬宸ュ叿锛屾彁渚涚洿瑙傜晫闈㈠拰瀹炴椂棰勮鍔熻兘
+- **Flexbox-Labs** → [prazzon/Flexbox-Labs](https://github.com/prazzon/Flexbox-Labs.git)
+  - 基于 Web 的 CSS Flexbox 布局工具，提供更直观和实时预览功能
 
-#### Git 鐩稿叧
+#### Git 相关
 
-- **Pro Git 2 涓枃缈昏瘧** 鈫?[progit/progit2-zh](https://github.com/progit/progit2-zh.git)
-  - Git 鏉冨▉涔︾睄銆奝ro Git銆嬬浜岀増鐨勪腑鏂囩炕璇戠増鏈?
+- **Pro Git 2 中文翻译** → [progit/progit2-zh](https://github.com/progit/progit2-zh.git)
+  - Git 圣经《Pro Git》第二版的中文翻译版本
 
-#### 寮€婧愮ぞ鍖虹浉鍏?
+#### 开源社区相关
 
-- **HelloGitHub** 鈫?[521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub.git)
-  - 鍒嗕韩 GitHub 涓婃湁瓒ｃ€佸叆闂ㄧ骇鐨勫紑婧愰」鐩紝姣忔湀 28 鍙蜂互鏈堝垔褰㈠紡鏇存柊
+- **HelloGitHub** → [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub.git)
+  - 分享 GitHub 上有趣、入门级的开源项目，每月 28 号以月刊形式更新
 
-#### 娓告垙寮€鍙戠浉鍏?
+#### 游戏开发相关
 
-- **Godot Engine** 鈫?[godotengine/godot](https://github.com/godotengine/godot.git)
-  - 璺ㄥ钩鍙扮殑 2D 鍜?3D 娓告垙寮曟搸锛屽厤璐瑰紑婧愶紝鏀寔澶氬钩鍙板鍑?
+- **Godot Engine** → [godotengine/godot](https://github.com/godotengine/godot.git)
+  - 强大的 2D 和 3D 游戏引擎，开源免费，支持多平台导出
 
-#### Python 鐩稿叧
+#### Python 相关
 
-- **Python Mastery** 鈫?[dabeaz-course/python-mastery](https://github.com/dabeaz-course/python-mastery.git)
-  - David Beazley 鐨勯珮绾?Python 缂栫▼璇剧▼锛屽寘鍚粌涔犲拰瑙ｅ喅鏂规
+- **Python Mastery** → [dabeaz-course/python-mastery](https://github.com/dabeaz-course/python-mastery.git)
+  - David Beazley 的高级 Python 编程课程，包含教学和解决方案
 
-#### 宸ュ叿鐩稿叧
+#### 工具相关
 
-- **NoteGen** 鈫?[codexu/note-gen](https://github.com/codexu/note-gen.git)
-  - 璺ㄥ钩鍙扮殑 Markdown AI 绗旇杞欢锛岃嚧鍔涗簬浣跨敤 AI 杩炴帴璁板綍鍜屽啓浣?
-- **Reference** 鈫?[jaywcjlove/reference](https://github.com/jaywcjlove/reference.git)
-  - 闈㈠悜寮€鍙戣€呯殑鎶€鏈€熸煡娓呭崟闆嗗悎锛屾暣鐞嗗父瑙佹妧鏈€佸伐鍏蜂笌寮€鍙戞祦绋?
+- **NoteGen** → [codexu/note-gen](https://github.com/codexu/note-gen.git)
+  - 强大的 Markdown AI 笔记工具，有助于使用 AI 辅助记录和写作
+- **Reference** → [jaywcjlove/reference](https://github.com/jaywcjlove/reference.git)
+  - 面向开发者的技术速查表合集，整理常见技术、工具与开发流程
 
 ***
 
-## 1. 椤圭洰绠€浠?| Introduction
+## 1. 项目简介 | Introduction
 
-MyNotebook 鏄竴涓患鍚堟€ф妧鏈涔犵瑪璁板簱锛屾兜鐩?C/C++銆乄eb 鍓嶇銆丳ython/Java 鍚庣銆丮ySQL 鏁版嵁搴撳強娓告垙寮€鍙戠瓑澶氫釜鎶€鏈鍩燂紝涓鸿嚜瀛﹁€呮彁渚涘涔犺祫鏂欍€?
+MyNotebook 是一个综合性技术学习笔记库，覆盖 C/C++、Web 前端、Python/Java 后端、MySQL 数据库及游戏开发等多个技术领域，为自学者提供学习资料。
 
-### 鏍稿績浠峰€?
+### 核心目标
 
-- **浣撶郴鍖栧涔?*锛氫粠鍩虹鍒拌繘闃讹紝鏋勫缓瀹屾暣鐨勭煡璇嗕綋绯?
-- **瀹炴垬瀵煎悜**锛氭彁渚涗赴瀵岀殑浠ｇ爜绀轰緥鍜屽疄璺垫寚鍗?
-- **鎸佺画鏇存柊**锛氬畾鏈熺淮鎶わ紝淇濇寔鍐呭鐨勬椂鏁堟€?
+- **体系化学习**：从基础到进阶，构建完整的知识体系
+- **实战导向**：提供丰富的代码示例和实战指导
+- **持续更新**：定期维护，保持内容的时效性
 
-### 鑱旂郴鏂瑰紡
+### 联系方式
 
-- 閭锛?fanquanpangpiing@163.com>
+- 邮箱：<fanquanpangpiing@163.com>
 
-## 2. 鐩綍绱㈠紩 | Directory Index
+## 2. 目录索引 | Directory Index
 
-### 2.1 蹇€熷鑸?
+### 2.1 快速导航
 
-| 搴忓彿 | 妯″潡鍚嶇О          | 鑻辨枃鍚嶇О                     | 璺緞                                                     |
-| :- | :------------ | :----------------------- | :----------------------------------------------------- |
-| 01 | GitHub 骞冲彴     | GitHub Platform          | [./01-Github/README.md](./01-Github/README.md)         |
-| 02 | C 璇█涓庣畻娉?      | C & Algorithms           | [./02-C璇█/README.md](./02-C璇█/README.md)               |
-| 03 | Python 鑴氭湰     | Python Scripting         | [./03-Python/README.md](./03-Python/README.md)         |
-| 04 | Java 鍚庣寮€鍙?    | Java Backend Development | [./04-Java/README.md](./04-Java/README.md)             |
-| 05 | HTML5 缃戦〉寮€鍙?   | HTML5 Web Development    | [./05-HTML5/README.md](./05-HTML5/README.md)           |
-| 06 | CSS 甯冨眬        | CSS Layouts              | [./06-CSS/README.md](./06-CSS/README.md)               |
-| 07 | Git 鐗堟湰鎺у埗      | Git Version Control      | [./07-Git/README.md](./07-Git/README.md)               |
-| 08 | JavaScript 鑴氭湰 | JavaScript               | [./08-Javascript/README.md](./08-Javascript/README.md) |
-| 09 | Markdown 鏂囨。   | Markdown Documentation   | [./09-Markdown/README.md](./09-Markdown/README.md)     |
-| 10 | MySQL 鏁版嵁搴?    | MySQL Database           | [./10-MySQL/README.md](./10-MySQL/README.md)           |
-| 11 | TypeScript 杩涢樁 | TypeScript Advanced      | [./11-Typescript/README.md](./11-Typescript/README.md) |
-| 12 | Vue3          | Vue3 Framework           | [./12-Vue3/README.md](./12-Vue3/README.md)             |
-| 13 | C++ 绯荤粺缂栫▼      | C++ Systems Programming  | [./13-C++/README.md](./13-C++/README.md)               |
-| 14 | Lua 璇█        | Lua Language             | [./14-Lua/README.md](./14-Lua/README.md)               |
-| 15 | Godot 娓告垙寮曟搸    | Godot Game Engine        | [./15-Godot/README.md](./15-Godot/README.md)           |
-| 16 | Ren'Py 娓告垙寮曟搸   | Ren'Py Game Engine       | [./16-Renpy/README.md](./16-Renpy/README.md)           |
+| 序号 | 模块名称 | 英文名称 | 路径 |
+| :- | :--- | :--- | :--- |
+| 01 | GitHub 平台 | GitHub Platform | [./01-Github/README.md](./01-Github/README.md) |
+| 02 | C 语言与算法 | C & Algorithms | [./02-C语言/README.md](./02-C语言/README.md) |
+| 03 | Python 基础 | Python Scripting | [./03-Python/README.md](./03-Python/README.md) |
+| 04 | Java 后端开发 | Java Backend Development | [./04-Java/README.md](./04-Java/README.md) |
+| 05 | HTML5 网页开发 | HTML5 Web Development | [./05-HTML5/README.md](./05-HTML5/README.md) |
+| 06 | CSS 布局 | CSS Layouts | [./06-CSS/README.md](./06-CSS/README.md) |
+| 07 | Git 版本控制 | Git Version Control | [./07-Git/README.md](./07-Git/README.md) |
+| 08 | JavaScript 基础 | JavaScript | [./08-Javascript/README.md](./08-Javascript/README.md) |
+| 09 | Markdown 文档 | Markdown Documentation | [./09-Markdown/README.md](./09-Markdown/README.md) |
+| 10 | MySQL 数据库 | MySQL Database | [./10-MySQL/README.md](./10-MySQL/README.md) |
+| 11 | TypeScript 进阶 | TypeScript Advanced | [./11-Typescript/README.md](./11-Typescript/README.md) |
+| 12 | Vue3 | Vue3 Framework | [./12-Vue3/README.md](./12-Vue3/README.md) |
+| 13 | C++ 系统编程 | C++ Systems Programming | [./13-C++/README.md](./13-C++/README.md) |
+| 14 | Lua 语言 | Lua Language | [./14-Lua/README.md](./14-Lua/README.md) |
+| 15 | Godot 游戏引擎 | Godot Game Engine | [./15-Godot/README.md](./15-Godot/README.md) |
+| 16 | Ren'Py 游戏引擎 | Ren'Py Game Engine | [./16-Renpy/README.md](./16-Renpy/README.md) |
 
-### 2.2 鎶€鏈鍩熷垎绫?
+### 2.2 技术领域分类
 
-#### 2.2.1 鍩虹宸ュ叿涓庣増鏈帶鍒?
+#### 2.2.1 基础工具与平台支持
 
-- [GitHub 骞冲彴](./01-Github/README.md)
-- [Git 鐗堟湰鎺у埗](./07-Git/README.md)
-- [Markdown 鏂囨。](./09-Markdown/README.md)
+- [GitHub 平台](./01-Github/README.md)
+- [Git 版本控制](./07-Git/README.md)
+- [Markdown 文档](./09-Markdown/README.md)
 
-#### 2.2.2 缂栫▼璇█
+#### 2.2.2 编程语言
 
-- [C 璇█涓庣畻娉昡(./02-C璇█/README.md)
-- [Python 鑴氭湰](./03-Python/README.md)
-- [Java 鍚庣寮€鍙慮(./04-Java/README.md)
-- [JavaScript 鑴氭湰](./08-Javascript/README.md)
-- [TypeScript 杩涢樁](./11-Typescript/README.md)
-- [C++ 绯荤粺缂栫▼](./13-C++/README.md)
-- [Lua 璇█](./14-Lua/README.md)
+- [C 语言与算法](./02-C语言/README.md)
+- [Python 基础](./03-Python/README.md)
+- [Java 后端开发](./04-Java/README.md)
+- [JavaScript 基础](./08-Javascript/README.md)
+- [TypeScript 进阶](./11-Typescript/README.md)
+- [C++ 系统编程](./13-C++/README.md)
+- [Lua 语言](./14-Lua/README.md)
 
-#### 2.2.3 Web 鍓嶇寮€鍙?
+#### 2.2.3 Web 前端开发
 
-- [HTML5 缃戦〉寮€鍙慮(./05-HTML5/README.md)
-- [CSS 甯冨眬](./06-CSS/README.md)
+- [HTML5 网页开发](./05-HTML5/README.md)
+- [CSS 布局](./06-CSS/README.md)
 - [Vue3](./12-Vue3/README.md)
 
-#### 2.2.4 鏁版嵁搴?
+#### 2.2.4 数据库
 
-- [MySQL 鏁版嵁搴揮(./10-MySQL/README.md)
+- [MySQL 数据库](./10-MySQL/README.md)
 
-#### 2.2.5 娓告垙寮€鍙?
+#### 2.2.5 游戏开发
 
-- [Godot 娓告垙寮曟搸](./15-Godot/README.md)
-- [Ren'Py 娓告垙寮曟搸](./16-Renpy/README.md)
+- [Godot 游戏引擎](./15-Godot/README.md)
+- [Ren'Py 游戏引擎](./16-Renpy/README.md)
 
-## 3. 瀛︿範璺嚎 | Learning Path
+## 3. 学习路径 | Learning Path
 
-### 3.1 鎺ㄨ崘瀛︿範椤哄簭
+### 3.1 推荐学习顺序
 
-1. **鍩虹宸ュ叿**锛歁arkdown 鏂囨。 鈫?Git 鐗堟湰鎺у埗 鈫?GitHub 骞冲彴
-2. **缂栫▼璇█鍩虹**锛欳 璇█涓庣畻娉?鈫?Python 鑴氭湰 鈫?JavaScript 鑴氭湰
-3. **Web 鍓嶇**锛欻TML5 缃戦〉寮€鍙?鈫?CSS 甯冨眬 鈫?TypeScript 杩涢樁 鈫?Vue3
-4. **鍚庣寮€鍙?*锛欽ava 鍚庣寮€鍙?鈫?MySQL 鏁版嵁搴?
-5. **绯荤粺涓庢父鎴忓紑鍙?*锛欳++ 绯荤粺缂栫▼ 鈫?Lua 璇█ 鈫?Godot 娓告垙寮曟搸 鈫?Ren'Py 娓告垙寮曟搸
+1. **基础工具**：Markdown 文档 → Git 版本控制 → GitHub 平台
+2. **编程语言基础**：C 语言与算法 → Python 基础 → JavaScript 基础
+3. **Web 前端**：HTML5 网页开发 → CSS 布局 → TypeScript 进阶 → Vue3
+4. **后端开发**：Java 后端开发 → MySQL 数据库
+5. **系统与游戏开发**：C++ 系统编程 → Lua 语言 → Godot 游戏引擎 → Ren'Py 游戏引擎
 
-### 3.2 鎶€鏈ā鍧椾緷璧栧叧绯?
+### 3.2 技术模块依赖关系
+
 ```mermaid
 graph TB
-    %% 鍩虹宸ュ叿灞?    M["09-Markdown<br/>鏂囨。缂栧啓"]
-    G["07-Git<br/>鐗堟湰鎺у埗"]
-    GH["01-GitHub<br/>骞冲彴浣跨敤"]
+    M["09-Markdown<br/>文档编写"]
+    G["07-Git<br/>版本控制"]
+    GH["01-GitHub<br/>平台使用"]
 
-    %% 缂栫▼璇█灞?    C["02-C璇█<br/>绯荤粺缂栫▼"]
-    Py["03-Python<br/>鑴氭湰鑷姩鍖?]
-    JS["08-JavaScript<br/>鍓嶇寮€鍙?]
-    TS["11-TypeScript<br/>绫诲瀷澧炲己"]
-    J["04-Java<br/>浼佷笟鍚庣"]
-    CPP["13-C++<br/>楂樻€ц兘"]
-    Lua["14-Lua<br/>宓屽叆寮?]
+    C["02-C语言<br/>系统编程"]
+    Py["03-Python<br/>脚本自动化"]
+    JS["08-JavaScript<br/>前端开发"]
+    TS["11-TypeScript<br/>类型增强"]
+    J["04-Java<br/>企业后端"]
+    CPP["13-C++<br/>高性能"]
+    Lua["14-Lua<br/>嵌入式"]
 
-    %% Web鎶€鏈眰
-    H["05-HTML5<br/>缁撴瀯灞?]
-    CSS["06-CSS<br/>鏍峰紡灞?]
-    Vue["12-Vue3<br/>鍓嶇妗嗘灦"]
+    H["05-HTML5<br/>结构层"]
+    CSS["06-CSS<br/>样式层"]
+    Vue["12-Vue3<br/>前端框架"]
 
-    %% 鏁版嵁灞?    DB["10-MySQL<br/>鍏崇郴鏁版嵁搴?]
+    DB["10-MySQL<br/>关系数据库"]
 
-    %% 娓告垙寮€鍙戝眰
-    Godot["15-Godot<br/>2D/3D娓告垙"]
-    Renpy["16-Renpy<br/>瑙嗚灏忚"]
+    Godot["15-Godot<br/>2D/3D游戏"]
+    Renpy["16-Renpy<br/>视觉小说"]
 
-    %% 鍩虹宸ュ叿娴佺▼
     M --> G --> GH
 
-    %% 缂栫▼璇█娴佺▼
     M --> C --> CPP --> Lua
     M --> Py --> JS --> TS --> Vue
     M --> Py --> J --> DB
     C --> J
 
-    %% Web鎶€鏈祦绋?    H --> CSS --> JS
+    H --> CSS --> JS
     TS --> Vue
 
-    %% 鍚庣鏁版嵁娴佺▼
     J --> DB
 
-    %% 娓告垙寮€鍙戞祦绋?    Lua --> Godot
+    Lua --> Godot
     Lua --> Renpy
 
-    %% 璺ㄩ鍩熷叧鑱?    JS -.-> H
+    JS -.-> H
     JS -.-> CSS
     TS -.-> J
     Vue -.-> H
 
-    %% 鏍峰紡
     classDef foundation fill:#e1f5fe,stroke:#01579b,stroke-width:2px
     classDef language fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
     classDef web fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px
@@ -227,180 +222,171 @@ graph TB
     class Godot,Renpy game
 ```
 
-### 3.3 瀛︿範璺緞鎺ㄨ崘
+### 3.3 学习路径推荐
 
-#### 璺緞涓€锛歐eb 鍏ㄦ爤寮€鍙?
+#### 路径一：Web 全栈开发
+
 ```mermaid
 graph LR
     HTML["HTML5"] --> CSS["CSS"] --> JS["JavaScript"] --> TS["TypeScript"] --> VUE["Vue3"]
-    JS -.-> DOM["DOM鎿嶄綔"]
+    JS -.-> DOM["DOM操作"]
     VUE -.-> Router["Vue Router"] -.-> VUE
     VUE -.-> Pinia["Pinia"] -.-> VUE
 ```
 
-#### 璺緞浜岋細鍚庣寮€鍙?
+#### 路径二：后端开发
+
 ```mermaid
 graph LR
-    C["C璇█"] --> Java["Java"] --> Spring["Spring Boot"] --> Cloud["Spring Cloud"]
+    C["C语言"] --> Java["Java"] --> Spring["Spring Boot"] --> Cloud["Spring Cloud"]
     Java --> DB["MySQL"]
     Spring -.-> DB
 ```
 
-#### 璺緞涓夛細绯荤粺涓庢父鎴忓紑鍙?
+#### 路径三：系统与游戏开发
+
 ```mermaid
 graph LR
-    C["C璇█"] --> CPP["C++"] --> Lua["Lua"] --> Godot["Godot"]
+    C["C语言"] --> CPP["C++"] --> Lua["Lua"] --> Godot["Godot"]
     Lua --> Renpy["Ren'Py"]
 ```
 
-## 4. 鐜瑕佹眰 | Environment Requirements
+## 4. 环境要求 | Environment Requirements
 
-- **鎿嶄綔绯荤粺**锛歐indows 10+, Ubuntu 22.04+, macOS 14+
-- **杩愯鏃?*锛?
-  - Python 3.10+ (鐢ㄤ簬 Python 妯″潡)
-  - JDK 17+ (鐢ㄤ簬 Java 妯″潡)
-  - Node.js 16+ (鐢ㄤ簬鍓嶇妯″潡)
-  - Git 2.40+ (鐢ㄤ簬鐗堟湰鎺у埗)
-- **寮€鍙戝伐鍏?*锛歏S Code, IntelliJ IDEA, Eclipse 绛?
-- **鏈€灏忛厤缃?*锛? 鏍稿績 CPU / 1 GB 鍐呭瓨 / 500 MB 纾佺洏
+- **操作系统**：Windows 10+, Ubuntu 22.04+, macOS 14+
+- **运行时**：
+  - Python 3.10+ (用于 Python 模块)
+  - JDK 17+ (用于 Java 模块)
+  - Node.js 16+ (用于前端模块)
+  - Git 2.40+ (用于版本控制)
+- **开发工具**：VS Code, IntelliJ IDEA, Eclipse 等
+- **最小配置**：2 核心 CPU / 1 GB 内存 / 500 MB 磁盘
 
-## 5. 蹇€熷紑濮?| Quick Start
+## 5. 快速开始 | Quick Start
 
 ```bash
-# 1. 鍏嬮殕浠撳簱鍒板綋鍓嶇洰褰?
+# 1. 克隆仓库到当前目录
 git clone https://github.com/fanquanpp/MyNotebook.git .
 
-# 2. 娴忚妯″潡鍐呭
-# 渚嬪锛氭煡鐪?Python 鑴氭湰妯″潡
-cd 03-Python鑴氭湰
+# 2. 浏览模块内容
+# 例如：查看 Python 基础模块
+cd 03-Python
 
-# 3. 寮€濮嬪涔?
-# 鎸夌収姣忎釜妯″潡鐨?README.md 涓殑瀛︿範璺嚎杩涜瀛︿範
+# 3. 开始学习
+# 按照每个模块的 README.md 中的学习路线进行学习
 ```
 
-## 6. 鏍稿績鐗硅壊 | Key Features
+## 6. 核心特色 | Key Features
 
-- **鍘熷瓙鍖栫瑪璁?*锛氭瘡涓€涓牳蹇冪煡璇嗙偣鐙珛鎴愭枃锛屼究浜庢绱笌缁存姢
-- **鍙岃娉ㄩ噴**锛氭墍鏈夋簮鐮佸潎鍖呭惈涓枃/鑻辨枃鍙岃娉ㄩ噴涓庤В鏋?
-- **瀛︿範璺嚎**锛氭瘡涓ā鍧楀潎鎻愪緵 Mermaid 娴佺▼鍥惧舰寮忕殑瀛︿範璺緞
-- **宸ヤ笟绾ф爣鍑?*锛氶伒寰粺涓€鐨勪唬鐮侀鏍兼寚鍗楋紝骞堕€氳繃鑷姩鍖栬剼鏈繘琛屾牎楠?
-- **鍏ㄩ潰瑕嗙洊**锛氭兜鐩栦粠鍩虹璇硶鍒伴珮绾у簲鐢ㄧ殑瀹屾暣鐭ヨ瘑浣撶郴
-- **瀹炴垬瀵煎悜**锛氭彁渚涗赴瀵岀殑浠ｇ爜绀轰緥鍜屽疄闄呭簲鐢ㄥ満鏅?
-- **缁撴瀯娓呮櫚**锛氶噰鐢ㄧ郴缁熷寲鐨勭洰褰曠粨鏋勶紝渚夸簬瀵艰埅鍜屾煡鎵?
-- **鎸佺画鏇存柊**锛氬畾鏈熸洿鏂板唴瀹癸紝淇濇寔鐭ヨ瘑鐨勬椂鏁堟€у拰鍑嗙‘鎬?
+- **原子化笔记**：每一个核心知识点独立成文，便于检索与维护
+- **双语注释**：所有源代码均包含中文/英文双语注释与说明
+- **学习路线**：每个模块均提供 Mermaid 流程图形式的学习路径
+- **企业级标准**：遵循统一的命名风格指南，并通过自动化工具进行检查
+- **全面覆盖**：覆盖从基础语法到高级应用的完整知识体系
+- **实战导向**：提供丰富的代码示例和实际应用场景
+- **结构清晰**：采用系统化的目录结构，便于浏览和查找
+- **持续更新**：定期更新内容，保持知识的时效性和准确性
 
-## 7. 绗旇鏂囦欢鍛藉悕绛栫暐 | Note File Naming Strategy
+## 7. 笔记文件命名策略 | Note File Naming Strategy
 
-### 7.1 鏁翠綋缁撴瀯
+### 7.1 整体结构
 
-鍩虹鐭ヨ瘑鐐圭瑪璁?鈫?楂樼骇鐭ヨ瘑鐐圭瑪璁?鈫?涓撻」鐭ヨ瘑鐐圭瑪璁?
+基础知识点笔记 → 高级知识点笔记 → 专项知识点笔记
 
-### 7.2 鍛藉悕瑙勫垯
+### 7.2 命名规则
 
-**瀹屾暣鏍煎紡**锛歚[绫诲瀷浠ｅ彿][鏂囦欢澶瑰簭鍙穄_[鏂囦欢搴忓彿]-[绗旇鍐呭].md`
+**完整格式**：`[类型代号][文件大类序号]_[文件序号]-[笔记内容].md`
 
-**绀轰緥**锛歚C01_101-璐︽埛鍙婂畨鍏?md`
+**示例**：`C01_101-账户与安全.md`
 
-| 閮ㄥ垎    | 璇存槑              | 绀轰緥                      |
-| ----- | --------------- | ----------------------- |
-| 绫诲瀷浠ｅ彿  | 绗旇绫诲瀷鏍囪瘑锛堣涓嬭〃锛?    | C銆丟銆乑銆丼FDE銆乂            |
-| 鏂囦欢澶瑰簭鍙?| 妯″潡缂栧彿锛?浣嶆暟瀛楋紝涓嶈冻琛?锛?| 01銆?2銆?..銆?6            |
-| 鏂囦欢搴忓彿  | 鏂囦欢缂栧彿锛?浣嶆暟瀛楋級      | 101銆?02銆?..銆?01銆?02銆?.. |
-| 绗旇鍐呭  | 鏂囦欢涓婚鎻忚堪锛堢煭妯嚎鍒嗛殧锛?  | 璐︽埛鍙婂畨鍏ㄣ€侀厤缃笌鏋勫缓             |
+| 部分 | 说明 | 示例 |
+| :--- | :--- | :--- |
+| 类型代号 | 笔记类型标识（见下表） | C, G, Z, SFDE, V |
+| 文件大类序号 | 模块编号（2位数字，不能省） | 01, 02, ..., 16 |
+| 文件序号 | 文件编号（3位数字） | 101, 102, ..., 201, 202, ... |
+| 笔记内容 | 文件主题描述（短横线分隔） | 账户与安全、配置与构建 |
 
-### 7.3 绫诲瀷浠ｅ彿璇存槑
+### 7.3 类型代号说明
 
-| 绫诲瀷      | 浠ｅ彿   | 璇存槑                     | 缂栧彿鑼冨洿    |
-| ------- | ---- | ---------------------- | ------- |
-| 鍩虹鐭ヨ瘑鐐圭瑪璁?| C    | 闈㈠悜鍒濆鑰呯殑鍩虹姒傚康鍜屼娇鐢ㄦ柟娉?       | 101-199 |
-| 楂樼骇鐭ヨ瘑鐐圭瑪璁?| G    | 闈㈠悜杩涢樁鑰呯殑楂樼骇鐗规€у拰鏈€浣冲疄璺?       | 201-299 |
-| 涓撻」鐭ヨ瘑鐐圭瑪璁?| Z    | 鐗瑰畾棰嗗煙鐨勬繁鍏ユ帰璁ㄥ拰涓撻鐮旂┒         | 301-399 |
-| 绠楁硶涓庢暟鎹粨鏋?| SFDE | 绠楁硶涓庢暟鎹粨鏋勭浉鍏崇殑涓撲笟鍐呭         | 301-399 |
-| 鍚嶈瘝娉ㄩ噴鏌ラ槄琛?| V    | 瀵瑰簲鍐呭鐨勪笓鏈夊悕璇嶇殑瀹氫箟鍜屾蹇电殑瑙ｉ噴璇存槑鏂囨。 | 101-999 |
+| 类型 | 代号 | 说明 | 编号范围 |
+| :--- | :--- | :--- | :--- |
+| 基础知识点笔记 | C | 面向初学者的基础概念和使用方法 | 101-199 |
+| 高级知识点笔记 | G | 面向进阶者的高级特性和最佳实践 | 201-299 |
+| 专项知识点笔记 | Z | 特定领域的深入研讨和专题研究 | 301-399 |
+| 算法与数据结构 | SFDE | 算法与数据结构相关的专业内容 | 301-499 |
+| 名词注释查阅表 | V | 对应内容的专有名词的定义和相关的注释说明文档 | 101-999 |
 
-### 7.4 鎺掑簭瑙勫垯
+### 7.4 排序规则
 
-- **鏂囦欢澶规帓搴?*锛?1銆?2銆?3鈥︹€?6锛堟寜妯″潡閲嶈鎬у拰瀛︿範椤哄簭锛?
-- **鏂囦欢鎺掑簭**锛?01銆?02鈥︹€?01銆?02銆?03鈥︹€︼紙鍩虹鐭ヨ瘑鐐逛粠101寮€濮嬶紝楂樼骇鐭ヨ瘑鐐逛粠201寮€濮嬶級
+- **文件大类排序**：01, 02, 03...16（按模块重要性和学习顺序）
+- **文件排序**：101, 102...201, 202, 203...（基础知识点从101开始，高级知识点从201开始）
 
-## 8. 璐＄尞鎸囧崡 | Contribution Guide
+## 8. 贡献指南 | Contribution Guide
 
-- **鍒嗘敮绛栫暐**锛氶伒寰?Git Flow (feature/hotfix) 宸ヤ綔娴?
-- **鎻愪氦瑙勮寖**锛氫娇鐢?Conventional Commits 瑙勮寖 (feat, fix, docs)
-- **浠ｇ爜瑙勮寖**锛?
-  - C/C++: 閬靛惊 Google C++ Style Guide
-  - Java: 閬靛惊 Google Java Style Guide
-  - JavaScript/TypeScript: 閬靛惊 ESLint 瑙勮寖
-  - Python: 閬靛惊 PEP 8 瑙勮寖
-- **鏂囨。瑙勮寖**锛?
-  - 閲囩敤 Markdown 鏍煎紡
-  - 閬靛惊 CJK/Alphanumeric 闂磋窛瑙勮寖
-  - 鍥剧墖璧勬簮瀛樻斁鍦?`assets/` 鐩綍涓?
+- **分支策略**：遵循 Git Flow (feature/hotfix) 工作流
+- **提交规范**：使用 Conventional Commits 规范 (feat, fix, docs)
+- **代码规范**：
+  - C/C++: 遵循 Google C++ Style Guide
+  - Java: 遵循 Google Java Style Guide
+  - JavaScript/TypeScript: 遵循 ESLint 规范
+  - Python: 遵循 PEP 8 规范
+- **文档规范**：
+  - 使用 Markdown 格式
+  - 遵循 CJK/Alphanumeric 间距规范
+  - 图片资源存放在 `assets/` 目录中
 
-## 9. 璁稿彲璇佷俊鎭?| License
+## 9. 许可证信息 | License
 
-- **SPDX-Identifier**锛歔CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- **Copyright**锛?024-2026 fanquanpp
+- **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**：2024-2026 fanquanpp
 
-## 10. 寤朵几闃呰 | Further Reading
+## 10. 延伸阅读 | Further Reading
 
-- [TypeScript 涓枃鎵嬪唽](https://jkchao.github.io/typescript-book-chinese/)
-- [Godot 寮曟搸鏂囨。](https://docs.godotengine.org/zh-cn/4.5/)
-- [Ren'Py 瀹樻柟鏂囨。](https://www.renpy.org/doc/html/)
+- [TypeScript 中文手册](https://jkchao.github.io/typescript-book-chinese/)
+- [Godot 引擎文档](https://docs.godotengine.org/zh-cn/4.5/)
+- [Ren'Py 官方文档](https://www.renpy.org/doc/html/)
 
 ***
 
-**鏇存柊鏃ュ織 | Changelog**
+**更新日志 | Changelog**
 
 ### 2026-05-02
 
-- **v3.5.0** - 鍏ㄩ潰妫€鏌ユ墍鏈夋ā鍧楁枃浠跺畬鏁存€э紝鏇存柊鍒?GitHub
-- 閫愪釜妫€鏌ユ墍鏈?16 涓ā鍧楃殑鏂囦欢瀹屾暣鎬?
-- 楠岃瘉鎵€鏈夊熀纭€鐭ヨ瘑鐐广€侀珮绾х煡璇嗙偣銆佺畻娉曠ず渚嬬殑鏂囦欢缁撴瀯
-- 纭鎵€鏈夋ā鍧?README 淇濇寔涓€鑷存€?
-- 娓呯悊涓嶅繀瑕佺殑閲嶅鍐呭
-- 鎻愪氦鏇存柊骞朵笂浼犲埌 GitHub
-
-### 2026-05-02
-
-- **v3.4.0** - 浼樺寲 README.md 缁撴瀯锛岀粏鍖栨枃浠跺懡鍚嶈鍒欏拰鏇存柊鏃ュ織
-- 浼樺寲 README.md 缁撴瀯鍜屽唴瀹?
-- 缁嗗寲鏂囦欢鍛藉悕瑙勫垯锛屽鍔犺〃鏍艰鏄?
-- 娣诲姞鐗堟湰鍘嗗彶鍒楄〃
-- 灏嗙増鏈巻鍙茶〃鏍兼敼涓哄垪琛ㄦ牸寮?
-- 娓呯悊 `.gitignore` 閲嶅鏉＄洰锛屼紭鍖栭厤缃?
-- 鍏ㄩ潰妫€鏌ラ」鐩粨鏋勫拰閰嶇疆鏂囦欢锛岀‘淇濅竴鑷存€?
-- 鏇存柊鎵€鏈夋ā鍧?README 鏂囦欢
+- **v3.5.0** - 全面检查所有模块文件完整性，更新到 GitHub
+- 逐个检查所有 16 个模块的文件完整性
+- 验证所有基础知识点、高级知识点、算法示例的文件结构
+- 确认所有模块 README 保持一致
+- 整理不必要的重复内容
+- 提交更新并上传到 GitHub
 
 ### 2026-04-18
 
-- **v3.3.0** - 闆嗘垚绗旇鏂囦欢鍛藉悕绛栫暐鍒?README.md
-- **v3.0.0** - 瀹屾垚 GitHub 浠撳簱 3.0 缁撴瀯浼樺寲瑙勫垝锛岀粺涓€鏂囦欢鍛藉悕瑙勮寖
-- **v2.5.10** - 鏇存柊 README.md 鏂囦欢锛岀‘淇濆寘鍚渶鏂扮殑鐩綍缁撴瀯鍜屼俊鎭?
-- 闆嗘垚绗旇鏂囦欢鍛藉悕绛栫暐鍒?README.md锛岃缁嗚鏄庢枃浠跺懡鍚嶈鍒欏拰浠ｅ彿绯荤粺
-- 瀹屾垚 GitHub 浠撳簱 3.0 缁撴瀯浼樺寲瑙勫垝锛岀粺涓€鏂囦欢鍛藉悕瑙勮寖锛屼紭鍖栫洰褰曠粨鏋?
-- 鏇存柊 README.md 鏂囦欢锛岀‘淇濆寘鍚渶鏂扮殑鐩綍缁撴瀯鍜屼俊鎭?
+- **v3.3.0** - 合并笔记文件命名策略到 README.md
+- **v3.0.0** - 完成 GitHub 仓库 3.0 结构优化规划，统一文件命名规范
+- **v2.5.10** - 更新 README.md 文件，确保包含最新的目录结构和信息
+- 合并笔记文件命名策略到 README.md，详细说明文件命名规则和代号系统
+- 完成 GitHub 仓库 3.0 结构优化规划，统一文件命名规范，优化目录结构
+- 更新 README.md 文件，确保包含最新的目录结构和信息
 
 ### 2026-04-08
 
-- **v2.5.8 \~ v2.5.9** - 琛ュ厖澶氫釜浼樿川 GitHub 浠撳簱鎺ㄨ崘
-- 琛ュ厖澶氫釜浼樿川 GitHub 浠撳簱鎺ㄨ崘锛堢畻娉曘€丣ava銆丆++銆丆SS銆丟it銆佹父鎴忓紑鍙戙€丳ython Mastery銆丯oteGen銆丷eference锛?
+- **v2.5.8 ~ v2.5.9** - 补充多个优质 GitHub 仓库推荐
+- 补充多个优质 GitHub 仓库推荐（算法、Java、C++、CSS、Git、游戏开发、Python Mastery、NoteGen、Reference）
 
 ### 2026-04-07
 
-- **v2.5.5 \~ v2.5.7** - 浼樺寲 README.md 澶栭儴璧勬簮鎺ㄨ崘閮ㄥ垎
-- 浼樺寲 README.md 澶栭儴璧勬簮鎺ㄨ崘閮ㄥ垎锛屼粠鍒楄〃鏀逛负琛ㄦ牸骞舵寜鍒嗙被缁勭粐锛屾彁鍗囧彲璇绘€?
+- **v2.5.5 ~ v2.5.7** - 优化 README.md 外部资源推荐部分
+- 优化 README.md 外部资源推荐部分，从列表改为表格并按分类组织，提高可读性
 
 ### 2026-04-06
 
-- **v2.5.1 \~ v2.5.4** - 閲嶆瀯椤圭洰鏍圭洰褰?README.md锛屼紭鍖栫粨鏋勫拰鍙鎬?
-- 閲嶆瀯椤圭洰鏍圭洰褰?README.md锛屼紭鍖栫粨鏋勫拰鍙鎬э紝澧炲姞瀛︿範椤哄簭璇存槑鍜屾妧鏈ā鍧椾緷璧栧叧绯诲浘
-- 琛ュ厖鍚勬ā鍧楅珮绾ф枃浠跺す鍜屽唴瀹癸紝瀹屽杽鏁版嵁缁撴瀯鍜岀畻娉曞疄鐜?
-- 淇鍏ㄥ簱 README 瀵艰埅涓庣储寮曢敊璇紝鏂板/琛ュ叏閮ㄥ垎妯″潡鐭ヨ瘑鐐逛笌鏂囨。缁撴瀯
-- 娣卞害浼樺寲 README.md 鎻忚堪鍐呭锛屽鍔犱粨搴撳畾浣嶈鏄庯紝鎻愬崌鏂囨。涓撲笟鎬?
-- 鏇存柊浼樺寲鎵€鏈?README.md 鏂囦欢锛岀粺涓€缁撴瀯鍜屾牸寮?
+- **v2.5.1 ~ v2.5.4** - 重构项目根目录 README.md，优化结构和可读性
+- 重构项目根目录 README.md，优化结构和可读性，添加学习顺序说明和技术模块依赖关系图
+- 补充各模块高级文档和内容，完善数据结构和算法实现
+- 修复全库 README 链接与导航错误，新增/补全部分模块知识点与文档结构
+- 深度优化 README.md 描述内容，增加项目定位说明，提升文档专业性
+- 更新优化所有 README.md 文件，统一结构和格式
 
 ### 2026-04-05
 
-- **v2.5.0** - 鍏ㄥ簱閲嶆瀯瀹屾垚
-- 鍏ㄥ簱閲嶆瀯瀹屾垚
+- **v2.5.0** - 全库重构完成
