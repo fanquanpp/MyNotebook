@@ -2,10 +2,10 @@
   "name": "MyNotebook CMS",
   "version": "1.0.0",
   "description": "Lightweight CMS for MyNotebook documentation",
-  "main": "cms/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node cms/server.js",
-    "dev": "node cms/server.js --watch"
+    "start": "node server.js",
+    "dev": "node server.js --watch"
   },
   "keywords": ["cms", "documentation", "markdown"],
   "author": "fanquanpp",
