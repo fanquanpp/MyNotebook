@@ -4,11 +4,9 @@
 > @Version: v3.0.0
 > @Created: 2026-04-05
 
-## 1. 项目简介 | Introduction
+## 1. 简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 C 语言与算法部分，专注于 C 语言基础语法、内存管理、指针操作及经典算法与数据结构的实现。作为系统编程的基础语言，C 语言是理解计算机底层原理的关键，本模块旨在为学习者提供从入门到进阶的系统化学习路径，为系统编程与高性能开发奠定坚实基础。
-
-This module focuses on C language fundamentals, memory management, pointer operations, and implementations of classic algorithms and data structures. As a foundational language for systems programming, C is crucial for understanding computer底层 principles, and this module aims to provide a systematic learning path from beginner to advanced levels, laying a solid foundation for systems programming and high-performance development.
+专注于 C 语言基础语法、内存管理、指针操作及经典算法与数据结构的实现。作为系统编程的基础语言，C 语言是理解计算机底层原理的关键，本模块旨在为学习者提供从入门到进阶的系统化学习路径，为系统编程与高性能开发打下坚实基础。
 
 ### 模块定位
 
@@ -16,12 +14,6 @@ This module focuses on C language fundamentals, memory management, pointer opera
 - **算法与数据结构实现**：提供经典算法和数据结构的 C 语言实现，包含详细注释和复杂度分析
 - **系统编程基础**：重点讲解内存管理、指针操作等系统编程核心概念
 - **实战导向**：通过实际代码示例和练习，帮助学习者掌握 C 语言的实际应用
-
-**使用说明：**
-
-- 本模块已开放为公共资源，允许他人访问和克隆
-- 禁止直接修改本仓库内容
-- 他人使用本模块内容时出现的任何问题与作者无关
 
 
 ## 2. 学习路线图 | Learning Roadmap

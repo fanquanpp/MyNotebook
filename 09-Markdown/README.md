@@ -4,11 +4,9 @@
 > @Version: v3.0.0
 > @Created: 2026-04-05
 
-## 1. 项目简介 | Introduction
+## 1. 简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 Markdown 文档部分，专注于 Markdown 基础语法、高级排版技巧和文档编写规范。作为一种轻量级标记语言，Markdown 因其简洁易读的特性被广泛应用于文档编写、博客撰写和技术文档等场景，本模块旨在帮助用户掌握 Markdown 的各种语法和排版技巧，建立统一、美观、易读的文档编写规范。
-
-This module focuses on Markdown basic syntax, advanced typesetting techniques, and documentation writing standards. As a lightweight markup language, Markdown is widely used in documentation writing, blog creation, and technical documentation due to its concise and readable nature, and this module aims to help users master various Markdown syntax and typesetting techniques, establishing unified, beautiful, and readable documentation writing standards.
+专注于 Markdown 基础语法、高级排版技巧和文档编写规范。作为一种轻量级标记语言，Markdown 因其简洁易读的特性被广泛应用于文档编写、博客撰写和技术文档等场景，本模块旨在帮助用户掌握 Markdown 的各种语法和排版技巧，建立统一、美观、易读的文档编写规范。
 
 ### 模块定位
 
@@ -16,12 +14,6 @@ This module focuses on Markdown basic syntax, advanced typesetting techniques, a
 - **文档编写规范**：建立一套统一的 Markdown 编写规范，确保文档的一致性和专业性
 - **排版技巧资源**：提供高级排版技巧，提升文档的美观度和可读性
 - **工具推荐中心**：推荐适合 Markdown 编写的工具和插件，提高写作效率
-
-**使用说明：**
-
-- 本模块已开放为公共资源，允许他人访问和克隆
-- 禁止直接修改本仓库内容
-- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 技术栈说明
 

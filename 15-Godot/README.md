@@ -4,11 +4,9 @@
 > @Version: v4.0.0
 > @Created: 2026-04-05
 
-## 1. 项目简介 | Introduction
+## 1. 简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 Godot 游戏引擎部分，专注于 Godot 引擎的核心开发技术，包括 GDScript 脚本语言、场景系统、物理系统、UI 系统、动画系统、网络通信以及游戏开发最佳实践等内容。作为一款免费开源的跨平台游戏引擎，Godot 以其独特的场景系统、节点架构和直观的编辑器而受到开发者的青睐，本模块旨在为创作者提供从入门到进阶的系统化 Godot 学习路径。
-
-This module focuses on Godot engine core development techniques, including GDScript scripting, scene system, physics system, UI system, animation system, networking, and game development best practices. As a free and open-source cross-platform game engine, Godot is loved by developers for its unique scene system, node architecture, and intuitive editor. This module aims to provide a systematic Godot learning path from beginner to advanced levels.
+专注于 Godot 引擎的核心开发技术，包括 GDScript 脚本语言、场景系统、物理系统、UI 系统、动画系统、网络通信以及游戏开发最佳实践等内容。作为一款免费开源的跨平台游戏引擎，Godot 以其独特的场景系统、节点架构和直观的编辑器而受到开发者的青睐，本模块旨在为创作者提供从入门到进阶的系统化 Godot 学习路径。
 
 ### 模块定位
 
@@ -17,18 +15,6 @@ This module focuses on Godot engine core development techniques, including GDScr
 - **引擎架构理解**：深入讲解 Godot 的场景树、节点系统、信号机制等核心概念
 - **跨平台发布指南**：提供完整的游戏打包和多平台发布流程
 - **官方文档同步**：与 Godot 官方文档保持一致的内容和最佳实践
-
-**使用说明：**
-
-- 本模块已开放为公共资源，允许他人访问和克隆
-- 禁止直接修改本仓库内容
-- 他人使用本模块内容时出现的任何问题与作者无关
-
-**联系方式：**
-
-- 邮箱：<fanquanpangpiing@163.com>
-- QQ：1839243393
-- 欢迎提意见交流或反馈问题
 
 ## 2. 学习路线图 | Learning Roadmap
 

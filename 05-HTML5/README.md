@@ -4,11 +4,9 @@
 > @Version: v3.0.0
 > @Created: 2026-04-05
 
-## 1. 项目简介 | Introduction
+## 1. 简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 HTML5 网页开发部分，专注于 HTML5 核心标签、语义化结构、表单验证、多媒体处理以及高级 Web API 的学习与应用。作为现代网页开发的基础，HTML5 提供了丰富的语义化标签和强大的 Web API，本模块旨在帮助开发者构建语义化、高性能、可访问的现代网页结构。
-
-This module focuses on HTML5 core tags, semantic structures, form validation, multimedia processing, and advanced Web API learning and application. As the foundation of modern web development, HTML5 provides rich semantic tags and powerful Web APIs, and this module aims to help developers build semantic, high-performance, and accessible modern web page structures.
+专注于 HTML5 核心标签、语义化结构、表单验证、多媒体处理以及高级 Web API 的学习与应用。作为现代网页开发的基础，HTML5 提供了丰富的语义化标签和强大的 Web API，本模块旨在帮助开发者构建语义化、高性能、可访问的现代网页结构。
 
 ### 模块定位
 
@@ -16,12 +14,6 @@ This module focuses on HTML5 core tags, semantic structures, form validation, mu
 - **语义化开发资源**：重点讲解语义化标签的使用方法和最佳实践
 - **Web API 参考**：提供常用 Web API 的详细使用说明和示例
 - **前端框架集成**：包含 Vue 等现代前端框架的实战应用
-
-**使用说明：**
-
-- 本模块已开放为公共资源，允许他人访问和克隆
-- 禁止直接修改本仓库内容
-- 他人使用本模块内容时出现的任何问题与作者无关
 
 
 ## 2. 学习路线图 | Learning Roadmap

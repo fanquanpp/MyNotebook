@@ -6,11 +6,9 @@
 
 > **路径**：`08-Javascript/` | **JavaScript（脚本语言，缩写 JS）**：浏览器与 **Node.js（Node 运行时）** 通用语法与实战
 
-## 1. 项目简介 | Introduction
+## 1. 简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 JavaScript 脚本部分，专注于 ECMAScript 语法标准、DOM 操作、异步编程、模块化开发以及调试优化等核心内容。作为前端开发的核心语言，JavaScript 不仅用于浏览器端交互，也广泛应用于 Node.js 服务端开发，本模块旨在为开发者提供从基础到高级的系统化 JavaScript 学习路径。
-
-This module focuses on ECMAScript syntax standards, DOM manipulation, asynchronous programming, modular development, and debugging optimization. As the core language of frontend development, JavaScript is not only used for browser-side interaction but also widely applied in Node.js server-side development, and this module aims to provide a systematic JavaScript learning path from beginner to advanced levels.
+专注于 ECMAScript 语法标准、DOM 操作、异步编程、模块化开发以及调试优化等核心内容。作为前端开发的核心语言，JavaScript 不仅用于浏览器端交互，也广泛应用于 Node.js 服务端开发，本模块旨在为开发者提供从基础到高级的系统化 JavaScript 学习路径。
 
 ### 模块定位
 
@@ -18,12 +16,6 @@ This module focuses on ECMAScript syntax standards, DOM manipulation, asynchrono
 - **前端交互开发资源**：提供 DOM 操作、事件处理和异步编程的实战技巧
 - **全栈开发支持**：涵盖浏览器端和 Node.js 服务端的 JavaScript 应用
 - **性能优化指南**：重点讲解 JavaScript 性能优化策略和最佳实践
-
-**使用说明：**
-
-- 本模块已开放为公共资源，允许他人访问和克隆
-- 禁止直接修改本仓库内容
-- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 技术栈与工具（双语）
 

@@ -4,11 +4,9 @@
 > @Version: v3.0.0
 > @Created: 2026-04-05
 
-## 1. 项目简介 | Introduction
+## 1. 简介 | Introduction
 
-本模块是 fanquanpp 个人综合学习笔记库中的 MySQL 数据库部分，专注于 MySQL 关系型数据库的核心概念、安装配置、SQL 语法、数据建模、性能优化以及高可用架构等内容。作为最流行的关系型数据库之一，MySQL 广泛应用于各种规模的应用系统，本模块旨在为开发者提供从入门到进阶的系统化 MySQL 学习路径，帮助构建高效、安全的数据持久化体系。
-
-This module focuses on MySQL relational database core concepts, installation, SQL syntax, data modeling, performance optimization, and high-availability architecture. As one of the most popular relational databases, MySQL is widely used in applications of all sizes, and this module aims to provide a systematic MySQL learning path from beginner to advanced levels, helping build efficient and secure data persistence systems.
+专注于 MySQL 关系型数据库的核心概念、安装配置、SQL 语法、数据建模、性能优化以及高可用架构等内容。作为最流行的关系型数据库之一，MySQL 广泛应用于各种规模的应用系统，本模块旨在为开发者提供从入门到进阶的系统化 MySQL 学习路径，帮助构建高效、安全的数据持久化体系。
 
 ### 模块定位
 
@@ -16,12 +14,6 @@ This module focuses on MySQL relational database core concepts, installation, SQ
 - **SQL 语法参考**：提供详细的 SQL 语法说明和实战示例
 - **性能优化资源**：重点讲解 MySQL 性能调优技巧和最佳实践
 - **数据建模指南**：收录常见业务场景的数据建模案例和设计原则
-
-**使用说明：**
-
-- 本模块已开放为公共资源，允许他人访问和克隆
-- 禁止直接修改本仓库内容
-- 他人使用本模块内容时出现的任何问题与作者无关
 
 
 ## 2. 学习路线图 | Learning Roadmap
