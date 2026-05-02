@@ -1,7 +1,7 @@
 # GitHub-专有名词注释查阅表 | GitHub
 
 > @Author: fanquanpp
-> @Version: v1.0.0
+> @Version: v3.5.0
 > @Created: 2026-04-30
 > @Description: GitHub 模块专有名词解释，按笔记出现顺序整理。 | GitHub terminology glossary organized by appearance order.
 

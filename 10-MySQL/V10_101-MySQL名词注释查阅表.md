@@ -1,5 +1,7 @@
 # MySQL-专有名词注释查阅表 | MySQL
 
+> @Version: v3.5.0
+
 > 作者：fanquanpp
 > 创建日期：2026-04-30
 > 版本：v1.0.0

@@ -1,5 +1,7 @@
 # Web Components 与 PWA 开发 | Web Components and PWA
 
+> @Version: v3.5.0
+
 ---
 
 ## 目录

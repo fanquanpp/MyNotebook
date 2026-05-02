@@ -1,5 +1,7 @@
 # GitHub Pages 多站点方案（Jekyll、VitePress、Hugo）
 
+> @Version: v3.5.0
+
 > @Author: Anonymous
 > @Category: GitHub Advanced
 > @Description: GitHub Pages 静态站点部署方案：Jekyll、VitePress、Hugo 构建与发布。 | Static site deployment on GitHub Pages with Jekyll, VitePress, Hugo.

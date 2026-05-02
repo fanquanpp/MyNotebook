@@ -1,5 +1,7 @@
 # GitHub Actions 语法、市场与 CI/CD 完整示例
 
+> @Version: v3.5.0
+
 > @Author: Anonymous
 > @Category: GitHub Advanced
 > @Description: GitHub Actions workflow 语法、市场使用、CI/CD 示例（Node/Java/Python）。 | GitHub Actions workflow syntax, marketplace usage, CI/CD examples.

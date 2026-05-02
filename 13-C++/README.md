@@ -1,111 +1,119 @@
-﻿# 13-C++ 绯荤粺缂栫▼ | C++ System Programming
+# C++ 教程 | C++ Tutorial
 
 > @Author: fanquanpp
-
 > @Version: v3.5.0
+> @Category: C++ Overview
+> @Description: C++ 完整教程：概述与标准、语法类型系统、指针引用、内存管理、面向对象、模板与STL、异常与性能优化。 | Complete C++ tutorial covering overview, syntax, pointers, OOP, templates, STL, exceptions, and performance optimization.
 
-> @Created: 2026-04-05
+## 1. 简介 | Introduction
 
-## 1. 绠€浠?| Introduction
+本教程涵盖 C++ 核心概念和高级应用，包括概述与标准、语法类型系统、指针引用与内存管理、面向对象、模板与STL、异常处理与性能优化。作为一种高性能系统编程语言，C++ 广泛应用于游戏开发、嵌入式系统、高频交易、图形渲染等领域。
 
-涓撴敞浜?C++11 鍙婁互鍚庢爣鍑嗙殑鐜颁唬 C++ 鐗规€с€侀潰鍚戝璞＄紪绋嬨€佹硾鍨嬬紪绋嬨€佸唴瀛樼鐞嗐€佸绾跨▼缂栫▼浠ュ強绯荤粺绾х紪绋嬫妧鏈€備綔涓轰竴绉嶅己澶х殑绯荤粺缂栫▼璇█锛孋++ 鍦ㄦ搷浣滅郴缁熴€佹父鎴忓紩鎿庛€佸祵鍏ュ紡绯荤粺绛夐鍩熸湁鐫€骞挎硾搴旂敤锛屾湰妯″潡鏃ㄥ湪涓哄紑鍙戣€呮彁渚涗粠鍩虹璇硶鍒伴珮绾х郴缁熺紪绋嬬殑绯荤粺鍖?C++ 瀛︿範璺緞銆?
-## 2. 鐩綍绱㈠紩 | Directory Index
+## 2. 目录索引 | Directory Index
 
-### 鍩虹绡?| Basics
+### 快速查阅 | Quick Reference
 
-- [V13_101-C++鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md](./V13_101-C++鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md)
-- [C13\_101-姒傝堪涓庢爣鍑?md](./C13_101-姒傝堪涓庢爣鍑?md)
-- [C13\_102-鍩虹璇硶涓庣被鍨嬬郴缁?md](./C13_102-鍩虹璇硶涓庣被鍨嬬郴缁?md)
-- [C13\_103-鎸囬拡寮曠敤涓庡唴瀛樼鐞?md](./C13_103-鎸囬拡寮曠敤涓庡唴瀛樼鐞?md)
-- [C13\_104-闈㈠悜瀵硅薄.md](./C13_104-闈㈠悜瀵硅薄.md)
-- [C13\_105-妯℃澘涓嶴TL.md](./C13_105-妯℃澘涓嶴TL.md)
-- [C13\_106-寮傚父涓庢€ц兘浼樺寲.md](./C13_106-寮傚父涓庢€ц兘浼樺寲.md)
+- [V13_101-C++名词注释查阅表.md](./V13_101-C++名词注释查阅表.md)
 
-### 杩涢樁绡?| Advanced
+### 基础篇 | Basics
 
-- [G13\_201-璋冭瘯涓庢€ц兘鍒嗘瀽.md](./G13_201-璋冭瘯涓庢€ц兘鍒嗘瀽.md)
-- [G13\_202-椤圭洰瀹炴垬.md](./G13_202-椤圭洰瀹炴垬.md)
+- [C13_101-概述与标准.md](./C13_101-概述与标准.md)
+- [C13_102-基础语法与类型系统.md](./C13_102-基础语法与类型系统.md)
+- [C13_103-指针引用与内存管理.md](./C13_103-指针引用与内存管理.md)
+- [C13_104-面向对象.md](./C13_104-面向对象.md)
+- [C13_105-模板与STL.md](./C13_105-模板与STL.md)
+- [C13_106-异常与性能优化.md](./C13_106-异常与性能优化.md)
 
-### 绠楁硶涓庢暟鎹粨鏋?| Algorithms & Data Structures
+### 算法与数据结构 | Algorithms & Data Structures
 
-- [SFDE13\_301-dijkstra\_cpp.cpp](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE13_301-dijkstra_cpp.cpp)
-- [SFDE13\_302-kruskal\_cpp.cpp](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE13_302-kruskal_cpp.cpp)
-- [SFDE13\_303-lcs\_cpp.cpp](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE13_303-lcs_cpp.cpp)
-- [SFDE13\_304-lis\_cpp.cpp](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE13_304-lis_cpp.cpp)
-- [SFDE13\_305-merge\_sort\_cpp.cpp](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE13_305-merge_sort_cpp.cpp)
-- [SFDE13\_306-segment\_tree\_cpp.cpp](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE13_306-segment_tree_cpp.cpp)
-- [SFDE13\_307-trie\_cpp.cpp](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE13_307-trie_cpp.cpp)
-- [SFDE13\_401-linked\_list\_cpp.cpp](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE13_401-linked_list_cpp.cpp)
+- [dijkstra_cpp.cpp](./算法与数据结构/代码示例/SFDE13_301-dijkstra_cpp.cpp)
+- [kruskal_cpp.cpp](./算法与数据结构/代码示例/SFDE13_302-kruskal_cpp.cpp)
+- [lcs_cpp.cpp](./算法与数据结构/代码示例/SFDE13_303-lcs_cpp.cpp)
+- [lis_cpp.cpp](./算法与数据结构/代码示例/SFDE13_304-lis_cpp.cpp)
+- [merge_sort_cpp.cpp](./算法与数据结构/代码示例/SFDE13_305-merge_sort_cpp.cpp)
+- [segment_tree_cpp.cpp](./算法与数据结构/代码示例/SFDE13_306-segment_tree_cpp.cpp)
+- [trie_cpp.cpp](./算法与数据结构/代码示例/SFDE13_307-trie_cpp.cpp)
+- [linked_list_cpp.cpp](./算法与数据结构/代码示例/SFDE13_401-linked_list_cpp.cpp)
 
-## 3. 鐜瑕佹眰 | Environment Requirements
+### 进阶篇 | Advanced
 
-- **鎿嶄綔绯荤粺**锛歐indows 10+, Ubuntu 22.04+, macOS 14+
-- **缂栬瘧鍣?*锛欸CC 7+, Clang 5+, MSVC 2019+
-- **鏋勫缓宸ュ叿**锛欳Make 3.10+
-- **鏈€灏忛厤缃?*锛? 鏍稿績 CPU / 4GB 鍐呭瓨 / 2GB 纾佺洏
+- [G13_201-调试与性能分析.md](./G13_201-调试与性能分析.md)
+- [G13_202-项目实战.md](./G13_202-项目实战.md)
 
-## 4. 蹇€熷紑濮?| Quick Start
+## 3. 环境要求 | Environment Requirements
 
-```bash
-# 1. 楠岃瘉缂栬瘧鍣?
-g++ --version
+- **编译器**：GCC 11+, Clang 14+, MSVC (Visual Studio 2022+)
+- **构建工具**：CMake 3.20+, Make, Ninja
+- **IDE**：VS Code, CLion, Visual Studio
+- **标准**：C++11 及以上，建议 C++17 或 C++20
 
-# 2. 缂栬瘧骞惰繍琛岀ず渚?
-g++ -std=c++17 绠楁硶/merge_sort_cpp.cpp -o merge_sort
-./merge_sort
-```
+## 4. 快速开始 | Quick Start
 
-## 5. 瀛︿範璺嚎 | Learning Path
+1. 安装 GCC 或 Clang 编译器
+2. 创建第一个 C++ 文件：`hello.cpp`
+3. 编译并运行：
+   ```bash
+   g++ -std=c++17 hello.cpp -o hello
+   ./hello
+   ```
 
-`姒傝堪涓庢爣鍑哷 鈫?`鍩虹璇硶涓庣被鍨嬬郴缁焋 鈫?`鎸囬拡寮曠敤涓庡唴瀛樼鐞哷 鈫?`闈㈠悜瀵硅薄` 鈫?`妯℃澘涓嶴TL` 鈫?`寮傚父涓庢€ц兘浼樺寲` 鈫?`璋冭瘯涓庢€ц兘鍒嗘瀽` 鈫?`椤圭洰瀹炴垬`
+## 5. 学习路径 | Learning Path
 
-## 6. 鏍稿績鐗硅壊 | Key Features
+`概述与标准` -> `基础语法` -> `指针与内存` -> `面向对象` -> `模板与STL` -> `异常处理` -> `性能优化` -> `项目实战`
 
-- **鐜颁唬 C++**锛氫笓娉ㄤ簬 C++11 鍙婁互鍚庣殑鏍囧噯鐗规€?- **绯荤粺缂栫▼**锛氭兜鐩栧唴瀛樼鐞嗐€佸绾跨▼銆佹枃浠剁郴缁熺瓑绯荤粺绾х紪绋?- **鎬ц兘浼樺寲**锛氭彁渚涜缁嗙殑鎬ц兘璋冧紭鎶€宸у拰鏈€浣冲疄璺?- **宸ョ▼瀹炶返**锛氬寘鍚吀鍨嬮」鐩疄鎴樻渚嬪拰浠ｇ爜瑙勮寖
-- **缁撴瀯娓呮櫚**锛氭寜鐓у熀纭€鍜岃繘闃剁粍缁囧唴瀹癸紝渚夸簬绯荤粺瀛︿範
-- **鍙岃娉ㄩ噴**锛氬叧閿蹇靛拰浠ｇ爜鎻愪緵涓嫳鏂囧鐓ф敞閲?
-## 7. 闃呰寤鸿 | Reading Guide
+## 6. 核心技术 | Key Features
 
-1. 鎸夌収瀛︿範璺嚎鐨勯『搴忓涔狅紝浠庡揩閫熷叆闂ㄥ紑濮嬶紝閫愭鎺屾彙 C++ 鐨勫悇绉嶇壒鎬?2. 缁撳悎瀹為檯椤圭洰缁冧範锛屽姞娣卞 C++ 绯荤粺缂栫▼鐨勭悊瑙?3. 鐗瑰埆鍏虫敞璋冭瘯涓庢€ц兘浼樺寲閮ㄥ垎锛岃繖鏄郴缁熺紪绋嬬殑鏍稿績
-4. 灏濊瘯浣跨敤 C++ 鏋勫缓涓€涓畬鏁寸殑绯荤粺绾ч」鐩紝宸╁浐鎵€瀛︾煡璇?
-## 8. 寤朵几闃呰 | Further Reading
+- **概述与标准**：C++ 发展历史、各标准特性对比
+- **语法类型系统**：基本类型、枚举、结构体、类型推断
+- **指针与内存**：指针运算、智能指针、内存布局
+- **面向对象**：类、继承、多态、虚函数、RTTI
+- **模板与STL**：模板元编程、容器、算法、迭代器
+- **异常处理**：异常安全、 noexcept、移动语义
+- **性能优化**：编译器优化、内存对齐、缓存友好
 
-- [C++ 瀹樻柟鏂囨。](https://en.cppreference.com/w/) <!-- nofollow -->
-- [C++ 鏍囧噯搴揮(https://en.cppreference.com/w/cpp)
-- [鐜颁唬 C++ 鏁欑▼](https://github.com/changkun/modern-cpp-tutorial) <!-- nofollow -->
+## 7. 阅读建议 | Reading Guide
 
-## 9. 鎶€鏈爤涓庡伐鍏?| Technology Stack & Tools
+1. 按照学习路径的顺序学习，从概述开始
+2. 注重实践，多编写代码加深理解
+3. 特别关注指针、智能指针和内存管理，这是 C++ 的核心
+4. 学习 STL 时，理解容器和算法的选择场景
 
-| 鑻辨枃锛堜腑鏂囷級                                     | 璇存槑     |
-| :----------------------------------------- | :----- |
-| **GCC** / **Clang** / **MSVC锛堝井杞?C++ 缂栬瘧鍣級** | 缂栬瘧鍣?   |
-| **CMake锛堣法骞冲彴鏋勫缓绯荤粺锛?*                         | 宸ョ▼缁勭粐   |
-| **VS Code / CLion**                        | 闆嗘垚寮€鍙戠幆澧?|
+## 8. 延伸阅读 | Further Reading
 
-## 10. 鍏宠仈绔犺妭 | Related Sections
+- [C++ 官方文档](https://isocpp.org/)
+- [cppreference](https://en.cppreference.com/)
+- [C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines)
+- 本仓库：[02-C语言](../02-C语言/README.md)
 
-- **C锛圕 璇█锛?*锛歔`02-C璇█`](../02-C璇█/README.md)
+## 9. 贡献指南 | Contribution Guide
 
-## 11. 鑱旂郴鏂瑰紡 | Contact Information
+- 推荐使用 Gitflow 工作流提交 PR
+- Commit message 遵循 `feat/fix/docs: 描述` 规范
+- 提供完整的代码示例和编译结果
 
-- 閭锛?fanquanpangpiing@163.com>
-- QQ锛?839243393
-- 娆㈣繋鎻愭剰瑙佷氦娴佹垨鍙嶉闂
+## 10. 联系方式 | Contact Information
 
-## 12. 璁稿彲璇佷俊鎭?| License
+- 邮箱：fanquanpangpiing@163.com
+- QQ：83924393
+- 欢迎提交问题或反馈
 
-- **SPDX-Identifier**锛歔CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- **Copyright**锛?024-2026 fanquanpp
+## 11. 许可证信息 | License
 
-***
+- **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**：2024-2026 fanquanpp
 
-**鏇存柊鏃ュ織 | Changelog**
+---
+
+**更新日志 | Changelog**
 
 - **2026-05-02**
-  - 鍗囩骇鐗堟湰鍙疯嚦 v3.5.0锛屼笌鏍圭洰褰?README 淇濇寔涓€鑷?- **2026-05-02**
-  - 鍏ㄩ潰妫€鏌ラ」鐩粨鏋勶紝纭繚涓€鑷存€?- **2026-04-18**
-  - 瀹屾垚 GitHub 浠撳簱 3.0 缁撴瀯浼樺寲瑙勫垝锛岀粺涓€鏂囦欢鍛藉悕瑙勮寖锛屼紭鍖栫洰褰曠粨鏋勶紝鍗囩骇涓?v3.0.0
+  - 修复编码问题，重建 README 结构
+
+- **2026-04-18**
+  - 完成 GitHub 仓库 3.0 结构优化规划，统一文件命名规范
+
 - **2026-04-06**
-  - 娣卞害浼樺寲 README.md 鏂囦欢锛屽畬鍠勭粨鏋勫拰鍐呭锛屽鍔犱粨搴撳畾浣嶃€佷娇鐢ㄨ鏄庣瓑閮ㄥ垎锛屽崌绾т负 v1.0.1 \~ v1.0.2
+  - 深度优化 README.md 文件，完善结构和内容
+
 - **2026-04-05**
-  - 缁熶竴妯″潡璇存槑涓庡弻璇爣棰?
+  - 初始版本 C++ 基础与进阶内容规划

@@ -1,94 +1,104 @@
-﻿# 07-Git 鐗堟湰鎺у埗 | Git Version Control
+# Git 版本控制教程 | Git Version Control
 
 > @Author: fanquanpp
 > @Version: v3.5.0
-> @Created: 2026-04-05
+> @Category: Git Overview
+> @Description: Git 版本控制完整教程：核心概念、命令操作和团队协作规范。 | Complete Git tutorial covering core concepts, commands, and collaboration workflows.
 
-## 1. 绠€浠?| Introduction
+## 1. 简介 | Introduction
 
-涓撴敞浜?Git 鏍稿績姒傚康銆佸懡浠ゆ搷浣滃拰鍥㈤槦鍗忎綔瑙勮寖銆備綔涓虹幇浠ｈ蒋浠跺紑鍙戠殑蹇呭宸ュ叿锛孏it 鐗堟湰鎺у埗鑳藉甯姪寮€鍙戣€呴珮鏁堢鐞嗕唬鐮佸簱锛岃拷韪唬鐮佸彉鏇达紝鍗忎綔寮€鍙戦」鐩紝鏈ā鍧楁棬鍦ㄤ负寮€鍙戣€呮彁渚涗粠鍏ラ棬鍒拌繘闃剁殑绯荤粺鍖?Git 瀛︿範璺緞銆?
-## 2. 鐩綍绱㈠紩 | Directory Index
+本教程专注于 Git 核心概念、命令操作和团队协作规范。作为现代软件开发必备工具，Git 版本控制能够帮助开发者高效管理代码库，追踪代码变更，协调多人协作，本模块旨在为开发者提供从入门到进阶的系统化 Git 学习路径。
 
-### 鍩虹 | Basics
+## 2. 目录索引 | Directory Index
 
-- [V07_101-Git鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md](./V07_101-Git鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md)
-- [C07_101-Git姒傝堪.md](./C07_101-Git姒傝堪.md)
-- [C07_102-鐜閰嶇疆涓庡垵濮嬪寲.md](./C07_102-鐜閰嶇疆涓庡垵濮嬪寲.md)
-- [C07_103-鍩烘湰鎿嶄綔.md](./C07_103-鍩烘湰鎿嶄綔.md)
-- [C07_104-鍒嗘敮绠＄悊.md](./C07_104-鍒嗘敮绠＄悊.md)
-- [C07_105-杩滅▼浠撳簱鎿嶄綔.md](./C07_105-杩滅▼浠撳簱鎿嶄綔.md)
+### 快速查阅 | Quick Reference
 
-### 楂樼骇 | Advanced
+- [V07_101-Git名词注释查阅表.md](./V07_101-Git名词注释查阅表.md)
 
-- [G07_201-Git鍘熺悊涓庡璞℃ā鍨?md](./G07_201-Git鍘熺悊涓庡璞℃ā鍨?md)
-- [G07_202-Git閽╁瓙涓嶨it_LFS.md](./G07_202-Git閽╁瓙涓嶨it_LFS.md)
+### 基础篇 | Basics
 
-## 3. 鐜瑕佹眰 | Environment Requirements
+- [C07_101-Git概述.md](./C07_101-Git概述.md)
+- [C07_102-环境配置与初始化.md](./C07_102-环境配置与初始化.md)
+- [C07_103-基本操作.md](./C07_103-基本操作.md)
+- [C07_104-分支管理.md](./C07_104-分支管理.md)
+- [C07_105-远程仓库操作.md](./C07_105-远程仓库操作.md)
 
-- **宸ュ叿**锛欸it 2.40+
-- **骞冲彴**锛欸itHub / GitLab / Gitee
-- **鍗忚**锛歋SH / HTTPS
-- **鎿嶄綔绯荤粺**锛歐indows 10+, Ubuntu 22.04+, macOS 14+
+### 进阶篇 | Advanced
 
-## 4. 蹇€熷紑濮?| Quick Start
+- [G07_201-Git原理与对象模型.md](./G07_201-Git原理与对象模型.md)
+- [G07_202-Git钩子与Git_LFS.md](./G07_202-Git钩子与Git_LFS.md)
 
-1. 閰嶇疆涓汉淇℃伅锛歚git config --global user.name "Your Name"`
-2. 閰嶇疆閭锛歚git config --global user.email "your.email@example.com"`
-3. 鍏嬮殕浠撳簱锛歚git clone <repo-url>`
-4. 鏌ョ湅鐘舵€侊細`git status`
-5. 鍒涘缓鍒嗘敮锛歚git checkout -b feature-branch`
+## 3. 环境要求 | Environment Requirements
 
-## 5. 瀛︿範璺嚎 | Learning Path
+- **工具**：Git 2.40+
+- **平台**：GitHub / GitLab / Gitee
+- **协议**：SSH / HTTPS
+- **操作系统**：Windows 10+, Ubuntu 22.04+, macOS 14+
 
-`Git姒傝堪` 鈫?`鐜閰嶇疆涓庡垵濮嬪寲` 鈫?`鍩烘湰鎿嶄綔` 鈫?`鍒嗘敮绠＄悊` 鈫?`杩滅▼浠撳簱鎿嶄綔` 鈫?`Git鍘熺悊涓庡璞℃ā鍨媊
+## 4. 快速开始 | Quick Start
 
-## 6. 鏍稿績鐗硅壊 | Key Features
+1. 配置个人信息：`git config --global user.name "Your Name"`
+2. 配置邮箱：`git config --global user.email "your.email@example.com"`
+3. 克隆仓库：`git clone <repo-url>`
+4. 查看状态：`git status`
+5. 创建分支：`git checkout -b feature-branch`
 
-- **鐗堟湰鎺у埗**锛氳缁嗚瑙?Git 鐨勬牳蹇冪増鏈帶鍒跺姛鑳藉拰宸ヤ綔鍘熺悊
-- **鍒嗘敮绠＄悊**锛氭彁渚涘垎鏀瓥鐣ュ拰宸ヤ綔娴佺殑鏈€浣冲疄璺?- **杩滅▼鍗忎綔**锛氳瑙ｈ繙绋嬩粨搴撴搷浣滃拰鍥㈤槦鍗忎綔娴佺▼
-- **骞冲彴闆嗘垚**锛氭兜鐩?GitHub銆丟itLab銆丟itee 绛変富娴佸钩鍙扮殑浣跨敤
-- **闂瑙ｅ喅**锛氭敹褰曞父瑙?Git 闂鐨勮В鍐虫柟妗堝拰鎺掓煡鎶€宸?- **鍘熺悊鍓栨瀽**锛氭繁鍏ヨ瑙?Git 鐨勫璞℃ā鍨嬪拰鍐呴儴鍘熺悊
-- **鍙岃娉ㄩ噴**锛氬叧閿蹇靛拰鍛戒护鎻愪緵涓嫳鏂囧鐓ф敞閲?
-## 7. 闃呰寤鸿 | Reading Guide
+## 5. 学习路径 | Learning Path
 
-1. 鎸夌収瀛︿範璺嚎鐨勯『搴忓涔狅紝浠?Git 姒傝堪寮€濮嬶紝閫愭鎺屾彙 Git 鐨勫悇绉嶆搷浣?2. 缁撳悎瀹為檯椤圭洰缁冧範锛屽姞娣卞 Git 鍛戒护鐨勭悊瑙?3. 鐗瑰埆鍏虫敞鍒嗘敮绠＄悊鍜岃繙绋嬩粨搴撴搷浣滐紝杩欐槸鍥㈤槦鍗忎綔鐨勬牳蹇?4. 灏濊瘯鐞嗚В Git 鍘熺悊涓庡璞℃ā鍨嬶紝杩欐湁鍔╀簬瑙ｅ喅澶嶆潅鐨?Git 闂
+`Git概述` -> `环境配置与初始化` -> `基本操作` -> `分支管理` -> `远程仓库操作` -> `Git原理与对象模型`
 
-## 8. 寤朵几闃呰 | Further Reading
+## 6. 核心技术 | Key Features
 
-- [Git 瀹樻柟鏂囨。](https://git-scm.com/doc) <!-- nofollow -->
-- [Pro Git](https://git-scm.com/book/en/v2) <!-- nofollow -->
-- 鏈粨搴擄細[01-Github骞冲彴](../01-Github/README.md)
+- **版本控制**：详细讲解 Git 的核心版本控制功能和操作原理
+- **分支管理**：提供分支策略和工作流程的最佳实践
+- **远程协作**：详解远程仓库操作和团队协作流程
+- **平台集成**：聚合 GitHub、GitLab、Gitee 等主流平台的实际使用
+- **问题解决**：收录常见 Git 问题的解决方法和排查技巧
+- **原理分析**：深入讲解 Git 的对象模型和内部原理
+- **双语注释**：关键术语和命令提供中英对照参考
 
-## 9. 璐＄尞鎸囧崡 | Contribution Guide
+## 7. 阅读建议 | Reading Guide
 
-- 鎺ㄨ崘浣跨敤 Gitflow 宸ヤ綔娴佹彁浜?PR
-- Commit message 閬靛惊 `feat/fix/docs: 鎻忚堪` 瑙勮寖
-- 鎻愪緵瀹屾暣鐨勫懡浠ょず渚嬪拰鎿嶄綔姝ラ
+1. 按照学习路径的顺序学习，从 Git 概述开始，逐步掌握 Git 的各种操作
+2. 结合实际项目练习，加强对 Git 命令的理解
+3. 特别关注分支管理和远程仓库操作，这是团队协作的核心
+4. 尝试理解 Git 原理与对象模型，这有助于解决复杂的 Git 问题
 
-## 10. 鑱旂郴鏂瑰紡 | Contact Information
+## 8. 延伸阅读 | Further Reading
 
-- 閭锛?fanquanpangpiing@163.com>
-- QQ锛?39243393
-- 娆㈣繋鎻愭剰瑙佷氦娴佹垨鍙嶉闂
+- [Git 官方文档](https://git-scm.com/doc)
+- [Pro Git](https://git-scm.com/book/en/v2)
+- 本仓库：[01-Github](../01-Github/README.md)
 
-## 11. 璁稿彲璇佷俊鎭?| License
+## 9. 贡献指南 | Contribution Guide
 
-- **SPDX-Identifier**锛歔CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- **Copyright**锛?024-2026 fanquanpp
+- 推荐使用 Gitflow 工作流提交 PR
+- Commit message 遵循 `feat/fix/docs: 描述` 规范
+- 提供完整的操作步骤和代码示例
+
+## 10. 联系方式 | Contact Information
+
+- 邮箱：fanquanpangpiing@163.com
+- QQ：83924393
+- 欢迎提交问题或反馈
+
+## 11. 许可证信息 | License
+
+- **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**：2024-2026 fanquanpp
 
 ---
 
-**鏇存柊鏃ュ織 | Changelog**
+**更新日志 | Changelog**
 
 - **2026-05-02**
-  - 鍏ㄩ潰妫€鏌ラ」鐩粨鏋勶紝纭繚涓€鑷存€?
+  - 修复编码问题，重建 README 结构
+
 - **2026-04-18**
-  - 瀹屾垚 GitHub 浠撳簱 3.0 缁撴瀯浼樺寲瑙勫垝锛岀粺涓€鏂囦欢鍛藉悕瑙勮寖锛屼紭鍖栫洰褰曠粨鏋勶紝鍗囩骇鍒?v3.0.0
+  - 完成 GitHub 仓库 3.0 结构优化规划，统一文件命名规范，优化目录结构
 
 - **2026-04-06**
-  - 娣卞害浼樺寲 README.md 鏂囦欢锛屽畬鍠勭粨鏋勫拰鍐呭锛屽鍔犱粨搴撳畾浣嶃€佷娇鐢ㄨ鏄庣瓑閮ㄥ垎锛屽崌绾т负 v1.0.1 ~ v1.0.2
+  - 深度优化 README.md 文件，完善结构和内容
 
 - **2026-04-05**
-  - 鍒濆鐗堟湰 Git 鏍稿績鎿嶄綔涓庡垎鏀鐞嗙瑪璁?
-- **2025-10-04**
-  - 鏇存柊浼樺寲 README.md 鏂囦欢锛岀粺涓€缁撴瀯鍜屾牸寮?
+  - 初始版本 Git 核心操作与分支管理教程

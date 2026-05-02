@@ -1,5 +1,7 @@
 # Vue Router 详解
 
+> @Version: v3.5.0
+
 ---
 
 ## 目录

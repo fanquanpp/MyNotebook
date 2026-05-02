@@ -1,5 +1,7 @@
 # GitHub Actions 与 Pages | GitHub Actions and Pages
 
+> @Version: v3.5.0
+
 ---
 
 ## 目录

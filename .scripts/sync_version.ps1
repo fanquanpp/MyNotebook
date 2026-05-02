@@ -1,7 +1,19 @@
+# Version Sync Script
+# Synchronizes @Version metadata across all README files
+# Uses .NET APIs to ensure UTF-8 without BOM encoding
+
 param(
     [Parameter(Mandatory=$true)]
     [string]$NewVersion
 )
+
+# UTF-8 without BOM encoding object
+$utf8NoBom = New-Object System.Text.UTF8Encoding $false
+
+function Write-FileUtf8NoBom {
+    param([string]$Path, [string]$Content)
+    [System.IO.File]::WriteAllText($Path, $Content, $utf8NoBom)
+}
 
 $RootReadme = "README.md"
 $Modules = Get-ChildItem -Directory | Where-Object { $_.Name -match '^[0-9]{2}-' } | Sort-Object Name
@@ -18,9 +30,9 @@ if (-not (Test-Path $RootReadme)) {
 }
 
 Write-Host "[1/4] Updating root README version..." -ForegroundColor Yellow
-$rootContent = Get-Content $RootReadme -Raw
+$rootContent = [System.IO.File]::ReadAllText($RootReadme, $utf8NoBom)
 $rootContent = $rootContent -replace '@Version:\s*v\d+\.\d+\.\d+', "@Version: $NewVersion"
-$rootContent | Set-Content $RootReadme -NoNewline -Encoding UTF8
+Write-FileUtf8NoBom -Path $RootReadme -Content $rootContent
 Write-Host "OK: Root README updated" -ForegroundColor Green
 
 Write-Host "[2/4] Updating module README versions..." -ForegroundColor Yellow
@@ -28,10 +40,10 @@ $updatedCount = 0
 foreach ($module in $Modules) {
     $readme = Join-Path $module.FullName "README.md"
     if (Test-Path $readme) {
-        $content = Get-Content $readme -Raw
+        $content = [System.IO.File]::ReadAllText($readme, $utf8NoBom)
         if ($content -match '@Version:') {
             $newContent = $content -replace '@Version:\s*v\d+\.\d+\.\d+', "@Version: $NewVersion"
-            $newContent | Set-Content $readme -NoNewline -Encoding UTF8
+            Write-FileUtf8NoBom -Path $readme -Content $newContent
             Write-Host "  OK: $($module.Name)" -ForegroundColor Green
             $updatedCount++
         }
@@ -45,7 +57,7 @@ $logEntry = "### $today`n`n- **$NewVersion** - Version sync update"
 
 if (-not ($rootContent -match "### $today")) {
     $rootContent = $rootContent -replace '(### 2026-\d+-\d+)', "$logEntry`n`n`$1"
-    $rootContent | Set-Content $RootReadme -NoNewline -Encoding UTF8
+    Write-FileUtf8NoBom -Path $RootReadme -Content $rootContent
     Write-Host "OK: Changelog added" -ForegroundColor Green
 } else {
     Write-Host "INFO: Today's changelog already exists, skipping" -ForegroundColor Cyan

@@ -1,5 +1,7 @@
 # TypeScript-专有名词注释查阅表 | TypeScript
 
+> @Version: v3.5.0
+
 ---
 
 ## 目录

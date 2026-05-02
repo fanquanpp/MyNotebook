@@ -1,5 +1,7 @@
 # Markdown 语法指南
 
+> @Version: v3.5.0
+
 > @Author: fanquanpp
 > @Category: Markdown Basics
 > @Description: Markdown 概述与核心特点。 | Markdown overview and key features.

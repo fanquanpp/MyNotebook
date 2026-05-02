@@ -1,5 +1,7 @@
 # HTML5 多媒体与 Canvas 绘图 (Multimedia & Canvas)
 
+> @Version: v3.5.0
+
 > @Author: Anonymous
 > @Category: HTML5 Basics
 > @Description: 原生音视频支持、Canvas 2D 绘图基础。 | Video, Audio, and Canvas 2D drawing.

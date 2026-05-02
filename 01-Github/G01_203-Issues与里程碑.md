@@ -1,5 +1,7 @@
 # Issues 模板、标签、里程碑与自动化
 
+> @Version: v3.5.0
+
 > @Author: Anonymous
 > @Category: GitHub Advanced
 > @Description: Issues 模板配置、Labels、Milestones、自动化关闭关键词与项目板衔接。 | Issue templates, labels, milestones, auto-close keywords, and project board integration.

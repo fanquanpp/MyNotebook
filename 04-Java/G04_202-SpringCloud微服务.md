@@ -1,5 +1,7 @@
 # Spring Cloud 微服务开发 | Spring Cloud Microservices
 
+> @Version: v3.5.0
+
 ---
 
 ## 目录

@@ -1,136 +1,129 @@
-﻿# 08-Javascript 鑴氭湰 | JavaScript Scripting
+# JavaScript 教程 | JavaScript Tutorial
 
 > @Author: fanquanpp
 > @Version: v3.5.0
-> @Created: 2026-04-05
+> @Category: JavaScript Overview
+> @Description: JavaScript 完整教程：变量、数据类型、函数、异步编程、DOM 操作、Node.js 高级特性与性能优化。 | Complete JavaScript tutorial covering variables, data types, functions, async programming, DOM manipulation, and Node.js advanced features.
 
-> **璺緞**锛歚08-Javascript/` | **JavaScript锛堣剼鏈瑷€锛岀缉鍐?JS锛?*锛氭祻瑙堝櫒涓?**Node.js锛圢ode 杩愯鏃讹級** 閫氱敤璇硶涓庡疄鎴?
+## 1. 简介 | Introduction
 
-## 1. 绠€浠?| Introduction
+本教程涵盖 JavaScript 核心概念和高级应用，包括变量与数据类型、函数与作用域、异步编程、原型与继承、模块化、DOM 操作，以及 Node.js 高级特性与性能优化。作为 Web 开发的核心语言，JavaScript 不仅用于前端开发，还广泛应用于后端开发（Node.js）、移动应用（React Native）、桌面应用（Electron）等领域。
 
-涓撴敞浜?ECMAScript 璇硶鏍囧噯銆丏OM 鎿嶄綔銆佸紓姝ョ紪绋嬨€佹ā鍧楀寲寮€鍙戜互鍙婅皟璇曚紭鍖栫瓑鏍稿績鍐呭銆備綔涓哄墠绔紑鍙戠殑鏍稿績璇█锛孞avaScript 涓嶄粎鐢ㄤ簬娴忚鍣ㄧ浜や簰锛屼篃骞挎硾搴旂敤浜?Node.js 鏈嶅姟绔紑鍙戯紝鏈ā鍧楁棬鍦ㄤ负寮€鍙戣€呮彁渚涗粠鍩虹鍒伴珮绾х殑绯荤粺鍖?JavaScript 瀛︿範璺緞銆?
+## 2. 目录索引 | Directory Index
 
-## 2. 鎶€鏈爤涓庡伐鍏凤紙鍙岃锛?
+### 快速查阅 | Quick Reference
 
-| 鑻辨枃锛堜腑鏂囷級 | 璇存槑 |
-| :--- | :--- |
-| **V8锛圝avaScript 寮曟搸锛?* | Chrome / Node 甯哥敤寮曟搸 |
-| **Chrome DevTools锛圕hrome 寮€鍙戣€呭伐鍏凤級** | 璋冭瘯涓庢€ц兘鍒嗘瀽宸ュ叿 |
+- [V08_101-JavaScript名词注释查阅表.md](./V08_101-JavaScript名词注释查阅表.md)
 
-## 3. 鐩綍绱㈠紩 | Directory Index
+### 基础篇 | Basics
 
+- [C08_101-概述与环境.md](./C08_101-概述与环境.md)
+- [C08_102-变量与数据类型.md](./C08_102-变量与数据类型.md)
+- [C08_103-程序结构与基础语法.md](./C08_103-程序结构与基础语法.md)
+- [C08_104-运算符与表达式.md](./C08_104-运算符与表达式.md)
+- [C08_105-控制流.md](./C08_105-控制流.md)
+- [C08_106-函数与作用域.md](./C08_106-函数与作用域.md)
+- [C08_107-对象与数组.md](./C08_107-对象与数组.md)
+- [C08_108-异步编程.md](./C08_108-异步编程.md)
+- [C08_109-原型与继承.md](./C08_109-原型与继承.md)
+- [C08_110-模块化.md](./C08_110-模块化.md)
+- [C08_111-DOM操作.md](./C08_111-DOM操作.md)
 
-### 鍩虹绡?| Basics
+### 示例 | Examples
 
-- [V08_101-JavaScript鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md](./V08_101-JavaScript鍚嶈瘝娉ㄩ噴鏌ラ槄琛?md)
-- [C08_101-姒傝堪涓庣幆澧?md](./C08_101-姒傝堪涓庣幆澧?md)
-- [C08_102-鍙橀噺涓庢暟鎹被鍨?md](./C08_102-鍙橀噺涓庢暟鎹被鍨?md)
-- [C08_103-绋嬪簭缁撴瀯涓庡熀纭€璇硶.md](./C08_103-绋嬪簭缁撴瀯涓庡熀纭€璇硶.md)
-- [C08_104-杩愮畻绗︿笌琛ㄨ揪寮?md](./C08_104-杩愮畻绗︿笌琛ㄨ揪寮?md)
-- [C08_105-鎺у埗娴?md](./C08_105-鎺у埗娴?md)
-- [C08_106-鍑芥暟涓庝綔鐢ㄥ煙.md](./C08_106-鍑芥暟涓庝綔鐢ㄥ煙.md)
-- [C08_107-瀵硅薄涓庢暟缁?md](./C08_107-瀵硅薄涓庢暟缁?md)
-- [C08_108-寮傛缂栫▼.md](./C08_108-寮傛缂栫▼.md)
-- [C08_109-鍘熷瀷涓庣户鎵?md](./C08_109-鍘熷瀷涓庣户鎵?md)
-- [C08_110-妯″潡鍖?md](./C08_110-妯″潡鍖?md)
-- [C08_111-DOM鎿嶄綔.md](./C08_111-DOM鎿嶄綔.md)
+- [animation.html](./示例/animation.html)
+- [async-programming.js](./示例/async-programming.js)
+- [dom-manipulation.html](./示例/dom-manipulation.html)
+- [event-handling.html](./示例/event-handling.html)
+- [modular-example.js](./示例/modular-example.js)
 
-### 楂樼骇绡?| Advanced
-- [G08_201-璋冭瘯涓庢€ц兘浼樺寲.md](./G08_201-璋冭瘯涓庢€ц兘浼樺寲.md)
-- [G08_202-椤圭洰瀹炴垬.md](./G08_202-椤圭洰瀹炴垬.md)
-- [G08_203-Node.js楂樼骇鐗规€т笌鎬ц兘浼樺寲.md](./G08_203-Node.js楂樼骇鐗规€т笌鎬ц兘浼樺寲.md)
+### 算法与数据结构 | Algorithms & Data Structures
 
-### 绠楁硶涓庢暟鎹粨鏋?| Algorithms & Data Structures
-- [SFDE08_301-binary_search_js.js](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE08_301-binary_search_js.js)
-- [SFDE08_302-merge_sort_js.js](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE08_302-merge_sort_js.js)
-- [SFDE08_303-quick_sort_js.js](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE08_303-quick_sort_js.js)
-- [SFDE08_401-binary_search_tree_js.js](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE08_401-binary_search_tree_js.js)
-- [SFDE08_402-graph_js.js](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE08_402-graph_js.js)
-- [SFDE08_403-linked_list_js.js](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE08_403-linked_list_js.js)
-- [SFDE08_404-queue_js.js](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE08_404-queue_js.js)
-- [SFDE08_405-stack_js.js](./绠楁硶涓庢暟鎹粨鏋?浠ｇ爜绀轰緥/SFDE08_405-stack_js.js)
+- [binary_search_js.js](./算法与数据结构/代码示例/SFDE08_301-binary_search_js.js)
+- [merge_sort_js.js](./算法与数据结构/代码示例/SFDE08_302-merge_sort_js.js)
+- [quick_sort_js.js](./算法与数据结构/代码示例/SFDE08_303-quick_sort_js.js)
+- [binary_search_tree_js.js](./算法与数据结构/代码示例/SFDE08_401-binary_search_tree_js.js)
+- [graph_js.js](./算法与数据结构/代码示例/SFDE08_402-graph_js.js)
+- [linked_list_js.js](./算法与数据结构/代码示例/SFDE08_403-linked_list_js.js)
+- [queue_js.js](./算法与数据结构/代码示例/SFDE08_404-queue_js.js)
+- [stack_js.js](./算法与数据结构/代码示例/SFDE08_405-stack_js.js)
 
-### 绀轰緥绡?| Examples
-- [dom-manipulation.html](./绀轰緥/dom-manipulation.html)
+### 进阶篇 | Advanced
 
-## 4. 鐜瑕佹眰 | Environment Requirements
+- [G08_201-调试与性能优化.md](./G08_201-调试与性能优化.md)
+- [G08_202-项目实战.md](./G08_202-项目实战.md)
+- [G08_203-Node.js高级特性与性能优化.md](./G08_203-Node.js高级特性与性能优化.md)
 
-- **娴忚鍣?*锛欳hrome 90+, Firefox 88+, Safari 14+, Edge 90+
-- **杩愯鏃?*锛歂ode.js 16+ (LTS)
-- **寮€鍙戝伐鍏?*锛歏S Code, Sublime Text, 鎴栦换浣曟枃鏈紪杈戝櫒
-- **鍖呯鐞嗗櫒**锛歯pm 7+, yarn 1.22+
+## 3. 环境要求 | Environment Requirements
 
-## 5. 蹇€熷紑濮?| Quick Start
+- **浏览器**：Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
+- **Node.js**：16.x 或更高版本
+- **开发工具**：VS Code, WebStorm, 或任何文本编辑器
+- **在线工具**：[CodePen](https://codepen.io/), [JSFiddle](https://jsfiddle.net/), [Node.js REPL](https://nodejs.org/en/)
 
-1. 瀹夎 Node.js 16+
-2. 鍒涘缓绗竴涓剼鏈枃浠讹細`hello.js`
-3. 杩愯鑴氭湰锛歚node hello.js`
+## 4. 快速开始 | Quick Start
 
-## 6. 瀛︿範璺嚎 | Learning Path
+1. 在浏览器控制台中输入：`console.log('Hello, JavaScript!')`
+2. 创建第一个 HTML 文件并引入 JavaScript
+3. 学习 [C08_101-概述与环境.md](./C08_101-概述与环境.md) 搭建开发环境
 
-`姒傝堪涓庣幆澧僠 鈫?`绋嬪簭缁撴瀯涓庡熀纭€璇硶` 鈫?`鍙橀噺涓庢暟鎹被鍨媊 鈫?`杩愮畻绗︿笌琛ㄨ揪寮廯 鈫?`鎺у埗娴乣 鈫?`鍑芥暟涓庝綔鐢ㄥ煙` 鈫?`瀵硅薄涓庢暟缁刞 鈫?`寮傛缂栫▼` 鈫?`鍘熷瀷涓庣户鎵縛 鈫?`妯″潡鍖朻 鈫?`DOM鎿嶄綔` 鈫?`璋冭瘯涓庢€ц兘浼樺寲`
+## 5. 学习路径 | Learning Path
 
-## 7. 鏍稿績鐗硅壊 | Key Features
+`概述与环境` -> `变量与数据类型` -> `函数与作用域` -> `对象与数组` -> `异步编程` -> `DOM操作` -> `模块化` -> `Node.js高级特性`
 
-- **鍏ㄦ爤搴旂敤**锛氭兜鐩栨祻瑙堝櫒绔拰 Node.js 鏈嶅姟绔殑 JavaScript 搴旂敤
-- **寮傛缂栫▼**锛氭繁鍏ヨ瑙?Promise銆乤sync/await 绛夌幇浠ｅ紓姝ョ紪绋嬫ā寮?
-- **妯″潡鍖栧紑鍙?*锛氭兜鐩?CommonJS銆丒S 妯″潡绛夊绉嶆ā鍧楀寲鏂规
-- **DOM 鎿嶄綔**锛氳缁嗚瑙ｆ祻瑙堝櫒 DOM 鎿嶄綔鍜屼簨浠跺鐞?
-- **鍘熷瀷缁ф壙**锛氳В鏋?JavaScript 鐙壒鐨勫師鍨嬬户鎵挎満鍒?
-- **鎬ц兘浼樺寲**锛氭彁渚?JavaScript 鎬ц兘浼樺寲鐨勬妧宸у拰鏈€浣冲疄璺?
-- **鍙岃娉ㄩ噴**锛氬叧閿蹇靛拰浠ｇ爜鎻愪緵涓嫳鏂囧鐓ф敞閲?
+## 6. 核心技术 | Key Features
 
-## 8. 闃呰寤鸿 | Reading Guide
+- **变量与数据类型**：var、let、const 及原始类型与引用类型
+- **函数与作用域**：函数声明、箭头函数、闭包、作用域链
+- **异步编程**：Promise、async/await、事件循环
+- **原型与继承**：原型链、构造函数、ES6 类
+- **模块化**：CommonJS、ES6 模块、动态导入
+- **DOM 操作**：元素选择、事件处理、样式修改
+- **Node.js 高级特性**：流、缓冲区、集群、性能优化
 
-1. 鎸夌収瀛︿範璺嚎鐨勯『搴忓涔狅紝浠庢杩颁笌鐜寮€濮嬶紝閫愭鎺屾彙 JavaScript 鐨勫悇绉嶇壒鎬?
-2. 缁撳悎瀹為檯椤圭洰缁冧範锛屽姞娣卞 JavaScript 姒傚康鐨勭悊瑙?
-3. 鐗瑰埆鍏虫敞寮傛缂栫▼鍜屽師鍨嬩笌缁ф壙閮ㄥ垎锛岃繖鏄?JavaScript 鐨勬牳蹇冪壒鎬?
-4. 灏濊瘯浣跨敤 JavaScript 瀹炵幇涓€浜涗氦浜掑姛鑳斤紝宸╁浐鎵€瀛︾煡璇?
+## 7. 阅读建议 | Reading Guide
 
-## 9. 寤朵几闃呰 | Further Reading
+1. 按照学习路径的顺序学习，从基础语法开始
+2. 结合浏览器控制台进行实践练习
+3. 特别关注异步编程和事件循环，这是 JavaScript 的核心概念
+4. 学习 Node.js 时，注意前后端概念的差异和联系
 
-- [MDN JavaScript 鏂囨。](https://developer.mozilla.org/en-US/docs/Web/JavaScript) <!-- nofollow -->
-- [ECMAScript 瀹樻柟瑙勮寖](https://tc39.es/ecma262/) <!-- nofollow -->
-- 鏈粨搴擄細[05-HTML5缃戦〉](../05-HTML5缃戦〉/README.md)銆乕11-Typescript](../11-Typescript/README.md)
+## 8. 延伸阅读 | Further Reading
 
-## 10. 鍏宠仈绔犺妭 | Related Modules
+- [MDN JavaScript 文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
+- [JavaScript 权威指南](https://github.com/getify/You-Dont-Know-JS)
+- [Node.js 官方文档](https://nodejs.org/en/docs/)
+- 本仓库：[11-TypeScript](../11-TypeScript/README.md)
 
-- **TypeScript锛堥潤鎬佺被鍨?JavaScript锛?*锛歔`11-Typescript`](../11-Typescript/README.md)  
-- **HTML / CSS**锛歔`05-HTML5缃戦〉`](../05-HTML5缃戦〉/README.md)銆乕`06-CSS甯冨眬`](../06-CSS甯冨眬/README.md)
+## 9. 贡献指南 | Contribution Guide
 
-## 11. 璐＄尞鎸囧崡 | Contribution Guide
+- 推荐使用 Gitflow 工作流提交 PR
+- Commit message 遵循 `feat/fix/docs: 描述` 规范
+- 提供完整的代码示例和运行结果
 
-- 浠ｇ爜绀轰緥闇€绗﹀悎 ESLint 瑙勮寖
-- 鎻愪緵瀹屾暣鐨勮繍琛岀幆澧冨拰渚濊禆璇存槑
-- 鍖呭惈鎬ц兘娴嬭瘯鍜屼紭鍖栧缓璁?
+## 10. 联系方式 | Contact Information
 
-## 12. 鑱旂郴鏂瑰紡 | Contact Information
+- 邮箱：fanquanpangpiing@163.com
+- QQ：83924393
+- 欢迎提交问题或反馈
 
-- 閭锛?fanquanpangpiing@163.com>
-- QQ锛?839243393
-- 娆㈣繋鎻愭剰瑙佷氦娴佹垨鍙嶉闂
+## 11. 许可证信息 | License
 
-## 13. 璁稿彲璇佷俊鎭?| License
-
-- **SPDX-Identifier**锛歔CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- **Copyright**锛?024-2026 fanquanpp
+- **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**：2024-2026 fanquanpp
 
 ---
 
-**鏇存柊鏃ュ織 | Changelog**
+**更新日志 | Changelog**
 
 - **2026-05-02**
-  - 鍏ㄩ潰妫€鏌ラ」鐩粨鏋勶紝纭繚涓€鑷存€?
+  - 修复编码问题，完善 README 结构
 
 - **2026-04-18**
-  - 瀹屾垚 GitHub 浠撳簱 3.0 缁撴瀯浼樺寲瑙勫垝锛岀粺涓€鏂囦欢鍛藉悕瑙勮寖锛屼紭鍖栫洰褰曠粨鏋勶紝鍗囩骇涓?v3.0.0
+  - 完成 GitHub 仓库 3.0 结构优化规划，统一文件命名规范
 
 - **2026-04-06**
-  - 鏂板銆屽師鍨嬩笌缁ф壙 / 妯″潡鍖?/ DOM 鎿嶄綔銆嶇煡璇嗙偣锛岃ˉ鍏ㄥ熀纭€绡囩储寮曚笌瀛︿範璺嚎锛屽崌绾т负 v1.0.3
-  - 娣卞害浼樺寲 README.md 鏂囦欢锛屽畬鍠勭粨鏋勫拰鍐呭锛屽鍔犱粨搴撳畾浣嶃€佷娇鐢ㄨ鏄庣瓑閮ㄥ垎锛屽崌绾т负 v1.0.1 ~ v1.0.2
+  - 深度优化 README.md 文件，完善结构和内容
 
 - **2026-04-05**
-  - 璇存槑鏂囦欢澶瑰悕涓庛€孞avaScript銆嶆爣鍑嗘嫾鍐欏叧绯?
-
-- **2026-10-04**
-  - 鏇存柊浼樺寲 README.md 鏂囦欢锛岀粺涓€缁撴瀯鍜屾牸寮?
+  - 初始版本 JavaScript 基础与进阶内容规划

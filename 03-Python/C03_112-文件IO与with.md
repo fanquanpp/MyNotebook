@@ -1,5 +1,7 @@
 # 文件 I/O 与上下文管理器 (File I/O & Context Manager)
 
+> @Version: v3.5.0
+
 > @Author: Anonymous
 > @Category: Python Basics
 > @Description: 文件读写模式、二进制处理、编码及 Context Manager (With)。 | File modes, binary handling, encoding, and Context Manager.

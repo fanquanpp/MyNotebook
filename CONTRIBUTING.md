@@ -229,9 +229,9 @@ git commit -m "fix(08-JavaScript): 修正异步编程章节的代码错误"
 git commit -m "docs(README): 更新学习路线图"
 
 # 错误示例
-git commit -m "更新"                           # ❌ 描述过于简略
-git commit -m "修改了一些东西"                   # ❌ 描述不明确
-git commit -m "feat: 添加新内容"                # ❌ 缺少模块标识
+git commit -m "更新"                           # 描述过于简略
+git commit -m "修改了一些东西"                   # 描述不明确
+git commit -m "feat: 添加新内容"                # 缺少模块标识
 ```
 
 ---

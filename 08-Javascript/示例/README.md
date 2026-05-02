@@ -1,7 +1,7 @@
 # JavaScript 示例 | JavaScript Examples
 
 > @Author: fanquanpp
-> @Version: v1.0.0
+> @Version: v3.5.0
 > @Created: 2026-04-06
 
 ## 1. 项目简介 | Introduction

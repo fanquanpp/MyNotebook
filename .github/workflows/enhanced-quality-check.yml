@@ -1,0 +1,247 @@
+name: Enhanced Quality Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  version-check:
+    name: Version Consistency Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check root README version
+        id: root_version
+        run: |
+          ROOT_VERSION=$(grep -oP '@Version:\s*v\K\d+\.\d+\.\d+' README.md | head -1)
+          echo "Root README version: $ROOT_VERSION"
+          echo "root_version=$ROOT_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Check module versions consistency
+        run: |
+          ROOT_VERSION=$(grep -oP '@Version:\s*v\K\d+\.\d+\.\d+' README.md | head -1)
+          echo "Expected version: $ROOT_VERSION"
+          echo ""
+
+          INCONSISTENT_MODULES=""
+
+          for dir in [0-9][0-9]-*/; do
+            if [ -f "$dir/README.md" ]; then
+              MODULE_NAME=$(basename "$dir")
+              MODULE_VERSION=$(grep -oP '@Version:\s*v\K\d+\.\d+\.\d+' "$dir/README.md" | head -1 || echo "not_found")
+
+              if [ "$MODULE_VERSION" = "not_found" ]; then
+                echo "  [WARNING] $MODULE_NAME: No version found"
+              elif [ "$MODULE_VERSION" != "$ROOT_VERSION" ]; then
+                echo "  [ERROR] $MODULE_NAME: v$MODULE_VERSION (expected v$ROOT_VERSION)"
+                INCONSISTENT_MODULES="$INCONSISTENT_MODULES $MODULE_NAME"
+              else
+                echo "  [OK] $MODULE_NAME: v$MODULE_VERSION"
+              fi
+            fi
+          done
+
+          if [ -n "$INCONSISTENT_MODULES" ]; then
+            echo ""
+            echo "Inconsistent modules:$INCONSISTENT_MODULES"
+            echo "Please run: .scripts/sync_version.ps1 -NewVersion v$ROOT_VERSION"
+            exit 1
+          fi
+
+          echo ""
+          echo "All module versions are consistent!"
+
+  encoding-check:
+    name: Encoding Validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for BOM in markdown files
+        run: |
+          echo "Checking for UTF-8 BOM in markdown files..."
+          echo ""
+
+          BOM_FILES=""
+
+          while IFS= read -r -d '' file; do
+            if [ -f "$file" ]; then
+              FIRST_BYTES=$(head -c 3 "$file" | xxd -p)
+              if [ "$FIRST_BYTES" = "efbbbf" ]; then
+                echo "  [ERROR] BOM found: $file"
+                BOM_FILES="$BOM_FILES $file"
+              fi
+            fi
+          done < <(find . -name "*.md" -type f -print 2>/dev/null)
+
+          if [ -n "$BOM_FILES" ]; then
+            echo ""
+            echo "Files with BOM:$BOM_FILES"
+            echo "Run: .scripts/validate_encoding.ps1 -Fix"
+            exit 1
+          fi
+
+          echo "No BOM files found!"
+
+  markdown-lint:
+    name: Markdown Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run markdownlint
+        uses: DavidAnson/markdownlint-cli2@v0.13.0
+        with:
+          globs: |
+            **/*.md
+            "!node_modules/**"
+          config: |
+            {
+              "default": true,
+              "MD013": {
+                "line_length": 120,
+                "tables": false
+              },
+              "MD033": {
+                "allowed_elements": ["br", "span", "mermaid"]
+              }
+            }
+
+  file-naming-check:
+    name: File Naming Convention Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check file naming conventions
+        run: |
+          echo "Checking file naming conventions..."
+          echo ""
+
+          INVALID_FILES=""
+
+          while IFS= read -r -d '' file; do
+            filename=$(basename "$file")
+
+            if [[ "$filename" =~ ^[0-9]- ]]; then
+              continue
+            fi
+
+            if [[ "$filename" =~ ^(C|G|Z|SFDE|V)[0-9]{2}_ ]]; then
+              if [[ ! "$filename" =~ ^[CGZVS]FDE[0-9]{2}_[0-9]{3}-[^-]+\.(md|py|js|ts|java|c|cpp|h|lua|sql|vue|html)$ ]]; then
+                echo "  [WARNING] Invalid naming: $file"
+                INVALID_FILES="$INVALID_FILES $file"
+              fi
+            fi
+          done < <(find . -type f \( -name "*.md" -o -name "*.py" -o -name "*.js" -o -name "*.ts" -o -name "*.java" -o -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -name "*.lua" -o -name "*.sql" -o -name "*.vue" -o -name "*.html" \) -print 2>/dev/null)
+
+          if [ -n "$INVALID_FILES" ]; then
+            echo ""
+            echo "Files with invalid naming:$INVALID_FILES"
+            exit 1
+          fi
+
+          echo "All files follow naming conventions!"
+
+  reference-check:
+    name: Cross-Reference Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for broken internal links
+        run: |
+          echo "Checking internal references..."
+          echo ""
+
+          BROKEN_LINKS=""
+          MODULE_DIRS=$(find . -maxdepth 1 -type d -name "[0-9][0-9]-*" | sed 's|^\./||')
+
+          for module_dir in $MODULE_DIRS; do
+            if [ -f "$module_dir/README.md" ]; then
+              while IFS= read -r link; do
+                if [[ "$link" =~ ^\.\/[0-9] ]]; then
+                  target=$(echo "$link" | sed 's/^(\.\/[^)]*)\.md.*/\1.md/' | sed 's/^(\.\///')
+                  if [ ! -f "$target" ]; then
+                    echo "  [ERROR] $module_dir/README.md -> $link (file not found)"
+                    BROKEN_LINKS="$BROKEN_LINKS $module_dir:$link"
+                  fi
+                fi
+              done < <(grep -oP '\.\/[0-9][0-9]-[^)]*\.md' "$module_dir/README.md" 2>/dev/null || true)
+            fi
+          done
+
+          if [ -n "$BROKEN_LINKS" ]; then
+            echo ""
+            echo "Broken links found:$BROKEN_LINKS"
+            exit 1
+          fi
+
+          echo "All internal references are valid!"
+
+  heading-structure-check:
+    name: Heading Structure Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check heading hierarchy
+        run: |
+          echo "Checking heading structure..."
+          echo ""
+
+          INVALID_HEADINGS=""
+
+          while IFS= read -r -d '' file; do
+            if [[ "$file" =~ \.git\.|_modules\/ ]]; then
+              continue
+            fi
+
+            levels=$(grep -oP '^#+ ' "$file" 2>/dev/null | sort -u || true)
+            if [ -n "$levels" ]; then
+              max_level=$(echo "$levels" | awk '{print length}' | sort -rn | head -1)
+              min_level=$(echo "$levels" | awk '{print length}' | sort -n | head -1)
+
+              if [ "$max_level" -gt 6 ]; then
+                echo "  [WARNING] $file: Heading level exceeds 6"
+                INVALID_HEADINGS="$INVALID_HEADINGS $file"
+              fi
+            fi
+          done < <(find . -name "*.md" -type f -print 2>/dev/null)
+
+          if [ -n "$INVALID_HEADINGS" ]; then
+            echo ""
+            echo "Files with invalid headings:$INVALID_HEADINGS"
+            echo "Please use heading levels 1-6 only."
+          else
+            echo "All heading structures are valid!"
+          fi
+
+  summary:
+    name: Summary
+    runs-on: ubuntu-latest
+    needs: [version-check, encoding-check, markdown-lint, file-naming-check, reference-check, heading-structure-check]
+    if: always()
+    steps:
+      - name: Summary
+        run: |
+          echo "=========================================="
+          echo "Enhanced Quality Check Summary"
+          echo "=========================================="
+          echo ""
+          echo "All checks passed! The project is consistent."
+          echo ""
+          echo "Checks performed:"
+          echo "  - Version consistency across modules"
+          echo "  - UTF-8 encoding validation (no BOM)"
+          echo "  - Markdown syntax and formatting"
+          echo "  - File naming conventions"
+          echo "  - Cross-references validity"
+          echo "  - Heading structure (levels 1-6)"

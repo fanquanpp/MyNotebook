@@ -1,5 +1,7 @@
 # 数据类型与 Table 详解 (Data Types & Tables)
 
+> @Version: v3.5.0
+
 > @Author: Anonymous
 > @Category: Lua Basics
 > @Description: Lua 8 种基础类型及核心数据结构 Table 的深度解析。 | Lua's 8 basic types and in-depth look at Tables.

@@ -1,5 +1,7 @@
 # Java Swing 图形界面 | Swing GUI
 
+> @Version: v3.5.0
+
 ---
 
 ## 目录

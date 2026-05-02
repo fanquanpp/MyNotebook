@@ -1,5 +1,7 @@
 # SSH 与 HTTPS 远程配置
 
+> @Version: v3.5.0
+
 > @Author: Anonymous
 > @Category: GitHub Basics
 > @Description: SSH 与 HTTPS 远程配置对比、公钥配置、HTTPS+PAT 配置指南。 | Comparison of SSH vs HTTPS, public key configuration, HTTPS+PAT setup guide.

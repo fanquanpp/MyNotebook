@@ -1,5 +1,7 @@
 # MySQL 快速查阅 (Quick Reference)
 
+> @Version: v3.5.0
+
 > @Author: Anonymous
 > @Category: MySQL Reference
 > @Description: MySQL 常用指令速查手册 | Quick reference for common MySQL commands.

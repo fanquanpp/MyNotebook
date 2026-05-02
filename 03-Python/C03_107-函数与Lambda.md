@@ -1,5 +1,7 @@
 # 函数详解 (Functions In-depth)
 
+> @Version: v3.5.0
+
 > @Author: Anonymous
 > @Category: Python Basics
 > @Description: 函数定义、参数传递、匿名函数、装饰器及作用域。 | Function definitions, parameters, lambda, decorators, and scope.

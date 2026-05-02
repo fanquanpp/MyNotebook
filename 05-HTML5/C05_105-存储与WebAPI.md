@@ -1,5 +1,7 @@
 # HTML5 离线存储与 Web API (Storage & Web APIs)
 
+> @Version: v3.5.0
+
 > @Author: Anonymous
 > @Category: HTML5 Basics
 > @Description: Web Storage、Geolocation、Web Worker 及 Fetch API。 | Web Storage, Geolocation, Workers, and Fetch.

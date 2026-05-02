@@ -1,6 +1,7 @@
 # GitHub 一站式中文教程 | GitHub Platform Tutorial
 
 > @Author: fanquanpp
+> @Version: v3.5.0
 > @Category: GitHub Overview
 > @Description: GitHub 平台完整教程：账户安全、远程协议、仓库管理、分支策略、PR/Issue、Actions、Pages、协作规范与排错。 | Complete GitHub platform tutorial covering security, protocols, repositories, branching, PR/Issue, Actions, Pages, and collaboration.
 
