@@ -1,11 +1,11 @@
-<a id="title"></a>
 # Markdown 语法指南
 
-> fanquanpp 的个人学习笔记
+> @Author: fanquanpp
+> @Category: Markdown Basics
+> @Description: Markdown 概述与核心特点。 | Markdown overview and key features.
+> @Updated: 2026-04-05
 
-最新更新时间：2026-04-05
-
-## 1 引言
+## 1. 引言
 
 Markdown 是一种轻量级标记语言，使用纯文本格式编写文档，具有语法简洁、可读性强、跨平台兼容等特点。它允许人们使用易读易写的纯文本格式编写文档，然后转换为结构完整的 HTML 文档或其他格式。
 

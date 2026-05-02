@@ -1,7 +1,5 @@
 # Godot-专有名词注释查阅表 | Godot
 
-&emsp;*&lt;small&gt;共计83个&lt;/small&gt;*
-
 ## 1. 基础概念类
 
 ### 1.1 Godot

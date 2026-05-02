@@ -1,10 +1,8 @@
 # JavaScript 示例 | JavaScript Examples
 
-<!--
-作者：fanquanpp
-创建日期：2026-04-06
-版本：v1.0.0
--->
+> @Author: fanquanpp
+> @Version: v1.0.0
+> @Created: 2026-04-06
 
 ## 1. 项目简介 | Introduction
 
@@ -62,4 +60,5 @@ node modular-example.js
 
 **更新日志 | Changelog**
 
-- 2026-04-06: 创建 JavaScript 示例目录，添加 README.md 文件，版本为 v1.0.0
+- **2026-04-06**
+  - 创建 JavaScript 示例目录，添加 README.md 文件，版本为 v1.0.0

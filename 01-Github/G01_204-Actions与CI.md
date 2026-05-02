@@ -1,11 +1,8 @@
-<!--
-文件名称：GitHub Actions 语法、市场与 CI/CD 示例
-原名称：无（新建）
-用途描述：说明 workflow 语法、Actions 市场、并以 Node/Java/Python 各一例演示 CI；面向需在仓库内跑自动化的读者；前置：04；关联 08、10。
-创建/更新：2026-04-05
--->
-
 # GitHub Actions 语法、市场与 CI/CD 完整示例
+
+> @Author: Anonymous
+> @Category: GitHub Advanced
+> @Description: GitHub Actions workflow 语法、市场使用、CI/CD 示例（Node/Java/Python）。 | GitHub Actions workflow syntax, marketplace usage, CI/CD examples.
 
 ## 1. 背景
 

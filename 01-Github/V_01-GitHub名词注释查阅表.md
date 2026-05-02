@@ -1,13 +1,9 @@
 # GitHub-专有名词注释查阅表 | GitHub
 
-<!--
-作者：fanquanpp
-创建日期：2026-04-30
-版本：v1.0.0
-用途：按笔记出现顺序整理 GitHub 模块的专有名词解释
--->
-
-## 1. 基础概念类
+> @Author: fanquanpp
+> @Version: v1.0.0
+> @Created: 2026-04-30
+> @Description: GitHub 模块专有名词解释，按笔记出现顺序整理。 | GitHub terminology glossary organized by appearance order.
 
 ### 1.1 GitHub
 

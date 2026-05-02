@@ -1,11 +1,8 @@
-<!--
-文件名称：Pull Request 完整生命周期
-原名称：无（新建）
-用途描述：从 Fork、克隆、分支、提交、推送、开 PR、审查、合并到同步上游的端到端说明；面向开源贡献者与内网协作者；前置：02、03、04；关联 09、10。
-创建/更新：2026-04-05
--->
-
 # Pull Request 完整协作流程
+
+> @Author: Anonymous
+> @Category: GitHub Advanced
+> @Description: Pull Request 完整生命周期：Fork、分支、提交、推送、审查、合并到同步上游。 | Complete PR lifecycle: Fork, branch, commit, push, review, merge, and sync.
 
 ## 1. 背景
 

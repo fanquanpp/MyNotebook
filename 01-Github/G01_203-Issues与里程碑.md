@@ -1,11 +1,8 @@
-<!--
-文件名称：Issues 模板、标签、里程碑与自动化
-原名称：无（新建）
-用途描述：配置 Issue 模板、Labels、Milestones、GitHub 自动关闭关键词与项目板衔接；面向产品与工程双角色读者；前置：无；关联 05、09。
-创建/更新：2026-04-05
--->
-
 # Issues 模板、标签、里程碑与自动化
+
+> @Author: Anonymous
+> @Category: GitHub Advanced
+> @Description: Issues 模板配置、Labels、Milestones、自动化关闭关键词与项目板衔接。 | Issue templates, labels, milestones, auto-close keywords, and project board integration.
 
 ## 1. 背景
 

@@ -1,11 +1,8 @@
-<!--
-文件名称：SSH 与 HTTPS 远程配置
-原名称：无（新建）
-用途描述：对比 SSH 与 HTTPS，配置公钥、测试连接、HTTPS+PAT；面向需在多台机器上克隆与推送的开发者；前置：01；关联 03、10。
-创建/更新：2026-04-05
--->
-
 # SSH 与 HTTPS 远程配置
+
+> @Author: Anonymous
+> @Category: GitHub Basics
+> @Description: SSH 与 HTTPS 远程配置对比、公钥配置、HTTPS+PAT 配置指南。 | Comparison of SSH vs HTTPS, public key configuration, HTTPS+PAT setup guide.
 
 ## 1. 背景
 

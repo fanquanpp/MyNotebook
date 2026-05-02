@@ -1,11 +1,8 @@
-<!--
-文件名称：GitHub Pages 部署静态站点（Jekyll、VitePress、Hugo）
-原名称：无（新建）
-用途描述：三种静态站点方案在 GitHub Pages 上的构建与发布要点；面向需要文档站或博客的读者；前置：07；关联 05、10。
-创建/更新：2026-04-05
--->
-
 # GitHub Pages 多站点方案（Jekyll、VitePress、Hugo）
+
+> @Author: Anonymous
+> @Category: GitHub Advanced
+> @Description: GitHub Pages 静态站点部署方案：Jekyll、VitePress、Hugo 构建与发布。 | Static site deployment on GitHub Pages with Jekyll, VitePress, Hugo.
 
 ## 1. 背景
 

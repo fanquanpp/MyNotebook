@@ -1,116 +1,110 @@
 # MyNotebook | 个人综合资料笔记库
 
-<!--
-作者：fanquanpp
-创建日期：2026-04-05
-版本：v3.3.0
--->
+> @Author: fanquanpp
+> @Version: v3.3.0
+> @Created: 2026-04-05
+> @Description: 综合性个人资料笔记库，涵盖 C/C++、Web 前端、Python/Java 后端、MySQL 数据库及游戏开发等多个技术领域。 | Comprehensive personal knowledge notebook covering multiple technical fields.
 
 <br />
 
 ## 0. 优质资源推荐 | Recommended Resources
 
-### 外部GitHub仓库推荐
+### 外部 GitHub 仓库推荐
 
-#### JavaScript相关
+#### JavaScript 相关
 
-| 资源名称                  | 仓库地址                                                                      | 描述                      |
-| :-------------------- | :------------------------------------------------------------------------ | :---------------------- |
-| JavaScript笔记          | [anbang/javascript-notes](https://github.com/anbang/javascript-notes.git) | 全面的JavaScript学习笔记和示例    |
-| Airbnb JavaScript风格指南 | [airbnb/javascript](https://github.com/airbnb/javascript.git)             | 业界广泛采用的JavaScript代码风格指南 |
+- **JavaScript笔记** → [anbang/javascript-notes](https://github.com/anbang/javascript-notes.git)
+  - 全面的 JavaScript 学习笔记和示例
+  
+- **Airbnb JavaScript风格指南** → [airbnb/javascript](https://github.com/airbnb/javascript.git)
+  - 业界广泛采用的 JavaScript 代码风格指南
 
 #### 算法相关
 
-| 资源名称          | 仓库地址                                                                                                                  | 描述                          |
-| :------------ | :-------------------------------------------------------------------------------------------------------------------- | :-------------------------- |
-| 算法可视化器        | [algorithm-visualizer/algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer.git)         | 通过可视化方式理解各种算法的执行过程          |
-| LeetCode算法题详解 | [doocs/leetcode](https://github.com/doocs/leetcode.git)                                                               | 包含详细的LeetCode题目解析和解决方案      |
-| 算法问题集合        | [MTrajK/coding-problems](https://github.com/MTrajK/coding-problems.git)                                               | 收集了各种编程算法问题和解答              |
-| 数据结构与算法（普拉特）  | [thepranaygupta/Data-Structures-and-Algorithms](https://github.com/thepranaygupta/Data-Structures-and-Algorithms.git) | 全面的数据结构与算法实现                |
-| 算法与数据结构（开尔文）  | [kelvins/algorithms-and-data-structures](https://github.com/kelvins/algorithms-and-data-structures.git)               | 多种编程语言实现的算法与数据结构            |
-| ApacheCN算法译文集 | [apachecn/apachecn-algo-zh](https://github.com/apachecn/apachecn-algo-zh.git)                                         | 数据结构与算法的中文译文集，包含LeetCode题解  |
-| Hello 算法      | [krahets/hello-algo](https://github.com/krahets/hello-algo.git)                                                       | 动画图解、一键运行的数据结构与算法教程，支持多语言实现 |
+- **算法可视化器** → [algorithm-visualizer/algorithm-visualizer](https://github.com/algorithm-visualizer/algorithm-visualizer.git)
+  - 通过可视化方式理解各种算法的执行过程
+  
+- **LeetCode算法题详解** → [doocs/leetcode](https://github.com/doocs/leetcode.git)
+  - 包含详细的 LeetCode 题目解析和解决方案
+  
+- **算法问题集合** → [MTrajK/coding-problems](https://github.com/MTrajK/coding-problems.git)
+  - 收集了各种编程算法问题和解答
+  
+- **数据结构与算法（普拉特）** → [thepranaygupta/Data-Structures-and-Algorithms](https://github.com/thepranaygupta/Data-Structures-and-Algorithms.git)
+  - 全面的数据结构与算法实现
+  
+- **算法与数据结构（开尔文）** → [kelvins/algorithms-and-data-structures](https://github.com/kelvins/algorithms-and-data-structures.git)
+  - 多种编程语言实现的算法与数据结构
+  
+- **ApacheCN算法译文集** → [apachecn/apachecn-algo-zh](https://github.com/apachecn/apachecn-algo-zh.git)
+  - 数据结构与算法的中文译文集，包含 LeetCode 题解
+  
+- **Hello 算法** → [krahets/hello-algo](https://github.com/krahets/hello-algo.git)
+  - 动画图解、一键运行的数据结构与算法教程，支持多语言实现
 
-#### TypeScript相关
+#### TypeScript 相关
 
-| 资源名称      | 仓库地址                                                        | 描述                     |
-| :-------- | :---------------------------------------------------------- | :--------------------- |
-| 多行文本测量和布局 | [chenglou/pretext](https://github.com/chenglou/pretext.git) | 专注于文本测量和布局的TypeScript库 |
+- **多行文本测量和布局** → [chenglou/pretext](https://github.com/chenglou/pretext.git)
+  - 专注于文本测量和布局的 TypeScript 库
 
-#### Java相关
+#### Java 相关
 
-| 资源名称             | 仓库地址                                                                          | 描述                                         |
-| :--------------- | :---------------------------------------------------------------------------- | :----------------------------------------- |
-| toBeBetterJavaer | [itwanger/toBeBetterJavaer](https://github.com/itwanger/toBeBetterJavaer.git) | 通俗易懂、风趣幽默的Java学习指南，涵盖Java基础、并发编程、虚拟机等核心知识点 |
+- **toBeBetterJavaer** → [itwanger/toBeBetterJavaer](https://github.com/itwanger/toBeBetterJavaer.git)
+  - 通俗易懂、风趣幽默的 Java 学习指南，涵盖 Java 基础、并发编程、虚拟机等核心知识点
 
-#### C++相关
+#### C++ 相关
 
-| 资源名称     | 仓库地址                                                            | 描述                                      |
-| :------- | :-------------------------------------------------------------- | :-------------------------------------- |
-| CppGuide | [balloonwj/CppGuide](https://github.com/balloonwj/CppGuide.git) | C++后端开发进阶学习资料，包含C++必知必会的知识点和游戏服务器端架构等内容 |
+- **CppGuide** → [balloonwj/CppGuide](https://github.com/balloonwj/CppGuide.git)
+  - C++ 后端开发进阶学习资料，包含 C++ 必知必会的知识点和游戏服务器端架构等内容
 
-#### CSS相关
+#### CSS 相关
 
-| 资源名称         | 仓库地址                                                                | 描述                                  |
-| :----------- | :------------------------------------------------------------------ | :---------------------------------- |
-| Flexbox-Labs | [prazzon/Flexbox-Labs](https://github.com/prazzon/Flexbox-Labs.git) | 基于Web的CSS Flexbox布局工具，提供直观界面和实时预览功能 |
+- **Flexbox-Labs** → [prazzon/Flexbox-Labs](https://github.com/prazzon/Flexbox-Labs.git)
+  - 基于 Web 的 CSS Flexbox 布局工具，提供直观界面和实时预览功能
 
-#### Git相关
+#### Git 相关
 
-| 资源名称           | 仓库地址                                                          | 描述                         |
-| :------------- | :------------------------------------------------------------ | :------------------------- |
-| Pro Git 2 中文翻译 | [progit/progit2-zh](https://github.com/progit/progit2-zh.git) | Git权威书籍《Pro Git》第二版的中文翻译版本 |
+- **Pro Git 2 中文翻译** → [progit/progit2-zh](https://github.com/progit/progit2-zh.git)
+  - Git 权威书籍《Pro Git》第二版的中文翻译版本
 
 #### 开源社区相关
 
-| 资源名称        | 仓库地址                                                                        | 描述                                |
-| :---------- | :-------------------------------------------------------------------------- | :-------------------------------- |
-| HelloGitHub | [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub.git) | 分享GitHub上有趣、入门级的开源项目，每月28号以月刊形式更新 |
+- **HelloGitHub** → [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub.git)
+  - 分享 GitHub 上有趣、入门级的开源项目，每月 28 号以月刊形式更新
 
 #### 游戏开发相关
 
-| 资源名称         | 仓库地址                                                          | 描述                         |
-| :----------- | :------------------------------------------------------------ | :------------------------- |
-| Godot Engine | [godotengine/godot](https://github.com/godotengine/godot.git) | 跨平台的2D和3D游戏引擎，免费开源，支持多平台导出 |
+- **Godot Engine** → [godotengine/godot](https://github.com/godotengine/godot.git)
+  - 跨平台的 2D 和 3D 游戏引擎，免费开源，支持多平台导出
 
-#### Python相关
+#### Python 相关
 
-| 资源名称           | 仓库地址                                                                                | 描述                                   |
-| :------------- | :---------------------------------------------------------------------------------- | :----------------------------------- |
-| Python Mastery | [dabeaz-course/python-mastery](https://github.com/dabeaz-course/python-mastery.git) | David Beazley的高级Python编程课程，包含练习和解决方案 |
+- **Python Mastery** → [dabeaz-course/python-mastery](https://github.com/dabeaz-course/python-mastery.git)
+  - David Beazley 的高级 Python 编程课程，包含练习和解决方案
 
 #### 工具相关
 
-| 资源名称      | 仓库地址                                                                | 描述                                 |
-| :-------- | :------------------------------------------------------------------ | :--------------------------------- |
-| NoteGen   | [codexu/note-gen](https://github.com/codexu/note-gen.git)           | 跨平台的Markdown AI笔记软件，致力于使用AI连接记录和写作 |
-| Reference | [jaywcjlove/reference](https://github.com/jaywcjlove/reference.git) | 面向开发者的技术速查清单集合，整理常见技术、工具与开发流程      |
+- **NoteGen** → [codexu/note-gen](https://github.com/codexu/note-gen.git)
+  - 跨平台的 Markdown AI 笔记软件，致力于使用 AI 连接记录和写作
+  
+- **Reference** → [jaywcjlove/reference](https://github.com/jaywcjlove/reference.git)
+  - 面向开发者的技术速查清单集合，整理常见技术、工具与开发流程
 
-<br />
-
-<br />
+---
 
 ## 1. 项目简介 | Introduction
 
-MyNotebook 是 fanquanpp 维护的综合性个人资料笔记库，专注于提供高质量、系统化的技术学习资料。本仓库采用「一知识点一文件」的深度解析模式，涵盖 C/C++、Web 前端、Python/Java 后端、MySQL 数据库及游戏开发等多个技术领域，旨在为自学者提供工业级的参考资料。
+MyNotebook 是一个综合性技术学习笔记库，涵盖 C/C++、Web 前端、Python/Java 后端、MySQL 数据库及游戏开发等多个技术领域，为自学者提供系统化的学习资料。
 
-### 仓库定位
+### 核心价值
 
-- **学习资源中心**：汇集各领域核心知识点，形成完整的学习体系
-- **技术文档库**：提供详细的技术解析和实践指南
-- **个人知识管理**：系统化整理个人学习成果，便于复习和查阅
+- **体系化学习**：从基础到进阶，构建完整的知识体系
+- **实战导向**：提供丰富的代码示例和实践指南
+- **持续更新**：定期维护，保持内容的时效性
 
-**使用说明：**
+### 联系方式
 
-- 仓库已开放为公共，允许他人访问和克隆
-- 禁止直接修改本仓库内容
-- 他人使用本仓库内容时出现的任何问题与作者无关
-
-**联系方式：**
-
-- 邮箱：<fanquanpangpiing@163.com>
-- QQ：1839243393
-- 欢迎提意见交流或反馈问题
+- 邮箱：fanquanpangpiing@163.com
 
 ## 2. 目录索引 | Directory Index
 
@@ -298,19 +292,29 @@ cd 03-Python脚本
 
 **更新日志 | Changelog**
 
-- 2026-04-18: 集成笔记文件命名策略到README.md，详细说明文件命名规则和代号系统，升级为 v3.3.0
-- 2026-04-18: 完成GitHub仓库3.0结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
-- 2026-04-18: 更新README.md文件，确保包含最新的目录结构和信息，升级为 v2.5.10
-- 2026-04-08: 补充三个优质GitHub仓库推荐：Python Mastery、NoteGen和Reference，升级为 v2.5.9
-- 2026-04-08: 补充多个优质GitHub仓库推荐，包括算法、Java、C++、CSS、Git、游戏开发等多个领域，升级为 v2.5.8
-- 2026-04-07: 将优质资源推荐部分从单一表格拆分为多个表格，按分类组织，提升可读性，升级为 v2.5.7
-- 2026-04-07: 将优质资源推荐部分从列表格式改为表格格式，提升可读性，升级为 v2.5.6
-- 2026-04-07: 优化 README.md 中外部资源推荐部分的结构与描述，升级为 v2.5.5
-- 2026-04-06: 重构项目根目录 README.md，优化结构和可读性，增加学习顺序说明和技术模块依赖关系图
-- 2026-04-06: 补充各模块高级文件夹和内容，完善数据结构和算法实现，升级为 v2.5.4
-- 2026-04-06: 修复全库 README 导航与索引错误，新增/补全部分模块知识点与文档结构，升级为 v2.5.3
-- 2026-04-06: 深度优化 README.md 描述内容，增加仓库定位说明，提升文档专业性，升级为 v2.5.2
-- 2026-04-06: 再次更新优化 README.md 文件，确保内容一致性和准确性
-- 2026-04-06: 更新优化所有 README.md 文件，统一结构和格式，升级为 v2.5.1
-- 2026-04-05: 全库重构完成，引入「一知识点一文件」架构，升级为 v2.5.0
+- **2026-05-02**
+  - 清理 `.gitignore` 重复条目，优化配置
+  - 全面检查项目结构和配置文件，确保一致性
+  - 更新所有模块 README 文件
+
+- **2026-04-18**
+  - 集成笔记文件命名策略到 README.md，详细说明文件命名规则和代号系统，升级为 v3.3.0
+  - 完成 GitHub 仓库 3.0 结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
+  - 更新 README.md 文件，确保包含最新的目录结构和信息，升级为 v2.5.10
+
+- **2026-04-08**
+  - 补充多个优质 GitHub 仓库推荐（算法、Java、C++、CSS、Git、游戏开发、Python Mastery、NoteGen、Reference），升级为 v2.5.8 ~ v2.5.9
+
+- **2026-04-07**
+  - 优化 README.md 外部资源推荐部分，从列表改为表格并按分类组织，提升可读性，升级为 v2.5.5 ~ v2.5.7
+
+- **2026-04-06**
+  - 重构项目根目录 README.md，优化结构和可读性，增加学习顺序说明和技术模块依赖关系图
+  - 补充各模块高级文件夹和内容，完善数据结构和算法实现
+  - 修复全库 README 导航与索引错误，新增/补全部分模块知识点与文档结构
+  - 深度优化 README.md 描述内容，增加仓库定位说明，提升文档专业性
+  - 更新优化所有 README.md 文件，统一结构和格式，升级为 v2.5.1 ~ v2.5.4
+
+- **2026-04-05**
+  - 全库重构完成，升级为 v2.5.0
 
