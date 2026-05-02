@@ -12,7 +12,7 @@
 
 ### 基础篇 | Basics
 
-- [V_11-TypeScript名词注释查阅表.md](./V_11-TypeScript名词注释查阅表.md)
+- [V11_101-TypeScript名词注释查阅表.md](./V11_101-TypeScript名词注释查阅表.md)
 
 - [C11_101-概述与环境.md](./C11_101-概述与环境.md)
 - [C11_102-基础类型系统.md](./C11_102-基础类型系统.md)
