@@ -24,8 +24,8 @@
 
 - [V_08-JavaScript名词注释查阅表.md](./V_08-JavaScript名词注释查阅表.md)
 - [C08_101-概述与环境.md](./C08_101-概述与环境.md)
-- [C08_102-程序结构与基础语法.md](./C08_102-程序结构与基础语法.md)
-- [C08_103-变量与数据类型.md](./C08_103-变量与数据类型.md)
+- [C08_102-变量与数据类型.md](./C08_102-变量与数据类型.md)
+- [C08_103-程序结构与基础语法.md](./C08_103-程序结构与基础语法.md)
 - [C08_104-运算符与表达式.md](./C08_104-运算符与表达式.md)
 - [C08_105-控制流.md](./C08_105-控制流.md)
 - [C08_106-函数与作用域.md](./C08_106-函数与作用域.md)
@@ -36,12 +36,19 @@
 - [C08_111-DOM操作.md](./C08_111-DOM操作.md)
 
 ### 高级篇 | Advanced
-- [G08_201-Node.js高级特性与性能优化.md](./G08_201-Node.js高级特性与性能优化.md)
-- [G08_202-调试与性能优化.md](./G08_202-调试与性能优化.md)
+- [G08_201-调试与性能优化.md](./G08_201-调试与性能优化.md)
+- [G08_202-项目实战.md](./G08_202-项目实战.md)
+- [G08_203-Node.js高级特性与性能优化.md](./G08_203-Node.js高级特性与性能优化.md)
 
 ### 算法与数据结构 | Algorithms & Data Structures
 - [SFDE08_301-binary_search_js.js](./算法与数据结构/代码示例/SFDE08_301-binary_search_js.js)
-- [SFDE08_302-quick_sort_js.js](./算法与数据结构/代码示例/SFDE08_302-quick_sort_js.js)
+- [SFDE08_302-merge_sort_js.js](./算法与数据结构/代码示例/SFDE08_302-merge_sort_js.js)
+- [SFDE08_303-quick_sort_js.js](./算法与数据结构/代码示例/SFDE08_303-quick_sort_js.js)
+- [SFDE08_401-binary_search_tree_js.js](./算法与数据结构/代码示例/SFDE08_401-binary_search_tree_js.js)
+- [SFDE08_402-graph_js.js](./算法与数据结构/代码示例/SFDE08_402-graph_js.js)
+- [SFDE08_403-linked_list_js.js](./算法与数据结构/代码示例/SFDE08_403-linked_list_js.js)
+- [SFDE08_404-queue_js.js](./算法与数据结构/代码示例/SFDE08_404-queue_js.js)
+- [SFDE08_405-stack_js.js](./算法与数据结构/代码示例/SFDE08_405-stack_js.js)
 
 ### 示例篇 | Examples
 - [dom-manipulation.html](./示例/dom-manipulation.html)

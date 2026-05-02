@@ -1,21 +1,39 @@
 # Git 钩子与 Git LFS | Git Hooks and Git LFS
 
-## 1. Git 钩子概述
+> fanquanpp 的个人学习笔记
+> 最新更新时间：2026-04-05
 
-Git 钩子是 Git 仓库中的脚本，在特定的 Git 事件发生时自动执行。它们可以用于自动化工作流程、强制执行代码规范、运行测试等。
+## 1. 目录
+
+- [1. Git 钩子概述](#1-git-钩子概述)
+- [2. 客户端钩子](#2-客户端钩子)
+- [3. 服务器端钩子](#3-服务器端钩子)
+- [4. Git LFS](#4-git-lfs)
+- [5. 钩子最佳实践](#5-钩子最佳实践)
+- [6. Git LFS 最佳实践](#6-git-lfs-最佳实践)
+- [7. 高级钩子示例](#7-高级钩子示例)
+- [8. 常见问题与解决方案](#8-常见问题与解决方案)
+- [9. 工具与集成](#9-工具与集成)
+- [10. 项目实战](#10-项目实战)
+- [11. 延伸阅读](#11-延伸阅读)
+
+## 2. Git 钩子概述
+
+Git 钩子是 Git 仓库中的脚本，在特定 Git 事件发生时自动执行。它们可以用于自动化工作流程、强制执行代码规范、运行测试等。
 
 ### 钩子类型
+
 - **客户端钩子**：在本地操作时触发
 - **服务器端钩子**：在服务器端操作时触发
 
-## 2. 客户端钩子
+## 3. 客户端钩子
 
 ### 2.1 常见客户端钩子
 
 | 钩子名称 | 触发时机 | 用途 |
 | :--- | :--- | :--- |
 | `pre-commit` | 提交前 | 代码检查、格式化、测试 |
-| `prepare-commit-msg` | 提交消息编辑前 | 自动生成提交消息 |
+| `prepare-commit-msg` | 提交消息编辑器前 | 自动生成提交消息 |
 | `commit-msg` | 提交消息编辑后 | 验证提交消息格式 |
 | `post-commit` | 提交后 | 通知、触发构建 |
 | `pre-push` | 推送前 | 运行测试、检查 |
@@ -75,14 +93,14 @@ EOF
 chmod +x .git/hooks/commit-msg
 ```
 
-## 3. 服务器端钩子
+## 4. 服务器端钩子
 
 ### 3.1 常见服务器端钩子
 
 | 钩子名称 | 触发时机 | 用途 |
 | :--- | :--- | :--- |
 | `pre-receive` | 推送接收前 | 拒绝不符合规则的推送 |
-| `update` | 分支更新前 | 对特定分支进行检查 |
+| `update` | 分支更新时 | 对特定分支进行检查 |
 | `post-receive` | 推送接收后 | 部署、通知 |
 
 ### 3.2 创建 post-receive 钩子
@@ -118,7 +136,7 @@ EOF
 chmod +x /path/to/repo.git/hooks/post-receive
 ```
 
-## 4. Git LFS (Large File Storage)
+## 5. Git LFS (Large File Storage)
 
 ### 4.1 Git LFS 概述
 
@@ -175,7 +193,7 @@ git lfs ls-files
 git lfs verify
 ```
 
-## 5. 钩子最佳实践
+## 6. 钩子最佳实践
 
 1. **版本控制钩子**：将钩子存储在仓库中，使用脚本安装
 2. **错误处理**：在钩子中添加适当的错误处理
@@ -196,7 +214,7 @@ chmod +x .git/hooks/*
 echo "Hooks installed successfully"
 ```
 
-## 6. Git LFS 最佳实践
+## 7. Git LFS 最佳实践
 
 1. **合理选择跟踪文件**：只跟踪真正的大文件
 2. **设置合理的文件大小阈值**：根据项目需求设置
@@ -213,7 +231,7 @@ echo "Hooks installed successfully"
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 ```
 
-## 7. 高级钩子示例
+## 8. 高级钩子示例
 
 ### 7.1 自动更新版本号
 
@@ -246,14 +264,14 @@ fi
 # 获取最新提交信息
 latest_commit=$(git log -1 --pretty=%B)
 
-# 提取提交类型和消息
+# 提取提交类型和信息
 if echo "$latest_commit" | grep -qE '^(feat|fix|docs|style|refactor|test|chore):'; then
   commit_type=$(echo "$latest_commit" | cut -d: -f1)
   commit_msg=$(echo "$latest_commit" | cut -d: -f2 | sed 's/^ //')
-  
+
   # 获取当前日期
   current_date=$(date +"%Y-%m-%d")
-  
+
   # 添加到 CHANGELOG
   echo "## $current_date\n\n- **$commit_type**: $commit_msg\n" | cat - CHANGELOG.md > CHANGELOG.md.tmp && mv CHANGELOG.md.tmp CHANGELOG.md
   git add CHANGELOG.md
@@ -262,7 +280,7 @@ if echo "$latest_commit" | grep -qE '^(feat|fix|docs|style|refactor|test|chore):
 fi
 ```
 
-## 8. 常见问题与解决方案
+## 9. 常见问题与解决方案
 
 ### 8.1 钩子不执行
 
@@ -282,9 +300,9 @@ fi
 ### 8.4 Git LFS 存储不足
 
 **问题**：Git LFS 存储空间不足
-**解决方案**：清理过期文件 `git lfs prune`，增加存储配额
+**解决方案**：清理过期文件 `git lfs prune`，增加存储配置
 
-## 9. 工具与集成
+## 10. 工具与集成
 
 ### 9.1 钩子管理工具
 
@@ -298,7 +316,7 @@ fi
 - **Bitbucket**：内置 Git LFS 支持
 - **自托管**：使用 Git LFS 服务器
 
-## 10. 项目实战
+## 11. 项目实战
 
 ### 10.1 完整的钩子配置
 
@@ -336,11 +354,11 @@ npx husky add .husky/commit-msg "npx commitlint --edit $1"
 npx husky add .husky/pre-push "npm test"
 ```
 
-## 11. 延伸阅读
+## 12. 延伸阅读
 
 - [Git 官方钩子文档](https://git-scm.com/docs/githooks)
 - [Git LFS 官方文档](https://git-lfs.github.com/)
 - [husky 文档](https://typicode.github.io/husky/)
 - [commitlint 文档](https://commitlint.js.org/)
 
-通过本教程，你已经了解了 Git 钩子和 Git LFS 的核心概念和实践技巧。在实际项目中，你可以使用这些工具来自动化工作流程、管理大文件，提高开发效率和代码质量。
+通过本教程，你已经了解了 Git 钩子和 Git LFS 的核心概念和实践技巧。在实际项目中，你可以使用这些工具来自动化工作流程、管理大文件，提高开发效率和代码质量

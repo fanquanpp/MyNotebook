@@ -10,23 +10,6 @@
 
 ## 2. 学习路线图 | Learning Roadmap
 
-```mermaid
-graph TD
-    A["基础入门 | Basics"] --> B["进阶特性 | Advanced"]
-    B --> C["界面设计 | UI Design"]
-    C --> D["音视频 | Audio & Video"]
-    D --> E["存储与系统 | Storage & System"]
-    E --> F["配置与构建 | Config & Build"]
-    F --> G["API参考 | API Reference"]
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-```
-
 ### 详细路径 | Detailed Path
 
 | 阶段 | 模块 | 内容 | 预计耗时 |
@@ -83,10 +66,10 @@ graph TD
 
 - [G16_601-配置与构建.md](./G16_601-配置与构建.md) - 配置项变量、游戏设置、构建发布流程
 
-### API参考 | API Reference
+### 名词注释查阅表 | Glossary
 
-- [V16_001-名词解释.md](./V16_001-名词解释.md) - Ren'Py 术语定义、概念说明、函数速查
-- [V_16-Ren'Py名词注释查阅表.md](./V_16-Ren'Py名词注释查阅表.md) - Ren'Py 名词注释查阅表
+- [V16_101-Ren'Py名词注释查阅表.md](./V16_101-Ren'Py名词注释查阅表.md) - Ren'Py 核心名词术语解释
+- [V16_102-名词解释.md](./V16_102-名词解释.md) - 补充名词说明
 
 ### 官方文档 | Official Documentation
 

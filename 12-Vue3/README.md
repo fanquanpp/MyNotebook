@@ -10,36 +10,6 @@
 
 ## 2. 学习路线图 | Learning Roadmap
 
-```mermaid
-graph TD
-    A["Vue3 基础"] --> B["环境搭建与项目创建"]
-    B --> C["组合式 API 基础"]
-    C --> D["响应式系统"]
-    D --> E["组件系统"]
-    E --> F["Vue Router 路由"]
-    F --> G["Pinia 状态管理"]
-    G --> H["TypeScript 集成"]
-    H --> I["性能优化"]
-    I --> J["高级特性"]
-    J --> K["实战项目"]
-    
-    subgraph 基础阶段
-    B
-    C
-    D
-    E
-    end
-    
-    subgraph 进阶阶段
-    F
-    G
-    H
-    I
-    J
-    K
-    end
-```
-
 ## 3. 目录索引 | Directory Index
 
 ### 基础语法 | Basics
@@ -56,8 +26,8 @@ graph TD
 - [G12_201-性能优化.md](./G12_201-性能优化.md)
 - [G12_202-TypeScript集成.md](./G12_202-TypeScript集成.md)
 - [G12_203-高级组件特性.md](./G12_203-高级组件特性.md)
-- [G12_204-Vue Router.md](./G12_204-Vue Router.md)
-- [G12_205-Pinia 状态管理.md](./G12_205-Pinia 状态管理.md)
+- [G12_204-Vue_Router.md](./G12_204-Vue_Router.md)
+- [G12_205-Pinia_状态管理.md](./G12_205-Pinia_状态管理.md)
 
 ### 算法与数据结构 | Algorithms & Data Structures
 - [SFDE12_301-debounce_throttle.ts](./算法与数据结构/代码示例/SFDE12_301-debounce_throttle.ts)

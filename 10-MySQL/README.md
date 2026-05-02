@@ -10,17 +10,6 @@
 
 ## 2. 学习路线图 | Learning Roadmap
 
-```mermaid
-graph TD
-    A["SQL 基础 (CRUD) | SQL Basics"] --> B["数据类型与约束 | Data Types"]
-    B --> C["函数与聚合 | Functions"]
-    C --> D["多表联查 (Joins) | Joins"]
-    D --> E["索引与性能优化 | Indexing"]
-    E --> F["高级查询 (CTE/Window) | Advanced SQL"]
-    F --> G["事务与并发控制 | Transactions"]
-    G --> H["架构设计与分库分表 | Architecture"]
-```
-
 ### 详细路径 | Detailed Path
 
 | 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
@@ -39,6 +28,7 @@ graph TD
 ### 基础语法 | Basics
 
 - [V_10-MySQL名词注释查阅表.md](./V_10-MySQL名词注释查阅表.md)
+- [V_10-MySQL快速查阅.md](./V_10-MySQL快速查阅.md)
 - [C10_101-概述与环境.md](./C10_101-概述与环境.md)
 - [C10_102-SQL基础语法.md](./C10_102-SQL基础语法.md)
 - [C10_103-进阶查询与联查.md](./C10_103-进阶查询与联查.md)
@@ -49,6 +39,7 @@ graph TD
 ### 高级特性 | Advanced
 - [G10_201-索引与优化.md](./G10_201-索引与优化.md)
 - [G10_202-事务与锁.md](./G10_202-事务与锁.md)
+- [G10_203-多表联查详解.md](./G10_203-多表联查详解.md)
 
 ### 专项内容 | Specialized
 - [Z10_301-advanced_sql_queries.sql](./Z10_301-advanced_sql_queries.sql)

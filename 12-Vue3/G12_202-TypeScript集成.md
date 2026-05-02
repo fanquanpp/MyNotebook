@@ -1,10 +1,8 @@
 # 02-TypeScript 集成 | TypeScript Integration
 
-<!--
-作者：fanquanpp
-创建日期：2026-04-06
-版本：v1.0.0
--->
+> 作者：fanquanpp
+> 创建日期：2026-04-06
+> 版本：v1.0.0
 
 ## 1. TypeScript 集成概述 | TypeScript Integration Overview
 

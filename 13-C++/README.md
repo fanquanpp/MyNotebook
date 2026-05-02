@@ -1,7 +1,9 @@
 # 13-C++ 系统编程 | C++ System Programming
 
 > @Author: fanquanpp
+>
 > @Version: v3.0.0
+>
 > @Created: 2026-04-05
 
 ## 1. 简介 | Introduction
@@ -12,28 +14,29 @@
 
 ### 基础篇 | Basics
 
-- [V_13-C++名词注释查阅表.md](./V_13-C++名词注释查阅表.md)
-
-- [C13_101-概述与标准.md](./C13_101-概述与标准.md)
-- [C13_102-基础语法与类型系统.md](./C13_102-基础语法与类型系统.md)
-- [C13_103-指针引用与内存管理.md](./C13_103-指针引用与内存管理.md)
-- [C13_104-面向对象.md](./C13_104-面向对象.md)
-- [C13_105-模板与STL.md](./C13_105-模板与STL.md)
-- [C13_106-异常与性能优化.md](./C13_106-异常与性能优化.md)
+- [V\_13-C++名词注释查阅表.md](./V_13-C++名词注释查阅表.md)
+- [C13\_101-概述与标准.md](./C13_101-概述与标准.md)
+- [C13\_102-基础语法与类型系统.md](./C13_102-基础语法与类型系统.md)
+- [C13\_103-指针引用与内存管理.md](./C13_103-指针引用与内存管理.md)
+- [C13\_104-面向对象.md](./C13_104-面向对象.md)
+- [C13\_105-模板与STL.md](./C13_105-模板与STL.md)
+- [C13\_106-异常与性能优化.md](./C13_106-异常与性能优化.md)
 
 ### 进阶篇 | Advanced
-- [G13_201-调试与性能分析.md](./G13_201-调试与性能分析.md)
-- [G13_202-项目实战.md](./G13_202-项目实战.md)
+
+- [G13\_201-调试与性能分析.md](./G13_201-调试与性能分析.md)
+- [G13\_202-项目实战.md](./G13_202-项目实战.md)
 
 ### 算法与数据结构 | Algorithms & Data Structures
-- [SFDE13_301-dijkstra_cpp.cpp](./算法与数据结构/代码示例/SFDE13_301-dijkstra_cpp.cpp)
-- [SFDE13_302-kruskal_cpp.cpp](./算法与数据结构/代码示例/SFDE13_302-kruskal_cpp.cpp)
-- [SFDE13_303-lcs_cpp.cpp](./算法与数据结构/代码示例/SFDE13_303-lcs_cpp.cpp)
-- [SFDE13_304-lis_cpp.cpp](./算法与数据结构/代码示例/SFDE13_304-lis_cpp.cpp)
-- [SFDE13_305-merge_sort_cpp.cpp](./算法与数据结构/代码示例/SFDE13_305-merge_sort_cpp.cpp)
-- [SFDE13_306-segment_tree_cpp.cpp](./算法与数据结构/代码示例/SFDE13_306-segment_tree_cpp.cpp)
-- [SFDE13_307-trie_cpp.cpp](./算法与数据结构/代码示例/SFDE13_307-trie_cpp.cpp)
-- [SFDE13_401-linked_list_cpp.cpp](./算法与数据结构/代码示例/SFDE13_401-linked_list_cpp.cpp)
+
+- [SFDE13\_301-dijkstra\_cpp.cpp](./算法与数据结构/代码示例/SFDE13_301-dijkstra_cpp.cpp)
+- [SFDE13\_302-kruskal\_cpp.cpp](./算法与数据结构/代码示例/SFDE13_302-kruskal_cpp.cpp)
+- [SFDE13\_303-lcs\_cpp.cpp](./算法与数据结构/代码示例/SFDE13_303-lcs_cpp.cpp)
+- [SFDE13\_304-lis\_cpp.cpp](./算法与数据结构/代码示例/SFDE13_304-lis_cpp.cpp)
+- [SFDE13\_305-merge\_sort\_cpp.cpp](./算法与数据结构/代码示例/SFDE13_305-merge_sort_cpp.cpp)
+- [SFDE13\_306-segment\_tree\_cpp.cpp](./算法与数据结构/代码示例/SFDE13_306-segment_tree_cpp.cpp)
+- [SFDE13\_307-trie\_cpp.cpp](./算法与数据结构/代码示例/SFDE13_307-trie_cpp.cpp)
+- [SFDE13\_401-linked\_list\_cpp.cpp](./算法与数据结构/代码示例/SFDE13_401-linked_list_cpp.cpp)
 
 ## 3. 环境要求 | Environment Requirements
 
@@ -81,11 +84,11 @@ g++ -std=c++17 算法/merge_sort_cpp.cpp -o merge_sort
 
 ## 9. 技术栈与工具 | Technology Stack & Tools
 
-| 英文（中文） | 说明 |
-| :--- | :--- |
-| **GCC** / **Clang** / **MSVC（微软 C++ 编译器）** | 编译器 |
-| **CMake（跨平台构建系统）** | 工程组织 |
-| **VS Code / CLion** | 集成开发环境 |
+| 英文（中文）                                     | 说明     |
+| :----------------------------------------- | :----- |
+| **GCC** / **Clang** / **MSVC（微软 C++ 编译器）** | 编译器    |
+| **CMake（跨平台构建系统）**                         | 工程组织   |
+| **VS Code / CLion**                        | 集成开发环境 |
 
 ## 10. 关联章节 | Related Sections
 
@@ -102,18 +105,16 @@ g++ -std=c++17 算法/merge_sort_cpp.cpp -o merge_sort
 - **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - **Copyright**：2024-2026 fanquanpp
 
----
+***
 
 **更新日志 | Changelog**
 
 - **2026-05-02**
   - 全面检查项目结构，确保一致性
-
 - **2026-04-18**
   - 完成 GitHub 仓库 3.0 结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
-
 - **2026-04-06**
-  - 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.1 ~ v1.0.2
-
+  - 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.1 \~ v1.0.2
 - **2026-04-05**
   - 统一模块说明与双语标题
+

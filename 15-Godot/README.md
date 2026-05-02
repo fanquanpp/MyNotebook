@@ -10,25 +10,6 @@
 
 ## 2. 学习路线图 | Learning Roadmap
 
-```mermaid
-graph TD
-    A["GDScript 概述与环境"] --> B["GDScript 基础语法"]
-    B --> C["GDScript 函数与面向对象"]
-    C --> D["信号与异步编程"]
-    D --> E["类型提示与注解系统"]
-    E --> F["场景系统"]
-    F --> G["物理系统"]
-    G --> H["UI 系统"]
-    H --> I["资源系统"]
-    I --> J["网络与多线程"]
-    J --> K["动画系统"]
-    K --> L["音频系统"]
-    L --> M["渲染与着色器"]
-    M --> N["导航与 AI"]
-    N --> O["编辑器扩展与插件"]
-    O --> P["性能优化与最佳实践"]
-```
-
 ### 详细路径 | Detailed Path
 
 根据 Godot 官方文档结构，学习路径如下：
@@ -78,6 +59,11 @@ graph TD
 - **版本差异**：注意 Godot 3.x 与 4.x 之间的重要变化
 
 ## 3. 目录索引 | Directory Index
+
+### 名词注释查阅表 | Glossary
+
+- [V15_101-Godot名词注释查阅表.md](./V15_101-Godot名词注释查阅表.md) - Godot 核心名词术语解释
+- [V15_102-名词解释.md](./V15_102-名词解释.md) - 补充名词说明
 
 ### GDScript 基础 | GDScript Basics
 

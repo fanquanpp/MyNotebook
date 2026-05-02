@@ -1,8 +1,8 @@
-# 02-C 语言与算法 | C &amp; Algorithms
+# 02-C 语言与算法 | C & Algorithms
 
-&gt; @Author: fanquanpp
-&gt; @Version: v3.0.0
-&gt; @Created: 2026-04-05
+> @Author: fanquanpp
+> @Version: v3.0.0
+> @Created: 2026-04-05
 
 ## 1. 简介 | Introduction
 

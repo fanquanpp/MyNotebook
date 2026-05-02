@@ -28,8 +28,8 @@
 - [package.json](./示例/package.json)
 
 ### 高级篇 | Advanced
-- [G06_201-CSS-in-JS与高级布局.md](./G06_201-CSS-in-JS与高级布局.md)
-- [G06_202-响应式设计.md](./G06_202-响应式设计.md)
+- [G06_201-响应式设计.md](./G06_201-响应式设计.md)
+- [G06_202-CSS-in-JS与高级布局.md](./G06_202-CSS-in-JS与高级布局.md)
 
 ## 3. 环境要求 | Environment Requirements
 

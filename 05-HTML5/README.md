@@ -10,16 +10,6 @@
 
 ## 2. 学习路线图 | Learning Roadmap
 
-```mermaid
-graph TD
-    A["HTML5 & CSS3 基础 | HTML & CSS Basics"] --> B["响应式布局 | Responsive Layouts"]
-    B --> C["JS 核心语法 | JS Core Syntax"]
-    C --> D["DOM 操作 & Web API | DOM & Web API"]
-    D --> E["TypeScript 进阶 | TypeScript Advanced"]
-    E --> F["现代框架 (Vue/React) | Modern Frameworks"]
-    F --> G["前端工程化与性能优化 | Tooling & Performance"]
-```
-
 ### 详细路径 | Detailed Path
 
 | 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
@@ -165,7 +155,7 @@ HTML5 基础篇涵盖了 HTML5 的核心技术，包括语义化标签、基础�
 
 - [MDN HTML 文档](https://developer.mozilla.org/en-US/docs/Web/HTML) <!-- nofollow -->
 - [HTML5 官方规范](https://html.spec.whatwg.org/) <!-- nofollow -->
-- 本仓库：[06-CSS布局](../06-CSS布局/README.md)、[08-Javascript](../08-Javascript/README.md)
+- 本仓库：[06-CSS](../06-CSS/README.md)、[08-Javascript](../08-Javascript/README.md)
 
 ## 11. 贡献指南 | Contribution Guide
 

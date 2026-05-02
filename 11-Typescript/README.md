@@ -32,9 +32,8 @@
 - [SFDE11_401-binary_search_tree_ts.ts](./算法与数据结构/代码示例/SFDE11_401-binary_search_tree_ts.ts)
 
 ### 示例篇 | Examples
-- [advanced_types.ts](./示例/advanced_types.ts)
-- [design_patterns_ts.ts](./示例/design_patterns_ts.ts)
-- [package.json](./示例/package.json)
+- [Z11_501-advanced_types.ts](./Z11_501-advanced_types.ts)
+- [Z11_502-design_patterns_ts.ts](./Z11_502-design_patterns_ts.ts)
 
 ## 3. 环境要求 | Environment Requirements
 

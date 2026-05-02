@@ -10,11 +10,6 @@
 
 ## 2. 学习路线图 | Learning Roadmap
 
-```mermaid
-graph LR
-    A[基础语法] --> B[常用算法] --> C[高级算法] --> D[实战项目]
-```
-
 ### 详细路径 | Detailed Path
 
 | 阶段 (Stage) | 知识点 (Topic) | 预计耗时 (Estimated Time) | 前置要求 (Prerequisites) |
@@ -271,25 +266,10 @@ python 算法与数据结构/代码示例/SFDE03_301-binary_search_py.py
 ### 5.3 算法可视化 | Visualization
 
 #### 5.3.1 快速排序 | Quick Sort
-```mermaid
-graph LR
-    A[Pivot] --> B[Left]
-    A --> C[Right]
-```
 
 #### 5.3.2 归并排序 | Merge Sort
-```mermaid
-graph LR
-    A[Array] --> B[Split] --> C[Sort] --> D[Merge]
-```
 
 #### 5.3.3 狄克斯特拉 | Dijkstra
-```mermaid
-graph LR
-    A --> B --> C --> D
-    A --> C
-    B --> D
-```
 
 ## 6. 环境要求 | Environment Requirements
 

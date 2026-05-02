@@ -10,19 +10,19 @@
 
 ## 2. 目录索引 | Directory Index
 
-### 基础篇 | Basics
+### 基础 | Basics
 
 - [V_07-Git名词注释查阅表.md](./V_07-Git名词注释查阅表.md)
-
 - [C07_101-Git概述.md](./C07_101-Git概述.md)
 - [C07_102-环境配置与初始化.md](./C07_102-环境配置与初始化.md)
 - [C07_103-基本操作.md](./C07_103-基本操作.md)
 - [C07_104-分支管理.md](./C07_104-分支管理.md)
 - [C07_105-远程仓库操作.md](./C07_105-远程仓库操作.md)
 
-### 高级篇 | Advanced
-- [G07_201-Git钩子与Git LFS.md](./G07_201-Git钩子与Git LFS.md)
-- [G07_202-Git原理与对象模型.md](./G07_202-Git原理与对象模型.md)
+### 高级 | Advanced
+
+- [G07_201-Git原理与对象模型.md](./G07_201-Git原理与对象模型.md)
+- [G07_202-Git钩子与Git_LFS.md](./G07_202-Git钩子与Git_LFS.md)
 
 ## 3. 环境要求 | Environment Requirements
 
@@ -64,7 +64,7 @@
 
 - [Git 官方文档](https://git-scm.com/doc) <!-- nofollow -->
 - [Pro Git](https://git-scm.com/book/en/v2) <!-- nofollow -->
-- 本仓库：[01-Github平台](../01-Github平台/README.md)
+- 本仓库：[01-Github平台](../01-Github/README.md)
 
 ## 9. 贡献指南 | Contribution Guide
 
@@ -75,7 +75,7 @@
 ## 10. 联系方式 | Contact Information
 
 - 邮箱：<fanquanpangpiing@163.com>
-- QQ：1839243393
+- QQ：839243393
 - 欢迎提意见交流或反馈问题
 
 ## 11. 许可证信息 | License
@@ -91,13 +91,13 @@
   - 全面检查项目结构，确保一致性
 
 - **2026-04-18**
-  - 完成 GitHub 仓库 3.0 结构优化规划，统一文件命名规范，优化目录结构，升级为 v3.0.0
+  - 完成 GitHub 仓库 3.0 结构优化规划，统一文件命名规范，优化目录结构，升级到 v3.0.0
 
 - **2026-04-06**
   - 深度优化 README.md 文件，完善结构和内容，增加仓库定位、使用说明等部分，升级为 v1.0.1 ~ v1.0.2
 
 - **2026-04-05**
-  - 初始化 Git 核心操作与分支管理笔记
+  - 初始版本 Git 核心操作与分支管理笔记
 
-- **2026-10-04**
+- **2025-10-04**
   - 更新优化 README.md 文件，统一结构和格式
