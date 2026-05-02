@@ -37,7 +37,7 @@ C 语言由 Dennis Ritchie 于 1972 年在 Bell Labs 开发，是一种通用的
 
 ## 3. 更新日志 | Changelog
 
-- **2026-05-02**
+- **2026-05-03**
   - 修复编码问题，确保 UTF-8 无 BOM 格式
   - 统一 README 结构和版本号
 

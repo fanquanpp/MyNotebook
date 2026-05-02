@@ -386,7 +386,7 @@ cd c:\Apan\Projects\Notebook
 
 **更新日志 | Changelog**
 
-### 2026-05-02
+### 2026-05-03
 
 - **v3.5.0** - 编码问题修复与项目规范化重构
 - 🔧 问题解决：修复 PowerShell 脚本导致的 UTF-8 BOM 中文乱码问题

@@ -2,7 +2,7 @@
 
 > @Author: fanquanpp
 > @Version: v3.5.0
-> @Created: 2026-05-02
+> @Created: 2026-05-03
 > @Description: MyNotebook 项目贡献规范和检查清单
 
 ---
@@ -419,4 +419,4 @@ markdownlint README.md **/*.md
 
 ---
 
-**最后更新：2026-05-02**
+**最后更新：2026-05-03**
