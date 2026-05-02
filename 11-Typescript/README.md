@@ -8,13 +8,6 @@
 
 专注于 TypeScript 强类型系统、高级类型技巧、工程化配置以及在大型项目中的应用。作为 JavaScript 的超集，TypeScript 为前端和 Node.js 开发提供了类型安全保障，本模块旨在为开发者提供从基础类型到复杂工程化配置的系统化 TypeScript 学习路径。
 
-### 模块定位
-
-- **TypeScript 进阶指南**：从基础类型到高级特性，全面覆盖 TypeScript 核心知识点
-- **类型系统深度解析**：深入探讨 TypeScript 强类型系统的设计原理和应用
-- **工程化实践资源**：提供大型 TypeScript 项目的配置、优化和最佳实践
-- **性能优化指南**：重点讲解 TypeScript 编译与运行性能优化策略
-
 ## 2. 目录索引 | Directory Index
 
 ### 基础篇 | Basics
