@@ -4,6 +4,23 @@
 > @Category: GitHub Advanced
 > @Description: Issues 模板配置、Labels、Milestones、自动化关闭关键词与项目板衔接。 | Issue templates, labels, milestones, auto-close keywords, and project board integration.
 
+---
+
+## 目录
+
+1. [背景](#背景)
+2. [Issue 模板详解](#issue-模板详解)
+3. [标签管理](#标签管理)
+4. [里程碑管理](#里程碑管理)
+5. [自动化工具](#自动化工具)
+6. [项目板与 Issues 集成](#项目板与-issues-集成)
+7. [常见问题与解决方案](#常见问题与解决方案)
+8. [最佳实践](#最佳实践)
+9. [实际应用案例](#实际应用案例)
+10. [延伸阅读](#延伸阅读)
+
+---
+
 ## 1. 背景
 
 **Issue（议题）** 用于跟踪缺陷、功能请求与讨论。**模板（template）** 统一报告格式，降低沟通成本；**Labels（标签）** 分类与筛选；**Milestones（里程碑）** 聚合版本目标与进度。

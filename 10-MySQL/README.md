@@ -40,6 +40,7 @@
 - [G10_201-索引与优化.md](./G10_201-索引与优化.md)
 - [G10_202-事务与锁.md](./G10_202-事务与锁.md)
 - [G10_203-多表联查详解.md](./G10_203-多表联查详解.md)
+- [G10_301-SQL注入.md](./G10_301-SQL注入.md)
 
 ### 专项内容 | Specialized
 - [Z10_301-advanced_sql_queries.sql](./Z10_301-advanced_sql_queries.sql)

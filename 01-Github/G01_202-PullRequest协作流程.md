@@ -4,6 +4,21 @@
 > @Category: GitHub Advanced
 > @Description: Pull Request 完整生命周期：Fork、分支、提交、推送、审查、合并到同步上游。 | Complete PR lifecycle: Fork, branch, commit, push, review, merge, and sync.
 
+---
+
+## 目录
+
+1. [背景](#背景)
+2. [PR 生命周期详解](#pr-生命周期详解)
+3. [PR 描述最佳实践](#pr-描述最佳实践)
+4. [代码审查指南](#代码审查指南)
+5. [常见问题与解决方案](#常见问题与解决方案)
+6. [最佳实践](#最佳实践)
+7. [实际应用案例](#实际应用案例)
+8. [延伸阅读](#延伸阅读)
+
+---
+
 ## 1. 背景
 
 **PR（Pull Request，拉取请求）** 是 GitHub 上请求将某分支合并入目标分支的审查单元，承载 **diff（差异）**、**讨论**、**审查意见** 与 **CI 结果**。开源常见流程：**Fork（复刻）** 上游仓库到个人空间，在 **fork** 上开发后向上游提 PR。
