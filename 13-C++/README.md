@@ -1,9 +1,9 @@
 # 13-C++ 系统编程 | C++ System Programming
 
 > @Author: fanquanpp
->
-> @Version: v3.0.0
->
+
+> @Version: v3.5.0
+
 > @Created: 2026-04-05
 
 ## 1. 简介 | Introduction
@@ -109,6 +109,8 @@ g++ -std=c++17 算法/merge_sort_cpp.cpp -o merge_sort
 
 **更新日志 | Changelog**
 
+- **2026-05-02**
+  - 升级版本号至 v3.5.0，与根目录 README 保持一致
 - **2026-05-02**
   - 全面检查项目结构，确保一致性
 - **2026-04-18**
