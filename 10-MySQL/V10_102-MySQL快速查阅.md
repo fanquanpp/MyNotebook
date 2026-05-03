@@ -28,12 +28,14 @@
 ## 1. 数据库操作
 
 ### 创建数据库
+
 ```sql
 CREATE DATABASE dbname;
 CREATE DATABASE IF NOT EXISTS dbname;
 ```
 
 ### 创建数据库（指定字符集）
+
 ```sql
 CREATE DATABASE dbname
   CHARACTER SET utf8mb4
@@ -46,6 +48,7 @@ CREATE DATABASE ecommerce
 ```
 
 ### 修改数据库字符集
+
 ```sql
 ALTER DATABASE dbname
   CHARACTER SET gbk
@@ -53,6 +56,7 @@ ALTER DATABASE dbname
 ```
 
 ### 查看数据库
+
 ```sql
 SHOW DATABASES;
 SHOW CREATE DATABASE dbname;
@@ -65,11 +69,13 @@ GROUP BY table_schema;
 ```
 
 ### 使用数据库
+
 ```sql
 USE dbname;
 ```
 
 ### 删除数据库
+
 ```sql
 DROP DATABASE dbname;
 DROP DATABASE IF EXISTS dbname;
@@ -80,6 +86,7 @@ DROP DATABASE IF EXISTS dbname;
 ## 2. 表操作
 
 ### 创建表
+
 ```sql
 CREATE TABLE tablename (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -102,6 +109,7 @@ CREATE TABLE users (
 ```
 
 ### 查看表
+
 ```sql
 SHOW TABLES;
 DESC tablename;
@@ -117,6 +125,7 @@ WHERE table_schema = DATABASE();
 ```
 
 ### 修改表结构
+
 ```sql
 -- 添加列
 ALTER TABLE tablename ADD COLUMN colname type;
@@ -140,17 +149,20 @@ ALTER TABLE users DROP COLUMN age;
 ```
 
 ### 删除表
+
 ```sql
 DROP TABLE tablename;
 DROP TABLE IF EXISTS tablename;
 ```
 
 ### 清空表
+
 ```sql
 TRUNCATE TABLE tablename;
 ```
 
 ### 复制表
+
 ```sql
 -- 复制结构
 CREATE TABLE newtable LIKE oldtable;
@@ -167,6 +179,7 @@ CREATE TABLE active_users AS SELECT * FROM users WHERE status = 1;
 ## 3. 数据类型
 
 ### 字符型
+
 - CHAR(n) - 定长字符串，最多255字符
 - VARCHAR(n) - 变长字符串，最多65535字符
 - TEXT - 长文本，最多65535字符
@@ -177,6 +190,7 @@ CREATE TABLE active_users AS SELECT * FROM users WHERE status = 1;
 - BLOB - 二进制大对象
 
 ### 数值型
+
 - TINYINT - 微整数 (-128~127)
 - SMALLINT - 小整数 (-32768~32767)
 - MEDIUMINT - 中等整数
@@ -187,6 +201,7 @@ CREATE TABLE active_users AS SELECT * FROM users WHERE status = 1;
 - DECIMAL(M,D) - 定点数
 
 ### 日期时间型
+
 - DATE - 日期 (YYYY-MM-DD)
 - TIME - 时间 (HH:MM:SS)
 - DATETIME - 日期时间
@@ -198,6 +213,7 @@ CREATE TABLE active_users AS SELECT * FROM users WHERE status = 1;
 ## 4. 约束类型
 
 ### 常用约束
+
 ```sql
 CREATE TABLE tablename (
     id INT PRIMARY KEY AUTO_INCREMENT,  -- 主键 + 自增
@@ -211,6 +227,7 @@ CREATE TABLE tablename (
 ```
 
 ### 外键约束选项
+
 ```sql
 FOREIGN KEY (col) REFERENCES parent_table(col)
     ON DELETE CASCADE        -- 级联删除
@@ -224,6 +241,7 @@ FOREIGN KEY (col) REFERENCES parent_table(col)
 ## 5. 数据操作
 
 ### 插入数据
+
 ```sql
 -- 单行插入
 INSERT INTO table(col1, col2) VALUES(val1, val2);
@@ -258,6 +276,7 @@ ON DUPLICATE KEY UPDATE username = VALUES(username), email = VALUES(email);
 ```
 
 ### 更新数据
+
 ```sql
 UPDATE table SET col = val WHERE condition;
 UPDATE table SET col1 = val1, col2 = val2 WHERE condition;
@@ -276,6 +295,7 @@ WHERE o.user_name IS NULL;
 ```
 
 ### 删除数据
+
 ```sql
 DELETE FROM table WHERE condition;  -- 按条件删除
 DELETE FROM table;                  -- 删除所有行
@@ -298,6 +318,7 @@ WHERE u.status = 0;
 ## 6. 数据查询
 
 ### 基础查询
+
 ```sql
 SELECT * FROM table;
 SELECT col1, col2 FROM table;
@@ -312,6 +333,7 @@ SELECT COUNT(*) AS user_count FROM users;
 ```
 
 ### 条件查询
+
 ```sql
 -- 比较运算
 SELECT * FROM table WHERE col = value;
@@ -350,6 +372,7 @@ SELECT * FROM users WHERE phone IS NULL;
 ```
 
 ### 排序与分页
+
 ```sql
 -- 排序
 SELECT * FROM table ORDER BY col ASC;
@@ -369,6 +392,7 @@ SELECT * FROM users ORDER BY created_at DESC LIMIT 20, 10;
 ```
 
 ### 分组查询
+
 ```sql
 -- 基本分组
 SELECT col, COUNT(*) FROM table GROUP BY col;
@@ -399,6 +423,7 @@ HAVING total_amount > 1000;
 ```
 
 ### 聚合函数
+
 ```sql
 SELECT 
     COUNT(*) AS total,      -- 统计行数
@@ -420,6 +445,7 @@ WHERE created_at BETWEEN '2024-01-01' AND '2024-01-31';
 ```
 
 ### 多表连接
+
 ```sql
 -- 内连接
 SELECT * FROM a INNER JOIN b ON a.id = b.id;
@@ -459,6 +485,7 @@ GROUP BY u.id;
 ## 7. 索引操作
 
 ### 创建索引
+
 ```sql
 -- 普通索引
 CREATE INDEX idx_name ON table(col);
@@ -483,6 +510,7 @@ CREATE INDEX idx_orders_user_date ON orders(user_id, created_at);
 ```
 
 ### 查看索引
+
 ```sql
 SHOW INDEX FROM table;
 
@@ -493,6 +521,7 @@ WHERE table_schema = DATABASE() AND table_name = 'users';
 ```
 
 ### 删除索引
+
 ```sql
 DROP INDEX idx_name ON table;
 
@@ -505,6 +534,7 @@ DROP INDEX idx_users_email ON users;
 ## 8. 用户与权限
 
 ### 用户管理
+
 ```sql
 -- 创建用户
 CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
@@ -527,6 +557,7 @@ CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin123';
 ```
 
 ### 权限管理
+
 ```sql
 -- 授予权限
 GRANT ALL PRIVILEGES ON dbname.* TO 'username'@'localhost';
@@ -552,6 +583,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
 ```
 
 ### 常用权限
+
 - ALL PRIVILEGES - 所有权限
 - SELECT, INSERT, UPDATE, DELETE - 基本操作
 - CREATE, DROP - 创建/删除
@@ -564,6 +596,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
 ## 9. 事务管理
 
 ### 基本操作
+
 ```sql
 -- 开始事务
 START TRANSACTION;
@@ -600,6 +633,7 @@ COMMIT;
 ```
 
 ### 隔离级别
+
 ```sql
 -- 查看当前隔离级别
 SELECT @@transaction_isolation;
@@ -610,6 +644,7 @@ SET GLOBAL TRANSACTION ISOLATION LEVEL REPEATABLE READ;
 ```
 
 ### 隔离级别说明
+
 - READ UNCOMMITTED - 最低级别，可能读取未提交数据
 - READ COMMITTED - 读取已提交数据
 - REPEATABLE READ - 可重复读（MySQL默认）
@@ -620,6 +655,7 @@ SET GLOBAL TRANSACTION ISOLATION LEVEL REPEATABLE READ;
 ## 10. 常用函数
 
 ### 字符串函数
+
 ```sql
 CONCAT('Hello', ' ', 'World')    -- 拼接字符串
 SUBSTRING('Hello', 1, 3)         -- 截取字符串
@@ -644,6 +680,7 @@ SELECT LOWER(CONCAT(SUBSTRING(first_name, 1, 1), last_name)) AS username FROM us
 ```
 
 ### 日期函数
+
 ```sql
 NOW()                           -- 当前日期时间
 CURDATE()                       -- 当前日期
@@ -671,6 +708,7 @@ SELECT DATE_SUB(CURDATE(), INTERVAL WEEKDAY(CURDATE()) DAY) AS monday;
 ```
 
 ### 数值函数
+
 ```sql
 ABS(-10)                        -- 绝对值
 ROUND(3.14159, 2)               -- 四舍五入
@@ -694,6 +732,7 @@ SELECT price * 0.8 AS discounted_price FROM products;
 ```
 
 ### 条件函数
+
 ```sql
 IF(age >= 18, '成人', '未成年')  -- 条件判断
 IFNULL(email, '未填写')          -- NULL替换
@@ -726,6 +765,7 @@ SELECT name, IFNULL(phone, '未填写') AS phone FROM customers;
 ## 附录：常用命令
 
 ### 服务器管理
+
 ```bash
 # 启动服务
 systemctl start mysql    # Linux
@@ -747,6 +787,7 @@ mysql -u username -p -h host -P port
 ```
 
 ### 备份与恢复
+
 ```bash
 # 备份数据库
 mysqldump -u username -p dbname > backup.sql
@@ -768,6 +809,7 @@ gunzip < backup.sql.gz | mysql -u username -p dbname
 ```
 
 ### 查看系统信息
+
 ```sql
 SELECT VERSION();           -- 版本
 SELECT USER();              -- 当前用户
@@ -781,4 +823,5 @@ SHOW VARIABLES LIKE 'slow_query%';  -- 慢查询状态
 ---
 
 ### 更新日志 (Changelog)
+
 - 2026-04-30: 基于数据库常用指令.txt 创建快速查阅文档，使用文本+代码块格式

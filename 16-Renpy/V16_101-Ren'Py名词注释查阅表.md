@@ -1,6 +1,9 @@
 # Ren'Py-专有名词注释查阅表 | Ren'Py
 
-> @Version: v3.5.0
+> @Author: fanquanpp
+> @Category: Ren'Py Basics
+> @Description: Ren'Py-专有名词注释查阅表 | Ren'Py
+> @Updated: 2026-05-03
 
 ---
 
@@ -663,6 +666,7 @@ tl 目录是 Ren'Py 中存放翻译文件的目录，每种语言一个子目录
 ---
 
 **文档信息**：
+
 - 文件名称：Z16_901-专有名词解释.md
 - 创建时间：2026-04-30
 - 版本号：v1.0.0

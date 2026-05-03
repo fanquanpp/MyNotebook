@@ -1,6 +1,9 @@
 # Vue Router 详解
 
-> @Version: v3.5.0
+> @Author: fanquanpp
+> @Category: Vue3 Basics
+> @Description: Vue Router 详解
+> @Updated: 2026-05-03
 
 ---
 

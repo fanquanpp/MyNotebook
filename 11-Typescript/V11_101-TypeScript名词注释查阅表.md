@@ -1,6 +1,9 @@
 # TypeScript-专有名词注释查阅表 | TypeScript
 
-> @Version: v3.5.0
+> @Author: fanquanpp
+> @Category: TypeScript Basics
+> @Description: TypeScript-专有名词注释查阅表 | TypeScript
+> @Updated: 2026-05-03
 
 ---
 
@@ -651,6 +654,7 @@ ReturnType<T> 是内置泛型工具类型，提取函数 T 的返回类型。
 ---
 
 **文档信息**：
+
 - 文件名称：Z11_901-专有名词解释.md
 - 创建时间：2026-04-30
 - 版本号：v1.0.0

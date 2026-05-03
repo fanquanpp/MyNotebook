@@ -1,6 +1,9 @@
 # Godot-专有名词注释查阅表 | Godot
 
-> @Version: v3.5.0
+> @Author: fanquanpp
+> @Category: Godot Engine
+> @Description: Godot-专有名词注释查阅表 | Godot
+> @Updated: 2026-05-03
 
 ---
 
@@ -789,6 +792,7 @@ Semaphore 是控制对共享资源访问的计数器，用于线程间同步。
 ---
 
 **文档信息**：
+
 - 文件名称：Z15_901-专有名词解释.md
 - 创建时间：2026-04-30
 - 版本号：v1.0.0

@@ -1,6 +1,9 @@
 # Pinia 状态管理详解
 
-> @Version: v3.5.0
+> @Author: fanquanpp
+> @Category: Vue3 Basics
+> @Description: Pinia 状态管理详解
+> @Updated: 2026-05-03
 
 ---
 
@@ -349,11 +352,13 @@ export const useUserStore = defineStore('user', () => {
 ### 8.1 使用 pinia-plugin-persistedstate
 
 安装：
+
 ```bash
 npm install pinia-plugin-persistedstate
 ```
 
 配置：
+
 ```ts
 // main.ts
 import { createApp } from 'vue'
@@ -369,6 +374,7 @@ app.mount('#app')
 ```
 
 使用：
+
 ```ts
 export const useCounterStore = defineStore('counter', {
   state: () => ({

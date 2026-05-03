@@ -1,6 +1,9 @@
 # CSS Canvas 绘图 | Canvas Drawing
 
-> @Version: v3.5.0
+> @Author: fanquanpp
+> @Category: CSS Basics
+> @Description: CSS Canvas 绘图 | Canvas Drawing
+> @Updated: 2026-05-03
 
 ---
 

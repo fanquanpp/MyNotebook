@@ -1,6 +1,9 @@
 # Web Components 与 PWA 开发 | Web Components and PWA
 
-> @Version: v3.5.0
+> @Author: fanquanpp
+> @Category: HTML5 Basics
+> @Description: Web Components 与 PWA 开发 | Web Components and PWA
+> @Updated: 2026-05-03
 
 ---
 
@@ -31,6 +34,7 @@
 Web Components 是一组 Web 平台 API，允许开发者创建可重用的自定义元素，这些元素可以在任何 HTML 页面中使用，无论使用什么框架。
 
 ### 核心技术
+
 - **Custom Elements**：创建自定义 HTML 元素
 - **Shadow DOM**：封装组件样式和结构
 - **HTML Templates**：定义可重用的 HTML 结构
@@ -174,6 +178,7 @@ customElements.define('my-template-element', MyTemplateElement);
 PWA 是一种结合了 Web 和原生应用优点的应用程序，具有安装到主屏幕、离线访问、推送通知等特性。
 
 ### 核心特性
+
 - **可安装**：可以添加到主屏幕
 - **离线工作**：使用 Service Worker 缓存资源
 - **推送通知**：发送推送消息

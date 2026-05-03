@@ -1,21 +1,25 @@
-# C 语言教程 | C Programming Tutorial
+# 02-C语言 C 语言与算法 | C & Algorithms
+
+> @Version: v3.5.1
 
 > @Author: fanquanpp
-> @Version: v3.5.0
-> @Category: C Overview
-> @Description: C 语言完整教程：概述、程序结构与语法、数据类型、变量、运算符、控制流、函数、数组、指针、结构体、文件IO、高级特性与系统编程。| Complete C tutorial covering overview, program structure & syntax, data types, variables, operators, control flow, functions, arrays, pointers, structs, file IO, advanced features & system programming.
+> @Category: C Basics
+> @Description: C 语言基础语法、指针与内存管理、经典算法与数据结构实现。 | C language fundamentals, pointers & memory management, classic algorithms and data structures.
+> @Updated: 2026-05-03
 
-> **路径**：`02-C语言/` | **C 语言**：经典的系统级编程语言，是众多编程语言的基础，广泛应用于操作系统、嵌入式系统、驱动程序开发等领域。
+---
 
-## 1. 简介 | Introduction
+## 1. 项目简介 | Introduction
 
-C 语言由 Dennis Ritchie 于 1972 年在 Bell Labs 开发，是一种通用的过程式编程语言。它提供了对硬件的底层访问能力，是学习编程和系统开发的绝佳起点，也是 C++、Java、Python 等语言的重要基础。
+本模块是 fanquanpp 个人综合学习笔记库中的 C 语言与算法 部分。
+
+**使用说明：**
+
+- 本模块已开放为公共资源，允许他人访问和克隆
+- 禁止直接修改本仓库内容
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
-
-### 快速查阅 | Quick Reference
-
-- [V02_101-C语言名词注释查阅表.md](./V02_101-C语言名词注释查阅表.md)
 
 ### 基础篇 | Basics
 
@@ -35,17 +39,41 @@ C 语言由 Dennis Ritchie 于 1972 年在 Bell Labs 开发，是一种通用的
 
 - [G02_201-C语言高级特性与系统编程.md](./G02_201-C语言高级特性与系统编程.md)
 
-## 3. 更新日志 | Changelog
+### 词汇表 | Vocabulary
 
-- **2026-05-03**
-  - 修复编码问题，确保 UTF-8 无 BOM 格式
-  - 统一 README 结构和版本号
+- [V02_101-C语言名词注释查阅表.md](./V02_101-C语言名词注释查阅表.md)
 
-- **2026-04-18**
-  - 完成 C 语言模块 3.0 结构优化规划，统一文件命名规范，优化目录结构
+## 3. 核心特色 | Key Features
 
-- **2026-04-06**
-  - 深度优化 README.md 文件，完善结构和内容
+- **系统级视角：从底层原理出发，深入讲解 C 语言的系统编程特性**
+- **内存管理：重点讲解指针、内存分配与释放等核心内存管理技巧**
+- **算法实现：收录经典算法的 C 语言实现，包含复杂度分析和优化**
+- **数据结构：提供链表、栈、队列等基础数据结构的实现**
 
-- **2026-04-05**
-  - 初版发布，建立子文档与索引结构
+## 4. 阅读建议 | Reading Guide
+
+1. 按基础篇顺序学习：概述 -> 语法 -> 数据类型 -> 指针，逐步建立 C 语言基础
+2. 指针与内存管理是 C 语言核心难点，建议反复练习并动手写代码
+3. 结合进阶篇的高级特性与系统编程，理解 C 语言在底层开发中的应用
+4. 参考词汇表查阅专业术语，建立准确的 C 语言概念体系
+
+## 5. 关联模块 | Related Modules
+
+- [13-C++ 系统编程](../13-C++/README.md)：C++ 是 C 的超集，学习 C 后进阶 C++
+
+## 6. 联系方式 | Contact Information
+
+- 邮箱：<fanquanpangpiing@163.com>
+- QQ：1839243393
+- 欢迎提意见交流或反馈问题
+
+## 7. 许可证信息 | License
+
+- **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**：2024-2026 fanquanpp
+
+---
+
+**更新日志 | Changelog**
+
+- 2026-05-03: v3.5.1 同步版本号，更新目录索引

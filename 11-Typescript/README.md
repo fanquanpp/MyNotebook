@@ -1,21 +1,25 @@
-# TypeScript 教程 | TypeScript Tutorial
+# 11-Typescript TypeScript 进阶 | Advanced TypeScript
+
+> @Version: v3.5.1
 
 > @Author: fanquanpp
-> @Version: v3.5.0
-> @Category: TypeScript Overview
-> @Description: TypeScript 完整教程：概述与环境、基础类型系统、接口与类型别名、函数与泛型、类与装饰器、高级类型与演算、编译优化、JS迁移、工程化、类型声明与模块解析。| Complete TypeScript tutorial covering overview & setup, basic type system, interfaces & type aliases, functions & generics, classes & decorators, advanced types & calculus, compilation optimization, JS migration, engineering, type declarations & module resolution.
+> @Category: TypeScript Basics
+> @Description: TypeScript 类型系统、接口与泛型、高级类型、编译优化、工程化配置。 | TypeScript type system, interfaces & generics, advanced types, compilation optimization, engineering config.
+> @Updated: 2026-05-03
 
-> **路径**：`11-Typescript/` | **TypeScript**：JavaScript 的超集，添加了可选的静态类型和基于类的面向对象编程，由 Microsoft 开发。
+---
 
-## 1. 简介 | Introduction
+## 1. 项目简介 | Introduction
 
-TypeScript 是由 Microsoft 开发的自由和开源的编程语言，是 JavaScript 的超集。它添加了可选的静态类型和基于类的面向对象编程，能够编译成普通的 JavaScript。TypeScript 使得大型 JavaScript 应用的开发和维护变得更加容易。
+本模块是 fanquanpp 个人综合学习笔记库中的 TypeScript 进阶 部分。
+
+**使用说明：**
+
+- 本模块已开放为公共资源，允许他人访问和克隆
+- 禁止直接修改本仓库内容
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
-
-### 快速查阅 | Quick Reference
-
-- [V11_101-TypeScript名词注释查阅表.md](./V11_101-TypeScript名词注释查阅表.md)
 
 ### 基础篇 | Basics
 
@@ -33,17 +37,47 @@ TypeScript 是由 Microsoft 开发的自由和开源的编程语言，是 JavaSc
 - [G11_203-工程化配置.md](./G11_203-工程化配置.md)
 - [G11_204-类型声明与模块解析.md](./G11_204-类型声明与模块解析.md)
 
-## 3. 更新日志 | Changelog
+### 代码示例 | Code Examples
 
-- **2026-05-03**
-  - 修复编码问题，确保 UTF-8 无 BOM 格式
-  - 统一 README 结构和版本号
+- [Z11_501-advanced_types.ts](./Z11_501-advanced_types.ts)
+- [Z11_502-design_patterns_ts.ts](./Z11_502-design_patterns_ts.ts)
 
-- **2026-04-18**
-  - 完成 TypeScript 模块 3.0 结构优化规划，统一文件命名规范，优化目录结构
+### 词汇表 | Vocabulary
 
-- **2026-04-06**
-  - 深度优化 README.md 文件，完善结构和内容
+- [V11_101-TypeScript名词注释查阅表.md](./V11_101-TypeScript名词注释查阅表.md)
 
-- **2026-04-05**
-  - 初版发布，建立子文档与索引结构
+## 3. 核心特色 | Key Features
+
+- **强类型系统与高级类型技巧**
+- **接口、类型别名与泛型编程**
+- **编译优化与工程化配置**
+- **类型声明与模块解析**
+
+## 4. 阅读建议 | Reading Guide
+
+1. 确保已掌握 JavaScript 基础后再学习 TypeScript
+2. 从基础类型系统开始，理解 TS 的类型推断和类型检查机制
+3. 接口与泛型是 TS 的核心特性，建议结合实际项目练习类型设计
+4. 进阶篇的工程化配置和类型声明适合大型项目开发
+
+## 5. 关联模块 | Related Modules
+
+- [08-JavaScript 基础](../08-Javascript/README.md)：TS 是 JS 的超集，需先掌握 JS
+- [12-Vue3](../12-Vue3/README.md)：Vue3 完整支持 TypeScript
+
+## 6. 联系方式 | Contact Information
+
+- 邮箱：<fanquanpangpiing@163.com>
+- QQ：1839243393
+- 欢迎提意见交流或反馈问题
+
+## 7. 许可证信息 | License
+
+- **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**：2024-2026 fanquanpp
+
+---
+
+**更新日志 | Changelog**
+
+- 2026-05-03: v3.5.1 同步版本号，更新目录索引

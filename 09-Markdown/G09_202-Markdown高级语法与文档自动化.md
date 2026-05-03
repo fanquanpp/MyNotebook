@@ -1,6 +1,11 @@
 # Markdown 高级语法与文档自动化 | Advanced Markdown Syntax and Documentation Automation
 
-> @Version: v3.5.0
+> @Author: fanquanpp
+> @Category: Markdown Basics
+> @Description: Markdown 高级语法与文档自动化 | Advanced Markdown Syntax and Documentation Automation
+> @Updated: 2026-05-03
+
+---
 
 ## 1. Markdown 高级语法
 
@@ -662,6 +667,7 @@ npm run dev
 
 **问题**：图片显示不出来
 **解决方案**：
+
 - 使用相对路径
 - 使用绝对路径
 - 使用在线图片链接
@@ -671,6 +677,7 @@ npm run dev
 
 **问题**：表格显示不正确
 **解决方案**：
+
 - 确保表格格式正确
 - 使用等宽字体编辑表格
 - 使用表格生成工具
@@ -679,6 +686,7 @@ npm run dev
 
 **问题**：数学公式不渲染
 **解决方案**：
+
 - 使用支持数学公式的渲染器
 - 安装相应的插件
 - 确保公式语法正确
@@ -687,6 +695,7 @@ npm run dev
 
 **问题**：构建失败
 **解决方案**：
+
 - 检查配置文件
 - 检查文件路径
 - 检查依赖安装

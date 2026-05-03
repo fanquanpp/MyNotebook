@@ -1,6 +1,9 @@
 # Java Swing 图形界面 | Swing GUI
 
-> @Version: v3.5.0
+> @Author: fanquanpp
+> @Category: Java Basics
+> @Description: Java Swing 图形界面 | Swing GUI
+> @Updated: 2026-05-03
 
 ---
 

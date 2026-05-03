@@ -1,11 +1,9 @@
 # MySQL-专有名词注释查阅表 | MySQL
 
-> @Version: v3.5.0
-
-> 作者：fanquanpp
-> 创建日期：2026-04-30
-> 版本：v1.0.0
-> 用途：按笔记出现顺序整理 MySQL 模块的专有名词解释
+> @Author: fanquanpp
+> @Category: MySQL Basics
+> @Description: MySQL-专有名词注释查阅表 | MySQL
+> @Updated: 2026-05-03
 
 ---
 

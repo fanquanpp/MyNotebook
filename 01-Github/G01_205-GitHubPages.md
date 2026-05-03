@@ -550,9 +550,9 @@ curl -I https://yourdomain.com
 
 - **元标签**：设置合适的 title、description 和其他元标签
 - **站点地图**：生成并提交 sitemap.xml
-- ** robots.txt**：配置 robots.txt 文件
+- **robots.txt**：配置 robots.txt 文件
 - **结构化数据**：添加 JSON-LD 结构化数据
-- ** canonical URL**：设置规范 URL
+- **canonical URL**：设置规范 URL
 
 ### 10.3 维护与更新
 

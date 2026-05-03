@@ -1,13 +1,9 @@
 # JavaScript-专有名词注释查阅表 | JavaScript
 
-> @Version: v3.5.0
-
-<!--
-作者：fanquanpp
-创建日期：2026-04-30
-版本：v1.0.0
-用途：按笔记出现顺序整理 JavaScript 模块的专有名词解释
--->
+> @Author: fanquanpp
+> @Category: JavaScript Basics
+> @Description: JavaScript-专有名词注释查阅表 | JavaScript
+> @Updated: 2026-05-03
 
 ---
 
@@ -313,7 +309,7 @@ call：`fn.call(thisArg, arg1, arg2)`。apply：`fn.apply(thisArg, [argsArray])`
 原型链是 JavaScript 实现继承的机制，每个对象都有指向另一个对象的原型。
 
 **详解**：
-__proto__：对象到原型的引用。Object.prototype：原型链终点，值为 null。属性查找：对象本身 → 原型 → 原型的原型 → null。
+**proto**：对象到原型的引用。Object.prototype：原型链终点，值为 null。属性查找：对象本身 → 原型 → 原型的原型 → null。
 
 ---
 

@@ -1,13 +1,11 @@
-<!--
-文件名称：SpringBoot-学习笔记
-原名称：无
-用途描述：介绍 Spring Boot 核心概念、环境配置、Actuator 监控、ORM 数据库操作、定时任务及消息队列。
-创建/更新：2026-04-05
--->
-
 # Spring Boot 学习笔记（Spring Boot Learning Notes）
 
-Spring Boot 是一种快速构建生产级 Spring 应用的方式，通过“约定优于配置”的思想简化了开发流程。
+> @Version: v3.5.0
+
+> @Author: fanquanpp
+> @Category: Java Basics
+> @Description: Spring Boot 学习笔记
+> @Updated: 2026-05-03
 
 ---
 
@@ -31,6 +29,7 @@ Spring Boot 是一种快速构建生产级 Spring 应用的方式，通过“约
 ## 2. 环境配置与核心功能
 
 ### 2.1 环境配置
+
 - `application.properties` 或 `application.yml`：全局配置文件。
 - `demo-properties`：如何读取配置文件内容。
 
@@ -44,6 +43,7 @@ spring:
 ```
 
 ### 2.2 监控与日志
+
 - **Actuator**：集成 `spring-boot-starter-actuator`，监控应用的健康状态、度量指标。
 - **Logback**：Spring Boot 默认集成的日志框架，配置灵活。
 
@@ -58,16 +58,19 @@ spring:
 ```
 
 ### 2.3 异常处理
+
 - **Unified Exception Handler**：使用 `@ControllerAdvice` 和 `@ExceptionHandler` 实现全局统一返回。
 
 ## 3. 实战应用
 
 ### 3.1 ORM 数据库操作
+
 - **JdbcTemplate**：简单封装通用 Dao 层。
 - **JPA**：`spring-boot-starter-data-jpa`，基于 Hibernate 实现。
 - **MyBatis / MyBatis-Plus**：灵活的 SQL 映射框架。
 
 ### 3.2 定时任务与异步
+
 - `@Scheduled`：快速实现定时任务。
 - `@Async`：开启多线程异步支持。
 

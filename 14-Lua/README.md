@@ -1,21 +1,25 @@
-# Lua 语言教程 | Lua Programming Tutorial
+# 14-Lua Lua 语言 | Lua Scripting
+
+> @Version: v3.5.1
 
 > @Author: fanquanpp
-> @Version: v3.5.0
-> @Category: Lua Overview
-> @Description: Lua 语言完整教程：基础语法、数据类型、Table、函数与闭包、协程、元表与OOP、模块与包。| Complete Lua tutorial covering basic syntax, data types, tables, functions & closures, coroutines, metatables & OOP, modules & packages.
+> @Category: Lua Basics
+> @Description: Lua 极简语法、Table 数据结构、元表机制、协程、模块与包。 | Lua minimalist syntax, Table data structure, metatable mechanism, coroutines, modules & packages.
+> @Updated: 2026-05-03
 
-> **路径**：`14-Lua/` | **Lua**：轻量级、高效、可嵌入的脚本语言，广泛应用于游戏开发（如 Roblox、World of Warcraft）。
+---
 
-## 1. 简介 | Introduction
+## 1. 项目简介 | Introduction
 
-Lua 是一种轻量级、高效、可嵌入的脚本语言，由 Roberto Ierusalimschy、Waldemar Celes 和 Luiz Henrique de Figueiredo 于 1993 年创建。它设计为可扩展、可嵌入，具有简单而强大的语法，被广泛应用于游戏开发（如 Roblox、World of Warcraft、Angry Birds）、嵌入式系统和 Web 开发等领域。
+本模块是 fanquanpp 个人综合学习笔记库中的 Lua 语言 部分。
+
+**使用说明：**
+
+- 本模块已开放为公共资源，允许他人访问和克隆
+- 禁止直接修改本仓库内容
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
-
-### 快速查阅 | Quick Reference
-
-- [V14_101-Lua名词注释查阅表.md](./V14_101-Lua名词注释查阅表.md)
 
 ### 基础篇 | Basics
 
@@ -30,17 +34,42 @@ Lua 是一种轻量级、高效、可嵌入的脚本语言，由 Roberto Ierusal
 - [G14_201-元表与OOP.md](./G14_201-元表与OOP.md)
 - [G14_202-模块与包.md](./G14_202-模块与包.md)
 
-## 3. 更新日志 | Changelog
+### 词汇表 | Vocabulary
 
-- **2026-05-03**
-  - 修复编码问题，确保 UTF-8 无 BOM 格式
-  - 统一 README 结构和版本号
+- [V14_101-Lua名词注释查阅表.md](./V14_101-Lua名词注释查阅表.md)
 
-- **2026-04-18**
-  - 完成 Lua 模块 3.0 结构优化规划，统一文件命名规范，优化目录结构
+## 3. 核心特色 | Key Features
 
-- **2026-04-06**
-  - 深度优化 README.md 文件，完善结构和内容
+- **极简语法与 Table 核心数据结构**
+- **元表机制与 OOP 实现**
+- **协程与异步编程**
+- **模块与包管理**
 
-- **2026-04-05**
-  - 初版发布，建立子文档与索引结构
+## 4. 阅读建议 | Reading Guide
+
+1. Lua 语法简洁，可快速上手基础篇全部内容
+2. Table 是 Lua 的核心数据结构，务必深入理解其多种用途
+3. 元表机制是 Lua 实现 OOP 的关键，建议动手实现类和继承
+4. 协程是 Lua 的特色功能，适合游戏开发中的异步场景
+
+## 5. 关联模块 | Related Modules
+
+- [15-Godot 游戏引擎](../15-Godot/README.md)：Godot 的 GDScript 语法类似 Lua
+- [16-Ren'Py 视觉小说](../16-Renpy/README.md)：Ren'Py 使用 Python/Lua 风格语法
+
+## 6. 联系方式 | Contact Information
+
+- 邮箱：<fanquanpangpiing@163.com>
+- QQ：1839243393
+- 欢迎提意见交流或反馈问题
+
+## 7. 许可证信息 | License
+
+- **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**：2024-2026 fanquanpp
+
+---
+
+**更新日志 | Changelog**
+
+- 2026-05-03: v3.5.1 同步版本号，更新目录索引

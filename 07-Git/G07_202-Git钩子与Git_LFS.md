@@ -1,9 +1,9 @@
 # Git 钩子与 Git LFS | Git Hooks and Git LFS
 
-> @Version: v3.5.0
-
-> fanquanpp 的个人学习笔记
-> 最新更新时间：2026-04-05
+> @Author: fanquanpp
+> @Category: Git Basics
+> @Description: Git 钩子与 Git LFS | Git Hooks and Git LFS
+> @Updated: 2026-05-03
 
 ---
 

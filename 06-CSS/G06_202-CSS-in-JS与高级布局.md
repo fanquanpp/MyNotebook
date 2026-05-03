@@ -1,6 +1,9 @@
 # CSS-in-JS 与高级布局技巧 | CSS-in-JS and Advanced Layouts
 
-> @Version: v3.5.0
+> @Author: fanquanpp
+> @Category: CSS Basics
+> @Description: CSS-in-JS 与高级布局技巧 | CSS-in-JS and Advanced Layouts
+> @Updated: 2026-05-03
 
 ---
 
@@ -27,6 +30,7 @@
 CSS-in-JS 是一种将 CSS 样式直接写在 JavaScript 代码中的方法，它允许开发者使用 JavaScript 的全部能力来管理样式，包括动态样式、条件样式和主题管理。
 
 ### 核心优势
+
 - **组件级样式**：样式与组件紧密耦合
 - **动态样式**：使用 JavaScript 变量和逻辑生成样式
 - **消除样式冲突**：自动生成唯一的类名

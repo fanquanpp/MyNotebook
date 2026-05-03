@@ -32,6 +32,7 @@
 **语法**: `open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)`
 
 **常用参数**:
+
 - `file`: 文件路径
 - `mode`: 打开模式
 - `encoding`: 编码方式，如 `'utf-8'`
@@ -185,6 +186,7 @@ with open("input.txt", "r") as infile, open("output.txt", "w") as outfile:
 ### 3.2 原理
 
 上下文管理器实现了 `__enter__` 和 `__exit__` 方法：
+
 - `__enter__()`: 进入上下文时调用，返回上下文对象
 - `__exit__(exc_type, exc_val, exc_tb)`: 退出上下文时调用，处理异常
 
@@ -251,6 +253,7 @@ with open("data.txt", "r") as f:
 移动文件指针到指定位置。
 
 **语法**: `seek(offset, whence=0)`
+
 - `offset`: 偏移量
 - `whence`: 参考位置，0 表示文件开头（默认），1 表示当前位置，2 表示文件末尾
 
@@ -604,6 +607,8 @@ log_message("Error: Database connection failed")
 - **加密敏感数据**：对于敏感文件，考虑加密存储
 
 ---
+
 ### 更新日志 (Changelog)
+
 - 2026-04-05: 细化 Pythonic 文件操作与 Context Manager 细节。
 - 2026-04-05: 扩写内容，增加详细的文件打开与关闭、读写操作、上下文管理器、文件指针、二进制文件处理、文件编码、大文件处理、文件系统操作和实际示例等内容。

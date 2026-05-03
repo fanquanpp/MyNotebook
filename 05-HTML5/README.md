@@ -1,21 +1,25 @@
-# HTML5 教程 | HTML5 Tutorial
+# 05-HTML5 HTML5 网页开发 | HTML5 Web Development
+
+> @Version: v3.5.1
 
 > @Author: fanquanpp
-> @Version: v3.5.0
-> @Category: HTML5 Overview
-> @Description: HTML5 完整教程：概述与语义化、基础标签与全局属性、表单与验证、多媒体与Canvas、存储与WebAPI、Vue核心与实战、WebComponents与PWA。| Complete HTML5 tutorial covering overview & semantics, basic tags & global attributes, forms & validation, multimedia & Canvas, storage & WebAPI, Vue core & practice, WebComponents & PWA.
+> @Category: HTML5 Basics
+> @Description: HTML5 语义化标签、表单验证、多媒体 Canvas、存储与 Web API。 | HTML5 semantic tags, form validation, multimedia Canvas, storage & Web API.
+> @Updated: 2026-05-03
 
-> **路径**：`05-HTML5/` | **HTML5**：最新的 HTML 标准，引入语义化标签、多媒体支持、Canvas、Web Storage 等新特性，是现代 Web 开发的基础。
+---
 
-## 1. 简介 | Introduction
+## 1. 项目简介 | Introduction
 
-HTML5 是万维网的核心语言——HTML 的第五次重大修订，于 2014 年由 W3C 正式发布标准。相比之前的 HTML 版本，HTML5 引入了大量新特性，包括语义化标签、原生音频/视频支持、Canvas 绘图、本地存储、离线应用等，极大地增强了 Web 应用的能力。
+本模块是 fanquanpp 个人综合学习笔记库中的 HTML5 网页开发 部分。
+
+**使用说明：**
+
+- 本模块已开放为公共资源，允许他人访问和克隆
+- 禁止直接修改本仓库内容
+- 他人使用本模块内容时出现的任何问题与作者无关
 
 ## 2. 目录索引 | Directory Index
-
-### 快速查阅 | Quick Reference
-
-- [V05_101-HTML5名词注释查阅表.md](./V05_101-HTML5名词注释查阅表.md)
 
 ### 基础篇 | Basics
 
@@ -30,17 +34,42 @@ HTML5 是万维网的核心语言——HTML 的第五次重大修订，于 2014 
 - [G05_201-Vue核心与实战.md](./G05_201-Vue核心与实战.md)
 - [G05_202-WebComponents与PWA.md](./G05_202-WebComponents与PWA.md)
 
-## 3. 更新日志 | Changelog
+### 词汇表 | Vocabulary
 
-- **2026-05-03**
-  - 修复编码问题，确保 UTF-8 无 BOM 格式
-  - 统一 README 结构和版本号
+- [V05_101-HTML5名词注释查阅表.md](./V05_101-HTML5名词注释查阅表.md)
 
-- **2026-04-18**
-  - 完成 HTML5 模块 3.0 结构优化规划，统一文件命名规范，优化目录结构
+## 3. 核心特色 | Key Features
 
-- **2026-04-06**
-  - 深度优化 README.md 文件，完善结构和内容
+- **语义化标签与 Web 标准详解**
+- **表单验证与用户输入处理**
+- **Canvas 绘图与多媒体处理**
+- **Web Storage 与 Web API 实战**
 
-- **2026-04-05**
-  - 初版发布，建立子文档与索引结构
+## 4. 阅读建议 | Reading Guide
+
+1. 从语义化标签和基础标签开始，理解 HTML 文档结构
+2. 表单与验证是 Web 交互基础，结合实际表单练习
+3. Canvas 和多媒体属于进阶内容，适合有基础后深入
+4. 进阶篇的 Vue 和 WebComponents 是前端框架方向，按需学习
+
+## 5. 关联模块 | Related Modules
+
+- [06-CSS 布局](../06-CSS/README.md)：HTML 与 CSS 配合构建网页
+- [08-JavaScript 基础](../08-Javascript/README.md)：JS 操作 HTML DOM
+
+## 6. 联系方式 | Contact Information
+
+- 邮箱：<fanquanpangpiing@163.com>
+- QQ：1839243393
+- 欢迎提意见交流或反馈问题
+
+## 7. 许可证信息 | License
+
+- **SPDX-Identifier**：[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- **Copyright**：2024-2026 fanquanpp
+
+---
+
+**更新日志 | Changelog**
+
+- 2026-05-03: v3.5.1 同步版本号，更新目录索引
