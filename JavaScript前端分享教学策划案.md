@@ -160,11 +160,36 @@ rgba颜色说明：
 ```
 伪元素 ::before / ::after -- 用CSS插入虚拟内容
 
+什么是伪元素？
+  伪元素是CSS创建的"虚拟标签"，不需要在HTML里写额外的标签
+  就能在元素内容的前面或后面插入装饰性内容
+
+  结构示意：
+  ┌─────────────────────────────┐
+  │  ::before  │  元素内容  │  ::after  │
+  └─────────────────────────────┘
+
+  ::before  → 插入到元素内容的最前面
+  ::after   → 插入到元素内容的最后面
+
+作用：
+  1. 纯装饰：加图标、箭头、装饰线，不污染HTML结构
+  2. 布局辅助：清除浮动、创建遮罩层
+  3. 内容增强：自动添加引号、序号等重复性文字
+
 核心规则：
   1. 必须写 content 属性，哪怕 content: ""，不写不显示
-  2. 伪元素默认是行内元素，设宽高要加 display: block
+  2. 伪元素默认是行内元素，设宽高要加 display: block 或 position: absolute
   3. ::before 在元素内容前面，::after 在后面
   4. 伪元素不属于DOM，JS无法直接操作
+  5. 每个元素只能有一个 ::before 和一个 ::after
+
+content属性的写法：
+  content: "文字"       插入文字
+  content: ""           空内容（只做装饰时常用）
+  content: attr(属性名)  读取HTML属性值并插入
+  content: url(图片路径) 插入图片
+  content: counter(名)  插入计数器值（自动编号）
 
 用法1：加装饰性文字
   .link::before {
@@ -173,6 +198,14 @@ rgba颜色说明：
   }
   /* 每个链接前面自动加个蓝色箭头 */
 
+  <!-- HTML -->
+  <a class="link" href="#">首页</a>
+  <a class="link" href="#">关于</a>
+
+  <!-- 渲染效果 -->
+  > 首页
+  > 关于
+
 用法2：清除浮动（经典写法）
   .clearfix::after {
       content: "";
@@ -180,6 +213,14 @@ rgba颜色说明：
       clear: both;
   }
   /* 父元素加clearfix类名，解决子元素浮动导致父元素高度塌陷 */
+
+  <!-- HTML -->
+  <div class="clearfix">
+      <div style="float: left;">左栏</div>
+      <div style="float: right;">右栏</div>
+  </div>
+  <!-- 不加clearfix：父div高度为0 -->
+  <!-- 加了clearfix：父div正常包裹子元素 -->
 
 用法3：卡片左侧彩色竖条
   .card {
@@ -196,24 +237,99 @@ rgba颜色说明：
   }
   /* 不用额外HTML标签就能加装饰线 */
 
+  <!-- HTML -->
+  <div class="card">
+      <h3>通知标题</h3>
+      <p>通知内容</p>
+  </div>
+
+  <!-- 渲染效果 -->
+  ┃ 通知标题
+  ┃ 通知内容
+  （左侧有一条蓝色竖线）
+
 用法4：遮罩层
+  .overlay {
+      position: relative;
+  }
   .overlay::after {
       content: "";
       position: absolute;
       inset: 0;  /* top/right/bottom/left都是0 */
       background: rgba(0,0,0,0.5);
   }
+
+  <!-- HTML -->
+  <div class="overlay">
+      <img src="photo.jpg" alt="照片">
+  </div>
+  <!-- 图片上盖了一层半透明黑色遮罩 -->
+
+用法5：用attr()读取属性值
+  .tooltip {
+      position: relative;
+  }
+  .tooltip::after {
+      content: attr(data-tip);
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #333;
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      white-space: nowrap;
+  }
+
+  <!-- HTML -->
+  <button class="tooltip" data-tip="点击保存">保存</button>
+  <!-- 鼠标悬停时按钮上方出现提示文字"点击保存" -->
+
+用法6：自动加引号
+  blockquote::before { content: "\201C"; }  /* 左双引号 " */
+  blockquote::after  { content: "\201D"; }  /* 右双引号 " */
+
+  <!-- HTML -->
+  <blockquote>学而不思则罔</blockquote>
+  <!-- 渲染效果："学而不思则罔" -->
+
+用法7：计数器自动编号
+  body { counter-reset: section; }
+  h2::before {
+      counter-increment: section;
+      content: "第" counter(section) "节 ";
+  }
+
+  <!-- HTML -->
+  <h2>CSS基础</h2>
+  <h2>CSS布局</h2>
+  <h2>JS基础</h2>
+  <!-- 渲染效果：第1节 CSS基础 / 第2节 CSS布局 / 第3节 JS基础 -->
+
+常见坑：
+  ❌ 忘了写content → 伪元素不显示
+  ❌ 想设宽高但没加display: block → 宽高不生效
+  ❌ 用JS操作伪元素 → 无法直接操作，只能改父元素的class间接控制
+  ❌ 伪元素放重要内容 → 屏幕阅读器读不到，SEO也不收录
 ```
 
 ### 说的话
 
 > 伪元素是个很有意思的东西。::before和::after可以在元素内容的前面和后面插入虚拟内容，这个内容不在HTML里，是CSS生成的，所以JS也没法直接操作它。
 >
+> 先理解它的作用：伪元素最大的价值就是"纯装饰"。如果一个装饰性的图标、箭头、竖线、遮罩只跟样式有关，跟内容无关，那就应该用伪元素来做，而不是在HTML里加个空标签。这样HTML只管内容，CSS只管样式，职责分明。
+>
 > 最重要的规则：**必须写content属性**，哪怕content是空字符串""，不写的话伪元素不会显示。这个坑很多人踩过，写了半天伪元素发现不出来，结果就是忘了写content。
 >
-> 实际用途很多。第一个，加装饰性文字，比如每个链接前面自动加个箭头，不用在HTML里手动写。第二个，清除浮动，这是个经典写法，父元素加个clearfix类名就行。第三个，卡片左侧彩色竖条，用伪元素做装饰线不用额外加HTML标签，保持HTML干净。第四个，遮罩层，图片上盖一层半透明黑色，做hover效果的时候常用。
+> content属性不只是写空字符串，还能写文字、用attr()读取HTML属性值、用url()插入图片、用counter()做自动编号。attr()特别实用，比如tooltip效果，把提示文字写在data-tip属性里，伪元素用attr(data-tip)读出来显示，一个CSS搞定所有tooltip。
+>
+> 实际用途很多。第一个，加装饰性文字，比如每个链接前面自动加个箭头，不用在HTML里手动写。第二个，清除浮动，这是个经典写法，父元素加个clearfix类名就行。第三个，卡片左侧彩色竖条，用伪元素做装饰线不用额外加HTML标签，保持HTML干净。第四个，遮罩层，图片上盖一层半透明黑色，做hover效果的时候常用。第五个，tooltip提示，用attr()读取属性值显示。第六个，自动加引号。第七个，计数器自动编号，做目录的时候很方便。
 >
 > 伪元素默认是行内元素，如果要设置宽高，记得加display: block或者position: absolute。
+>
+> 还有几个常见的坑要注意：伪元素不能放重要内容，因为屏幕阅读器读不到，搜索引擎也不收录；伪元素JS无法直接操作，只能通过改父元素的class来间接控制样式。
 
 ---
 
@@ -226,13 +342,21 @@ rgba颜色说明：
 伪元素 -- 创建虚拟元素（双冒号::）
 别搞混了！
 
-常用伪类：
-  :hover        鼠标悬停时
-  :active       鼠标按下没松开时
-  :focus        输入框获得焦点时（被点击）
-  :first-child  第一个子元素
-  :last-child   最后一个子元素
-  :nth-child(n) 第n个子元素
+什么是伪类？
+  伪类是CSS的选择器，用来选中元素的某种"状态"或"位置"
+  它不创建新元素，而是给已有元素在不同情况下加不同样式
+
+  伪类 vs 伪元素：
+  伪类  → 选中已有元素的某种状态（如鼠标悬停、第3个子元素）
+  伪元素 → 创建一个虚拟的新元素（如在内容前插入箭头）
+
+常用伪类及作用：
+  :hover        鼠标悬停时       → 按钮变色、卡片浮起、链接下划线
+  :active       鼠标按下没松开时 → 按钮按下的"按压感"
+  :focus        输入框获得焦点时 → 输入框高亮边框
+  :first-child  第一个子元素     → 列表第一项不加上边框
+  :last-child   最后一个子元素   → 列表最后一项不加下边框
+  :nth-child(n) 第n个子元素     → 表格隔行变色、选前几个
 
 :nth-child的写法：
   :nth-child(3)       选第3个
@@ -240,10 +364,16 @@ rgba颜色说明：
   :nth-child(even)    选偶数个（2,4,6...）
   :nth-child(3n)      每3个选一个（3,6,9...）
   :nth-child(-n+3)    选前3个（1,2,3）
+  :nth-child(3n+1)    从第1个开始每3个选一个（1,4,7...）
 
-按钮hover效果：
+用法1：按钮交互三件套（hover + active + focus）
   .btn {
       background: #409eff;
+      color: #fff;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 4px;
+      cursor: pointer;
       transition: all 0.3s;
   }
   .btn:hover {
@@ -251,28 +381,103 @@ rgba颜色说明：
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(64,158,255,0.4);
   }
+  .btn:active {
+      background: #3a8ee6;
+      transform: translateY(0);
+      box-shadow: none;
+  }
+  .btn:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(64,158,255,0.3);
+  }
 
-输入框focus效果：
+  <!-- HTML -->
+  <button class="btn">提交</button>
+  <!-- hover：鼠标移上去按钮变浅色+浮起+阴影 -->
+  <!-- active：按下时按钮变深色+沉下去 -->
+  <!-- focus：键盘Tab聚焦时出现蓝色光晕 -->
+
+用法2：输入框focus效果
+  input {
+      border: 2px solid #dcdfe6;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+  }
   input:focus {
       border-color: #409eff;
       outline: none;
       box-shadow: 0 0 0 3px rgba(64,158,255,0.2);
   }
 
-列表隔行变色：
+  <!-- HTML -->
+  <input type="text" placeholder="请输入用户名">
+  <!-- 点击输入框时边框变蓝+出现蓝色光晕 -->
+
+用法3：列表隔行变色
   li:nth-child(odd) { background: #f5f5f5; }
   li:nth-child(even) { background: #fff; }
+
+  <!-- HTML -->
+  <ul>
+      <li>第1行（灰色）</li>
+      <li>第2行（白色）</li>
+      <li>第3行（灰色）</li>
+      <li>第4行（白色）</li>
+  </ul>
+
+用法4：列表首尾项特殊处理
+  li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+  }
+  li:first-child {
+      border-top: 1px solid #eee;
+  }
+  li:last-child {
+      border-bottom: none;
+  }
+
+  <!-- HTML -->
+  <ul>
+      <li>第一项（有上边框）</li>
+      <li>中间项（只有下边框）</li>
+      <li>最后一项（没有下边框）</li>
+  </ul>
+
+用法5：导航栏当前页高亮
+  .nav-link:hover {
+      color: #409eff;
+      border-bottom: 2px solid #409eff;
+  }
+
+  <!-- HTML -->
+  <a class="nav-link" href="#">首页</a>
+  <a class="nav-link" href="#">关于</a>
+  <!-- 鼠标移上去文字变蓝+底部出现蓝色下划线 -->
+
+LVHA顺序（重要！）：
+  链接伪类要按这个顺序写，否则会覆盖：
+  :link    → 未访问的链接
+  :visited → 已访问的链接
+  :hover   → 鼠标悬停
+  :active  → 鼠标按下
+  口诀：LVHA（Link Visited Hover Active）
 ```
 
 ### 说的话
 
-> 伪类和伪元素容易搞混，再强调一下：伪元素是创建一个虚拟元素，双冒号::；伪类是选中元素的某种状态，单冒号:。
+> 伪类和伪元素容易搞混，再强调一下：伪元素是创建一个虚拟元素，双冒号::；伪类是选中元素的某种状态，单冒号:。伪类不会创建新东西，它只是让已有元素在不同状态下有不同样式。
 >
-> :hover最常用，鼠标移上去触发样式变化。:focus是输入框被点击获得焦点的时候。:active是鼠标按下没松开的时候，这三个经常一起用做按钮的交互反馈。
+> :hover最常用，鼠标移上去触发样式变化。:focus是输入框被点击获得焦点的时候。:active是鼠标按下没松开的时候，这三个经常一起用做按钮的交互反馈。按钮交互三件套：hover时浮起来，active时按下去，focus时出现光晕，配合transition就是丝滑的交互体验。
 >
-> :nth-child可以选第几个子元素，odd是奇数even是偶数，做表格隔行变色特别方便。:nth-child(-n+3)选中前三个，这个写法有点反直觉，-n+3就是从1到3。
+> :first-child和:last-child也很实用，比如列表的边框处理，第一项加上边框，最后一项去掉下边框，中间项只保留下边框，这样所有项之间的间距就统一了。
+>
+> :nth-child可以选第几个子元素，odd是奇数even是偶数，做表格隔行变色特别方便。:nth-child(-n+3)选中前三个，这个写法有点反直觉，-n+3就是从1到3。:nth-child(3n+1)是从第1个开始每3个选一个，就是1、4、7。
 >
 > 看那个按钮hover效果的例子：鼠标移上去背景变浅、往上移2px、加个蓝色阴影。配合transition就有平滑的动画效果，按钮像是浮起来了。输入框focus的时候边框变蓝、加个蓝色光晕，这个效果在各种网站上都能看到。
+>
+> 还有一个重要的点：链接伪类要按LVHA顺序写，:link、:visited、:hover、:active。因为CSS是后写的覆盖先写的，如果hover写在visited前面，已访问的链接鼠标悬停时不会变色。
 
 ---
 
