@@ -1828,6 +1828,73 @@ DOM操作 -- JS操控页面（简单了解，后面课会细讲）
 
 ---
 
+### 实战：按键点击给文本框赋值
+
+### PPT页面
+
+```
+按键点击给文本框赋值 -- 最常见的页面交互
+
+场景：点击按钮，把内容填进输入框
+  比如搜索框的快捷搜索词、表单的默认值填充、表情选择器
+
+HTML结构：
+  <input type="text" id="msgInput" placeholder="请输入内容">
+  <p id="preview">预览区域</p>
+  <button class="quick-btn" data-text="你好">快捷1：你好</button>
+  <button class="quick-btn" data-text="在吗">快捷2：在吗</button>
+  <button class="quick-btn" data-text="收到">快捷3：收到</button>
+  <button id="clearBtn">清空</button>
+
+JS逻辑：
+  const msgInput = document.getElementById("msgInput");
+  const preview = document.getElementById("preview");
+  const quickBtns = document.querySelectorAll(".quick-btn");
+  const clearBtn = document.getElementById("clearBtn");
+
+  // 点击快捷按钮 → 给输入框赋值
+  quickBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+          msgInput.value = btn.dataset.text;
+          preview.textContent = "已填入：" + btn.dataset.text;
+      });
+  });
+
+  // 清空按钮
+  clearBtn.addEventListener("click", () => {
+      msgInput.value = "";
+      preview.textContent = "";
+  });
+
+核心知识点：
+  input.value = "文字"    给输入框赋值（读取也用.value）
+  btn.dataset.text        读取 data-text 属性（HTML: data-text="你好"）
+  querySelectorAll + forEach  批量给多个按钮绑事件
+
+进阶：追加内容而不是替换
+  msgInput.value += btn.dataset.text;   // 追加到已有内容后面
+
+进阶：实时预览输入内容
+  msgInput.addEventListener("input", () => {
+      preview.textContent = "正在输入：" + msgInput.value;
+  });
+  // input事件：每次输入变化都触发（比change更实时）
+```
+
+### 说的话
+
+> 接下来做一个最常见也最实用的交互——点击按钮给文本框赋值。这种交互到处都是：搜索框的热搜词点击、聊天软件的快捷回复、表单的默认值填充，本质上都是"点按钮→填内容"。
+>
+> HTML部分，一个输入框、一个预览区、几个快捷按钮。按钮上用data-text属性存要填入的文字，这是HTML5的自定义属性，JS里用dataset.text读取，非常方便。
+>
+> JS逻辑分两块。第一块，用querySelectorAll选中所有快捷按钮，forEach遍历，每个按钮绑click事件，点击时把data-text的值赋给input.value。注意这里是赋值用等号，不是textContent——输入框的值用value属性读写，不是textContent。第二块，清空按钮把value设为空字符串就行。
+>
+> 再说两个进阶用法。一个是追加内容，把等号改成+=，点按钮就是在已有内容后面追加，而不是替换。比如表情选择器，点一个表情追加一个。另一个是实时预览，给输入框绑input事件，每次内容变化都触发，可以实时显示用户正在输入什么。input事件比change事件更实时，change要等输入框失焦才触发，input是每敲一个字就触发。
+>
+> 这个例子虽然简单，但把DOM操作的核心流程走通了：找元素→绑事件→读属性→写属性→更新页面。后面做任何交互都是这个套路。
+
+---
+
 ### 实战：简易计算器
 
 ### PPT页面
