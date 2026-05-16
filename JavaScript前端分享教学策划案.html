@@ -5,30 +5,43 @@
 <style>
 @page {
     size: A4;
-    margin: 2cm;
+    margin: 1.5cm 2cm;
+    @bottom-center {
+        content: counter(page);
+        font-size: 9pt;
+        color: #999;
+    }
 }
 body {
     font-family: "Noto Sans CJK SC", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
     font-size: 11pt;
-    line-height: 1.6;
+    line-height: 1.7;
     color: #333;
+}
+.page-break {
+    page-break-before: always;
 }
 h1 {
     font-size: 20pt;
     color: #1a1a1a;
     border-bottom: 2px solid #409eff;
     padding-bottom: 6px;
-    margin-top: 30px;
-    page-break-before: auto;
+    margin-top: 10px;
 }
 h2 {
     font-size: 14pt;
     color: #2c3e50;
-    margin-top: 20px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #eee;
 }
 h3 {
     font-size: 12pt;
     color: #34495e;
+}
+p {
+    margin: 4px 0;
 }
 table {
     border-collapse: collapse;
@@ -60,6 +73,7 @@ pre {
     overflow-x: auto;
     font-size: 9pt;
     line-height: 1.4;
+    page-break-inside: avoid;
 }
 pre code {
     background: none;
@@ -68,14 +82,7 @@ pre code {
 hr {
     border: none;
     border-top: 1px solid #ddd;
-    margin: 20px 0;
-}
-blockquote {
-    border-left: 3px solid #409eff;
-    margin: 10px 0;
-    padding: 5px 15px;
-    color: #555;
-    background: #f9f9f9;
+    margin: 15px 0;
 }
 </style>
 </head>
@@ -152,6 +159,8 @@ blockquote {
 <hr />
 <h1>第一章 开场 - 前端三件套</h1>
 <hr />
+<div class="page-break"></div>
+
 <p>[P1]</p>
 <h2>标题区</h2>
 <p>前端三件套</p>
@@ -181,6 +190,8 @@ blockquote {
 <hr />
 <h1>第二章 Markdown vs HTML</h1>
 <hr />
+<div class="page-break"></div>
+
 <p>[P2]</p>
 <h2>标题区</h2>
 <p>Markdown vs HTML - 两种写文档的语言</p>
@@ -209,6 +220,8 @@ blockquote {
 【演讲备注】
 在讲CSS之前，先花几分钟聊聊Markdown和HTML。这两个东西大家平时都在用，但可能没仔细想过它们的关系。Markdown写README、写笔记，HTML写网页，看起来是两个世界，但其实Markdown最终会被转换成HTML。理解了这个关系，对后面学CSS和JS都有帮助。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P3]</p>
 <h2>标题区</h2>
 <p>Markdown语法速览</p>
@@ -230,10 +243,10 @@ blockquote {
   分割线：  ---
   表格：    | 列1 | 列2 |</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="gh">#</span> 项目名称
+<pre><code>
+# 项目名称
 这是一个**很棒**的项目
-</code></pre></div>
-
+</code></pre>
 <h2>安装</h2>
 <ol>
 <li>克隆仓库</li>
@@ -263,6 +276,8 @@ blockquote {
 <p>【演讲备注】
 Markdown大家应该很熟悉了，写README、写笔记、写文档都在用。它的设计理念就是"用最少的符号表达格式"，#号就是标题，星号就是加粗，大于号就是引用，非常直观。写的时候眼睛不用离开内容去想标签怎么写，专注在文字本身。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P4]</p>
 <h2>标题区</h2>
 <p>HTML快速复习</p>
@@ -290,27 +305,29 @@ Markdown大家应该很熟悉了，写README、写笔记、写文档都在用。
   head   头部，放标题和元信息（用户看不到）
   body   主体，放页面内容（用户看到的）</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>一级标题<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>段落文字<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>加粗<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;url&quot;</span><span class="p">&gt;</span>链接文字<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;&lt;</span><span class="nt">li</span><span class="p">&gt;</span>无序项<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<pre><code class="language-html">
+&lt;h1&gt;一级标题&lt;/h1&gt;
+&lt;p&gt;段落文字&lt;/p&gt;
+&lt;strong&gt;加粗&lt;/strong&gt;
+&lt;a href=&quot;url&quot;&gt;链接文字&lt;/a&gt;
+&lt;ul&gt;&lt;li&gt;无序项&lt;/li&gt;&lt;/ul&gt;
 
-<span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>页面标题<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;页面标题&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
     页面内容写在这里
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
-
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 <p>【演讲备注】
 HTML大家也学过了，快速过一下。标签成对出现，有开始有结束。常用标签就那些，标题h1到h6，段落p，加粗strong，链接a，列表ul/ol。一个HTML文档就是html包head和body，head放标题和元信息，body放页面内容。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P5]</p>
 <h2>标题区</h2>
 <p>Markdown vs HTML - 语法对比与使用场景</p>
@@ -342,6 +359,8 @@ HTML大家也学过了，快速过一下。标签成对出现，有开始有结�
 <hr />
 <h1>第三章 CSS常用属性</h1>
 <hr />
+<div class="page-break"></div>
+
 <p>[P6]</p>
 <h2>标题区</h2>
 <p>CSS常用属性速览</p>
@@ -368,6 +387,8 @@ HTML大家也学过了，快速过一下。标签成对出现，有开始有结�
 【演讲备注】
 先过一遍CSS里做项目用得最多、但课上可能没细讲的属性。盒模型大家应该都学过了，不展开。重点讲几个课上可能一笔带过的属性，这些属性组合起来就是各种好看的卡片、按钮效果。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P7]</p>
 <h2>标题区</h2>
 <p>border-radius - 让方角变圆角</p>
@@ -392,15 +413,17 @@ HTML大家也学过了，快速过一下。标签成对出现，有开始有结�
   50%圆角 + 长方形 = 椭圆（不是正圆）
   圆角值超过元素短边一半时，效果和50%一样</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="p">.</span><span class="nc">avatar</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="kt">%</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="p">.</span><span class="nc">btn-capsule</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">999</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="p">.</span><span class="nc">modal-top</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div>
-
+<pre><code class="language-css">
+.avatar { border-radius: 50%; }
+.btn-capsule { border-radius: 999px; }
+.card { border-radius: 12px; }
+.modal-top { border-radius: 12px 12px 0 0; }
+</code></pre>
 <p>【演讲备注】
 border-radius做圆角，这个做项目的时候几乎每个元素都会用到。写一个值就是四个角都一样，写四个值就是顺时针方向。几个常见的用法：头像做圆形就50%，但注意元素本身得是正方形；按钮做胶囊形状就给一个特别大的值比如999px；卡片做圆角一般8px到12px比较好看。还有个技巧：只圆上面两个角可以写border-radius: 12px 12px 0 0，做弹窗或者卡片顶部的时候常用。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P8]</p>
 <h2>标题区</h2>
 <p>box-shadow - 给元素加阴影</p>
@@ -429,26 +452,28 @@ border-radius做圆角，这个做项目的时候几乎每个元素都会用到�
   rgba(0,0,0,0.1) 最后一个值是透明度，0完全透明，1完全不透明
   阴影用0.05-0.2比较自然，纯黑太硬了</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="c">/* 卡片最常用的阴影 */</span>
-<span class="nt">box-shadow</span><span class="o">:</span><span class="w"> </span><span class="nt">0</span><span class="w"> </span><span class="nt">2px</span><span class="w"> </span><span class="nt">8px</span><span class="w"> </span><span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="p">.</span><span class="nc">1</span><span class="o">);</span>
+<pre><code class="language-css">
+/* 卡片最常用的阴影 */
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 
-<span class="c">/* 悬浮效果 */</span>
-<span class="nt">box-shadow</span><span class="o">:</span><span class="w"> </span><span class="nt">0</span><span class="w"> </span><span class="nt">4px</span><span class="w"> </span><span class="nt">12px</span><span class="w"> </span><span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="p">.</span><span class="nc">15</span><span class="o">);</span>
+/* 悬浮效果 */
+box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 
-<span class="c">/* 内阴影 */</span>
-<span class="nt">box-shadow</span><span class="o">:</span><span class="w"> </span><span class="nt">inset</span><span class="w"> </span><span class="nt">0</span><span class="w"> </span><span class="nt">1px</span><span class="w"> </span><span class="nt">3px</span><span class="w"> </span><span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="p">.</span><span class="nc">2</span><span class="o">);</span>
+/* 内阴影 */
+box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
 
-<span class="c">/* 多层阴影 */</span>
-<span class="nt">box-shadow</span><span class="o">:</span><span class="w"> </span><span class="nt">0</span><span class="w"> </span><span class="nt">1px</span><span class="w"> </span><span class="nt">2px</span><span class="w"> </span><span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="p">.</span><span class="nc">1</span><span class="o">),</span>
-<span class="w">            </span><span class="nt">0</span><span class="w"> </span><span class="nt">2px</span><span class="w"> </span><span class="nt">8px</span><span class="w"> </span><span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="p">.</span><span class="nc">1</span><span class="o">);</span>
+/* 多层阴影 */
+box-shadow: 0 1px 2px rgba(0,0,0,0.1),
+            0 2px 8px rgba(0,0,0,0.1);
 
-<span class="c">/* 文字阴影 */</span>
-<span class="nt">text-shadow</span><span class="o">:</span><span class="w"> </span><span class="nt">1px</span><span class="w"> </span><span class="nt">1px</span><span class="w"> </span><span class="nt">2px</span><span class="w"> </span><span class="nt">rgba</span><span class="o">(</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="o">,</span><span class="nt">0</span><span class="p">.</span><span class="nc">3</span><span class="o">);</span>
-</code></pre></div>
-
+/* 文字阴影 */
+text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+</code></pre>
 <p>【演讲备注】
 box-shadow给元素加阴影，做卡片效果的时候特别常用。没有阴影的卡片就像贴在屏幕上的纸片，加了阴影就有立体感和层次感。参数顺序是：水平偏移、垂直偏移、模糊半径、扩展半径（可以省略）、颜色。颜色建议用rgba，最后一个值控制透明度。纯黑阴影太硬了，0.1到0.2之间比较自然。inset是内阴影，做输入框那种内凹效果。多层阴影叠加可以让阴影更真实。text-shadow参数差不多，给标题文字加阴影用。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P9]</p>
 <h2>标题区</h2>
 <p>伪元素 ::before / ::after - 用CSS插入虚拟内容</p>
@@ -474,77 +499,79 @@ box-shadow给元素加阴影，做卡片效果的时候特别常用。没有阴�
   content: attr(属性名)   读取HTML属性值并插入
   content: counter(名)   插入计数器值（自动编号）</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="c">/* 用法1：加装饰性文字 */</span>
-<span class="p">.</span><span class="nc">link</span><span class="p">::</span><span class="nd">before</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&gt; &quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#409eff</span><span class="p">;</span>
-<span class="p">}</span>
+<pre><code class="language-css">
+/* 用法1：加装饰性文字 */
+.link::before {
+    content: &quot;&gt; &quot;;
+    color: #409eff;
+}
 
-<span class="c">/* 用法2：清除浮动（经典写法） */</span>
-<span class="p">.</span><span class="nc">clearfix</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
-<span class="w">    </span><span class="k">clear</span><span class="p">:</span><span class="w"> </span><span class="kc">both</span><span class="p">;</span>
-<span class="p">}</span>
+/* 用法2：清除浮动（经典写法） */
+.clearfix::after {
+    content: &quot;&quot;;
+    display: block;
+    clear: both;
+}
 
-<span class="c">/* 用法3：卡片左侧彩色竖条 */</span>
-<span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">relative</span><span class="p">;</span>
-<span class="w">    </span><span class="k">padding-left</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">card</span><span class="p">::</span><span class="nd">before</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">absolute</span><span class="p">;</span>
-<span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="k">top</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#409eff</span><span class="p">;</span>
-<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span>
+/* 用法3：卡片左侧彩色竖条 */
+.card {
+    position: relative;
+    padding-left: 16px;
+}
+.card::before {
+    content: &quot;&quot;;
+    position: absolute;
+    left: 0; top: 0;
+    width: 4px; height: 100%;
+    background: #409eff;
+    border-radius: 2px;
+}
 
-<span class="c">/* 用法4：遮罩层 */</span>
-<span class="p">.</span><span class="nc">overlay</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">relative</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">overlay</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">absolute</span><span class="p">;</span>
-<span class="w">    </span><span class="k">inset</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">);</span>
-<span class="p">}</span>
+/* 用法4：遮罩层 */
+.overlay {
+    position: relative;
+}
+.overlay::after {
+    content: &quot;&quot;;
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
 
-<span class="c">/* 用法5：用attr()读取属性值做tooltip */</span>
-<span class="p">.</span><span class="nc">tooltip</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">relative</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">tooltip</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="nb">attr</span><span class="p">(</span><span class="n">data</span><span class="nv">-tip</span><span class="p">);</span>
-<span class="w">    </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">absolute</span><span class="p">;</span>
-<span class="w">    </span><span class="k">bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
-<span class="w">    </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
-<span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translateX</span><span class="p">(</span><span class="mi">-50</span><span class="kt">%</span><span class="p">);</span>
-<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#333</span><span class="p">;</span>
-<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#fff</span><span class="p">;</span>
-<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="k">white-space</span><span class="p">:</span><span class="w"> </span><span class="kc">nowrap</span><span class="p">;</span>
-<span class="p">}</span>
+/* 用法5：用attr()读取属性值做tooltip */
+.tooltip {
+    position: relative;
+}
+.tooltip::after {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+}
 
-<span class="c">/* 用法6：自动加引号 */</span>
-<span class="nt">blockquote</span><span class="p">::</span><span class="nd">before</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\201C&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="nt">blockquote</span><span class="p">::</span><span class="nd">after</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;\201D&quot;</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+/* 用法6：自动加引号 */
+blockquote::before { content: &quot;\201C&quot;; }
+blockquote::after  { content: &quot;\201D&quot;; }
 
-<span class="c">/* 用法7：计数器自动编号 */</span>
-<span class="nt">body</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">counter-reset</span><span class="p">:</span><span class="w"> </span><span class="n">section</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="nt">h2</span><span class="p">::</span><span class="nd">before</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">counter-increment</span><span class="p">:</span><span class="w"> </span><span class="n">section</span><span class="p">;</span>
-<span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;第&quot;</span><span class="w"> </span><span class="nb">counter</span><span class="p">(</span><span class="n">section</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;节 &quot;</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-
+/* 用法7：计数器自动编号 */
+body { counter-reset: section; }
+h2::before {
+    counter-increment: section;
+    content: &quot;第&quot; counter(section) &quot;节 &quot;;
+}
+</code></pre>
 <p>【演讲备注】
 伪元素是个很有意思的东西。::before和::after可以在元素内容的前面和后面插入虚拟内容，这个内容不在HTML里，是CSS生成的，所以JS也没法直接操作它。先理解它的作用：伪元素最大的价值就是"纯装饰"。如果一个装饰性的图标、箭头、竖线、遮罩只跟样式有关，跟内容无关，那就应该用伪元素来做。最重要的规则：必须写content属性，哪怕content是空字符串""，不写的话伪元素不会显示。content属性不只是写空字符串，还能写文字、用attr()读取HTML属性值、用counter()做自动编号。实际用途很多：加装饰性文字、清除浮动、卡片左侧彩色竖条、遮罩层、tooltip提示、自动加引号、计数器自动编号。伪元素默认是行内元素，如果要设置宽高，记得加display: block或者position: absolute。还有几个常见的坑要注意：伪元素不能放重要内容，因为屏幕阅读器读不到；伪元素JS无法直接操作，只能通过改父元素的class来间接控制样式。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P10]</p>
 <h2>标题区</h2>
 <p>伪类 :hover / :focus / :nth-child()</p>
@@ -574,63 +601,65 @@ box-shadow给元素加阴影，做卡片效果的时候特别常用。没有阴�
   :link  --&gt;  :visited  --&gt;  :hover  --&gt;  :active
   口诀：LVHA</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="c">/* 用法1：按钮交互三件套 */</span>
-<span class="p">.</span><span class="nc">btn</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#409eff</span><span class="p">;</span>
-<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#fff</span><span class="p">;</span>
-<span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
-<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="k">cursor</span><span class="p">:</span><span class="w"> </span><span class="kc">pointer</span><span class="p">;</span>
-<span class="w">    </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="kc">all</span><span class="w"> </span><span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">btn</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#66b1ff</span><span class="p">;</span>
-<span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translateY</span><span class="p">(</span><span class="mi">-2</span><span class="kt">px</span><span class="p">);</span>
-<span class="w">    </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span><span class="mi">158</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mf">0.4</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">btn</span><span class="p">:</span><span class="nd">active</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#3a8ee6</span><span class="p">;</span>
-<span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translateY</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-<span class="w">    </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">btn</span><span class="p">:</span><span class="nd">focus</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">outline</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
-<span class="w">    </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">3</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span><span class="mi">158</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mf">0.3</span><span class="p">);</span>
-<span class="p">}</span>
+<pre><code class="language-css">
+/* 用法1：按钮交互三件套 */
+.btn {
+    background: #409eff;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover {
+    background: #66b1ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(64,158,255,0.4);
+}
+.btn:active {
+    background: #3a8ee6;
+    transform: translateY(0);
+    box-shadow: none;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(64,158,255,0.3);
+}
 
-<span class="c">/* 用法2：输入框focus效果 */</span>
-<span class="nt">input</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="mh">#dcdfe6</span><span class="p">;</span>
-<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="k">border-color</span><span class="w"> </span><span class="mf">0.3</span><span class="kt">s</span><span class="p">,</span><span class="w"> </span><span class="k">box-shadow</span><span class="w"> </span><span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nt">input</span><span class="p">:</span><span class="nd">focus</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#409eff</span><span class="p">;</span>
-<span class="w">    </span><span class="k">outline</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
-<span class="w">    </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">3</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span><span class="mi">158</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mf">0.2</span><span class="p">);</span>
-<span class="p">}</span>
+/* 用法2：输入框focus效果 */
+input {
+    border: 2px solid #dcdfe6;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+input:focus {
+    border-color: #409eff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(64,158,255,0.2);
+}
 
-<span class="c">/* 用法3：列表隔行变色 */</span>
-<span class="nt">li</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">odd</span><span class="o">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#f5f5f5</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="nt">li</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">even</span><span class="o">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#fff</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+/* 用法3：列表隔行变色 */
+li:nth-child(odd) { background: #f5f5f5; }
+li:nth-child(even) { background: #fff; }
 
-<span class="c">/* 用法4：列表首尾项特殊处理 */</span>
-<span class="nt">li</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="k">border-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="mh">#eee</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="nt">li</span><span class="p">:</span><span class="nd">first-child</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">border-top</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="mh">#eee</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="nt">li</span><span class="p">:</span><span class="nd">last-child</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">border-bottom</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+/* 用法4：列表首尾项特殊处理 */
+li { padding: 8px 0; border-bottom: 1px solid #eee; }
+li:first-child { border-top: 1px solid #eee; }
+li:last-child { border-bottom: none; }
 
-<span class="c">/* 用法5：导航栏hover高亮 */</span>
-<span class="p">.</span><span class="nc">nav-link</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#409eff</span><span class="p">;</span>
-<span class="w">    </span><span class="k">border-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="mh">#409eff</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-
+/* 用法5：导航栏hover高亮 */
+.nav-link:hover {
+    color: #409eff;
+    border-bottom: 2px solid #409eff;
+}
+</code></pre>
 <p>【演讲备注】
 伪类和伪元素容易搞混，再强调一下：伪元素是创建一个虚拟元素，双冒号::；伪类是选中元素的某种状态，单冒号:。伪类不会创建新东西，它只是让已有元素在不同状态下有不同样式。:hover最常用，鼠标移上去触发样式变化。:focus是输入框被点击获得焦点的时候。:active是鼠标按下没松开的时候，这三个经常一起用做按钮的交互反馈。按钮交互三件套：hover时浮起来，active时按下去，focus时出现光晕。:first-child和:last-child也很实用，比如列表的边框处理。:nth-child可以选第几个子元素，odd是奇数even是偶数，做表格隔行变色特别方便。还有一个重要的点：链接伪类要按LVHA顺序写。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P11]</p>
 <h2>标题区</h2>
 <p>transition - 让CSS属性变化有过渡动画</p>
@@ -656,14 +685,16 @@ box-shadow给元素加阴影，做卡片效果的时候特别常用。没有阴�
   写在:hover里：鼠标移开时没有过渡，直接跳回原样
   写在元素本身：鼠标移入和移出都有平滑过渡</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="nt">transition</span><span class="o">:</span><span class="w"> </span><span class="nt">all</span><span class="w"> </span><span class="nt">0</span><span class="p">.</span><span class="nc">3s</span><span class="w"> </span><span class="nt">ease</span><span class="o">;</span><span class="w">           </span><span class="c">/* 所有属性0.3秒过渡 */</span>
-<span class="nt">transition</span><span class="o">:</span><span class="w"> </span><span class="nt">background</span><span class="w"> </span><span class="nt">0</span><span class="p">.</span><span class="nc">3s</span><span class="w"> </span><span class="nt">ease</span><span class="o">;</span><span class="w">    </span><span class="c">/* 只过渡背景色 */</span>
-<span class="nt">transition</span><span class="o">:</span><span class="w"> </span><span class="nt">transform</span><span class="w"> </span><span class="nt">0</span><span class="p">.</span><span class="nc">3s</span><span class="o">,</span><span class="w"> </span><span class="nt">box-shadow</span><span class="w"> </span><span class="nt">0</span><span class="p">.</span><span class="nc">3s</span><span class="o">;</span><span class="w">  </span><span class="c">/* 多个属性 */</span>
-</code></pre></div>
-
+<pre><code class="language-css">
+transition: all 0.3s ease;           /* 所有属性0.3秒过渡 */
+transition: background 0.3s ease;    /* 只过渡背景色 */
+transition: transform 0.3s, box-shadow 0.3s;  /* 多个属性 */
+</code></pre>
 <p>【演讲备注】
 transition让属性变化有个过渡动画。没有transition的话，hover的时候颜色"啪"一下就变了，体验很生硬。加上transition: all 0.3s ease，变化就是0.3秒平滑过渡。一般写all就行，时长0.2到0.3秒比较舒服。ease是最常用的缓动函数。transition要写在元素本身上，不是写在:hover里，这个很多人搞反。写在:hover里的话，鼠标移开的时候没有过渡，直接跳回原样，很突兀。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P12]</p>
 <h2>标题区</h2>
 <p>卡片动画效果 - 实战合集</p>
@@ -693,52 +724,54 @@ transition让属性变化有个过渡动画。没有transition的话，hover的�
 <p>核心思路都一样：
   先定义初始状态，hover时改变属性，transition负责平滑过渡</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="c">/* 效果1：悬浮上移 */</span>
-<span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="kc">all</span><span class="w"> </span><span class="mf">0.3</span><span class="kt">s</span><span class="w"> </span><span class="kc">ease</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="p">.</span><span class="nc">card</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translateY</span><span class="p">(</span><span class="mi">-8</span><span class="kt">px</span><span class="p">);</span>
-<span class="w">    </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="w"> </span><span class="mi">24</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.15</span><span class="p">);</span>
-<span class="p">}</span>
+<pre><code class="language-css">
+/* 效果1：悬浮上移 */
+.card { transition: all 0.3s ease; }
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
 
-<span class="c">/* 效果2：放大 */</span>
-<span class="p">.</span><span class="nc">card</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">scale</span><span class="p">(</span><span class="mf">1.05</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+/* 效果2：放大 */
+.card:hover { transform: scale(1.05); }
 
-<span class="c">/* 效果3：翻转 */</span>
-<span class="p">.</span><span class="nc">card-inner</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="k">transform</span><span class="w"> </span><span class="mf">0.6</span><span class="kt">s</span><span class="p">;</span>
-<span class="w">    </span><span class="k">transform-style</span><span class="p">:</span><span class="w"> </span><span class="kc">preserve-3d</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">card</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">.</span><span class="nc">card-inner</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">rotateY</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
-<span class="p">.</span><span class="nc">card-front</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">card-back</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">backface-visibility</span><span class="p">:</span><span class="w"> </span><span class="kc">hidden</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="p">.</span><span class="nc">card-back</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">rotateY</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
+/* 效果3：翻转 */
+.card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.card:hover .card-inner { transform: rotateY(180deg); }
+.card-front, .card-back { backface-visibility: hidden; }
+.card-back { transform: rotateY(180deg); }
 
-<span class="c">/* 效果4：遮罩淡入 */</span>
-<span class="p">.</span><span class="nc">card-img-wrapper</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">absolute</span><span class="p">;</span><span class="w"> </span><span class="k">inset</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">);</span>
-<span class="w">    </span><span class="k">opacity</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">    </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="k">opacity</span><span class="w"> </span><span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">card</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">.</span><span class="nc">card-img-wrapper</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">opacity</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+/* 效果4：遮罩淡入 */
+.card-img-wrapper::after {
+    content: &quot;&quot;;
+    position: absolute; inset: 0;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.card:hover .card-img-wrapper::after { opacity: 1; }
 
-<span class="c">/* 效果5：底部边框滑入 */</span>
-<span class="p">.</span><span class="nc">card</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">content</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="k">position</span><span class="p">:</span><span class="w"> </span><span class="kc">absolute</span><span class="p">;</span>
-<span class="w">    </span><span class="k">bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="k">left</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#409eff</span><span class="p">;</span>
-<span class="w">    </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="k">width</span><span class="w"> </span><span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">card</span><span class="p">:</span><span class="nd">hover</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div>
-
+/* 效果5：底部边框滑入 */
+.card::after {
+    content: &quot;&quot;;
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0; height: 3px;
+    background: #409eff;
+    transition: width 0.3s;
+}
+.card:hover::after { width: 100%; }
+</code></pre>
 <p>【演讲备注】
 来看几个常见的卡片动画效果。效果1悬浮上移，最常见，鼠标移上去卡片往上移8px，阴影变大变深。效果2卡片放大，scale(1.05)放大5%，注意别放大太多。效果3卡片翻转，用到了3D变换。效果4图片遮罩淡入，用伪元素做遮罩层，opacity从0变1。效果5底部边框滑入，width从0变100%。这些效果的核心思路都一样：先定义初始状态，hover时改变属性，transition负责平滑过渡。</p>
 <hr />
 <h1>第四章 CSS布局</h1>
 <hr />
+<div class="page-break"></div>
+
 <p>[P13]</p>
 <h2>标题区</h2>
 <p>CSS三种布局方式</p>
@@ -774,6 +807,8 @@ transition让属性变化有个过渡动画。没有transition的话，hover的�
 【演讲备注】
 CSS布局是做页面最重要的部分。一共有三种方式：普通流、Flex、Grid。普通流就是默认的排列方式，大家都懂。重点讲Flex和Grid，这两个是现在做布局的主力。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P14]</p>
 <h2>标题区</h2>
 <p>普通流 - 默认排列方式</p>
@@ -813,6 +848,8 @@ CSS布局是做页面最重要的部分。一共有三种方式：普通流、Fl
 【演讲备注】
 普通流快速过一下。块级元素独占一行，行内元素并排显示。float以前经常用来做布局，但现在有Flex和Grid之后基本不用了，float回归它本来的用途——文字环绕图片。position: sticky做吸顶导航栏特别好用。display: none和visibility: hidden的区别：none完全不占空间，hidden还占空间只是看不见。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P15]</p>
 <h2>标题区</h2>
 <p>Flex布局 - 一维布局利器</p>
@@ -839,14 +876,16 @@ CSS布局是做页面最重要的部分。一共有三种方式：普通流、Fl
     flex-shrink  缩小比例
     flex-basis   初始大小</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-
+<pre><code class="language-css">
+.container {
+    display: flex;
+}
+</code></pre>
 <p>【演讲备注】
 Flex布局是现在用得最多的布局方式。核心思路很简单：给父容器加display: flex，子元素就变成Flex项目，可以灵活排列。Flex有两个轴：主轴和交叉轴。主轴就是排列方向，默认从左到右；交叉轴跟主轴垂直，默认从上到下。后面讲的justify-content管主轴，align-items管交叉轴。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P16]</p>
 <h2>标题区</h2>
 <p>Flex容器属性</p>
@@ -877,31 +916,33 @@ Flex布局是现在用得最多的布局方式。核心思路很简单：给父�
   flex-wrap: wrap     允许换行（项目太多时自动换到下一行）
   gap: 16px           行间距和列间距都是16px（替代margin更方便）</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="c">/* 导航栏：logo在左，菜单在右 */</span>
-<span class="p">.</span><span class="nc">navbar</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
-<span class="w">    </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">space-between</span><span class="p">;</span>
-<span class="w">    </span><span class="k">align-items</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
-<span class="p">}</span>
+<pre><code class="language-css">
+/* 导航栏：logo在左，菜单在右 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-<span class="c">/* 水平垂直双居中 */</span>
-<span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
-<span class="w">    </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
-<span class="w">    </span><span class="k">align-items</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
-<span class="p">}</span>
+/* 水平垂直双居中 */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-<span class="c">/* 卡片列表：自动换行+间距 */</span>
-<span class="p">.</span><span class="nc">card-list</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
-<span class="w">    </span><span class="k">flex-wrap</span><span class="p">:</span><span class="w"> </span><span class="kc">wrap</span><span class="p">;</span>
-<span class="w">    </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-
+/* 卡片列表：自动换行+间距 */
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+</code></pre>
 <p>【演讲备注】
 flex-direction决定主轴方向，row是默认值从左到右，column是从上到下垂直排列。justify-content控制主轴方向的对齐，space-between是两端对齐，做导航栏特别好用。align-items控制交叉轴方向的对齐。那个经典组合一定要记住：display: flex + justify-content: center + align-items: center，实现水平垂直双居中。flex-wrap默认不换行，改成wrap允许换行。gap是间距，以前要给子元素加margin然后处理最后一个，现在直接在父容器写gap就行。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P17]</p>
 <h2>标题区</h2>
 <p>Flex项目属性</p>
@@ -927,13 +968,15 @@ flex-direction决定主轴方向，row是默认值从左到右，column是从上
 <p>两个子元素都写flex: 1 --&gt; 平分空间
 一个flex: 1 一个flex: 2 --&gt; 1:2比例分配</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="p">.</span><span class="nc">sidebar</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">flex</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">200</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="p">.</span><span class="nc">main</span><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="k">flex</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div>
-
+<pre><code class="language-css">
+.sidebar { flex: 0 0 200px; }
+.main    { flex: 1; }
+</code></pre>
 <p>【演讲备注】
 子元素上的属性，最常用的是flex简写。flex: 1的意思是占满剩余空间。如果有两个子元素都写了flex: 1，就平分空间；一个写flex: 1一个写flex: 2，就是1:2的比例。flex: 0 0 200px是固定宽度，不放大也不缩小。做侧边栏+主内容布局的时候，侧边栏固定宽度，主内容flex: 1自适应，这个组合特别常用。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P18]</p>
 <h2>标题区</h2>
 <p>Grid布局 - 二维布局利器</p>
@@ -958,26 +1001,28 @@ flex-direction决定主轴方向，row是默认值从左到右，column是从上
   1fr 1fr 1fr = 三等分（每列占1份）
   2fr 1fr = 2:1比例（第一列占2份，第二列占1份）</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="p">.</span><span class="nc">page</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
-<span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="kt">px</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span>
-<span class="w">    </span><span class="k">grid-template-rows</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="kt">px</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span>
+<pre><code class="language-css">
+.page {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 1fr 40px;
+}
 
-<span class="c">/* 三列等宽 */</span>
-<span class="nt">grid-template-columns</span><span class="o">:</span><span class="w"> </span><span class="nt">1fr</span><span class="w"> </span><span class="nt">1fr</span><span class="w"> </span><span class="nt">1fr</span><span class="o">;</span>
-<span class="nt">grid-template-columns</span><span class="o">:</span><span class="w"> </span><span class="nt">repeat</span><span class="o">(</span><span class="nt">3</span><span class="o">,</span><span class="w"> </span><span class="nt">1fr</span><span class="o">);</span>
+/* 三列等宽 */
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: repeat(3, 1fr);
 
-<span class="c">/* 2:1比例 */</span>
-<span class="nt">grid-template-columns</span><span class="o">:</span><span class="w"> </span><span class="nt">2fr</span><span class="w"> </span><span class="nt">1fr</span><span class="o">;</span>
+/* 2:1比例 */
+grid-template-columns: 2fr 1fr;
 
-<span class="c">/* 响应式：自动算一行放几个 */</span>
-<span class="nt">grid-template-columns</span><span class="o">:</span><span class="w"> </span><span class="nt">repeat</span><span class="o">(</span><span class="nt">auto-fill</span><span class="o">,</span><span class="w"> </span><span class="nt">minmax</span><span class="o">(</span><span class="nt">280px</span><span class="o">,</span><span class="w"> </span><span class="nt">1fr</span><span class="o">));</span>
-</code></pre></div>
-
+/* 响应式：自动算一行放几个 */
+grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+</code></pre>
 <p>【演讲备注】
 Grid是二维布局，可以同时控制行和列。怎么选？排列一行或一列的东西用Flex，需要行和列同时控制的用Grid。fr是Grid特有的单位，表示按比例分配空间。repeat(auto-fill, minmax(280px, 1fr))这行代码特别实用：每个卡片最小280px，自动算一行能放几个，窗口缩小的时候自动从三列变两列变一列，不用写媒体查询。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P19]</p>
 <h2>标题区</h2>
 <p>grid-template-areas - 给区域起名字</p>
@@ -994,32 +1039,34 @@ Grid是二维布局，可以同时控制行和列。怎么选？排列一行或�
 <p>子元素用grid-area认领自己的位置：
   grid-area: header  表示这个元素放在header区域</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="p">.</span><span class="nc">page</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
-<span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="kt">px</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span>
-<span class="w">    </span><span class="k">grid-template-rows</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="kt">px</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="w"> </span><span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="k">grid-template-areas</span><span class="p">:</span>
-<span class="w">        </span><span class="s2">&quot;header  header&quot;</span>
-<span class="w">        </span><span class="s2">&quot;sidebar main&quot;</span>
-<span class="w">        </span><span class="s2">&quot;footer  footer&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span>
+<pre><code class="language-css">
+.page {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 1fr 40px;
+    grid-template-areas:
+        &quot;header  header&quot;
+        &quot;sidebar main&quot;
+        &quot;footer  footer&quot;;
+    gap: 10px;
+}
 
-<span class="p">.</span><span class="nc">header</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">header</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="p">.</span><span class="nc">sidebar</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">sidebar</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="p">.</span><span class="nc">main</span><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">main</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="p">.</span><span class="nc">footer</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">footer</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+.header  { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main    { grid-area: main; }
+.footer  { grid-area: footer; }
 
-<span class="c">/* 三列布局 */</span>
-<span class="nt">grid-template-areas</span><span class="o">:</span>
-<span class="w">    </span><span class="s2">&quot;header  header  header&quot;</span>
-<span class="w">    </span><span class="s2">&quot;sidebar main    aside&quot;</span>
-<span class="w">    </span><span class="s2">&quot;footer  footer  footer&quot;</span><span class="o">;</span>
-</code></pre></div>
-
+/* 三列布局 */
+grid-template-areas:
+    &quot;header  header  header&quot;
+    &quot;sidebar main    aside&quot;
+    &quot;footer  footer  footer&quot;;
+</code></pre>
 <p>【演讲备注】
 grid-template-areas是Grid最直观的用法。你在父容器里画个"地图"，每个区域起个名字，子元素用grid-area认领自己的位置。一眼就能看出页面结构，比写坐标数字直观多了。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P20]</p>
 <h2>标题区</h2>
 <p>常用界面模板1 - 顶部导航栏（Flex）</p>
@@ -1029,12 +1076,13 @@ grid-template-areas是Grid最直观的用法。你在父容器里画个"地图"�
   align-items: center垂直居中
   box-shadow做底部阴影线</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;navbar&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;logo&quot;</span><span class="p">&gt;</span>Logo<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;nav-links&quot;</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>首页<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">li</span><span class="p">&gt;</span>关于<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">li</span><span class="p">&gt;</span>联系<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+<pre><code class="language-html">
+&lt;nav class=&quot;navbar&quot;&gt;
+    &lt;div class=&quot;logo&quot;&gt;Logo&lt;/div&gt;
+    &lt;ul class=&quot;nav-links&quot;&gt;
+        &lt;li&gt;首页&lt;/li&gt;&lt;li&gt;关于&lt;/li&gt;&lt;li&gt;联系&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
 
 .navbar {
     display: flex;
@@ -1050,11 +1098,12 @@ grid-template-areas是Grid最直观的用法。你在父容器里画个"地图"�
     gap: 24px;
     list-style: none;
 }
-</code></pre></div>
-
+</code></pre>
 <p>【演讲备注】
 第一个是顶部导航栏，几乎所有页面都要用。Flex布局，space-between让logo在左边菜单在右边，align-items: center让内容垂直居中，box-shadow做底部一条淡淡的阴影线。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P21]</p>
 <h2>标题区</h2>
 <p>常用界面模板2 - 卡片列表（Grid推荐）</p>
@@ -1064,28 +1113,30 @@ grid-template-areas是Grid最直观的用法。你在父容器里画个"地图"�
   hover时上移+阴影加深 = 悬浮效果
   Grid版自动响应式，不用算calc</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="c">/* Grid版（推荐） */</span>
-<span class="p">.</span><span class="nc">card-list</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
-<span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="nf">repeat</span><span class="p">(</span><span class="kc">auto</span><span class="nv">-fill</span><span class="p">,</span><span class="w"> </span><span class="nf">minmax</span><span class="p">(</span><span class="mi">280</span><span class="kt">px</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">));</span>
-<span class="w">    </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
-<span class="p">}</span>
+<pre><code class="language-css">
+/* Grid版（推荐） */
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
 
-<span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
-<span class="w">    </span><span class="k">overflow</span><span class="p">:</span><span class="w"> </span><span class="kc">hidden</span><span class="p">;</span>
-<span class="w">    </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="kc">all</span><span class="w"> </span><span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">card</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translateY</span><span class="p">(</span><span class="mi">-4</span><span class="kt">px</span><span class="p">);</span>
-<span class="w">    </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="w"> </span><span class="mi">24</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.12</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
-
+.card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+</code></pre>
 <p>【演讲备注】
 第二个是卡片列表，展示商品、文章、作品集都用到。推荐Grid版，repeat(auto-fill, minmax(280px, 1fr))自动算一行放几个，不用手动calc，还自带响应式。卡片样式：border-radius做圆角，box-shadow做阴影，overflow: hidden让内容不超出圆角。hover时transform上移，阴影加深，就是之前讲的悬浮效果。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P22]</p>
 <h2>标题区</h2>
 <p>常用界面模板3 - 登录表单（Flex居中）与模板4 - 后台管理（Grid+Flex）</p>
@@ -1099,47 +1150,49 @@ grid-template-areas是Grid最直观的用法。你在父容器里画个"地图"�
   Flex排框架内部的细节（导航栏里的元素）
   这就是实际开发中最常见的搭配方式</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="c">/* 登录表单 */</span>
-<span class="p">.</span><span class="nc">form-wrapper</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
-<span class="w">    </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
-<span class="w">    </span><span class="k">align-items</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
-<span class="w">    </span><span class="k">min-height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
-<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#f5f5f5</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">form-card</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#fff</span><span class="p">;</span>
-<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
-<span class="w">    </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">4</span><span class="kt">px</span><span class="w"> </span><span class="mi">16</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.08</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">form-card</span><span class="w"> </span><span class="nt">input</span><span class="p">:</span><span class="nd">focus</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">border-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#409eff</span><span class="p">;</span>
-<span class="w">    </span><span class="k">outline</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
-<span class="w">    </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">3</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span><span class="mi">158</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mf">0.2</span><span class="p">);</span>
-<span class="p">}</span>
+<pre><code class="language-css">
+/* 登录表单 */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+.form-card {
+    width: 400px;
+    padding: 32px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.form-card input:focus {
+    border-color: #409eff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(64,158,255,0.2);
+}
 
-<span class="c">/* 后台管理 */</span>
-<span class="p">.</span><span class="nc">layout</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="k">grid</span><span class="p">;</span>
-<span class="w">    </span><span class="k">grid-template-columns</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="kt">px</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span>
-<span class="w">    </span><span class="k">grid-template-rows</span><span class="p">:</span><span class="w"> </span><span class="mi">60</span><span class="kt">px</span><span class="w"> </span><span class="mi">1</span><span class="n">fr</span><span class="p">;</span>
-<span class="w">    </span><span class="k">grid-template-areas</span><span class="p">:</span>
-<span class="w">        </span><span class="s2">&quot;sidebar header&quot;</span>
-<span class="w">        </span><span class="s2">&quot;sidebar main&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="k">min-height</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="p">.</span><span class="nc">header</span><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">header</span><span class="p">;</span><span class="w"> </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span><span class="w"> </span><span class="k">align-items</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="p">.</span><span class="nc">sidebar</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">sidebar</span><span class="p">;</span><span class="w"> </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#304156</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="p">.</span><span class="nc">main</span><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="k">grid-area</span><span class="p">:</span><span class="w"> </span><span class="n">main</span><span class="p">;</span><span class="w"> </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#f0f2f5</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div>
-
+/* 后台管理 */
+.layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas:
+        &quot;sidebar header&quot;
+        &quot;sidebar main&quot;;
+    min-height: 100vh;
+}
+.header  { grid-area: header; display: flex; align-items: center; }
+.sidebar { grid-area: sidebar; background: #304156; }
+.main    { grid-area: main; padding: 20px; background: #f0f2f5; }
+</code></pre>
 <p>【演讲备注】
 第三个是登录表单，课程设计里肯定用得到。外层Flex双居中，min-height: 100vh占满整个屏幕高度，表单卡片就在正中间。第四个是后台管理页面，Grid搭整体框架，header在上，sidebar在左，main在右。header里面再用Flex排用户名、搜索框这些细节。Grid和Flex搭配的标准用法：Grid管大框架，Flex管小细节。</p>
 <hr />
 <h1>第五章 JS基础</h1>
 <hr />
+<div class="page-break"></div>
+
 <p>[P23]</p>
 <h2>标题区</h2>
 <p>var有什么问题？</p>
@@ -1174,30 +1227,32 @@ grid-template-areas是Grid最直观的用法。你在父容器里画个"地图"�
 <p>选择策略：默认用const，需要改的用let，var别用了
   const存数组和对象时，内容可以改（push、修改属性），只是引用不能变</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="cm">/* 作用域泄露 */</span>
-<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span><span class="w">  </span><span class="c1">// 10，跑出来了</span>
+<pre><code class="language-javascript">
+/* 作用域泄露 */
+if (true) { var x = 10; }
+console.log(x);  // 10，跑出来了
 
-<span class="cm">/* 重复声明 */</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;小明&quot;</span><span class="p">;</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;小红&quot;</span><span class="p">;</span><span class="w">  </span><span class="c1">// 不报错</span>
+/* 重复声明 */
+var name = &quot;小明&quot;;
+var name = &quot;小红&quot;;  // 不报错
 
-<span class="cm">/* 变量提升 */</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span><span class="w">  </span><span class="c1">// undefined</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+/* 变量提升 */
+console.log(a);  // undefined
+var a = 1;
 
-<span class="cm">/* let/const 解决 */</span>
-<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kd">let</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">y</span><span class="p">);</span><span class="w">  </span><span class="c1">// 报错，y不存在</span>
+/* let/const 解决 */
+if (true) { let y = 10; }
+console.log(y);  // 报错，y不存在
 
-<span class="kd">const</span><span class="w"> </span><span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">];</span>
-<span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="mf">4</span><span class="p">);</span><span class="w">   </span><span class="c1">// 可以，改的是内容</span>
-<span class="nx">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">];</span><span class="w">  </span><span class="c1">// 报错，不能改引用</span>
-</code></pre></div>
-
+const arr = [1, 2, 3];
+arr.push(4);   // 可以，改的是内容
+arr = [5, 6];  // 报错，不能改引用
+</code></pre>
 <p>【演讲备注】
 JS部分从大家最熟悉的var说起。var有几个坑：作用域泄露、允许重复声明、变量提升。let和const解决了这些问题。const不能重新赋值，但存对象或数组时内容可以改，const限制的是"引用不能变"不是"内容不能变"。策略：默认const，需要改的用let，var别用了。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P24]</p>
 <h2>标题区</h2>
 <p>JS数据类型</p>
@@ -1226,20 +1281,22 @@ JS部分从大家最熟悉的var说起。var有几个坑：作用域泄露、允
   typeof []         返回 "object"  坑！数组本质也是对象</p>
 <p>判断数组的正确方法：Array.isArray([1,2,3])  返回 true</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="ow">typeof</span><span class="w"> </span><span class="mf">123</span><span class="w">        </span><span class="c1">// &quot;number&quot;</span>
-<span class="ow">typeof</span><span class="w"> </span><span class="s2">&quot;hello&quot;</span><span class="w">    </span><span class="c1">// &quot;string&quot;</span>
-<span class="ow">typeof</span><span class="w"> </span><span class="kc">true</span><span class="w">       </span><span class="c1">// &quot;boolean&quot;</span>
-<span class="ow">typeof</span><span class="w"> </span><span class="kc">undefined</span><span class="w">  </span><span class="c1">// &quot;undefined&quot;</span>
-<span class="ow">typeof</span><span class="w"> </span><span class="kc">null</span><span class="w">       </span><span class="c1">// &quot;object&quot;  坑！</span>
-<span class="ow">typeof</span><span class="w"> </span><span class="p">{}</span><span class="w">         </span><span class="c1">// &quot;object&quot;</span>
-<span class="ow">typeof</span><span class="w"> </span><span class="p">[]</span><span class="w">         </span><span class="c1">// &quot;object&quot;  坑！</span>
+<pre><code class="language-javascript">
+typeof 123        // &quot;number&quot;
+typeof &quot;hello&quot;    // &quot;string&quot;
+typeof true       // &quot;boolean&quot;
+typeof undefined  // &quot;undefined&quot;
+typeof null       // &quot;object&quot;  坑！
+typeof {}         // &quot;object&quot;
+typeof []         // &quot;object&quot;  坑！
 
-<span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">([</span><span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="mf">3</span><span class="p">])</span><span class="w">  </span><span class="c1">// true</span>
-</code></pre></div>
-
+Array.isArray([1,2,3])  // true
+</code></pre>
 <p>【演讲备注】
 数据类型这块，基本类型大家课上学过Number、String、Boolean，补充两个：undefined是"声明了但没赋值"的默认值，null是你主动设的"空"。typeof可以判断类型，但有两个坑：typeof null返回"object"，这是历史bug；typeof数组也返回"object"。判断数组要用Array.isArray()。基本类型和引用类型的区别很重要：基本类型赋值是复制值，互不影响；引用类型赋值是复制地址，改一个另一个也变。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P25]</p>
 <h2>标题区</h2>
 <p>数组 - JS里用得最多的数据结构</p>
@@ -1264,27 +1321,29 @@ JS部分从大家最熟悉的var说起。var有几个坑：作用域泄露、允
   forEach        对每个元素执行操作，没有返回值
   for...of       直接获取元素值，简洁推荐</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">fruits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;苹果&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;香蕉&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;橙子&quot;</span><span class="p">];</span>
-<span class="nx">fruits</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w">                        </span><span class="c1">// &quot;苹果&quot;</span>
-<span class="nx">fruits</span><span class="p">[</span><span class="nx">fruits</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">]</span><span class="w">        </span><span class="c1">// &quot;橙子&quot;</span>
+<pre><code class="language-javascript">
+const fruits = [&quot;苹果&quot;, &quot;香蕉&quot;, &quot;橙子&quot;];
+fruits[0]                        // &quot;苹果&quot;
+fruits[fruits.length - 1]        // &quot;橙子&quot;
 
-<span class="nx">fruits</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">&quot;芒果&quot;</span><span class="p">)</span><span class="w">              </span><span class="c1">// 末尾添加</span>
-<span class="nx">fruits</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span><span class="w">                     </span><span class="c1">// 末尾删除</span>
-<span class="nx">fruits</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">&quot;香蕉&quot;</span><span class="p">)</span><span class="w">           </span><span class="c1">// 找索引</span>
-<span class="nx">fruits</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="s2">&quot;苹果&quot;</span><span class="p">)</span><span class="w">          </span><span class="c1">// 是否包含</span>
-<span class="nx">fruits</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span><span class="w">              </span><span class="c1">// 从索引1删1个（修改原数组）</span>
-<span class="nx">fruits</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">)</span><span class="w">               </span><span class="c1">// 截取（不修改原数组）</span>
-<span class="nx">fruits</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="p">)</span><span class="w">                </span><span class="c1">// &quot;苹果, 香蕉&quot;</span>
+fruits.push(&quot;芒果&quot;)              // 末尾添加
+fruits.pop()                     // 末尾删除
+fruits.indexOf(&quot;香蕉&quot;)           // 找索引
+fruits.includes(&quot;苹果&quot;)          // 是否包含
+fruits.splice(1, 1)              // 从索引1删1个（修改原数组）
+fruits.slice(0, 2)               // 截取（不修改原数组）
+fruits.join(&quot;, &quot;)                // &quot;苹果, 香蕉&quot;
 
-<span class="cm">/* 遍历 */</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">fruits</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
-<span class="nx">fruits</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">item</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">));</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">item</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">fruits</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">item</span><span class="p">);</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div>
-
+/* 遍历 */
+for (let i = 0; i &lt; fruits.length; i++) { ... }
+fruits.forEach(item =&gt; console.log(item));
+for (const item of fruits) { console.log(item); }
+</code></pre>
 <p>【演讲备注】
 数组是JS里用得最多的数据结构。常用方法：push末尾加、pop末尾删、indexOf找索引、includes判断有没有。splice和slice容易搞混：splice会修改原数组，slice不会。遍历三种方式，推荐for...of，简洁而且可以用break和continue。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P26]</p>
 <h2>标题区</h2>
 <p>数组高阶方法</p>
@@ -1309,27 +1368,29 @@ JS部分从大家最熟悉的var说起。var有几个坑：作用域泄露、允
 <p>some     判断有没有满足条件的（返回布尔值）
 every    判断是不是全部满足条件（返回布尔值）</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="cm">/* map */</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">doubled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">].</span><span class="nx">map</span><span class="p">(</span><span class="nx">n</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span><span class="w">  </span><span class="c1">// [2, 4, 6]</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[{</span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;小明&quot;</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;小红&quot;</span><span class="p">}].</span><span class="nx">map</span><span class="p">(</span><span class="nx">u</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">u</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+<pre><code class="language-javascript">
+/* map */
+const doubled = [1, 2, 3].map(n =&gt; n * 2);  // [2, 4, 6]
+const names = [{name: &quot;小明&quot;}, {name: &quot;小红&quot;}].map(u =&gt; u.name);
 
-<span class="cm">/* filter */</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">passed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">45</span><span class="p">,</span><span class="w"> </span><span class="mf">80</span><span class="p">,</span><span class="w"> </span><span class="mf">92</span><span class="p">,</span><span class="w"> </span><span class="mf">55</span><span class="p">,</span><span class="w"> </span><span class="mf">78</span><span class="p">].</span><span class="nx">filter</span><span class="p">(</span><span class="nx">s</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">s</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">60</span><span class="p">);</span><span class="w">  </span><span class="c1">// [80, 92, 78]</span>
+/* filter */
+const passed = [45, 80, 92, 55, 78].filter(s =&gt; s &gt;= 60);  // [80, 92, 78]
 
-<span class="cm">/* reduce */</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">].</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">acc</span><span class="p">,</span><span class="w"> </span><span class="nx">cur</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">acc</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">cur</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span><span class="w">  </span><span class="c1">// 10</span>
+/* reduce */
+const sum = [1, 2, 3, 4].reduce((acc, cur) =&gt; acc + cur, 0);  // 10
 
-<span class="cm">/* find */</span>
-<span class="p">[</span><span class="mf">45</span><span class="p">,</span><span class="w"> </span><span class="mf">80</span><span class="p">,</span><span class="w"> </span><span class="mf">92</span><span class="p">].</span><span class="nx">find</span><span class="p">(</span><span class="nx">s</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">s</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">60</span><span class="p">);</span><span class="w">  </span><span class="c1">// 80</span>
+/* find */
+[45, 80, 92].find(s =&gt; s &gt;= 60);  // 80
 
-<span class="cm">/* some / every */</span>
-<span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">].</span><span class="nx">some</span><span class="p">(</span><span class="nx">n</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span><span class="w">    </span><span class="c1">// true</span>
-<span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">].</span><span class="nx">every</span><span class="p">(</span><span class="nx">n</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span><span class="w">   </span><span class="c1">// false</span>
-</code></pre></div>
-
+/* some / every */
+[1, 2, 3].some(n =&gt; n &gt; 2);    // true
+[1, 2, 3].every(n =&gt; n &gt; 2);   // false
+</code></pre>
 <p>【演讲备注】
 数组的高阶方法，做项目和打比赛都会频繁用到。map是对每个元素做加工返回新数组。filter是过滤只保留满足条件的。reduce是累计计算，acc是累加器，cur是当前元素，最后的0是初始值。find找第一个满足条件的，some判断有没有满足的，every判断是不是全部满足。这些方法都不改变原数组。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P27]</p>
 <h2>标题区</h2>
 <p>对象 + 模板字符串</p>
@@ -1358,35 +1419,37 @@ every    判断是不是全部满足条件（返回布尔值）</p>
   ${}内可以写任意JS表达式（变量、运算、函数调用）
   支持多行字符串，拼HTML特别方便</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">student</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;小明&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">20</span><span class="p">,</span><span class="w"> </span><span class="nx">major</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;计算机&quot;</span><span class="w"> </span><span class="p">};</span>
+<pre><code class="language-javascript">
+const student = { name: &quot;小明&quot;, age: 20, major: &quot;计算机&quot; };
 
-<span class="nx">student</span><span class="p">.</span><span class="nx">name</span><span class="w">                    </span><span class="c1">// &quot;小明&quot;</span>
-<span class="nx">student</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">]</span><span class="w">                  </span><span class="c1">// 20</span>
-<span class="nx">student</span><span class="p">.</span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">21</span><span class="w">                </span><span class="c1">// 修改</span>
-<span class="nx">student</span><span class="p">.</span><span class="nx">grade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;大二&quot;</span><span class="w">          </span><span class="c1">// 添加</span>
-<span class="ow">delete</span><span class="w"> </span><span class="nx">student</span><span class="p">.</span><span class="nx">major</span><span class="w">            </span><span class="c1">// 删除</span>
+student.name                    // &quot;小明&quot;
+student[&quot;age&quot;]                  // 20
+student.age = 21                // 修改
+student.grade = &quot;大二&quot;          // 添加
+delete student.major            // 删除
 
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">key</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nx">student</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span><span class="w"> </span><span class="nx">student</span><span class="p">[</span><span class="nx">key</span><span class="p">]);</span><span class="w"> </span><span class="p">}</span>
+for (let key in student) { console.log(key, student[key]); }
 
-<span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">student</span><span class="p">;</span><span class="w">  </span><span class="c1">// 解构</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">copy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">student</span><span class="w"> </span><span class="p">};</span><span class="w">    </span><span class="c1">// 展开</span>
+const { name, age } = student;  // 解构
+const copy = { ...student };    // 展开
 
-<span class="cm">/* 模板字符串 */</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;小明&quot;</span><span class="p">;</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span><span class="p">;</span>
+/* 模板字符串 */
+const name = &quot;小明&quot;; const age = 20;
 
-<span class="c1">// 以前</span>
-<span class="s2">&quot;我叫&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;，今年&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;岁&quot;</span>
+// 以前
+&quot;我叫&quot; + name + &quot;，今年&quot; + age + &quot;岁&quot;
 
-<span class="c1">// 现在</span>
-<span class="sb">`我叫</span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">，今年</span><span class="si">${</span><span class="nx">age</span><span class="si">}</span><span class="sb">岁`</span>
-<span class="sb">`明年</span><span class="si">${</span><span class="nx">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="si">}</span><span class="sb">岁`</span>
-</code></pre></div>
-
+// 现在
+`我叫${name}，今年${age}岁`
+`明年${age + 1}岁`
+</code></pre>
 <p>【演讲备注】
 对象就是键值对，用花括号包起来。访问属性用点语法或者方括号。遍历对象用for...in，注意这个遍历的是key不是value。解构赋值可以从对象里直接提取属性，展开运算符可以复制或者合并对象。模板字符串用反引号包起来，变量用${}包裹，比用加号拼字符串方便太多。而且支持换行，不用写\n了。${}里面还能写表达式。</p>
 <hr />
 <h1>第六章 JS运算符与流程控制</h1>
 <hr />
+<div class="page-break"></div>
+
 <p>[P28]</p>
 <h2>标题区</h2>
 <p>== vs ===</p>
@@ -1404,21 +1467,23 @@ every    判断是不是全部满足条件（返回布尔值）</p>
   NaN不等于任何值，包括它自己（NaN === NaN 返回false）
   判断NaN要用Number.isNaN()方法</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="mf">3</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;3&quot;</span><span class="w">    </span><span class="c1">// true   （&quot;3&quot;被转成数字3）</span>
-<span class="mf">3</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;3&quot;</span><span class="w">   </span><span class="c1">// false  （数字和字符串类型不同）</span>
-<span class="s2">&quot;&quot;</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="c1">// true   （空字符串转0，false也转0）</span>
-<span class="mf">0</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">false</span><span class="w">  </span><span class="c1">// true</span>
-<span class="p">[]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="c1">// true</span>
+<pre><code class="language-javascript">
+3 == &quot;3&quot;    // true   （&quot;3&quot;被转成数字3）
+3 === &quot;3&quot;   // false  （数字和字符串类型不同）
+&quot;&quot; == false // true   （空字符串转0，false也转0）
+0 == false  // true
+[] == false // true
 
-<span class="kc">NaN</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">NaN</span><span class="w">  </span><span class="c1">// false</span>
-<span class="kc">NaN</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">NaN</span><span class="w"> </span><span class="c1">// false</span>
+NaN == NaN  // false
+NaN === NaN // false
 
-<span class="nb">Number</span><span class="p">.</span><span class="nb">isNaN</span><span class="p">(</span><span class="kc">NaN</span><span class="p">)</span><span class="w">  </span><span class="c1">// true</span>
-</code></pre></div>
-
+Number.isNaN(NaN)  // true
+</code></pre>
 <p>【演讲备注】
 ==和===的区别，竞赛必考。==会做类型转换，===不会。空字符串、0、空数组用==比较都等于false，太离谱了。结论：永远用===。NaN是JS里唯一一个不等于自己的值，判断NaN要用Number.isNaN()。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P29]</p>
 <h2>标题区</h2>
 <p>条件判断与循环</p>
@@ -1436,25 +1501,27 @@ every    判断是不是全部满足条件（返回布尔值）</p>
   break     跳出整个循环（不再执行后续循环）
   continue  跳过当前这一轮，进入下一轮</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="cm">/* 三元运算符 */</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">score</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">60</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s2">&quot;及格&quot;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;挂科&quot;</span><span class="p">;</span>
+<pre><code class="language-javascript">
+/* 三元运算符 */
+let result = score &gt;= 60 ? &quot;及格&quot; : &quot;挂科&quot;;
 
-<span class="cm">/* for循环 */</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+/* for循环 */
+for (let i = 0; i &lt; 10; i++) { ... }
 
-<span class="cm">/* while循环 */</span>
-<span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nx">condition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+/* while循环 */
+while (condition) { ... }
 
-<span class="cm">/* for...of 遍历数组 */</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">item</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">array</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+/* for...of 遍历数组 */
+for (const item of array) { ... }
 
-<span class="cm">/* for...in 遍历对象 */</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">key</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nx">object</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div>
-
+/* for...in 遍历对象 */
+for (const key in object) { ... }
+</code></pre>
 <p>【演讲备注】
 条件和循环大家都有基础，快速过。三元运算符是if-else的简写，适合简单的二选一。for...of遍历数组拿值，for...in遍历对象拿key，别搞混。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P30]</p>
 <h2>标题区</h2>
 <p>实战：九九乘法表</p>
@@ -1464,24 +1531,26 @@ every    判断是不是全部满足条件（返回布尔值）</p>
   内层循环控制列（j从1到i）
   模板字符串拼接每一项</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">9</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">row</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span><span class="w"> </span><span class="nx">j</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="nx">i</span><span class="p">;</span><span class="w"> </span><span class="nx">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">row</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">j</span><span class="si">}</span><span class="sb">x</span><span class="si">${</span><span class="nx">i</span><span class="si">}</span><span class="sb">=</span><span class="si">${</span><span class="nx">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">j</span><span class="si">}</span><span class="sb">\t`</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">row</span><span class="p">);</span>
-<span class="p">}</span>
+<pre><code class="language-javascript">
+for (let i = 1; i &lt;= 9; i++) {
+    let row = &quot;&quot;;
+    for (let j = 1; j &lt;= i; j++) {
+        row += `${j}x${i}=${i * j}\t`;
+    }
+    console.log(row);
+}
 
-<span class="c1">// 输出：</span>
-<span class="c1">// 1x1=1</span>
-<span class="c1">// 1x2=2  2x2=4</span>
-<span class="c1">// 1x3=3  2x3=6  3x3=9</span>
-<span class="c1">// ...</span>
-</code></pre></div>
-
+// 输出：
+// 1x1=1
+// 1x2=2  2x2=4
+// 1x3=3  2x3=6  3x3=9
+// ...
+</code></pre>
 <p>【演讲备注】
 九九乘法表，嵌套循环最经典的例子。外层循环i控制行，从1到9。内层循环j控制列，从1到i。为什么j只到i？因为乘法表是三角形的，第i行只有i个式子。这个练习把for循环、嵌套循环、模板字符串都串起来了。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P31]</p>
 <h2>标题区</h2>
 <p>实战：打印三角形</p>
@@ -1490,34 +1559,36 @@ every    判断是不是全部满足条件（返回布尔值）</p>
 等腰三角形：第i行有(5-i)个空格 + (2i-1)个星号
 repeat(n)方法：把字符串重复n次</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="cm">/* 直角三角形 */</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;*&quot;</span><span class="p">.</span><span class="nx">repeat</span><span class="p">(</span><span class="nx">i</span><span class="p">));</span>
-<span class="p">}</span>
-<span class="c1">// *</span>
-<span class="c1">// **</span>
-<span class="c1">// ***</span>
-<span class="c1">// ****</span>
-<span class="c1">// *****</span>
+<pre><code class="language-javascript">
+/* 直角三角形 */
+for (let i = 1; i &lt;= 5; i++) {
+    console.log(&quot;*&quot;.repeat(i));
+}
+// *
+// **
+// ***
+// ****
+// *****
 
-<span class="cm">/* 等腰三角形 */</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">spaces</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot; &quot;</span><span class="p">.</span><span class="nx">repeat</span><span class="p">(</span><span class="mf">5</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">i</span><span class="p">);</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">stars</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">.</span><span class="nx">repeat</span><span class="p">(</span><span class="mf">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">spaces</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">stars</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="c1">//     *</span>
-<span class="c1">//    ***</span>
-<span class="c1">//   *****</span>
-<span class="c1">//  *******</span>
-<span class="c1">// *********</span>
-</code></pre></div>
-
+/* 等腰三角形 */
+for (let i = 1; i &lt;= 5; i++) {
+    const spaces = &quot; &quot;.repeat(5 - i);
+    const stars = &quot;*&quot;.repeat(2 * i - 1);
+    console.log(spaces + stars);
+}
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+</code></pre>
 <p>【演讲备注】
 打印三角形，也是循环的经典练习。直角三角形很简单，第i行i个星号，用repeat方法重复字符串就行。等腰三角形稍微复杂一点，每行前面有空格，空格数是5-i，星号数是2i-1。这两个练习练的是循环的核心思路：外层控制行，内层控制每行的内容。</p>
 <hr />
 <h1>第七章 JS函数</h1>
 <hr />
+<div class="page-break"></div>
+
 <p>[P32]</p>
 <h2>标题区</h2>
 <p>函数三种写法</p>
@@ -1541,25 +1612,27 @@ repeat(n)方法：把字符串重复n次</p>
   一行代码省大括号和return（自动返回表达式的值）
   多行代码要大括号和return（需要手动写return）</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="c1">// 函数声明</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">add</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<pre><code class="language-javascript">
+// 函数声明
+function add(a, b) { return a + b; }
 
-<span class="c1">// 函数表达式</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">add</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span><span class="w"> </span><span class="p">};</span>
+// 函数表达式
+const add = function(a, b) { return a + b; };
 
-<span class="c1">// 箭头函数</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">add</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span>
+// 箭头函数
+const add = (a, b) =&gt; a + b;
 
-<span class="c1">// 箭头函数多行</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">add</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">2</span><span class="p">;</span>
-<span class="p">};</span>
-</code></pre></div>
-
+// 箭头函数多行
+const add = (a, b) =&gt; {
+    const sum = a + b;
+    return sum * 2;
+};
+</code></pre>
 <p>【演讲备注】
 函数是JS的核心概念。三种写法效果一样，但有个关键区别——this的指向不同。先看三种写法长什么样。函数声明和函数表达式的区别是：函数声明有整体提升，你可以在声明之前调用它；函数表达式不行。不过实际写代码都是先声明再调用，这个区别影响不大。箭头函数是重点，写法短。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P33]</p>
 <h2>标题区</h2>
 <p>this指向 - 三种写法最大的区别</p>
@@ -1577,22 +1650,24 @@ repeat(n)方法：把字符串重复n次</p>
   需要用this（操作触发事件的元素） --&gt; 用普通函数
   不需要this（纯数据处理） --&gt; 箭头函数更简洁</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">btn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#myBtn&quot;</span><span class="p">);</span>
+<pre><code class="language-javascript">
+const btn = document.querySelector(&quot;#myBtn&quot;);
 
-<span class="c1">// 普通函数 -- this指向btn，正确</span>
-<span class="nx">btn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;已点击&quot;</span><span class="p">;</span>
-<span class="p">});</span>
+// 普通函数 -- this指向btn，正确
+btn.addEventListener(&quot;click&quot;, function() {
+    this.textContent = &quot;已点击&quot;;
+});
 
-<span class="c1">// 箭头函数 -- this指向window，不对</span>
-<span class="nx">btn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;已点击&quot;</span><span class="p">;</span>
-<span class="p">});</span>
-</code></pre></div>
-
+// 箭头函数 -- this指向window，不对
+btn.addEventListener(&quot;click&quot;, () =&gt; {
+    this.textContent = &quot;已点击&quot;;
+});
+</code></pre>
 <p>【演讲备注】
 三种写法最大的区别是this的指向。来看个实际场景：页面上有个按钮，点击后改按钮文字。用普通函数，this指向btn，正确。用箭头函数，this指向window，不对。因为普通函数的this是"谁调用我this就是谁"，箭头函数没有自己的this，它从外层"继承"this。所以规则很简单：需要用this的时候用普通函数，其他时候箭头函数更简洁。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P34]</p>
 <h2>标题区</h2>
 <p>参数默认值 + 解构参数</p>
@@ -1612,35 +1687,37 @@ repeat(n)方法：把字符串重复n次</p>
   解构参数如果不传任何参数会报错（因为要对undefined解构）
   解决方法：在最外层加 = {} 作为默认值</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="cm">/* 参数默认值 */</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;同学&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;你好，&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">name</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="nx">greet</span><span class="p">();</span><span class="w">       </span><span class="c1">// &quot;你好，同学&quot;</span>
-<span class="nx">greet</span><span class="p">(</span><span class="s2">&quot;小明&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// &quot;你好，小明&quot;</span>
+<pre><code class="language-javascript">
+/* 参数默认值 */
+function greet(name = &quot;同学&quot;) {
+    console.log(&quot;你好，&quot; + name);
+}
+greet();       // &quot;你好，同学&quot;
+greet(&quot;小明&quot;); // &quot;你好，小明&quot;
 
-<span class="cm">/* 箭头函数也能用 */</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">greet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;同学&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="sb">`你好，</span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+/* 箭头函数也能用 */
+const greet = (name = &quot;同学&quot;) =&gt; `你好，${name}`;
 
-<span class="cm">/* 解构参数 */</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">createUser</span><span class="p">({</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;匿名&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">18</span><span class="p">,</span><span class="w"> </span><span class="nx">role</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;user&quot;</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="p">,</span><span class="w"> </span><span class="nx">role</span><span class="w"> </span><span class="p">};</span>
-<span class="p">}</span>
-<span class="nx">createUser</span><span class="p">({</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;小明&quot;</span><span class="w"> </span><span class="p">});</span>
-<span class="c1">// { name: &quot;小明&quot;, age: 18, role: &quot;user&quot; }</span>
+/* 解构参数 */
+function createUser({ name = &quot;匿名&quot;, age = 18, role = &quot;user&quot; }) {
+    return { name, age, role };
+}
+createUser({ name: &quot;小明&quot; });
+// { name: &quot;小明&quot;, age: 18, role: &quot;user&quot; }
 
-<span class="cm">/* 不传参的默认值 */</span>
-<span class="kd">function</span><span class="w"> </span><span class="nx">createUser</span><span class="p">({</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;匿名&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">18</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{})</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="p">};</span>
-<span class="p">}</span>
-<span class="nx">createUser</span><span class="p">();</span><span class="w">  </span><span class="c1">// { name: &quot;匿名&quot;, age: 18 }</span>
-</code></pre></div>
-
+/* 不传参的默认值 */
+function createUser({ name = &quot;匿名&quot;, age = 18 } = {}) {
+    return { name, age };
+}
+createUser();  // { name: &quot;匿名&quot;, age: 18 }
+</code></pre>
 <p>【演讲备注】
 参数默认值，不传就用默认值，传了就用传的值。做项目的时候很常用。还有个解构参数的写法，传对象进去，自动解构，没传的属性用默认值。做配置项的时候特别方便。注意如果不传参数会报错，要在最外层加个={}作为默认值。</p>
 <hr />
 <h1>第八章 JS DOM与事件</h1>
 <hr />
+<div class="page-break"></div>
+
 <p>[P35]</p>
 <h2>标题区</h2>
 <p>DOM操作 - JS操控页面</p>
@@ -1668,15 +1745,17 @@ repeat(n)方法：把字符串重复n次</p>
   用户操作 --&gt; 事件触发 --&gt; JS处理数据 --&gt; 更新页面
   所有前端交互都遵循这个流程</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">el</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#myId&quot;</span><span class="p">);</span>
-<span class="nx">el</span><span class="p">.</span><span class="nx">textContent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;新文字&quot;</span><span class="p">;</span>
-<span class="nx">el</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;active&quot;</span><span class="p">);</span>
-<span class="nx">el</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">});</span>
-</code></pre></div>
-
+<pre><code class="language-javascript">
+const el = document.querySelector(&quot;#myId&quot;);
+el.textContent = &quot;新文字&quot;;
+el.classList.add(&quot;active&quot;);
+el.addEventListener(&quot;click&quot;, () =&gt; { ... });
+</code></pre>
 <p>【演讲备注】
 DOM这部分大家还没深入学，简单过一下知道怎么回事就行。核心就三步：找到元素、改内容、绑事件。找元素推荐用querySelector，CSS选择器语法，一个方法搞定。改文字用textContent，操作class用classList。绑事件用addEventListener。所有前端交互都是同一个套路：用户操作触发事件，JS处理数据，然后更新页面。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P36]</p>
 <h2>标题区</h2>
 <p>实战：按键点击给文本框赋值</p>
@@ -1692,46 +1771,48 @@ DOM这部分大家还没深入学，简单过一下知道怎么回事就行。�
 <p>进阶2：实时预览输入内容
   input事件比change事件更实时</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="cm">&lt;!-- HTML --&gt;</span>
-<span class="nt">&lt;input</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;text&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;msgInput&quot;</span><span class="w"> </span><span class="na">placeholder=</span><span class="s">&quot;请输入内容&quot;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;p</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;preview&quot;</span><span class="nt">&gt;</span>预览区域<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;button</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;quick-btn&quot;</span><span class="w"> </span><span class="na">data-text=</span><span class="s">&quot;你好&quot;</span><span class="nt">&gt;</span>快捷1：你好<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;quick-btn&quot;</span><span class="w"> </span><span class="na">data-text=</span><span class="s">&quot;在吗&quot;</span><span class="nt">&gt;</span>快捷2：在吗<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;quick-btn&quot;</span><span class="w"> </span><span class="na">data-text=</span><span class="s">&quot;收到&quot;</span><span class="nt">&gt;</span>快捷3：收到<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;clearBtn&quot;</span><span class="nt">&gt;</span>清空<span class="nt">&lt;/button&gt;</span>
+<pre><code>
+&lt;!-- HTML --&gt;
+&lt;input type=&quot;text&quot; id=&quot;msgInput&quot; placeholder=&quot;请输入内容&quot;&gt;
+&lt;p id=&quot;preview&quot;&gt;预览区域&lt;/p&gt;
+&lt;button class=&quot;quick-btn&quot; data-text=&quot;你好&quot;&gt;快捷1：你好&lt;/button&gt;
+&lt;button class=&quot;quick-btn&quot; data-text=&quot;在吗&quot;&gt;快捷2：在吗&lt;/button&gt;
+&lt;button class=&quot;quick-btn&quot; data-text=&quot;收到&quot;&gt;快捷3：收到&lt;/button&gt;
+&lt;button id=&quot;clearBtn&quot;&gt;清空&lt;/button&gt;
 
-//<span class="w"> </span>JS
-const<span class="w"> </span>msgInput<span class="w"> </span>=<span class="w"> </span>document.getElementById(&quot;msgInput&quot;);
-const<span class="w"> </span>preview<span class="w"> </span>=<span class="w"> </span>document.getElementById(&quot;preview&quot;);
-const<span class="w"> </span>quickBtns<span class="w"> </span>=<span class="w"> </span>document.querySelectorAll(&quot;.quick-btn&quot;);
-const<span class="w"> </span>clearBtn<span class="w"> </span>=<span class="w"> </span>document.getElementById(&quot;clearBtn&quot;);
+// JS
+const msgInput = document.getElementById(&quot;msgInput&quot;);
+const preview = document.getElementById(&quot;preview&quot;);
+const quickBtns = document.querySelectorAll(&quot;.quick-btn&quot;);
+const clearBtn = document.getElementById(&quot;clearBtn&quot;);
 
-//<span class="w"> </span>点击快捷按钮<span class="w"> </span>-&gt;<span class="w"> </span>给输入框赋值
-quickBtns.forEach(btn<span class="w"> </span>=&gt;<span class="w"> </span>{
-<span class="w">    </span>btn.addEventListener(&quot;click&quot;,<span class="w"> </span>()<span class="w"> </span>=&gt;<span class="w"> </span>{
-<span class="w">        </span>msgInput.value<span class="w"> </span>=<span class="w"> </span>btn.dataset.text;
-<span class="w">        </span>preview.textContent<span class="w"> </span>=<span class="w"> </span>&quot;已填入：&quot;<span class="w"> </span>+<span class="w"> </span>btn.dataset.text;
-<span class="w">    </span>});
+// 点击快捷按钮 -&gt; 给输入框赋值
+quickBtns.forEach(btn =&gt; {
+    btn.addEventListener(&quot;click&quot;, () =&gt; {
+        msgInput.value = btn.dataset.text;
+        preview.textContent = &quot;已填入：&quot; + btn.dataset.text;
+    });
 });
 
-//<span class="w"> </span>清空按钮
-clearBtn.addEventListener(&quot;click&quot;,<span class="w"> </span>()<span class="w"> </span>=&gt;<span class="w"> </span>{
-<span class="w">    </span>msgInput.value<span class="w"> </span>=<span class="w"> </span>&quot;&quot;;
-<span class="w">    </span>preview.textContent<span class="w"> </span>=<span class="w"> </span>&quot;&quot;;
+// 清空按钮
+clearBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    msgInput.value = &quot;&quot;;
+    preview.textContent = &quot;&quot;;
 });
 
-//<span class="w"> </span>进阶：追加内容
-msgInput.value<span class="w"> </span>+=<span class="w"> </span>btn.dataset.text;
+// 进阶：追加内容
+msgInput.value += btn.dataset.text;
 
-//<span class="w"> </span>进阶：实时预览
-msgInput.addEventListener(&quot;input&quot;,<span class="w"> </span>()<span class="w"> </span>=&gt;<span class="w"> </span>{
-<span class="w">    </span>preview.textContent<span class="w"> </span>=<span class="w"> </span>&quot;正在输入：&quot;<span class="w"> </span>+<span class="w"> </span>msgInput.value;
+// 进阶：实时预览
+msgInput.addEventListener(&quot;input&quot;, () =&gt; {
+    preview.textContent = &quot;正在输入：&quot; + msgInput.value;
 });
-</code></pre></div>
-
+</code></pre>
 <p>【演讲备注】
 接下来做一个最常见也最实用的交互——点击按钮给文本框赋值。HTML部分，一个输入框、一个预览区、几个快捷按钮。按钮上用data-text属性存要填入的文字，JS里用dataset.text读取。JS逻辑分两块：第一块，querySelectorAll选中所有快捷按钮，forEach遍历，每个按钮绑click事件，点击时把data-text的值赋给input.value。注意输入框的值用value属性读写，不是textContent。第二块，清空按钮把value设为空字符串。进阶用法：追加内容用+=，实时预览用input事件。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P37]</p>
 <h2>标题区</h2>
 <p>实战：简易计算器</p>
@@ -1744,51 +1825,53 @@ msgInput.addEventListener(&quot;input&quot;,<span class="w"> </span>()<span clas
   模板字符串拼接结果
   textContent更新页面</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="cm">&lt;!-- HTML --&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span> <span class="na">id=</span><span class="s">&quot;num1&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;数字1&quot;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&quot;op&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;+&quot;</span><span class="nt">&gt;</span>+<span class="nt">&lt;/option&gt;</span>
-<span class="w">    </span><span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;-&quot;</span><span class="nt">&gt;</span>-<span class="nt">&lt;/option&gt;</span>
-<span class="w">    </span><span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;*&quot;</span><span class="nt">&gt;</span>*<span class="nt">&lt;/option&gt;</span>
-<span class="w">    </span><span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">&quot;/&quot;</span><span class="nt">&gt;</span>/<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;number&quot;</span> <span class="na">id=</span><span class="s">&quot;num2&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;数字2&quot;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">&quot;calcBtn&quot;</span><span class="nt">&gt;</span>计算<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">&quot;result&quot;</span><span class="nt">&gt;&lt;/p&gt;</span>
+<pre><code>
+&lt;!-- HTML --&gt;
+&lt;input type=&quot;number&quot; id=&quot;num1&quot; placeholder=&quot;数字1&quot;&gt;
+&lt;select id=&quot;op&quot;&gt;
+    &lt;option value=&quot;+&quot;&gt;+&lt;/option&gt;
+    &lt;option value=&quot;-&quot;&gt;-&lt;/option&gt;
+    &lt;option value=&quot;*&quot;&gt;*&lt;/option&gt;
+    &lt;option value=&quot;/&quot;&gt;/&lt;/option&gt;
+&lt;/select&gt;
+&lt;input type=&quot;number&quot; id=&quot;num2&quot; placeholder=&quot;数字2&quot;&gt;
+&lt;button id=&quot;calcBtn&quot;&gt;计算&lt;/button&gt;
+&lt;p id=&quot;result&quot;&gt;&lt;/p&gt;
 
-//<span class="w"> </span>JS
-const<span class="w"> </span>num1<span class="w"> </span>=<span class="w"> </span>document.getElementById(&quot;num1&quot;);
-const<span class="w"> </span>num2<span class="w"> </span>=<span class="w"> </span>document.getElementById(&quot;num2&quot;);
-const<span class="w"> </span>op<span class="w"> </span>=<span class="w"> </span>document.getElementById(&quot;op&quot;);
-const<span class="w"> </span>calcBtn<span class="w"> </span>=<span class="w"> </span>document.getElementById(&quot;calcBtn&quot;);
-const<span class="w"> </span>result<span class="w"> </span>=<span class="w"> </span>document.getElementById(&quot;result&quot;);
+// JS
+const num1 = document.getElementById(&quot;num1&quot;);
+const num2 = document.getElementById(&quot;num2&quot;);
+const op = document.getElementById(&quot;op&quot;);
+const calcBtn = document.getElementById(&quot;calcBtn&quot;);
+const result = document.getElementById(&quot;result&quot;);
 
-calcBtn.addEventListener(&quot;click&quot;,<span class="w"> </span>()<span class="w"> </span>=&gt;<span class="w"> </span>{
-<span class="w">    </span>const<span class="w"> </span>a<span class="w"> </span>=<span class="w"> </span>Number(num1.value);
-<span class="w">    </span>const<span class="w"> </span>b<span class="w"> </span>=<span class="w"> </span>Number(num2.value);
-<span class="w">    </span>const<span class="w"> </span>operator<span class="w"> </span>=<span class="w"> </span>op.value;
-<span class="w">    </span>let<span class="w"> </span>res;
+calcBtn.addEventListener(&quot;click&quot;, () =&gt; {
+    const a = Number(num1.value);
+    const b = Number(num2.value);
+    const operator = op.value;
+    let res;
 
-<span class="w">    </span>if<span class="w"> </span>(operator<span class="w"> </span>===<span class="w"> </span>&quot;+&quot;)<span class="w"> </span>res<span class="w"> </span>=<span class="w"> </span>a<span class="w"> </span>+<span class="w"> </span>b;
-<span class="w">    </span>else<span class="w"> </span>if<span class="w"> </span>(operator<span class="w"> </span>===<span class="w"> </span>&quot;-&quot;)<span class="w"> </span>res<span class="w"> </span>=<span class="w"> </span>a<span class="w"> </span>-<span class="w"> </span>b;
-<span class="w">    </span>else<span class="w"> </span>if<span class="w"> </span>(operator<span class="w"> </span>===<span class="w"> </span>&quot;*&quot;)<span class="w"> </span>res<span class="w"> </span>=<span class="w"> </span>a<span class="w"> </span>*<span class="w"> </span>b;
-<span class="w">    </span>else<span class="w"> </span>if<span class="w"> </span>(operator<span class="w"> </span>===<span class="w"> </span>&quot;/&quot;)<span class="w"> </span>{
-<span class="w">        </span>if<span class="w"> </span>(b<span class="w"> </span>===<span class="w"> </span>0)<span class="w"> </span>{
-<span class="w">            </span>result.textContent<span class="w"> </span>=<span class="w"> </span>&quot;除数不能为0&quot;;
-<span class="w">            </span>return;
-<span class="w">        </span>}
-<span class="w">        </span>res<span class="w"> </span>=<span class="w"> </span>a<span class="w"> </span>/<span class="w"> </span>b;
-<span class="w">    </span>}
+    if (operator === &quot;+&quot;) res = a + b;
+    else if (operator === &quot;-&quot;) res = a - b;
+    else if (operator === &quot;*&quot;) res = a * b;
+    else if (operator === &quot;/&quot;) {
+        if (b === 0) {
+            result.textContent = &quot;除数不能为0&quot;;
+            return;
+        }
+        res = a / b;
+    }
 
-<span class="w">    </span>result.textContent<span class="w"> </span>=<span class="w"> </span>`结果：<span class="cp">${</span><span class="n">res</span><span class="cp">}</span>`;
+    result.textContent = `结果：${res}`;
 });
-</code></pre></div>
-
+</code></pre>
 <p>【演讲备注】
 来做个综合练习——简易计算器。逻辑拆开看：先获取所有元素的引用。点击按钮时，用input.value拿到输入值，注意value是字符串，要用Number()转成数字。然后根据运算符做不同的计算，if-else判断。除法要特殊处理，除数不能为0。最后用textContent把结果显示出来。这个例子把今天讲的很多东西都串起来了。</p>
 <hr />
 <h1>第九章 竞赛题与收尾</h1>
 <hr />
+<div class="page-break"></div>
+
 <p>[P38]</p>
 <h2>标题区</h2>
 <p>竞赛高频题</p>
@@ -1803,6 +1886,8 @@ calcBtn.addEventListener(&quot;click&quot;,<span class="w"> </span>()<span class
 【演讲备注】
 最后来几道竞赛和面试里的高频题，大家可以当自我检测。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P39]</p>
 <h2>标题区</h2>
 <p>题目1：var + setTimeout 闭包</p>
@@ -1813,34 +1898,36 @@ calcBtn.addEventListener(&quot;click&quot;,<span class="w"> </span>()<span class
 <p>改法1：var换成let（最简单）
 改法2：IIFE闭包，每次循环把i传进立即执行函数，j被"锁住"</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="c1">// 输出：3, 3, 3</span>
+<pre><code class="language-javascript">
+for (var i = 0; i &lt; 3; i++) {
+    setTimeout(function() {
+        console.log(i);
+    }, 0);
+}
+// 输出：3, 3, 3
 
-<span class="c1">// 改法1：let</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
-<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="c1">// 输出：0, 1, 2</span>
+// 改法1：let
+for (let i = 0; i &lt; 3; i++) {
+    setTimeout(function() {
+        console.log(i);
+    }, 0);
+}
+// 输出：0, 1, 2
 
-<span class="c1">// 改法2：IIFE闭包</span>
-<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">var</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">3</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">j</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">j</span><span class="p">);</span>
-<span class="w">        </span><span class="p">},</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
-<span class="w">    </span><span class="p">})(</span><span class="nx">i</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
-
+// 改法2：IIFE闭包
+for (var i = 0; i &lt; 3; i++) {
+    (function(j) {
+        setTimeout(function() {
+            console.log(j);
+        }, 0);
+    })(i);
+}
+</code></pre>
 <p>【演讲备注】
 var只有函数作用域，三个回调共享同一个i，执行时i已经是3。改成let每次循环独立的i。或者用立即执行函数创建闭包，把每次的i锁住。这个题蓝桥杯、前端面试出现率极高。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P40]</p>
 <h2>标题区</h2>
 <p>题目2：typeof null 陷阱</p>
@@ -1857,17 +1944,19 @@ null === undefined   返回 false （类型不同）</p>
   typeof "number" 返回 "string"
   typeof的返回值永远是字符串</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="ow">typeof</span><span class="w"> </span><span class="kc">null</span><span class="w">       </span><span class="c1">// &quot;object&quot;  坑！</span>
-<span class="ow">typeof</span><span class="w"> </span><span class="kc">undefined</span><span class="w">  </span><span class="c1">// &quot;undefined&quot;</span>
-<span class="kc">null</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">undefined</span><span class="w"> </span><span class="c1">// true</span>
-<span class="kc">null</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">undefined</span><span class="w"> </span><span class="c1">// false</span>
+<pre><code class="language-javascript">
+typeof null       // &quot;object&quot;  坑！
+typeof undefined  // &quot;undefined&quot;
+null == undefined // true
+null === undefined // false
 
-<span class="ow">typeof</span><span class="w"> </span><span class="ow">typeof</span><span class="w"> </span><span class="mf">1</span><span class="w">   </span><span class="c1">// &quot;string&quot;</span>
-</code></pre></div>
-
+typeof typeof 1   // &quot;string&quot;
+</code></pre>
 <p>【演讲备注】
 typeof null返回"object"，历史bug。null是主动设的空，undefined是还没赋值。typeof的返回值永远是字符串，所以typeof typeof 1是"string"。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P41]</p>
 <h2>标题区</h2>
 <p>题目3：事件循环执行顺序</p>
@@ -1880,17 +1969,19 @@ typeof null返回"object"，历史bug。null是主动设的空，undefined是还
 <p>setTimeout延迟是0也排在微任务后面
 "尽快执行"不等于"最先执行"</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">1</span><span class="p">);</span>
-<span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">2</span><span class="p">),</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
-<span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">().</span><span class="nx">then</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">3</span><span class="p">));</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mf">4</span><span class="p">);</span>
+<pre><code class="language-javascript">
+console.log(1);
+setTimeout(() =&gt; console.log(2), 0);
+Promise.resolve().then(() =&gt; console.log(3));
+console.log(4);
 
-<span class="c1">// 输出顺序：1, 4, 3, 2</span>
-</code></pre></div>
-
+// 输出顺序：1, 4, 3, 2
+</code></pre>
 <p>【演讲备注】
 蓝桥杯高频题。JS执行顺序：先同步，再微任务，最后宏任务。console.log同步，Promise.then微任务，setTimeout宏任务。延迟0毫秒只是说"尽快执行"，但再快也排在微任务后面。记住：同步 &gt; 微任务 &gt; 宏任务。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P42]</p>
 <h2>标题区</h2>
 <p>题目4：引用类型赋值</p>
@@ -1905,27 +1996,29 @@ typeof null返回"object"，历史bug。null是主动设的空，undefined是还
   展开运算符做浅拷贝
   JSON方法做深拷贝</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;小明&quot;</span><span class="w"> </span><span class="p">};</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">a</span><span class="p">;</span>
-<span class="nx">b</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;小红&quot;</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span><span class="w">  </span><span class="c1">// &quot;小红&quot;</span>
+<pre><code class="language-javascript">
+const a = { name: &quot;小明&quot; };
+const b = a;
+b.name = &quot;小红&quot;;
+console.log(a.name);  // &quot;小红&quot;
 
-<span class="c1">// 对比基本类型</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span>
-<span class="kd">let</span><span class="w"> </span><span class="nx">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">c</span><span class="p">;</span>
-<span class="nx">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">c</span><span class="p">);</span><span class="w">  </span><span class="c1">// 10，互不影响</span>
+// 对比基本类型
+const c = 10;
+let d = c;
+d = 20;
+console.log(c);  // 10，互不影响
 
-<span class="c1">// 浅拷贝</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">copy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">obj</span><span class="w"> </span><span class="p">};</span>
+// 浅拷贝
+const copy = { ...obj };
 
-<span class="c1">// 深拷贝</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">deepCopy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">));</span>
-</code></pre></div>
-
+// 深拷贝
+const deepCopy = JSON.parse(JSON.stringify(obj));
+</code></pre>
 <p>【演讲备注】
 a和b指向同一个对象，改b就是改a。对象和数组是引用类型，赋值复制地址。基本类型赋值才是复制值。想真正复制对象要用展开运算符做浅拷贝，或者JSON方法做深拷贝。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P43]</p>
 <h2>标题区</h2>
 <p>题目5：隐式类型转换</p>
@@ -1936,17 +2029,19 @@ a和b指向同一个对象，改b就是改a。对象和数组是引用类型，�
 <p>结论：==的类型转换规则太离谱，永远用===
       +遇到字符串拼接，-遇到字符串转数字</p>
 <h2>代码区</h2>
-<div class="codehilite"><pre><span></span><code>[] == false  // true
+<pre><code>
+[] == false  // true
 [] == ![]    // true（![]是false，然后[] == false）
 &quot;1&quot; + 1     // &quot;11&quot;（+遇到字符串会拼接）
 &quot;1&quot; - 1     // 0  （-会把字符串转数字）
 1 + 2 + &quot;3&quot; // &quot;33&quot;（先1+2=3，再拼&quot;3&quot;）
 &quot;1&quot; + 2 + 3 // &quot;123&quot;（从左到右，&quot;1&quot;+2=&quot;12&quot;，再+3=&quot;123&quot;）
-</code></pre></div>
-
+</code></pre>
 <p>【演讲备注】
 空数组等于false，因为类型转换太离谱。这就是为什么用===不用==。隐式转换的题竞赛里经常出，记住+遇到字符串拼接，-遇到字符串转数字，从左到右依次计算。</p>
 <hr />
+<div class="page-break"></div>
+
 <p>[P44]</p>
 <h2>标题区</h2>
 <p>今天聊了这些</p>
